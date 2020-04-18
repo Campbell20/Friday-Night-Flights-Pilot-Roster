@@ -1,1 +1,72 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+body {
+  font-family: 'Courier New';
+}
+
+.grid {
+  border: 1px solid #313131;
+}
+
+.grid-header {
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .grid-header {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+.grid-flight-group {
+  background-color: #e0e0e0;
+}
+
+.grid-green {
+  background-color: #93c47d;
+}
+
+.grid-green-leader {
+  background-color: #6aa84f;
+}
+
+.grid-green-pilot {
+  background-color: #b6d7a8;
+}
+
+.grid-red {
+  background-color: #ea9999;
+}
+
+.grid-red-leader {
+  background-color: #e06666;
+}
+
+.grid-red-pilot {
+  background-color: #f4cccc;
+}
+
+.grid-blue {
+  background-color: #a4c2f4;
+}
+
+.grid-blue-leader {
+  background-color: #6d9eeb;
+}
+
+.grid-blue-pilot {
+  background-color: #cfe2f3;
+}
+
+.grid-black {
+  background-color: #666666;
+}
+
+.grid-black-leader {
+  background-color: #434343;
+}
+
+.grid-black-pilot {
+  background-color: #aaaaaa;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,98 @@
+body {
+    // background-color: #999;
+    font-family: 'Courier New';
+}
+
+$lightgrey:rgb(224, 224, 224);
+$darkgrey: rgb(49, 49, 49);
+$black: rgb(20, 20, 20);
+
+
+$teamGreenLighter: #b6d7a8;
+$teamGreen: #93c47d;
+$teamGreenDarker: #6aa84f;
+
+$teamRedLighter: #f4cccc;
+$teamRed: #ea9999;
+$teamRedDarker: #e06666;
+
+$teamBlueLighter: #cfe2f3;
+$teamBlue: #a4c2f4;
+$teamBlueDarker: #6d9eeb;
+
+$teamBlackLighter: rgb(170, 170, 170);
+$teamBlack: #666666;
+$teamBlackDarker: #434343;
+
+@mixin teamColor($backgroundColor) {
+    background-color: $backgroundColor;
+
+}
+
+.grid {
+    border: 1px solid $darkgrey;
+
+    &-header {
+
+        display: block;
+
+        // Medium devices (tablets, 768px and up)
+        @media (min-width: 992px) {
+            display: inline-flex;
+        }
+
+    }
+
+    &-flight-group {
+        @include teamColor($lightgrey);
+    }
+
+    &-green {
+        @include teamColor($teamGreen);
+
+        &-leader {
+            @include teamColor($teamGreenDarker);
+        }
+
+        &-pilot {
+            @include teamColor($teamGreenLighter);
+        }
+    }
+
+    &-red {
+        @include teamColor($teamRed);
+
+        &-leader {
+            @include teamColor($teamRedDarker);
+        }
+
+        &-pilot {
+            @include teamColor($teamRedLighter);
+        }
+    }
+
+    &-blue {
+        @include teamColor($teamBlue);
+
+        &-leader {
+            @include teamColor($teamBlueDarker);
+        }
+
+        &-pilot {
+            @include teamColor($teamBlueLighter);
+        }
+    }
+
+    &-black {
+        @include teamColor($teamBlack);
+
+        &-leader {
+            @include teamColor($teamBlackDarker);
+        }
+
+        &-pilot {
+            @include teamColor($teamBlackLighter);
+        }
+    }
+
+}
