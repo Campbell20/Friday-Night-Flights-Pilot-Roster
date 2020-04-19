@@ -1,20 +1,16 @@
 {
   "0": {
-    "Timestamp": "2020-04-19T14:36:54.102Z",
     "Enter Pilot Name:": "Sketch",
     "Select role:": "Attacker Pilot",
     "Select Fighter Pilot Group:": "",
     "Select Fighter Pilot Position:": "",
-    "Select Attacker Pilot Position:": "Flight Lead",
-    "Email Address": "johncampbell5050@gmail.com"
+    "Select Attacker Pilot Position:": "Flight Lead"
   },
   "1": {
-    "Timestamp": "2020-04-18T22:45:29.034Z",
     "Enter Pilot Name:": "Reagan505",
     "Select role:": "Fighter Pilot",
     "Select Fighter Pilot Group:": "Escort Fighter Group",
     "Select Fighter Pilot Position:": "Wingman",
-    "Select Attacker Pilot Position:": "",
-    "Email Address": ""
+    "Select Attacker Pilot Position:": ""
   }
 }
