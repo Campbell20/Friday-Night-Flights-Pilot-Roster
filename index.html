@@ -19,7 +19,7 @@
 <body>
     <div class="container-fluid">
         <div class="col-12 d-flex justify-content-center">
-            <h3>Personnel</h3>
+            <h3>Friday Night Flights Roster</h3>
         </div>
         <div class="col-12 grid-header">
 
@@ -29,43 +29,27 @@
                     Detached/CAS
                 </div>
                 <div class="col-12 px-0 grid grid-green">
-                    Green Flight
+                    Green Flight Roster
                 </div>
                 <div class="d-inline-flex col-12 px-0">
                     <div class="col-4 px-0 grid grid-green-leader">
-                        Green Flight Lead
+                        Green Lead
                     </div>
-                    <div class="col-8 px-0 grid grid-green-pilot" id="green-1">
-                        
+                    <div class="col-8 px-0 grid grid-green-pilot" id="green">
+
                     </div>
                 </div>
                 <div id="green-wingmen"></div>
                 <template-green>
-                    <div class="d-inline-flex col-12 px-0">
-                        <div class="col-4 px-0 grid grid-green">
-                            Green
+                    <div class="d-inline-flex col px-0">
+                        <div class="col-4 px-0 grid grid-green grid-green-number green-number" id='green-number'>
+
                         </div>
-                        <div class="col-8 px-0 grid grid-green-pilot" id="green-2">
-                            
+                        <div class="col-8 px-0 grid grid-green-pilot" id="green">
+
                         </div>
                     </div>
                 </template-green>
-                <!-- <div class="d-inline-flex col-12 px-0">
-                    <div class="col-4 px-0 grid grid-green">
-                        Green 3
-                    </div>
-                    <div class="col-8 px-0 grid grid-green-pilot" id="green-3">
-                        
-                    </div>
-                </div>
-                <div class="d-inline-flex col-12 px-0">
-                    <div class="col-4 px-0 grid grid-green">
-                        Green 4
-                    </div>
-                    <div class="col-8 px-0 grid grid-green-pilot" id="green-4">
-                        
-                    </div>
-                </div> -->
             </div>
 
             <div class="col pl-0 pr-1">
@@ -73,40 +57,27 @@
                     Attached Escort
                 </div>
                 <div class="col-12 px-0 grid grid-red">
-                    Red Flight
+                    Red Flight Roster
                 </div>
                 <div class="d-inline-flex col-12 px-0">
                     <div class="col-4 px-0 grid grid-red-leader">
-                        Red Flight Lead
+                        Red Lead
                     </div>
-                    <div class="col-8 px-0 grid grid-red-pilot" id="red-1">
-                        
-                    </div>
-                </div>
-                <div class="d-inline-flex col-12 px-0">
-                    <div class="col-4 px-0 grid grid-red">
-                        Red 2
-                    </div>
-                    <div class="col-8 px-0 grid grid-red-pilot" id="red-2">
-                        
+                    <div class="col-8 px-0 grid grid-red-pilot" id="red">
+
                     </div>
                 </div>
-                <div class="d-inline-flex col-12 px-0">
-                    <div class="col-4 px-0 grid grid-red">
-                        Red 3
+                <div id="red-wingmen"></div>
+                <template-red>
+                    <div class="d-inline-flex col px-0">
+                        <div class="col-4 px-0 grid grid-red grid-red-number red-number" id='red-number'>
+
+                        </div>
+                        <div class="col-8 px-0 grid grid-red-pilot" id="red">
+
+                        </div>
                     </div>
-                    <div class="col-8 px-0 grid grid-red-pilot" id="red-3">
-                        
-                    </div>
-                </div>
-                <div class="d-inline-flex col-12 px-0">
-                    <div class="col-4 px-0 grid grid-red">
-                        Red 4
-                    </div>
-                    <div class="col-8 px-0 grid grid-red-pilot" id="red-4">
-                        
-                    </div>
-                </div>
+                </template-red>
             </div>
 
 
@@ -115,40 +86,27 @@
                     Strike Package
                 </div>
                 <div class="col-12 px-0 grid grid-blue">
-                    Blue Flight
+                    Blue Flight Roster
                 </div>
                 <div class="d-inline-flex col-12 px-0">
                     <div class="col-4 px-0 grid grid-blue-leader">
-                        Blue Flight Lead
+                        Blue Lead
                     </div>
                     <div class="col-8 px-0 grid grid-blue-pilot" id="blue-1">
-                        
+
                     </div>
                 </div>
-                <div class="d-inline-flex col-12 px-0">
-                    <div class="col-4 px-0 grid grid-blue">
-                        Blue 2
+                <div id="blue-wingmen"></div>
+                <template-blue>
+                    <div class="d-inline-flex col px-0">
+                        <div class="col-4 px-0 grid grid-blue grid-blue-number blue-number" id='blue-number'>
+
+                        </div>
+                        <div class="col-8 px-0 grid grid-blue-pilot" id="blue">
+
+                        </div>
                     </div>
-                    <div class="col-8 px-0 grid grid-blue-pilot" id="blue-2">
-                        
-                    </div>
-                </div>
-                <div class="d-inline-flex col-12 px-0">
-                    <div class="col-4 px-0 grid grid-blue">
-                        Blue 3
-                    </div>
-                    <div class="col-8 px-0 grid grid-blue-pilot" id="blue-3">
-                        
-                    </div>
-                </div>
-                <div class="d-inline-flex col-12 px-0">
-                    <div class="col-4 px-0 grid grid-blue">
-                        Blue 4
-                    </div>
-                    <div class="col-8 px-0 grid grid-blue-pilot" id="blue-4">
-                        
-                    </div>
-                </div>
+                </template-blue>
             </div>
 
             <div class="col pl-0 pr-1">
@@ -156,42 +114,35 @@
                     Strike Package
                 </div>
                 <div class="col-12 px-0 grid grid-black">
-                    Black Flight
+                    Black Flight Roster
                 </div>
                 <div class="d-inline-flex col-12 px-0">
                     <div class="col-4 px-0 grid grid-black-leader">
-                        Black Flight Lead
+                        Black Lead
                     </div>
                     <div class="col-8 px-0 grid grid-black-pilot" id="black-1">
-                        
-                    </div>
-                </div>
-                <div class="d-inline-flex col-12 px-0">
-                    <div class="col-4 px-0 grid grid-black">
-                        Black 2
-                    </div>
-                    <div class="col-8 px-0 grid grid-black-pilot" id="black-2">
-                        
-                    </div>
-                </div>
-                <div class="d-inline-flex col-12 px-0">
-                    <div class="col-4 px-0 grid grid-black">
-                        Black 3
-                    </div>
-                    <div class="col-8 px-0 grid grid-black-pilot" id="black-3">
-                        
-                    </div>
-                </div>
-                <div class="d-inline-flex col-12 px-0">
-                    <div class="col-4 px-0 grid grid-black">
-                        Black 4
-                    </div>
-                    <div class="col-8 px-0 grid grid-black-pilot" id="black-4">
-                        
-                    </div>
-                </div>
-            </div>
 
+                    </div>
+                </div>
+                <div id="black-wingmen"></div>
+                <template-black>
+                    <div class="d-inline-flex col px-0">
+                        <div class="col-4 px-0 grid grid-black grid-black-number black-number" id='black-number'>
+
+                        </div>
+                        <div class="col-8 px-0 grid grid-black-pilot" id="black">
+
+                        </div>
+                    </div>
+                </template-black>
+            </div>
+        </div>
+
+
+        <div class="col-12 py-3 d-flex justify-content-center">
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSfB6WovQEkwirlugLJew-dcq-aDGseR9-KRbwwNPsFvIh0bwA/viewform?embedded=true"
+                width="640" height="3000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
     </div>
 

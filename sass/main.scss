@@ -1,5 +1,5 @@
 body {
-    // background-color: #999;
+    background-color: #999;
     font-family: 'Courier New';
 }
 
@@ -22,7 +22,7 @@ $teamBlueDarker: #6d9eeb;
 
 $teamBlackLighter: rgb(170, 170, 170);
 $teamBlack: #666666;
-$teamBlackDarker: #434343;
+$teamBlackDarker: #515151;
 
 @mixin teamColor($backgroundColor) {
     background-color: $backgroundColor;
@@ -31,12 +31,9 @@ $teamBlackDarker: #434343;
 
 .grid {
     border: 1px solid $darkgrey;
-
     &-header {
-
         display: block;
 
-        // Medium devices (tablets, 768px and up)
         @media (min-width: 992px) {
             display: inline-flex;
         }
@@ -48,14 +45,20 @@ $teamBlackDarker: #434343;
     }
 
     &-green {
-        @include teamColor($teamGreen);
-
+        @include teamColor($teamGreen);        
         &-leader {
             @include teamColor($teamGreenDarker);
+            border-right: none;
+            border-top: none;
         }
 
         &-pilot {
             @include teamColor($teamGreenLighter);
+            border-top: none;
+        }
+        &-number {
+            border-top: none;
+            border-right: none;
         }
     }
 
@@ -64,10 +67,17 @@ $teamBlackDarker: #434343;
 
         &-leader {
             @include teamColor($teamRedDarker);
+            border-right: none;
+            border-top: none;
         }
 
         &-pilot {
             @include teamColor($teamRedLighter);
+            border-top: none;
+        }
+        &-number {
+            border-top: none;
+            border-right: none;
         }
     }
 
@@ -76,10 +86,17 @@ $teamBlackDarker: #434343;
 
         &-leader {
             @include teamColor($teamBlueDarker);
+            border-right: none;
+            border-top: none;
         }
 
         &-pilot {
             @include teamColor($teamBlueLighter);
+            border-top: none;
+        }
+        &-number {
+            border-top: none;
+            border-right: none;
         }
     }
 
@@ -88,10 +105,17 @@ $teamBlackDarker: #434343;
 
         &-leader {
             @include teamColor($teamBlackDarker);
+            border-right: none;
+            border-top: none;
         }
 
         &-pilot {
             @include teamColor($teamBlackLighter);
+            border-top: none;
+        }
+        &-number {
+            border-top: none;
+            border-right: none;
         }
     }
 

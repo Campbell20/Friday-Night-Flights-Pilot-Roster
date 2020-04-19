@@ -1,4 +1,5 @@
 body {
+  background-color: #999;
   font-family: 'Courier New';
 }
 
@@ -28,10 +29,18 @@ body {
 
 .grid-green-leader {
   background-color: #6aa84f;
+  border-right: none;
+  border-top: none;
 }
 
 .grid-green-pilot {
   background-color: #b6d7a8;
+  border-top: none;
+}
+
+.grid-green-number {
+  border-top: none;
+  border-right: none;
 }
 
 .grid-red {
@@ -40,10 +49,18 @@ body {
 
 .grid-red-leader {
   background-color: #e06666;
+  border-right: none;
+  border-top: none;
 }
 
 .grid-red-pilot {
   background-color: #f4cccc;
+  border-top: none;
+}
+
+.grid-red-number {
+  border-top: none;
+  border-right: none;
 }
 
 .grid-blue {
@@ -52,10 +69,18 @@ body {
 
 .grid-blue-leader {
   background-color: #6d9eeb;
+  border-right: none;
+  border-top: none;
 }
 
 .grid-blue-pilot {
   background-color: #cfe2f3;
+  border-top: none;
+}
+
+.grid-blue-number {
+  border-top: none;
+  border-right: none;
 }
 
 .grid-black {
@@ -63,10 +88,22 @@ body {
 }
 
 .grid-black-leader {
-  background-color: #434343;
+  background-color: #515151;
+  border-right: none;
+  border-top: none;
 }
 
 .grid-black-pilot {
   background-color: #aaaaaa;
+  border-top: none;
+}
+
+.grid-black-number {
+  border-top: none;
+  border-right: none;
+}
+
+.frame {
+  height: 100%;
 }
 /*# sourceMappingURL=main.css.map */
