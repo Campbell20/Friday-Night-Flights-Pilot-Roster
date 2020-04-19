@@ -1,0 +1,72 @@
+{
+  "0": {
+    "Enter Pilot Name:": "Sketch",
+    "Select role:": "Fighter Pilot",
+    "Select Fighter Pilot Group:": "Detached Fighter Group",
+    "Select Fighter Pilot Position:": "Flight Lead",
+    "Select Attacker Pilot Position:": ""
+  },
+  "1": {
+    "Enter Pilot Name:": "Reagan",
+    "Select role:": "Fighter Pilot",
+    "Select Fighter Pilot Group:": "Detached Fighter Group",
+    "Select Fighter Pilot Position:": "Wingman",
+    "Select Attacker Pilot Position:": ""
+  },
+  "2": {
+    "Enter Pilot Name:": "Alonzo",
+    "Select role:": "Fighter Pilot",
+    "Select Fighter Pilot Group:": "Detached Fighter Group",
+    "Select Fighter Pilot Position:": "Flight Lead",
+    "Select Attacker Pilot Position:": ""
+  },
+  "3": {
+    "Enter Pilot Name:": "Reagan505",
+    "Select role:": "Fighter Pilot",
+    "Select Fighter Pilot Group:": "Escort Fighter Group",
+    "Select Fighter Pilot Position:": "Wingman",
+    "Select Attacker Pilot Position:": ""
+  },
+  "4": {
+    "Enter Pilot Name:": "Attacker Pilot LeaderTEST",
+    "Select role:": "Attacker Pilot",
+    "Select Fighter Pilot Group:": "",
+    "Select Fighter Pilot Position:": "",
+    "Select Attacker Pilot Position:": "Flight Lead"
+  },
+  "5": {
+    "Enter Pilot Name:": "Green Test",
+    "Select role:": "Fighter Pilot",
+    "Select Fighter Pilot Group:": "Detached Fighter Group",
+    "Select Fighter Pilot Position:": "Wingman",
+    "Select Attacker Pilot Position:": ""
+  },
+  "6": {
+    "Enter Pilot Name:": "Green Test 2",
+    "Select role:": "Fighter Pilot",
+    "Select Fighter Pilot Group:": "Detached Fighter Group",
+    "Select Fighter Pilot Position:": "Wingman",
+    "Select Attacker Pilot Position:": ""
+  },
+  "7": {
+    "Enter Pilot Name:": "Attack Wingman TEST",
+    "Select role:": "Attacker Pilot",
+    "Select Fighter Pilot Group:": "",
+    "Select Fighter Pilot Position:": "",
+    "Select Attacker Pilot Position:": "Wingman"
+  },
+  "8": {
+    "Enter Pilot Name:": "",
+    "Select role:": "",
+    "Select Fighter Pilot Group:": "",
+    "Select Fighter Pilot Position:": "",
+    "Select Attacker Pilot Position:": ""
+  },
+  "9": {
+    "Enter Pilot Name:": "",
+    "Select role:": "",
+    "Select Fighter Pilot Group:": "",
+    "Select Fighter Pilot Position:": "",
+    "Select Attacker Pilot Position:": ""
+  }
+}
