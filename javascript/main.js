@@ -1,8 +1,27 @@
 
 $(document).ready(function () {
     $.getJSON('data/data.json', function (json) {
+        createGreenFlight(json);
         setJsonData(json);
     });
+
+
+
+
+    function createGreenFlight(json) {
+        var greenTemplate = document.getElementsByTagName("templat-green")[0];
+        var divs = greenTemplate.content.querySelector('div');
+        var a;
+        jsonLength = Object.keys(json).length;
+
+        for (i = 0; i < jsonLength; i++) {
+            a = document.importNode(divs, true);
+            //add them to the page
+            //   document.body.appendChild(a);
+            document.getElementById("green-wingmen").appendChild(a);
+        }
+    }
+
 
     function setJsonData(json) {
         greenLeaderFilled = false;
@@ -16,8 +35,6 @@ $(document).ready(function () {
         blackLeaderFilled = false;
         blackLeaderName = "";
         attackerTeam = 0;
-
-
 
         console.log(json);
         jsonLength = Object.keys(json).length;
