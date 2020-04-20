@@ -12,5 +12,19 @@
     "Select Fighter Pilot Group:": "Escort Fighter Group",
     "Select Fighter Pilot Position:": "Wingman",
     "Select Attacker Pilot Position:": ""
+  },
+  "2": {
+    "Enter Pilot Name:": "[TWB]Sauerkraut",
+    "Select role:": "Fighter Pilot",
+    "Select Fighter Pilot Group:": "Detached Fighter Group",
+    "Select Fighter Pilot Position:": "Flight Lead",
+    "Select Attacker Pilot Position:": ""
+  },
+  "3": {
+    "Enter Pilot Name:": "Apoxy",
+    "Select role:": "Attacker Pilot",
+    "Select Fighter Pilot Group:": "",
+    "Select Fighter Pilot Position:": "",
+    "Select Attacker Pilot Position:": "Wingman"
   }
 }
