@@ -33,5 +33,12 @@
     "Select Fighter Pilot Group:": "Detached Fighter Group",
     "Select Fighter Pilot Position:": "Wingman",
     "Select Attacker Pilot Position:": ""
+  },
+  "5": {
+    "Enter Pilot Name:": "Alonzo",
+    "Select role:": "Attacker Pilot",
+    "Select Fighter Pilot Group:": "",
+    "Select Fighter Pilot Position:": "",
+    "Select Attacker Pilot Position:": "Flight Lead"
   }
 }
