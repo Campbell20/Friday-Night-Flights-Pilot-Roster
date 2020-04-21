@@ -40,5 +40,19 @@
     "Select Fighter Pilot Group:": "",
     "Select Fighter Pilot Position:": "",
     "Select Attacker Pilot Position:": "Flight Lead"
+  },
+  "6": {
+    "Enter Pilot Name:": "[1/KG]SpysAreAMyth",
+    "Select role:": "Attacker Pilot",
+    "Select Fighter Pilot Group:": "",
+    "Select Fighter Pilot Position:": "",
+    "Select Attacker Pilot Position:": "Wingman"
+  },
+  "7": {
+    "Enter Pilot Name:": "BenyAAu",
+    "Select role:": "Fighter Pilot",
+    "Select Fighter Pilot Group:": "Escort Fighter Group",
+    "Select Fighter Pilot Position:": "Wingman",
+    "Select Attacker Pilot Position:": ""
   }
 }
