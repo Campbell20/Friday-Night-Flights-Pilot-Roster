@@ -8,10 +8,10 @@
   },
   "1": {
     "Enter Pilot Name:": "Reagan505",
-    "Select role:": "Fighter Pilot",
-    "Select Fighter Pilot Group:": "Escort Fighter Group",
-    "Select Fighter Pilot Position:": "Wingman",
-    "Select Attacker Pilot Position:": ""
+    "Select role:": "Attacker Pilot",
+    "Select Fighter Pilot Group:": "",
+    "Select Fighter Pilot Position:": "",
+    "Select Attacker Pilot Position:": "Wingman"
   },
   "2": {
     "Enter Pilot Name:": "[TWB]Sauerkraut",
@@ -61,5 +61,12 @@
     "Select Fighter Pilot Group:": "Escort Fighter Group",
     "Select Fighter Pilot Position:": "Flight Lead",
     "Select Attacker Pilot Position:": ""
+  },
+  "9": {
+    "Enter Pilot Name:": "Eclipse4349",
+    "Select role:": "Attacker Pilot",
+    "Select Fighter Pilot Group:": "",
+    "Select Fighter Pilot Position:": "",
+    "Select Attacker Pilot Position:": "Wingman"
   }
 }
