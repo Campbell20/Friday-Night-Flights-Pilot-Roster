@@ -68,5 +68,12 @@
     "Select Fighter Pilot Group:": "",
     "Select Fighter Pilot Position:": "",
     "Select Attacker Pilot Position:": "Wingman"
+  },
+  "10": {
+    "Enter Pilot Name:": "[=PzG=]-Ramulon",
+    "Select role:": "Attacker Pilot",
+    "Select Fighter Pilot Group:": "",
+    "Select Fighter Pilot Position:": "",
+    "Select Attacker Pilot Position:": "Wingman"
   }
 }
