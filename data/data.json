@@ -96,5 +96,12 @@
     "Select Fighter Pilot Group:": "Detached Fighter Group",
     "Select Fighter Pilot Position:": "Wingman",
     "Select Attacker Pilot Position:": ""
+  },
+  "14": {
+    "Enter Pilot Name:": "_MasterViolin",
+    "Select role:": "Attacker Pilot",
+    "Select Fighter Pilot Group:": "",
+    "Select Fighter Pilot Position:": "",
+    "Select Attacker Pilot Position:": "Wingman"
   }
 }
