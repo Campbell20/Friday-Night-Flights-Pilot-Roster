@@ -85,10 +85,10 @@
   },
   "12": {
     "Enter Pilot Name:": "TailPipe27",
-    "Select role:": "Fighter Pilot",
-    "Select Fighter Pilot Group:": "Escort Fighter Group",
-    "Select Fighter Pilot Position:": "Wingman",
-    "Select Attacker Pilot Position:": ""
+    "Select role:": "Attacker Pilot",
+    "Select Fighter Pilot Group:": "",
+    "Select Fighter Pilot Position:": "",
+    "Select Attacker Pilot Position:": "Wingman"
   },
   "13": {
     "Enter Pilot Name:": "ALPACAS_UNITED",
