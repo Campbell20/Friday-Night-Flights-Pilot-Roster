@@ -71,10 +71,10 @@
   },
   "10": {
     "Enter Pilot Name:": "[=PzG=]-Ramulon",
-    "Select role:": "Attacker Pilot",
-    "Select Fighter Pilot Group:": "",
-    "Select Fighter Pilot Position:": "",
-    "Select Attacker Pilot Position:": "Wingman"
+    "Select role:": "Fighter Pilot",
+    "Select Fighter Pilot Group:": "Detached Fighter Group",
+    "Select Fighter Pilot Position:": "Wingman",
+    "Select Attacker Pilot Position:": ""
   },
   "11": {
     "Enter Pilot Name:": "[TWB] kmac31",
