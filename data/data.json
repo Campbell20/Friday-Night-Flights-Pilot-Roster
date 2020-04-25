@@ -77,69 +77,76 @@
     "Select Attacker Pilot Position:": ""
   },
   "11": {
+    "Enter Pilot Name:": "[TWB] kmac31",
+    "Select role:": "Attacker Pilot",
+    "Select Fighter Pilot Group:": "",
+    "Select Fighter Pilot Position:": "",
+    "Select Attacker Pilot Position:": "Wingman"
+  },
+  "12": {
     "Enter Pilot Name:": "TailPipe27",
     "Select role:": "Fighter Pilot",
     "Select Fighter Pilot Group:": "Escort Fighter Group",
     "Select Fighter Pilot Position:": "Wingman",
     "Select Attacker Pilot Position:": ""
   },
-  "12": {
+  "13": {
     "Enter Pilot Name:": "ALPACAS_UNITED",
     "Select role:": "Fighter Pilot",
     "Select Fighter Pilot Group:": "Detached Fighter Group",
     "Select Fighter Pilot Position:": "Wingman",
     "Select Attacker Pilot Position:": ""
   },
-  "13": {
+  "14": {
     "Enter Pilot Name:": "_MasterViolin",
     "Select role:": "Fighter Pilot",
     "Select Fighter Pilot Group:": "Escort Fighter Group",
     "Select Fighter Pilot Position:": "Wingman",
     "Select Attacker Pilot Position:": ""
   },
-  "14": {
+  "15": {
     "Enter Pilot Name:": "Maltor",
     "Select role:": "Attacker Pilot",
     "Select Fighter Pilot Group:": "",
     "Select Fighter Pilot Position:": "",
     "Select Attacker Pilot Position:": "Wingman"
   },
-  "15": {
+  "16": {
     "Enter Pilot Name:": "D13th_Korn",
     "Select role:": "Fighter Pilot",
     "Select Fighter Pilot Group:": "Escort Fighter Group",
     "Select Fighter Pilot Position:": "Wingman",
     "Select Attacker Pilot Position:": ""
   },
-  "16": {
+  "17": {
     "Enter Pilot Name:": "Syrtis",
     "Select role:": "Attacker Pilot",
     "Select Fighter Pilot Group:": "",
     "Select Fighter Pilot Position:": "",
     "Select Attacker Pilot Position:": "Wingman"
   },
-  "17": {
+  "18": {
     "Enter Pilot Name:": "Zak Argo",
     "Select role:": "Attacker Pilot",
     "Select Fighter Pilot Group:": "",
     "Select Fighter Pilot Position:": "",
     "Select Attacker Pilot Position:": "Wingman"
   },
-  "18": {
+  "19": {
     "Enter Pilot Name:": "Odie Hill",
     "Select role:": "Attacker Pilot",
     "Select Fighter Pilot Group:": "",
     "Select Fighter Pilot Position:": "",
     "Select Attacker Pilot Position:": "Wingman"
   },
-  "19": {
+  "20": {
     "Enter Pilot Name:": "MyArmy",
     "Select role:": "Attacker Pilot",
     "Select Fighter Pilot Group:": "",
     "Select Fighter Pilot Position:": "",
     "Select Attacker Pilot Position:": "Wingman"
   },
-  "20": {
+  "21": {
     "Enter Pilot Name:": "ThePieSpy",
     "Select role:": "Attacker Pilot",
     "Select Fighter Pilot Group:": "",
