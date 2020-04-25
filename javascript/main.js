@@ -8,6 +8,11 @@ $(document).ready(function () {
         setJsonData(json);
     });
 
+
+
+    
+
+
     //green flight
     function createGreenFlight(json) {
         var greenTemplate = document.getElementsByTagName("template-green")[0];
@@ -79,7 +84,7 @@ $(document).ready(function () {
             //add them to the page
             if (json[i]["Select Attacker Pilot Position:"] == "Wingman") {
                 attacker++;
-                if (attacker < 5) {
+                if (attacker < 7) {
                     document.getElementById("blue-wingmen").appendChild(a);
                    
                 }
@@ -110,7 +115,7 @@ $(document).ready(function () {
             //add them to the page
             if (json[i]["Select Attacker Pilot Position:"] == "Wingman") {
                 attacker++
-                if(attacker >= 6){
+                if(attacker >= 7){
                     document.getElementById("black-wingmen").appendChild(a);
                    
                 }
@@ -121,7 +126,7 @@ $(document).ready(function () {
 
     function createBlackTeamIds() {
         $(".black-number").each(function (i) {
-            $(this).attr('id', "black-number" + (i  + 6));
+            $(this).attr('id', "black-number" + (i  + 7));
             $(this).text("Black " + (i + 2));
         });
         $(".grid-black-pilot").each(function (i) {
@@ -194,11 +199,11 @@ $(document).ready(function () {
                     && blueLeaderName != json[i]["Enter Pilot Name:"]
                     && blackLeaderName != json[i]["Enter Pilot Name:"]) {
                     attackerTeam++;
-                    if (attackerTeam < 6) {
+                    if (attackerTeam < 7) {
                         document.getElementById("blue" + (attackerTeam)).innerHTML = json[i]["Enter Pilot Name:"];
                     }
                     else {
-                        document.getElementById("black" + (attackerTeam - 5)).innerHTML = json[i]["Enter Pilot Name:"];
+                        document.getElementById("black" + (attackerTeam - 6)).innerHTML = json[i]["Enter Pilot Name:"];
                     }
                 }
                 else {

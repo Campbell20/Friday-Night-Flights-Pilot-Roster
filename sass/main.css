@@ -103,7 +103,7 @@ body {
   border-right: none;
 }
 
-.frame {
-  height: 100%;
+.hidden-templates {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
