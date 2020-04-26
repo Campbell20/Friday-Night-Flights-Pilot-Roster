@@ -106,4 +106,22 @@ body {
 .hidden-templates {
   display: none;
 }
+
+.highlight-green {
+  background-color: #09ff00;
+}
+
+.highlight-red {
+  background-color: #fd2c2c;
+  color: white;
+}
+
+.highlight-blue {
+  background-color: #00ccff;
+}
+
+.highlight-black {
+  background-color: #252525;
+  color: white;
+}
 /*# sourceMappingURL=main.css.map */

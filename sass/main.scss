@@ -124,3 +124,20 @@ $teamBlackDarker: #515151;
 .hidden-templates{
     display: none;
 }
+
+.highlight {
+    &-green{
+        background-color: #09ff00;
+    }
+    &-red {
+        background-color: rgb(253, 44, 44);
+        color: white;
+    }
+    &-blue {
+        background-color: rgb(0, 204, 255);
+    }
+    &-black {
+        background-color: rgb(37, 37, 37);
+        color: white;
+    }
+}
