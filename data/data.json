@@ -33,5 +33,26 @@
     "Select Fighter Pilot Group:": "",
     "Select Fighter Pilot Position:": "",
     "Select Attacker Pilot Position:": "Flight Lead"
+  },
+  "5": {
+    "Enter Pilot Name:": "Ramulon",
+    "Select role:": "Fighter Pilot",
+    "Select Fighter Pilot Group:": "Escort Fighter Group",
+    "Select Fighter Pilot Position:": "Wingman",
+    "Select Attacker Pilot Position:": ""
+  },
+  "6": {
+    "Enter Pilot Name:": "[TWB]Hawx04",
+    "Select role:": "Fighter Pilot",
+    "Select Fighter Pilot Group:": "Escort Fighter Group",
+    "Select Fighter Pilot Position:": "Wingman",
+    "Select Attacker Pilot Position:": ""
+  },
+  "7": {
+    "Enter Pilot Name:": "Superfly29r",
+    "Select role:": "Fighter Pilot",
+    "Select Fighter Pilot Group:": "Escort Fighter Group",
+    "Select Fighter Pilot Position:": "Wingman",
+    "Select Attacker Pilot Position:": ""
   }
 }
