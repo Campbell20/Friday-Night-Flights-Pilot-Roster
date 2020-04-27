@@ -33,6 +33,11 @@ body {
   border-top: none;
 }
 
+.grid-green-leader-pilot {
+  background-color: #b6d7a8;
+  border-top: none;
+}
+
 .grid-green-pilot {
   background-color: #b6d7a8;
   border-top: none;

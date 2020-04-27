@@ -2,11 +2,11 @@
   "0": {
     "Enter Pilot Name:": "Sketch",
     "Select role:": "Attacker Pilot",
-    "Select Fighter Pilot Group:": "",
-    "Select Fighter Pilot Position:": "",
+    "Select Fighter Pilot Group:": "null",
+    "Select Fighter Pilot Position:": "null",
     "Select Attacker Pilot Position:": "Flight Lead"
   },
-  "": {
+  "1": {
     "Enter Pilot Name:": "kanth",
     "Select role:": "Fighter Pilot",
     "Select Fighter Pilot Group:": "Escort Fighter Group",

@@ -50,6 +50,11 @@ $teamBlackDarker: #515151;
             @include teamColor($teamGreenDarker);
             border-right: none;
             border-top: none;
+            
+            &-pilot {
+                @include teamColor($teamGreenLighter);
+            border-top: none;
+            }
         }
 
         &-pilot {
