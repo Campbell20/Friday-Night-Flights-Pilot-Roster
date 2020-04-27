@@ -54,5 +54,12 @@
     "Select Fighter Pilot Group:": "Escort Fighter Group",
     "Select Fighter Pilot Position:": "Wingman",
     "Select Attacker Pilot Position:": ""
+  },
+  "8": {
+    "Enter Pilot Name:": "_Masterviolin",
+    "Select role:": "Attacker Pilot",
+    "Select Fighter Pilot Group:": "",
+    "Select Fighter Pilot Position:": "",
+    "Select Attacker Pilot Position:": "Wingman"
   }
 }
