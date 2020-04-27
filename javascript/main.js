@@ -3,6 +3,7 @@ $(document).ready(function () {
     $.getJSON('data/data.json', function (json) {
         createGridFromTemplate(json);
         setJsonData(json);
+        
     });
 
     flightSize = 6
@@ -21,7 +22,10 @@ $(document).ready(function () {
         var blackDivs = blackTemplate.querySelector('div');
         var blD;
 
-        attackerPilots = 0
+        AttackerFlightLead = 0;
+        GreenFlightLead = 0;
+        RedFlightLead = 0;
+        attackerPilots = 0;
         jsonLength = Object.keys(json).length;
 
         for (i = 0; i < jsonLength; i++) {
@@ -32,24 +36,33 @@ $(document).ready(function () {
 
             if (json[i]["Select role:"] == "Fighter Pilot") {
                 if (json[i]["Select Fighter Pilot Group:"] == "Detached Fighter Group") {
-                    if (json[i]["Select Fighter Pilot Position:"] == "Wingman") {
+                    if(json[i]["Select Fighter Pilot Position:"] == "Flight Lead"){
+                        GreenFlightLead++;
+                    }
+                    if (json[i]["Select Fighter Pilot Position:"] == "Wingman" || GreenFlightLead > 1) {
                         document.getElementById("green-wingmen").appendChild(gD);
                     }
                 }
                 if (json[i]["Select Fighter Pilot Group:"] == "Escort Fighter Group") {
-                    if (json[i]["Select Fighter Pilot Position:"] == "Wingman") {
+                    if(json[i]["Select Fighter Pilot Position:"] == "Flight Lead"){
+                        RedFlightLead++;
+                    }
+                    if (json[i]["Select Fighter Pilot Position:"] == "Wingman" || RedFlightLead > 1) {
                         document.getElementById("red-wingmen").appendChild(aD);
                     }
                 }
             }
             else if(json[i]["Select role:"] == "Attacker Pilot") {
-                if (json[i]["Select Attacker Pilot Position:"] == "Wingman") {
+                if(json[i]["Select Attacker Pilot Position:"] == "Flight Lead"){
+                    AttackerFlightLead++;
+                }
+                if (json[i]["Select Attacker Pilot Position:"] == "Wingman" || AttackerFlightLead > 2) {
                     attackerPilots++;
                     if (attackerPilots < flightSize) {
                         document.getElementById("blue-wingmen").appendChild(bD);
 
                     }
-                    if (attacker >= flightSize) {
+                    if (attackerPilots >= flightSize) {
                         document.getElementById("black-wingmen").appendChild(blD);
 
                     }
@@ -131,7 +144,6 @@ $(document).ready(function () {
                     }
                     else if (redLeaderName != json[i]["Enter Pilot Name:"]) {
                         redPilot++;
-                        console.log("Added " + json[i]["Enter Pilot Name:"] + " to the escort roster.");
                         document.getElementById("red" + (redPilot)).innerHTML = json[i]["Enter Pilot Name:"];
                     }
                     else {
@@ -153,6 +165,17 @@ $(document).ready(function () {
                     blackLeaderName = json[i]["Enter Pilot Name:"];
                     document.getElementById("black0").innerHTML = blackLeaderName;
                 }
+                else if (json[i]["Select Attacker Pilot Position:"] == "Flight Lead" 
+                    && blueLeaderFilled
+                    && blueLeaderFilled){
+                        attackerPilots++;
+                        if (attackerPilots < flightSize) {
+                            document.getElementById("blue" + (attackerPilots)).innerHTML = json[i]["Enter Pilot Name:"];
+                        }
+                        else {
+                            document.getElementById("black" + (attackerPilots - flightSize)).innerHTML = json[i]["Enter Pilot Name:"];
+                        }
+                    }
                 else if (json[i]["Select Attacker Pilot Position:"] == "Wingman"
                     && blueLeaderName != json[i]["Enter Pilot Name:"]
                     && blackLeaderName != json[i]["Enter Pilot Name:"]) {
