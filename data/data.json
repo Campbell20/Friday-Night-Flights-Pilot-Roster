@@ -82,5 +82,12 @@
     "Select Fighter Pilot Group:": "Detached Fighter Group",
     "Select Fighter Pilot Position:": "Wingman",
     "Select Attacker Pilot Position:": ""
+  },
+  "12": {
+    "Enter Pilot Name:": "Apoxy",
+    "Select role:": "Attacker Pilot",
+    "Select Fighter Pilot Group:": "",
+    "Select Fighter Pilot Position:": "",
+    "Select Attacker Pilot Position:": "Wingman"
   }
 }
