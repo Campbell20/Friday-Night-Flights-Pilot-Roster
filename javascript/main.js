@@ -163,6 +163,7 @@ $(document).ready(function () {
                     && blackLeaderFilled == false) {
                     blackLeaderFilled = true;
                     blackLeaderName = json[i]["Enter Pilot Name:"];
+                    console.log(json[i]["Enter Pilot Name:"]);
                     document.getElementById("black0").innerHTML = blackLeaderName;
                 }
                 else if (json[i]["Select Attacker Pilot Position:"] == "Flight Lead" 
@@ -173,7 +174,7 @@ $(document).ready(function () {
                             document.getElementById("blue" + (attackerPilots)).innerHTML = json[i]["Enter Pilot Name:"];
                         }
                         else {
-                            document.getElementById("black" + (attackerPilots - flightSize)).innerHTML = json[i]["Enter Pilot Name:"];
+                            document.getElementById("black" + (attackerPilots + 1 - flightSize)).innerHTML = json[i]["Enter Pilot Name:"];
                         }
                     }
                 else if (json[i]["Select Attacker Pilot Position:"] == "Wingman"
@@ -184,7 +185,8 @@ $(document).ready(function () {
                         document.getElementById("blue" + (attackerPilots)).innerHTML = json[i]["Enter Pilot Name:"];
                     }
                     else {
-                        document.getElementById("black" + (attackerPilots - flightSize)).innerHTML = json[i]["Enter Pilot Name:"];
+                    
+                        document.getElementById("black" + (attackerPilots + 1 - flightSize)).innerHTML = json[i]["Enter Pilot Name:"];
                     }
                 }
                 else {
