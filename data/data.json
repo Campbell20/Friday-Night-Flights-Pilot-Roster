@@ -148,9 +148,9 @@
   },
   "21": {
     "Enter Pilot Name:": "Alonzo",
-    "Select role:": "Fighter Pilot",
-    "Select Fighter Pilot Group:": "Escort Fighter Group",
-    "Select Fighter Pilot Position:": "Wingman",
-    "Select Attacker Pilot Position:": ""
+    "Select role:": "Attacker Pilot",
+    "Select Fighter Pilot Group:": "",
+    "Select Fighter Pilot Position:": "",
+    "Select Attacker Pilot Position:": "Wingman"
   }
 }
