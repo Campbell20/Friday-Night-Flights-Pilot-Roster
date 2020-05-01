@@ -68,6 +68,26 @@ body {
   border-right: none;
 }
 
+.grid-purple {
+  background-color: #bd40c9;
+}
+
+.grid-purple-leader {
+  background-color: #9f33a7;
+  border-right: none;
+  border-top: none;
+}
+
+.grid-purple-pilot {
+  background-color: #f481ff;
+  border-top: none;
+}
+
+.grid-purple-number {
+  border-top: none;
+  border-right: none;
+}
+
 .grid-blue {
   background-color: #a4c2f4;
 }
@@ -127,6 +147,11 @@ body {
 
 .highlight-black {
   background-color: #252525;
+  color: white;
+}
+
+.highlight-purple {
+  background-color: #ff00ea;
   color: white;
 }
 /*# sourceMappingURL=main.css.map */

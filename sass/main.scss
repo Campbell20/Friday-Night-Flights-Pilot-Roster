@@ -16,6 +16,10 @@ $teamRedLighter: #f4cccc;
 $teamRed: #ea9999;
 $teamRedDarker: #e06666;
 
+$teamPurpleLighter: rgb(244, 129, 255);
+$teamPurple: rgb(189, 64, 201);
+$teamPurpleDarker: rgb(159, 51, 167);
+
 $teamBlueLighter: #cfe2f3;
 $teamBlue: #a4c2f4;
 $teamBlueDarker: #6d9eeb;
@@ -86,6 +90,25 @@ $teamBlackDarker: #515151;
         }
     }
 
+    &-purple {
+        @include teamColor($teamPurple);
+
+        &-leader {
+            @include teamColor($teamPurpleDarker);
+            border-right: none;
+            border-top: none;
+        }
+
+        &-pilot {
+            @include teamColor($teamPurpleLighter);
+            border-top: none;
+        }
+        &-number {
+            border-top: none;
+            border-right: none;
+        }
+    }
+
     &-blue {
         @include teamColor($teamBlue);
 
@@ -143,6 +166,10 @@ $teamBlackDarker: #515151;
     }
     &-black {
         background-color: rgb(37, 37, 37);
+        color: white;
+    }
+    &-purple {
+        background-color: rgb(255, 0, 234);
         color: white;
     }
 }
