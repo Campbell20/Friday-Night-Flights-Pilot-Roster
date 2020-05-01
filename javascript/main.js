@@ -163,7 +163,6 @@ $(document).ready(function () {
                     && blackLeaderFilled == false) {
                     blackLeaderFilled = true;
                     blackLeaderName = json[i]["Enter Pilot Name:"];
-                    console.log(json[i]["Enter Pilot Name:"]);
                     document.getElementById("black0").innerHTML = blackLeaderName;
                 }
                 else if (json[i]["Select Attacker Pilot Position:"] == "Flight Lead" 
