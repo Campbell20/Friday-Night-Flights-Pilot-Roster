@@ -159,5 +159,47 @@
     "Select Fighter Pilot Group:": "Escort Fighter Group",
     "Select Fighter Pilot Position:": "Wingman",
     "Select Attacker Pilot Position:": ""
+  },
+  "23": {
+    "Enter Pilot Name:": "thomasmynott",
+    "Select role:": "Fighter Pilot",
+    "Select Fighter Pilot Group:": "Escort Fighter Group",
+    "Select Fighter Pilot Position:": "Wingman",
+    "Select Attacker Pilot Position:": ""
+  },
+  "24": {
+    "Enter Pilot Name:": "SeniorWiener",
+    "Select role:": "Fighter Pilot",
+    "Select Fighter Pilot Group:": "Escort Fighter Group",
+    "Select Fighter Pilot Position:": "Wingman",
+    "Select Attacker Pilot Position:": ""
+  },
+  "25": {
+    "Enter Pilot Name:": "Spinal",
+    "Select role:": "Fighter Pilot",
+    "Select Fighter Pilot Group:": "Detached Fighter Group",
+    "Select Fighter Pilot Position:": "Wingman",
+    "Select Attacker Pilot Position:": ""
+  },
+  "26": {
+    "Enter Pilot Name:": "The-nines",
+    "Select role:": "Fighter Pilot",
+    "Select Fighter Pilot Group:": "Detached Fighter Group",
+    "Select Fighter Pilot Position:": "Flight Lead",
+    "Select Attacker Pilot Position:": ""
+  },
+  "27": {
+    "Enter Pilot Name:": "[CPT]Nem0",
+    "Select role:": "Attacker Pilot",
+    "Select Fighter Pilot Group:": "",
+    "Select Fighter Pilot Position:": "",
+    "Select Attacker Pilot Position:": "Wingman"
+  },
+  "28": {
+    "Enter Pilot Name:": "Camasi",
+    "Select role:": "Attacker Pilot",
+    "Select Fighter Pilot Group:": "",
+    "Select Fighter Pilot Position:": "",
+    "Select Attacker Pilot Position:": "Wingman"
   }
 }
