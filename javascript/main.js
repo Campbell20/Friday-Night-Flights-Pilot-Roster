@@ -1,12 +1,25 @@
 
 $(document).ready(function () {
     $.getJSON('data/data.json', function (json) {
+        setPlanes()
         createGridFromTemplate(json);
         setJsonData(json);
 
     });
 
     flightSize = 6
+
+    function setPlanes() {
+        fighterPlane = "BF109K4";
+        attackerPlane = "BF110G2"
+        
+        document.getElementById("green-plane").innerHTML = fighterPlane;
+        document.getElementById("red-plane").innerHTML = fighterPlane;
+        document.getElementById("purple-plane").innerHTML = fighterPlane;
+        document.getElementById("blue-plane").innerHTML = attackerPlane;
+        document.getElementById("black-plane").innerHTML = attackerPlane;
+    }
+
 
     function createGridFromTemplate(json) {
         var greenTemplate = document.getElementsByTagName("template-green")[0];
@@ -52,6 +65,9 @@ $(document).ready(function () {
                     if (json[i]["Select Fighter Pilot Position:"] == "Flight Lead") {
                         RedFlightLead++;
                     }
+                    if (RedFlightLead >= 2) {
+                        document.getElementById("purple-flight").style.display = "block";
+                    }
                     if (json[i]["Select Fighter Pilot Position:"] == "Wingman" || RedFlightLead > 1) {
                         escortPilots++;
                         if (escortPilots < flightSize) {
@@ -59,6 +75,7 @@ $(document).ready(function () {
 
                         }
                         if (escortPilots >= flightSize) {
+                            document.getElementById("purple-flight").style.display = "block";
                             document.getElementById("purple-wingmen").appendChild(pD);
 
                         }
@@ -69,6 +86,9 @@ $(document).ready(function () {
                 if (json[i]["Select Attacker Pilot Position:"] == "Flight Lead") {
                     AttackerFlightLead++;
                 }
+                if (AttackerFlightLead >= 2) {
+                    document.getElementById("purple-flight").style.display = "block";
+                }
                 if (json[i]["Select Attacker Pilot Position:"] == "Wingman" || AttackerFlightLead > 2) {
                     attackerPilots++;
                     if (attackerPilots < flightSize) {
@@ -76,6 +96,7 @@ $(document).ready(function () {
 
                     }
                     if (attackerPilots >= flightSize) {
+                        document.getElementById("black-flight").style.display = "block";
                         document.getElementById("black-wingmen").appendChild(blD);
 
                     }
@@ -160,10 +181,18 @@ $(document).ready(function () {
                 }
                 if (json[i]["Select Fighter Pilot Group:"] == "Escort Fighter Group") {
                     if (json[i]["Select Fighter Pilot Position:"] == "Flight Lead"
-                        && redLeaderFilled == false) {
+                        && redLeaderFilled == false
+                        && purpleLeaderFilled == false) {
                         redLeaderFilled = true;
                         redLeaderName = json[i]["Enter Pilot Name:"];
                         document.getElementById("red0").innerHTML = redLeaderName;
+                    }
+                    else if (json[i]["Select Fighter Pilot Position:"] == "Flight Lead"
+                        && redLeaderFilled
+                        && purpleLeaderFilled == false) {
+                        purpleLeaderFilled = true;
+                        purpleLeaderName = json[i]["Enter Pilot Name:"];
+                        document.getElementById("purple0").innerHTML = purpleLeaderName;
                     }
                     else if (json[i]["Select Fighter Pilot Position:"] == "Wingman") {
                         redPilot++;

@@ -19,14 +19,17 @@
 <body>
     <div class="container-fluid">
         <div class="col-12 d-flex justify-content-center">
-            <h3>Friday Night Flights Roster</h3>
+            <h2><strong>Friday Night Flights</strong></h2>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+            <h5>May 8th - Blue Team Roster</h5>
         </div>
         <div class="col-12 grid-header">
 
 
             <div class="col pl-0 pr-1">
                 <div class="col-12 px-0 grid-flight-group">
-                    Detached/CAS - <b class="highlight-green">P51 Mustang</b>
+                    Detached/CAS - <b class="highlight-green" id="green-plane">P51 Mustang</b>
                 </div>
                 <div class="col-12 px-0 grid grid-green">
                     Green Flight Roster
@@ -45,7 +48,7 @@
 
             <div class="col pl-0 pr-1">
                 <div class="col-12 px-0 grid-flight-group">
-                    Attached Escort - <b class="highlight-red">P51 Mustang</b>
+                    Primary Escort - <b class="highlight-red" id="red-plane">P51 Mustang</b>
                 </div>
                 <div class="col-12 px-0 grid grid-red">
                     Red Flight Roster
@@ -60,27 +63,29 @@
                 </div>
                 <div id="red-wingmen"></div>
             </div>
-            <div class="col pl-0 pr-1">
-                <div class="col-12 px-0 grid-flight-group">
-                    Secondary Escort - <b class="highlight-purple">P51 Mustang</b>
-                </div>
-                <div class="col-12 px-0 grid grid-purple">
-                    Purple Flight Roster
-                </div>
-                <div class="d-inline-flex col-12 px-0">
-                    <div class="col-4 px-0 grid grid-purple-leader">
-                        Purple Lead
+            <div id="purple-flight">
+                <div class="col pl-0 pr-1">
+                    <div class="col-12 px-0 grid-flight-group">
+                        Secondary Escort - <b class="highlight-purple" id="purple-plane">P51 Mustang</b>
                     </div>
-                    <div class="col-8 px-0 grid grid-purple-pilot" id="purple">
+                    <div class="col-12 px-0 grid grid-purple">
+                        Purple Flight Roster
+                    </div>
+                    <div class="d-inline-flex col-12 px-0">
+                        <div class="col-4 px-0 grid grid-purple-leader">
+                            Purple Lead
+                        </div>
+                        <div class="col-8 px-0 grid grid-purple-pilot" id="purple">
 
+                        </div>
                     </div>
+                    <div id="purple-wingmen"></div>
                 </div>
-                <div id="purple-wingmen"></div>
             </div>
 
             <div class="col pl-0 pr-1">
                 <div class="col-12 px-0 grid-flight-group">
-                    Strike Package - <b class="highlight-blue">A20b Havoc</b>
+                    Strike Package - <b class="highlight-blue" id="blue-plane">A20b Havoc</b>
                 </div>
                 <div class="col-12 px-0 grid grid-blue">
                     Blue Flight Roster
@@ -95,23 +100,24 @@
                 </div>
                 <div id="blue-wingmen"></div>
             </div>
-
-            <div class="col pl-0 pr-1">
-                <div class="col-12 px-0 grid-flight-group">
-                    Strike Package - <b class="highlight-black">A20b Havoc</b>
-                </div>
-                <div class="col-12 px-0 grid grid-black">
-                    Black Flight Roster
-                </div>
-                <div class="d-inline-flex col-12 px-0">
-                    <div class="col-4 px-0 grid grid-black-leader">
-                        Black Lead
+            <div id="black-flight">
+                <div class="col pl-0 pr-1">
+                    <div class="col-12 px-0 grid-flight-group">
+                        Strike Package - <b class="highlight-black" id="black-plane">A20b Havoc</b>
                     </div>
-                    <div class="col-8 px-0 grid grid-black-pilot" id="black">
-
+                    <div class="col-12 px-0 grid grid-black">
+                        Black Flight Roster
                     </div>
+                    <div class="d-inline-flex col-12 px-0">
+                        <div class="col-4 px-0 grid grid-black-leader">
+                            Black Lead
+                        </div>
+                        <div class="col-8 px-0 grid grid-black-pilot" id="black">
+
+                        </div>
+                    </div>
+                    <div id="black-wingmen"></div>
                 </div>
-                <div id="black-wingmen"></div>
             </div>
         </div>
         <div class="col-12 d-flex justify-content-center">

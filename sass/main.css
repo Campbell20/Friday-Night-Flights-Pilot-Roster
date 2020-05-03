@@ -154,4 +154,12 @@ body {
   background-color: #ff00ea;
   color: white;
 }
+
+#purple-flight {
+  display: none;
+}
+
+#black-flight {
+  display: none;
+}
 /*# sourceMappingURL=main.css.map */
