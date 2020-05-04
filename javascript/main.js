@@ -7,7 +7,7 @@ $(document).ready(function () {
 
     });
 
-    flightSize = 6
+    flightSize = 4
 
     function setPlanes() {
         fighterPlane = "BF109K4";
