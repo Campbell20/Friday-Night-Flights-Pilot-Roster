@@ -19,5 +19,33 @@
     "Select Fighter Pilot Group:": "Escort Fighter Group",
     "Select Fighter Pilot Position:": "Wingman",
     "Select Attacker Pilot Position:": ""
+  },
+  "3": {
+    "Enter Pilot Name:": "JimTM",
+    "Select role:": "Attacker Pilot",
+    "Select Fighter Pilot Group:": "",
+    "Select Fighter Pilot Position:": "",
+    "Select Attacker Pilot Position:": "Wingman"
+  },
+  "4": {
+    "Enter Pilot Name:": "ITAF_Airone1989",
+    "Select role:": "Fighter Pilot",
+    "Select Fighter Pilot Group:": "Escort Fighter Group",
+    "Select Fighter Pilot Position:": "Wingman",
+    "Select Attacker Pilot Position:": ""
+  },
+  "5": {
+    "Enter Pilot Name:": "Sticky_Backseat",
+    "Select role:": "Fighter Pilot",
+    "Select Fighter Pilot Group:": "Detached Fighter Group",
+    "Select Fighter Pilot Position:": "Wingman",
+    "Select Attacker Pilot Position:": ""
+  },
+  "6": {
+    "Enter Pilot Name:": "Lawn*Dart",
+    "Select role:": "Attacker Pilot",
+    "Select Fighter Pilot Group:": "",
+    "Select Fighter Pilot Position:": "",
+    "Select Attacker Pilot Position:": "Wingman"
   }
 }
