@@ -7,7 +7,7 @@ $(document).ready(function () {
 
     });
 
-    flightSize = 5
+    flightSize = 6
 
     function setPlanes() {
         fighterPlane = "BF109K4";
@@ -87,7 +87,7 @@ $(document).ready(function () {
                     AttackerFlightLead++;
                 }
                 if (AttackerFlightLead >= 2) {
-                    document.getElementById("purple-flight").style.display = "block";
+                    document.getElementById("black-flight").style.display = "block";
                 }
                 if (json[i]["Select Attacker Pilot Position:"] == "Wingman" || AttackerFlightLead > 2) {
                     attackerPilots++;

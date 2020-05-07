@@ -79,7 +79,7 @@
   "11": {
     "Enter Pilot Name:": "OdieHill",
     "Select role:": "Fighter Pilot",
-    "Select Fighter Pilot Group:": "Escort Fighter Group",
+    "Select Fighter Pilot Group:": "Detached Fighter Group",
     "Select Fighter Pilot Position:": "Wingman",
     "Select Attacker Pilot Position:": ""
   },
@@ -114,8 +114,29 @@
   "16": {
     "Enter Pilot Name:": "Halop",
     "Select role:": "Fighter Pilot",
-    "Select Fighter Pilot Group:": "Escort Fighter Group",
+    "Select Fighter Pilot Group:": "Detached Fighter Group",
     "Select Fighter Pilot Position:": "Wingman",
+    "Select Attacker Pilot Position:": ""
+  },
+  "17": {
+    "Enter Pilot Name:": "[TWB]Sauerkraut",
+    "Select role:": "Fighter Pilot",
+    "Select Fighter Pilot Group:": "Escort Fighter Group",
+    "Select Fighter Pilot Position:": "Flight Lead",
+    "Select Attacker Pilot Position:": ""
+  },
+  "18": {
+    "Enter Pilot Name:": "Alonzo",
+    "Select role:": "Attacker Pilot",
+    "Select Fighter Pilot Group:": "",
+    "Select Fighter Pilot Position:": "",
+    "Select Attacker Pilot Position:": "Flight Lead"
+  },
+  "19": {
+    "Enter Pilot Name:": "[TWB] KMAC31",
+    "Select role:": "Fighter Pilot",
+    "Select Fighter Pilot Group:": "Detached Fighter Group",
+    "Select Fighter Pilot Position:": "Flight Lead",
     "Select Attacker Pilot Position:": ""
   }
 }
