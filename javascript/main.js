@@ -7,12 +7,15 @@ $(document).ready(function () {
 
     });
 
-    flightSize = 6
+    flightSize = 4
+    fighterPlane = "Spitfire MkIXe";
+    attackerPlane = "A20b Havoc";
+    eventDate = "May 15th";
+    teamColor = "Allied";
+    map = "Battle for Kalinin"
+
 
     function setPlanes() {
-        fighterPlane = "BF109K4";
-        attackerPlane = "BF110G2"
-        
         document.getElementById("green-plane").innerHTML = fighterPlane;
         document.getElementById("red-plane").innerHTML = fighterPlane;
         document.getElementById("purple-plane").innerHTML = fighterPlane;
@@ -251,4 +254,41 @@ $(document).ready(function () {
             }
         }
     }
+
+    function toggleRegistration() {
+        var d = new Date();
+        var n = d.getDay()
+        //0 = Sunday
+        //1 = Monday
+        //2 = Tuesday
+        //3 = Wednesday
+        //4 = Thursday
+        //5 = Friday
+        //6 = Saturday
+        if (n == 0 || n == 5 || n == 6) {
+            document.getElementById("registration-closed").style.display = "flex";
+        }
+        else {
+            document.getElementById("google-form").style.display = "flex";
+            document.getElementById("roster-updated").style.display = "flex";
+        }
+    }
+
+    function setEventDate() {
+        document.getElementById("event-date0").innerHTML = eventDate;
+        document.getElementById("event-date1").innerHTML = eventDate;
+    }
+
+    function setTeamColor() {
+        document.getElementById("team-color").innerHTML = teamColor;  
+    }
+
+    function setMap() {
+        document.getElementById("map").innerHTML = map;  
+    }
+
+    toggleRegistration();
+    setEventDate();
+    setTeamColor();
+    setMap();
 });

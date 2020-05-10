@@ -162,4 +162,16 @@ body {
 #black-flight {
   display: none;
 }
+
+#registration-closed {
+  display: none;
+}
+
+#roster-updated {
+  display: none;
+}
+
+#google-form {
+  display: none;
+}
 /*# sourceMappingURL=main.css.map */
