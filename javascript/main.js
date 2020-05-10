@@ -265,7 +265,7 @@ $(document).ready(function () {
         //4 = Thursday
         //5 = Friday
         //6 = Saturday
-        if (n == 0 || n == 5 || n == 6) {
+        if (n == 5 || n == 6) {
             document.getElementById("registration-closed").style.display = "flex";
         }
         else {
