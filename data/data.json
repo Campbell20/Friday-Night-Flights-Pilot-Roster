@@ -46,7 +46,7 @@
     "Select role:": "Attacker Pilot",
     "Select Fighter Pilot Group:": "",
     "Select Fighter Pilot Position:": "",
-    "Select Attacker Pilot Position:": "Wingman"
+    "Select Attacker Pilot Position:": "Flight Lead"
   },
   "7": {
     "Enter Pilot Name:": "crewen",
@@ -61,5 +61,26 @@
     "Select Fighter Pilot Group:": "Escort Fighter Group",
     "Select Fighter Pilot Position:": "Wingman",
     "Select Attacker Pilot Position:": ""
+  },
+  "9": {
+    "Enter Pilot Name:": "MasterViolin_",
+    "Select role:": "Attacker Pilot",
+    "Select Fighter Pilot Group:": "",
+    "Select Fighter Pilot Position:": "",
+    "Select Attacker Pilot Position:": "Wingman"
+  },
+  "10": {
+    "Enter Pilot Name:": "ThePieSpy",
+    "Select role:": "Attacker Pilot",
+    "Select Fighter Pilot Group:": "",
+    "Select Fighter Pilot Position:": "",
+    "Select Attacker Pilot Position:": "Wingman"
+  },
+  "11": {
+    "Enter Pilot Name:": "WA Lancer",
+    "Select role:": "Attacker Pilot",
+    "Select Fighter Pilot Group:": "",
+    "Select Fighter Pilot Position:": "",
+    "Select Attacker Pilot Position:": "Wingman"
   }
 }

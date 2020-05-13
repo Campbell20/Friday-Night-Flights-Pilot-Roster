@@ -7,7 +7,7 @@ $(document).ready(function () {
 
     });
 
-    flightSize = 4
+    flightSize = 5
     fighterPlane = "Spitfire MkIXe";
     attackerPlane = "A20b Havoc";
     eventDate = "May 15th";
