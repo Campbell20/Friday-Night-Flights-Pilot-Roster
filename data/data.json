@@ -82,5 +82,26 @@
     "Select Fighter Pilot Group:": "",
     "Select Fighter Pilot Position:": "",
     "Select Attacker Pilot Position:": "Wingman"
+  },
+  "12": {
+    "Enter Pilot Name:": "Clark",
+    "Select role:": "Attacker Pilot",
+    "Select Fighter Pilot Group:": "",
+    "Select Fighter Pilot Position:": "",
+    "Select Attacker Pilot Position:": "Wingman"
+  },
+  "13": {
+    "Enter Pilot Name:": "Apoxy",
+    "Select role:": "Attacker Pilot",
+    "Select Fighter Pilot Group:": "",
+    "Select Fighter Pilot Position:": "",
+    "Select Attacker Pilot Position:": "Wingman"
+  },
+  "14": {
+    "Enter Pilot Name:": "Alonzo",
+    "Select role:": "Fighter Pilot",
+    "Select Fighter Pilot Group:": "Escort Fighter Group",
+    "Select Fighter Pilot Position:": "Wingman",
+    "Select Attacker Pilot Position:": ""
   }
 }
