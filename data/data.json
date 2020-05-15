@@ -117,5 +117,12 @@
     "Select Fighter Pilot Group:": "",
     "Select Fighter Pilot Position:": "",
     "Select Attacker Pilot Position:": "Wingman"
+  },
+  "17": {
+    "Enter Pilot Name:": "Eclipse4349",
+    "Select role:": "Fighter Pilot",
+    "Select Fighter Pilot Group:": "Escort Fighter Group",
+    "Select Fighter Pilot Position:": "Wingman",
+    "Select Attacker Pilot Position:": ""
   }
 }
