@@ -126,6 +126,20 @@
     "Select Attacker Pilot Position:": ""
   },
   "18": {
+    "Enter Pilot Name:": "Maltor",
+    "Select role:": "Fighter Pilot",
+    "Select Fighter Pilot Group:": "Escort Fighter Group",
+    "Select Fighter Pilot Position:": "Flight Lead",
+    "Select Attacker Pilot Position:": ""
+  },
+  "19": {
+    "Enter Pilot Name:": "Tox",
+    "Select role:": "Fighter Pilot",
+    "Select Fighter Pilot Group:": "Escort Fighter Group",
+    "Select Fighter Pilot Position:": "Wingman",
+    "Select Attacker Pilot Position:": ""
+  },
+  "20": {
     "Enter Pilot Name:": "Ddrake1984",
     "Select role:": "Fighter Pilot",
     "Select Fighter Pilot Group:": "Escort Fighter Group",
