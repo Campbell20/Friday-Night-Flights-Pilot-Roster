@@ -7,7 +7,7 @@ $(document).ready(function () {
 
     });
 
-    flightSize = 4
+    flightSize = 5
     fighterPlane = "P51 Mustang";
     attackerPlane = "P47 Jug";
     eventDate = "May 22nd";
