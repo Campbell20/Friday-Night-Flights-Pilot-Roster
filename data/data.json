@@ -61,5 +61,12 @@
     "Select Fighter Pilot Group:": "",
     "Select Fighter Pilot Position:": "",
     "Select Attacker Pilot Position:": "Wingman"
+  },
+  "9": {
+    "Enter Pilot Name:": "JimTM",
+    "Select role:": "Attacker Pilot",
+    "Select Fighter Pilot Group:": "",
+    "Select Fighter Pilot Position:": "",
+    "Select Attacker Pilot Position:": "Flight Lead"
   }
 }
