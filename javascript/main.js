@@ -7,12 +7,12 @@ $(document).ready(function () {
 
     });
 
-    flightSize = 6
-    fighterPlane = "Spitfire MkIXe";
-    attackerPlane = "A20b Havoc";
-    eventDate = "May 15th";
+    flightSize = 4
+    fighterPlane = "P51 Mustang";
+    attackerPlane = "P47 Jug";
+    eventDate = "May 22nd";
     teamColor = "Allied";
-    map = "Battle for Kalinin"
+    map = "A Bridge Too Far"
 
 
     function setPlanes() {
