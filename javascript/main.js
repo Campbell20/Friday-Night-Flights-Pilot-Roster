@@ -1,18 +1,19 @@
 
 $(document).ready(function () {
     $.getJSON('data/data.json', function (json) {
+        console.log(json);
         setPlanes()
         createGridFromTemplate(json);
         setJsonData(json);
 
     });
 
-    flightSize = 5
+    flightSize = 4;
     fighterPlane = "P51 Mustang";
     attackerPlane = "P47 Jug";
     eventDate = "May 22nd";
     teamColor = "Allied";
-    map = "A Bridge Too Far"
+    map = "A Bridge Too Far";
 
 
     function setPlanes() {
