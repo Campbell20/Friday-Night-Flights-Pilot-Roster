@@ -124,5 +124,12 @@
     "Select Fighter Pilot Group:": "",
     "Select Fighter Pilot Position:": "",
     "Select Attacker Pilot Position:": "Wingman"
+  },
+  "18": {
+    "Enter Pilot Name:": "TheFace",
+    "Select role:": "Fighter Pilot",
+    "Select Fighter Pilot Group:": "Escort Fighter Group",
+    "Select Fighter Pilot Position:": "Flight Lead",
+    "Select Attacker Pilot Position:": ""
   }
 }
