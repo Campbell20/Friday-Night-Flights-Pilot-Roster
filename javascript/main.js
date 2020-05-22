@@ -14,6 +14,7 @@ $(document).ready(function () {
     eventDate = "May 22nd";
     teamColor = "Allied";
     map = "A Bridge Too Far";
+    registration = false;
 
 
     function setPlanes() {
@@ -266,7 +267,7 @@ $(document).ready(function () {
         //4 = Thursday
         //5 = Friday
         //6 = Saturday
-        if (n == 5 || n == 6) {
+        if (n == 5 || n == 6 || registration == false) {
             document.getElementById("registration-closed").style.display = "flex";
         }
         else {
