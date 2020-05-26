@@ -10,11 +10,11 @@ $(document).ready(function () {
 
     flightSize = 5;
     fighterPlane = "P51 Mustang";
-    attackerPlane = "P47 Jug";
-    eventDate = "May 22nd";
+    attackerPlane = "A20 Havocs";
+    eventDate = "May 29th";
     teamColor = "Allied";
-    map = "A Bridge Too Far";
-    registration = false;
+    map = "Rhineland Campaign";
+    registration = true;
 
 
     function setPlanes() {
