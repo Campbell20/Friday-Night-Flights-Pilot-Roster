@@ -10,7 +10,7 @@ $(document).ready(function () {
 
     flightSize = 5;
     fighterPlane = "P51 Mustang";
-    attackerPlane = "A20 Havocs";
+    attackerPlane = "P38 Lightings";
     eventDate = "May 29th";
     teamColor = "Allied";
     map = "Rhineland Campaign";
