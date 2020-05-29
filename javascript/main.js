@@ -14,7 +14,7 @@ $(document).ready(function () {
     eventDate = "May 29th";
     teamColor = "Allied";
     map = "Rhineland Campaign";
-    registration = true;
+    registration = false;
 
 
     function setPlanes() {
