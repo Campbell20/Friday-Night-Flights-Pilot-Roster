@@ -1,0 +1,89 @@
+body {
+  background-color: #999;
+  font-family: 'Courier New';
+}
+
+.grid {
+  border: 1px solid #313131;
+}
+
+.grid-header {
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .grid-header {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+.grid-flight-group {
+  background-color: #e0e0e0;
+}
+
+.grid-allied {
+  background-color: #ea9999;
+}
+
+.grid-allied-leader {
+  background-color: #e06666;
+  border-right: none;
+  border-top: none;
+}
+
+.grid-allied-pilot {
+  background-color: #f4cccc;
+  border-top: none;
+}
+
+.grid-allied-number {
+  border-top: none;
+  border-right: none;
+}
+
+.grid-axis {
+  background-color: #a4c2f4;
+}
+
+.grid-axis-leader {
+  background-color: #6d9eeb;
+  border-right: none;
+  border-top: none;
+}
+
+.grid-axis-pilot {
+  background-color: #cfe2f3;
+  border-top: none;
+}
+
+.grid-axis-number {
+  border-top: none;
+  border-right: none;
+}
+
+.hidden-templates {
+  display: none;
+}
+
+#purple-flight {
+  display: none;
+}
+
+#black-flight {
+  display: none;
+}
+
+#registration-closed {
+  display: none;
+}
+
+#roster-updated {
+  display: none;
+}
+
+#google-form {
+  display: none;
+}
+/*# sourceMappingURL=pwcgfnf.css.map */

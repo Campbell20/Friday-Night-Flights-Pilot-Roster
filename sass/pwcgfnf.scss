@@ -1,0 +1,157 @@
+body {
+    background-color: #999;
+    font-family: 'Courier New';
+}
+
+$lightgrey:rgb(224, 224, 224);
+$darkgrey: rgb(49, 49, 49);
+$black: rgb(20, 20, 20);
+
+
+$teamGreenLighter: #b6d7a8;
+$teamGreen: #93c47d;
+$teamGreenDarker: #6aa84f;
+
+$teamRedLighter: #f4cccc;
+$teamRed: #ea9999;
+$teamRedDark: #e066669f;
+$teamRedDarker: #e06666;
+
+$teamPurpleLighter: rgb(244, 129, 255);
+$teamPurple: rgb(189, 64, 201);
+$teamPurpleDarker: rgb(159, 51, 167);
+
+$teamBlueLighter: #cfe2f3;
+$teamBlue: #a4c2f4;
+$teamBlueDarker: #6d9eeb;
+
+$teamBlackLighter: rgb(170, 170, 170);
+$teamBlack: #666666;
+$teamBlackDarker: #515151;
+
+
+$alliedLighter: #f4cccc;
+$alliedRed: #ea9999;
+$alliedDark: #e066669f;
+$alliedDarker: #e06666;
+
+
+$axisLighter: #cfe2f3;
+$axisBlue: #a4c2f4;
+$axisDark: #7891bd;
+$axisDarker: #4e7bc4;
+
+@mixin teamColor($backgroundColor) {
+    background-color: $backgroundColor;
+
+}
+
+.grid {
+    border: 1px solid $darkgrey;
+
+    &-header {
+        display: block;
+
+        @media (min-width: 992px) {
+            display: inline-flex;
+        }
+
+    }
+
+    &-flight-group {
+        @include teamColor($lightgrey);
+    }
+
+    
+    &-allied {
+        @include teamColor($teamRed);
+
+        &-leader {
+            @include teamColor($teamRedDarker);
+            border-right: none;
+            border-top: none;
+        }
+      
+        &-pilot {
+            @include teamColor($teamRedLighter);
+            border-top: none;
+        }
+
+        &-number {
+            border-top: none;
+            border-right: none;
+        }
+    }
+
+
+    &-axis {
+        @include teamColor($teamBlue);
+
+        &-leader {
+            @include teamColor($teamBlueDarker);
+            border-right: none;
+            border-top: none;
+        }
+
+        &-pilot {
+            @include teamColor($teamBlueLighter);
+            border-top: none;
+        }
+
+        &-number {
+            border-top: none;
+            border-right: none;
+        }
+    }
+
+}
+
+.hidden-templates {
+    display: none;
+}
+
+// .highlight {
+//     &-green {
+//         background-color: #09ff00;
+//     }
+
+//     &-red {
+//         background-color: rgb(253, 44, 44);
+//         color: white;
+//     }
+
+//     &-blue {
+//         background-color: rgb(0, 204, 255);
+//     }
+
+//     &-black {
+//         background-color: rgb(37, 37, 37);
+//         color: white;
+//     }
+
+//     &-purple {
+//         background-color: rgb(255, 0, 234);
+//         color: white;
+//     }
+// }
+
+//IDs that only show when necessary
+#purple-flight {
+    display: none;
+}
+
+#black-flight {
+    display: none;
+}
+
+#registration-closed {
+    display: none;
+}
+
+#roster-updated {
+    display: none;
+}
+
+#google-form {
+    display: none;
+}

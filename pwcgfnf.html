@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="sass\pwcgfnf.css">
+
+    <title>Friday Night Flights Registration Reponses</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="col-12 d-flex justify-content-center">
+            <h2><strong>Friday Night Flights</strong></h2>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+            <h5>Next event: <span id="event-date0"></span></h5>
+        </div>
+
+        <div class="col-12 d-flex justify-content-center">
+            Allied Team Roster
+        </div>
+
+        <div class="col-12 grid-header">
+            <!-- first flight -->
+            <div class="col pl-0 pr-1">
+                <div class="col-12 px-0 grid-flight-group">
+                    <span id="alliedfighterA">FLIGHT GROUP</span> - <b class="" id="alliedfighterA-plane">PLANE
+                        TYPE</b>
+                </div>
+                <div class="d-inline-flex col-12 px-0">
+                    <div class="col-4 px-0 grid grid-allied">
+                        1-1 (Flight Leader)
+                    </div>
+                    <div class="col-8 px-0 grid grid-allied-leader" id="alliedfighterA-leader">
+
+                    </div>
+                </div>
+                <div id="alliedfighterA-wingmen"></div>
+            </div>
+
+            <!-- second flight -->
+            <div class="col pl-0 pr-1">
+                <div class="col-12 px-0 grid-flight-group">
+                    <span id="alliedfighterB">FLIGHT GROUP</span> - <b class="" id="alliedfighterB-plane">PLANE
+                        TYPE</b>
+                </div>
+                <div class="d-inline-flex col-12 px-0">
+                    <div class="col-4 px-0 grid grid-allied">
+                        2-1 (Flight Leader)
+                    </div>
+                    <div class="col-8 px-0 grid grid-allied-leader" id="alliedfighterB-leader">
+
+                    </div>
+                </div>
+                <div id="alliedfighterB-wingmen"></div>
+            </div>
+
+            <!-- bomber flight -->
+            <div class="col pl-0 pr-1">
+                <div class="col-12 px-0 grid-flight-group">
+                    <span id="alliedbombergroup">FLIGHT GROUP</span> - <b class="" id="alliedbombergroup-plane">PLANE
+                        TYPE</b>
+                </div>
+                <div class="d-inline-flex col-12 px-0">
+                    <div class="col-4 px-0 grid grid-allied">
+                        3-1 (Flight Leader)
+                    </div>
+                    <div class="col-8 px-0 grid grid-allied-leader" id="alliedbomber-leader">
+
+                    </div>
+                </div>
+                <div id="alliedbomber-wingmen"></div>
+            </div>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+            Axis Team Roster
+        </div>
+        <div class="col-12 grid-header">
+            <!-- first flight -->
+            <div class="col pl-0 pr-1">
+                <div class="col-12 px-0 grid-flight-group">
+                    <span id="axisfighterA">FLIGHT GROUP</span> - <b class="" id="axisfighterA-plane">PLANE
+                        TYPE</b>
+                </div>
+                <div class="d-inline-flex col-12 px-0">
+                    <div class="col-4 px-0 grid grid-axis">
+                        1-1 (Flight Leader)
+                    </div>
+                    <div class="col-8 px-0 grid grid-axis-leader" id="axisfighterA-leader">
+
+                    </div>
+                </div>
+                <div id="axisfighterA-wingmen"></div>
+            </div>
+
+            <!-- second flight -->
+            <div class="col pl-0 pr-1">
+                <div class="col-12 px-0 grid-flight-group">
+                    <span id="axisfighterB">FLIGHT GROUP</span> - <b class="" id="axisfighterB-plane">PLANE
+                        TYPE</b>
+                </div>
+                <div class="d-inline-flex col-12 px-0">
+                    <div class="col-4 px-0 grid grid-axis">
+                        2-1 (Flight Leader)
+                    </div>
+                    <div class="col-8 px-0 grid grid-axis-leader" id="axisfighterB-leader">
+
+                    </div>
+                </div>
+                <div id="axisfighterB-wingmen"></div>
+            </div>
+
+            <!-- bomber flight -->
+            <div class="col pl-0 pr-1">
+                <div class="col-12 px-0 grid-flight-group">
+                    <span id="axisbombergroup">FLIGHT GROUP</span> - <b class="" id="axisbombergroup-plane">PLANE
+                        TYPE</b>
+                </div>
+                <div class="d-inline-flex col-12 px-0">
+                    <div class="col-4 px-0 grid grid-axis">
+                        3-1 (Flight Leader)
+                    </div>
+                    <div class="col-8 px-0 grid grid-axis-leader" id="axisbomber-leader">
+
+                    </div>
+                </div>
+                <div id="axisbomber-wingmen"></div>
+            </div>
+        </div>
+
+
+
+
+        <div class="col-12 justify-content-center" id="registration-closed">
+            <em>Registration is now closed for the <span id="event-date1">EVENT DATE</span> event!</em>
+        </div>
+
+        <div class="col-12 justify-content-center" id="roster-updated">
+            <em>Roster is updated daily. Check back later to see where you have been added.</em>
+        </div>
+
+        <!-- <div class="col-12 py-3 justify-content-center" id="google-form">
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSfB6WovQEkwirlugLJew-dcq-aDGseR9-KRbwwNPsFvIh0bwA/viewform?embedded=true"
+                width="640" height="660" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div> -->
+    </div>
+
+
+
+    <div class="hidden-templates">
+        <template-alliedFGA>
+            <div class="d-inline-flex col px-0">
+                <div class="col-4 px-0 grid grid-allied grid-allied-number allied-number alliedFGA-number"
+                    id='alliedFGA-number'>
+
+                </div>
+                <div class="col-8 px-0 grid grid-allied-pilot alliedFGA" id="alliedFGA">
+
+                </div>
+            </div>
+        </template-alliedFGA>
+        <template-alliedFGB>
+            <div class="d-inline-flex col px-0">
+                <div class="col-4 px-0 grid grid-allied grid-allied-number allied-number alliedFGB-number"
+                    id='alliedFGB-number'>
+
+                </div>
+                <div class="col-8 px-0 grid grid-allied-pilot alliedFGB" id="alliedFGB">
+
+                </div>
+            </div>
+        </template-alliedFGB>
+        <template-alliedBG>
+            <div class="d-inline-flex col px-0">
+                <div class="col-4 px-0 grid grid-allied grid-allied-number allied-number alliedBG-number"
+                    id='alliedBG-number'>
+
+                </div>
+                <div class="col-8 px-0 grid grid-allied-pilot alliedBG" id="alliedBG">
+
+                </div>
+            </div>
+        </template-alliedBG>
+
+
+        <template-axisFGA>
+            <div class="d-inline-flex col px-0">
+                <div class="col-4 px-0 grid grid-axis grid-axis-number axis-number axisFGA-number" id='axisFGA-number'>
+
+                </div>
+                <div class="col-8 px-0 grid grid-axis-pilot axisFGA" id="axisFGA">
+
+                </div>
+            </div>
+        </template-axisFGA>
+        <template-axisFGB>
+            <div class="d-inline-flex col px-0">
+                <div class="col-4 px-0 grid grid-axis grid-axis-number axis-number axisFGB-number" id='axisFGB-number'>
+
+                </div>
+                <div class="col-8 px-0 grid grid-axis-pilot axisFGB" id="axisFGB">
+
+                </div>
+            </div>
+        </template-axisFGB>
+        <template-axisBG>
+            <div class="d-inline-flex col px-0">
+                <div class="col-4 px-0 grid grid-axis grid-axis-number axis-number axisBG-number" id='axisBG-number'>
+
+                </div>
+                <div class="col-8 px-0 grid grid-axis-pilot axisBG" id="axisBG">
+
+                </div>
+            </div>
+        </template-axisBG>
+
+
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="javascript/pwcgfnf.js"></script>
+</body>
+
+</html>
