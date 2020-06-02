@@ -1,55 +1,44 @@
 body {
     background-color: #999;
     font-family: 'Courier New';
+    font-size: 1.1rem;
 }
 
-$lightgrey:rgb(224, 224, 224);
+$lightgrey: rgb(224, 224, 224);
 $darkgrey: rgb(49, 49, 49);
 $black: rgb(20, 20, 20);
-
-
-$teamGreenLighter: #b6d7a8;
-$teamGreen: #93c47d;
-$teamGreenDarker: #6aa84f;
-
-$teamRedLighter: #f4cccc;
-$teamRed: #ea9999;
-$teamRedDark: #e066669f;
-$teamRedDarker: #e06666;
-
-$teamPurpleLighter: rgb(244, 129, 255);
-$teamPurple: rgb(189, 64, 201);
-$teamPurpleDarker: rgb(159, 51, 167);
-
-$teamBlueLighter: #cfe2f3;
-$teamBlue: #a4c2f4;
-$teamBlueDarker: #6d9eeb;
-
-$teamBlackLighter: rgb(170, 170, 170);
-$teamBlack: #666666;
-$teamBlackDarker: #515151;
-
+$body-bckgrnd: #dbdbd9;
+$table-wrapper-bckgrnd: #bdbdb3;
+$thead-bckgrnd: #c9c3b1;
+$tbody-bckgrnd: #cfcfc4;
+$border: rgba(70, 70, 70, 0.65);
+$font-color: rgb(24, 24, 24);
 
 $alliedLighter: #f4cccc;
 $alliedRed: #ea9999;
 $alliedDark: #e066669f;
 $alliedDarker: #e06666;
 
-
 $axisLighter: #cfe2f3;
 $axisBlue: #a4c2f4;
 $axisDark: #7891bd;
 $axisDarker: #4e7bc4;
 
-@mixin teamColor($backgroundColor) {
-    background-color: $backgroundColor;
-
+.registration {
+    &-btn {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        border: 1px solid $lightgrey;
+    }
 }
 
 .grid {
-    border: 1px solid $darkgrey;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    color: $font-color;
 
-    &-header {
+    &-card {
         display: block;
 
         @media (min-width: 992px) {
@@ -58,52 +47,61 @@ $axisDarker: #4e7bc4;
 
     }
 
-    &-flight-group {
-        @include teamColor($lightgrey);
+    &-header {
+        background-color: $thead-bckgrnd;
+        border-top-left-radius: 1rem;
+        justify-content: center;
+        border-top: 1px solid $border;
+        border-left: 1px solid $border;
+        border-right: 1px solid $border;
+        border-bottom: 1px dotted $border;
+
+        &-flight {
+            border: none;
+            font-weight: bold;
+        }
+
+        &-plane {
+            border: none;
+            font-style: italic;
+        }
     }
 
-    
-    &-allied {
-        @include teamColor($teamRed);
+    &-body {
+        background-color: $tbody-bckgrnd;
+        border-bottom: 1px dotted $border;
 
-        &-leader {
-            @include teamColor($teamRedDarker);
-            border-right: none;
-            border-top: none;
-        }
-      
-        &-pilot {
-            @include teamColor($teamRedLighter);
-            border-top: none;
+        &-name {
+            text-indent: .5rem;
+            font-weight: bold;
+            border-right: 1px solid $border;
         }
 
         &-number {
-            border-top: none;
-            border-right: none;
+            font-weight: bold;
+            justify-content: center;
+            border-left: 1px solid $border;
         }
     }
 
-
-    &-axis {
-        @include teamColor($teamBlue);
-
-        &-leader {
-            @include teamColor($teamBlueDarker);
-            border-right: none;
-            border-top: none;
-        }
-
-        &-pilot {
-            @include teamColor($teamBlueLighter);
-            border-top: none;
-        }
-
-        &-number {
-            border-top: none;
-            border-right: none;
+    &-last {
+        &:last-child {
+            .grid {
+                &-body {
+                    &-name {
+                        border-bottom: 1px solid $border;  
+                    }
+                    &-number {
+                        border-bottom: 1px solid $border;  
+                    }
+                    &-pic {
+                        border-bottom: 1px solid $border;  
+                    }
+                }
+            }  
         }
     }
-
+  
 }
 
 .hidden-templates {
@@ -136,14 +134,6 @@ $axisDarker: #4e7bc4;
 // }
 
 //IDs that only show when necessary
-#purple-flight {
-    display: none;
-}
-
-#black-flight {
-    display: none;
-}
-
 #registration-closed {
     display: none;
 }

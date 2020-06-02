@@ -1,83 +1,92 @@
 {
-    "0": {
-      "Side": "Allied",
-      "Allied Name": "Sketch-Allied",
-      "Allied FG": "352nd Fighter Group - P51 Mustang",
-      "Allied Position": "Flight Lead",
-      "Axis Name": "",
-      "Axis FG": "",
-      "Axis Position": ""
-    },
-    "1": {
-      "Side": "Axis",
-      "Allied Name": "",
-      "Allied FG": "",
-      "Allied Position": "",
-      "Axis Name": "Sketch-Axis",
-      "Axis FG": "I./JG1 - Bf109G14 (Fighter Group)",
-      "Axis Position": "Flight Lead"
-    },
-    "2": {
-      "Side": "Allied",
-      "Allied Name": "Sketch-Allied2",
-      "Allied FG": "474th Fighter Group - P38 Lightings",
-      "Allied Position": "Flight Lead",
-      "Axis Name": "",
-      "Axis FG": "",
-      "Axis Position": ""
-    },
-    "3": {
-      "Side": "Allied",
-      "Allied Name": "Sketch-P38s",
-      "Allied FG": "474th Fighter Group - P38 Lightings",
-      "Allied Position": "Flight Lead",
-      "Axis Name": "",
-      "Axis FG": "",
-      "Axis Position": ""
-    },
-    "4": {
-      "Side": "Allied",
-      "Allied Name": "Sketch-P38s-Wingman",
-      "Allied FG": "474th Fighter Group - P38 Lightings",
-      "Allied Position": "Wingman",
-      "Axis Name": "",
-      "Axis FG": "",
-      "Axis Position": ""
-    },
-    "5": {
-      "Side": "Allied",
-      "Allied Name": "Sketch-Wingman-P51s",
-      "Allied FG": "352nd Fighter Group - P51 Mustang",
-      "Allied Position": "Wingman",
-      "Axis Name": "",
-      "Axis FG": "",
-      "Axis Position": ""
-    },
-    "6": {
-      "Side": "Axis",
-      "Allied Name": "",
-      "Allied FG": "",
-      "Allied Position": "",
-      "Axis Name": "Sketch - Axis 190",
-      "Axis FG": "I./JG77 - Fw190A8 (Fighter Group)",
-      "Axis Position": "Wingman"
-    },
-    "7": {
-      "Side": "Allied",
-      "Allied Name": "Bomber Leader",
-      "Allied FG": "410th Bomber Group - A20 Havocs",
-      "Allied Position": "Flight Lead",
-      "Axis Name": "",
-      "Axis FG": "",
-      "Axis Position": ""
-    },
-    "8": {
-      "Side": "Allied",
-      "Allied Name": "Bomber Winamn",
-      "Allied FG": "410th Bomber Group - A20 Havocs",
-      "Allied Position": "Wingman",
-      "Axis Name": "",
-      "Axis FG": "",
-      "Axis Position": ""
-    }
+  "0": {
+    "Side": "Allied",
+    "Allied Name": "Sketch",
+    "Allied FG": "352nd Fighter Group - P51 Mustang",
+    "Allied Position": "Flight Lead",
+    "Axis Name": "",
+    "Axis FG": "",
+    "Axis Position": "",
+    "Image": 51
+  },
+  "1": {
+    "Side": "Allied",
+    "Allied Name": "Alonzo",
+    "Allied FG": "474th Fighter Group - P38 Lightings",
+    "Allied Position": "Wingman",
+    "Axis Name": "",
+    "Axis FG": "",
+    "Axis Position": "",
+    "Image": 2
+  },
+  "2": {
+    "Side": "Allied",
+    "Allied Name": "Talon",
+    "Allied FG": "352nd Fighter Group - P51 Mustang",
+    "Allied Position": "Wingman",
+    "Axis Name": "",
+    "Axis FG": "",
+    "Axis Position": "",
+    "Image": 44
+  },
+  "3": {
+    "Side": "Allied",
+    "Allied Name": "Krup",
+    "Allied FG": "474th Fighter Group - P38 Lightings",
+    "Allied Position": "Flight Lead",
+    "Axis Name": "",
+    "Axis FG": "",
+    "Axis Position": "",
+    "Image": 55
+  },
+  "4": {
+    "Side": "Axis",
+    "Allied Name": "",
+    "Allied FG": "",
+    "Allied Position": "",
+    "Axis Name": "Nines",
+    "Axis FG": "I./JG1 - Bf109G14 (Fighter Group)",
+    "Axis Position": "Flight Lead",
+    "Image": 34
+  },
+  "5": {
+    "Side": "Axis",
+    "Allied Name": "",
+    "Allied FG": "",
+    "Allied Position": "",
+    "Axis Name": "KillerXXX",
+    "Axis FG": "I./JG1 - Bf109G14 (Fighter Group)",
+    "Axis Position": "Flight Lead",
+    "Image": 8
+  },
+  "6": {
+    "Side": "Axis",
+    "Allied Name": "",
+    "Allied FG": "",
+    "Allied Position": "",
+    "Axis Name": "Chick-Fil-A",
+    "Axis FG": "I./KG54 - Ju88 (Bomber Group)",
+    "Axis Position": "Flight Lead",
+    "Image": 52
+  },
+  "7": {
+    "Side": "Allied",
+    "Allied Name": "Jim",
+    "Allied FG": "410th Bomber Group - A20 Havocs",
+    "Allied Position": "Flight Lead",
+    "Axis Name": "",
+    "Axis FG": "",
+    "Axis Position": "",
+    "Image": 64
+  },
+  "8": {
+    "Side": "Allied",
+    "Allied Name": "Drake",
+    "Allied FG": "410th Bomber Group - A20 Havocs",
+    "Allied Position": "Wingman",
+    "Axis Name": "",
+    "Axis FG": "",
+    "Axis Position": "",
+    "Image": 31
   }
+}

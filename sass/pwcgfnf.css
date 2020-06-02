@@ -1,77 +1,92 @@
 body {
   background-color: #999;
   font-family: 'Courier New';
+  font-size: 1.1rem;
+}
+
+.registration-btn {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  border: 1px solid #e0e0e0;
 }
 
 .grid {
-  border: 1px solid #313131;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #181818;
 }
 
-.grid-header {
+.grid-card {
   display: block;
 }
 
 @media (min-width: 992px) {
-  .grid-header {
+  .grid-card {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
 }
 
-.grid-flight-group {
-  background-color: #e0e0e0;
+.grid-header {
+  background-color: #c9c3b1;
+  border-top-left-radius: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 1px solid rgba(70, 70, 70, 0.65);
+  border-left: 1px solid rgba(70, 70, 70, 0.65);
+  border-right: 1px solid rgba(70, 70, 70, 0.65);
+  border-bottom: 1px dotted rgba(70, 70, 70, 0.65);
 }
 
-.grid-allied {
-  background-color: #ea9999;
+.grid-header-flight {
+  border: none;
+  font-weight: bold;
 }
 
-.grid-allied-leader {
-  background-color: #e06666;
-  border-right: none;
-  border-top: none;
+.grid-header-plane {
+  border: none;
+  font-style: italic;
 }
 
-.grid-allied-pilot {
-  background-color: #f4cccc;
-  border-top: none;
+.grid-body {
+  background-color: #cfcfc4;
+  border-bottom: 1px dotted rgba(70, 70, 70, 0.65);
 }
 
-.grid-allied-number {
-  border-top: none;
-  border-right: none;
+.grid-body-name {
+  text-indent: .5rem;
+  font-weight: bold;
+  border-right: 1px solid rgba(70, 70, 70, 0.65);
 }
 
-.grid-axis {
-  background-color: #a4c2f4;
+.grid-body-number {
+  font-weight: bold;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-left: 1px solid rgba(70, 70, 70, 0.65);
 }
 
-.grid-axis-leader {
-  background-color: #6d9eeb;
-  border-right: none;
-  border-top: none;
+.grid-last:last-child .grid-body-name {
+  border-bottom: 1px solid rgba(70, 70, 70, 0.65);
 }
 
-.grid-axis-pilot {
-  background-color: #cfe2f3;
-  border-top: none;
+.grid-last:last-child .grid-body-number {
+  border-bottom: 1px solid rgba(70, 70, 70, 0.65);
 }
 
-.grid-axis-number {
-  border-top: none;
-  border-right: none;
+.grid-last:last-child .grid-body-pic {
+  border-bottom: 1px solid rgba(70, 70, 70, 0.65);
 }
 
 .hidden-templates {
-  display: none;
-}
-
-#purple-flight {
-  display: none;
-}
-
-#black-flight {
   display: none;
 }
 
