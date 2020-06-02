@@ -39,7 +39,7 @@ $(document).ready(function () {
                     !alliedFGALeaderFilled) {
                         alliedFGALeaderFilled = true; 
                         document.getElementById('alliedfighterA-leader').innerHTML = json[i]["Allied Name"];
-                        document.getElementById('alliedfighterA-leader-pic').src = '/imgs/American/American' + json[i]["Image"] + ".jpg";
+                        document.getElementById('alliedfighterA-leader-pic').src = 'imgs/American/American' + json[i]["Image"] + ".jpg";
                     }
                     else {
                         alliedfightergroupAD = document.importNode(alliedFGADivs, true);
@@ -47,7 +47,7 @@ $(document).ready(function () {
                         createIds();
                         alliedFGA++;
                         document.getElementById("alliedFGA" + alliedFGA).innerHTML = json[i]["Allied Name"];
-                        document.getElementById('alliedFGA-pic' + alliedFGA).src = '/imgs/American/American' + json[i]["Image"] + ".jpg";
+                        document.getElementById('alliedFGA-pic' + alliedFGA).src = 'imgs/American/American' + json[i]["Image"] + ".jpg";
                     }
                 }
                 else if (json[i]["Allied FG"] == "474th Fighter Group - P38 Lightings" ) {
@@ -58,7 +58,7 @@ $(document).ready(function () {
                     !alliedFGBLeaderFilled) {
                         alliedFGBLeaderFilled = true;
                         document.getElementById('alliedfighterB-leader').innerHTML = json[i]["Allied Name"];
-                        document.getElementById('alliedfighterB-leader-pic').src = '/imgs/American/American' + json[i]["Image"] + ".jpg";
+                        document.getElementById('alliedfighterB-leader-pic').src = 'imgs/American/American' + json[i]["Image"] + ".jpg";
                     }
                     else {
                         alliedfightergroupBD = document.importNode(alliedFGBDivs, true);
@@ -66,7 +66,7 @@ $(document).ready(function () {
                         createIds();
                         alliedFGB++;
                         document.getElementById("alliedFGB" + alliedFGB).innerHTML = json[i]["Allied Name"];
-                        document.getElementById('alliedFGB-pic' + alliedFGB).src = '/imgs/American/American' + json[i]["Image"] + ".jpg";
+                        document.getElementById('alliedFGB-pic' + alliedFGB).src = 'imgs/American/American' + json[i]["Image"] + ".jpg";
                     }
                 }
                 else {
@@ -77,7 +77,7 @@ $(document).ready(function () {
                     !alliedBGLeaderFilled) {
                         alliedBGLeaderFilled = true;
                         document.getElementById('alliedbomber-leader').innerHTML = json[i]["Allied Name"];
-                        document.getElementById('alliedbomber-leader-pic').src = '/imgs/American/American' + json[i]["Image"] + ".jpg";
+                        document.getElementById('alliedbomber-leader-pic').src = 'imgs/American/American' + json[i]["Image"] + ".jpg";
                     }
                     else {
                         alliedBomberD = document.importNode(alliedBomberDivs, true);
@@ -85,7 +85,7 @@ $(document).ready(function () {
                         createIds();
                         alliedB++;
                         document.getElementById("alliedBG" + alliedB).innerHTML = json[i]["Allied Name"];
-                        document.getElementById('alliedBG-pic' + alliedB).src = '/imgs/American/American' + json[i]["Image"] + ".jpg";
+                        document.getElementById('alliedBG-pic' + alliedB).src = 'imgs/American/American' + json[i]["Image"] + ".jpg";
                     }
                 }
             }
@@ -100,7 +100,7 @@ $(document).ready(function () {
                     !axisFGALeaderFilled) {
                         axisFGALeaderFilled = true;
                         document.getElementById('axisfighterA-leader').innerHTML = json[i]["Axis Name"];
-                        document.getElementById('axisfighterA-leader-pic').src = '/imgs/German/German' + json[i]["Image"] + ".jpg";
+                        document.getElementById('axisfighterA-leader-pic').src = 'imgs/German/German' + json[i]["Image"] + ".jpg";
                     }
                     else {
                         axisfightergroupAD = document.importNode(axisFGADivs, true);
@@ -108,7 +108,7 @@ $(document).ready(function () {
                         createIds();
                         axisFGA++;
                         document.getElementById("axisFGA" + axisFGA).innerHTML = json[i]["Axis Name"];
-                        document.getElementById('axisFGA-pic' + axisFGA).src = '/imgs/German/German' + json[i]["Image"] + ".jpg";
+                        document.getElementById('axisFGA-pic' + axisFGA).src = 'imgs/German/German' + json[i]["Image"] + ".jpg";
                     }
                 }
                 else if (json[i]["Axis FG"] == "I./JG1 - Bf109G14 (Fighter Group)") {
@@ -119,7 +119,7 @@ $(document).ready(function () {
                     !axisFGBLeaderFilled) {
                         axisFGBLeaderFilled = true;
                         document.getElementById('axisfighterB-leader').innerHTML = json[i]["Axis Name"];
-                        document.getElementById('axisfighterB-leader-pic').src = '/imgs/German/German' + json[i]["Image"] + ".jpg";
+                        document.getElementById('axisfighterB-leader-pic').src = 'imgs/German/German' + json[i]["Image"] + ".jpg";
                     }
                     else {
                         axisfightergroupBD = document.importNode(axisFGBDivs, true);
@@ -127,7 +127,7 @@ $(document).ready(function () {
                         createIds();
                         axisFGB++;
                         document.getElementById("axisFGB" + axisFGB).innerHTML = json[i]["Axis Name"];
-                        document.getElementById('axisFGB-pic'+ axisFGB).src = '/imgs/German/German' + json[i]["Image"] + ".jpg";
+                        document.getElementById('axisFGB-pic'+ axisFGB).src = 'imgs/German/German' + json[i]["Image"] + ".jpg";
                     }
                 }
                 else {
@@ -138,7 +138,7 @@ $(document).ready(function () {
                     !axisBGLeaderFilled) {
                         axisBGLeaderFilled = true;
                         document.getElementById('axisbomber-leader').innerHTML = json[i]["Axis Name"];
-                        document.getElementById('axisbomber-leader-pic').src = '/imgs/German/German' + json[i]["Image"] + ".jpg";
+                        document.getElementById('axisbomber-leader-pic').src = 'imgs/German/German' + json[i]["Image"] + ".jpg";
                     }
                     else {
                         axisBomberD = document.importNode(axisBomberDivs, true);
@@ -146,7 +146,7 @@ $(document).ready(function () {
                         createIds();
                         axisB++;
                         document.getElementById("axisBG" + axisB).innerHTML = json[i]["Axis Name"];
-                        document.getElementById('axisBG-pic' + axisB).src = '/imgs/German/German' + json[i]["Image"] + ".jpg";
+                        document.getElementById('axisBG-pic' + axisB).src = 'imgs/German/German' + json[i]["Image"] + ".jpg";
                     }
                 }
             }
