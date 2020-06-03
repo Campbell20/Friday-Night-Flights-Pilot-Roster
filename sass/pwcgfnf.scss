@@ -72,8 +72,9 @@ $axisDarker: #4e7bc4;
         border-bottom: 1px dotted $border;
 
         &-name {
-            text-indent: .5rem;
-            font-weight: bold;
+            // text-indent: .5rem;
+            // font-weight: bold;
+            padding: 0 .2rem;
             border-right: 1px solid $border;
         }
 
