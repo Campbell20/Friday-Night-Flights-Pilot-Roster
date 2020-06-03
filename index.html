@@ -13,7 +13,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="sass\main.css">
 
-    <title>Friday Night Flights Registration Reponses</title>
+    <title>Friday Night Flights Registration</title>
 </head>
 
 <body>
@@ -24,7 +24,10 @@
         <div class="col-12 d-flex justify-content-center">
             <h5>Next event: <span id="event-date0"></span></h5>
         </div>
-        <div class="col-12 d-flex justify-content-center">
+        <div class="col-12 justify-content-center pt-1" id="registration-closed">
+            <em>Registration is now closed for the <span id="event-date1">EVENT DATE</span> event!</em>
+        </div>
+        <div class="col-12 justify-content-center" id="registration-opened">
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-info registration-btn" data-toggle="modal" data-target="#registrationModal">
                 REGISTER HERE
@@ -37,7 +40,7 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="registrationModalLabel">Registration</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="location.reload();">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
@@ -186,17 +189,6 @@
                 <div class="grid-last" id="axisbomber-wingmen"></div>
             </div>
 
-        </div>
-
-
-
-
-        <div class="col-12 justify-content-center pt-5" id="registration-closed">
-            <em>Registration is now closed for the <span id="event-date1">EVENT DATE</span> event!</em>
-        </div>
-
-        <div class="col-12 justify-content-center pt-5" id="roster-updated">
-            <em>Roster is updated by refreshing the page after registration.</em>
         </div>
     </div>
 

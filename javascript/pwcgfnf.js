@@ -5,16 +5,16 @@ $(document).ready(function () {
         createGridsFromTemplate(json);
     });
 
-    $.get('/data/Names/FirstNamesUSA.txt', function (fnUSA) {
+    $.get('data/Names/FirstNamesUSA.txt', function (fnUSA) {
         firstNamesUSA = fnUSA.split('\n');
     });
-    $.get('/data/Names/LastNamesUSA.txt', function (lnUSA) {
+    $.get('data/Names/LastNamesUSA.txt', function (lnUSA) {
         lastNamesUSA = lnUSA.split('\n');
     });
-    $.get('/data/Names/FirstNamesGermany.txt', function (fnGermany) {
+    $.get('data/Names/FirstNamesGermany.txt', function (fnGermany) {
         firstNamesGermany = fnGermany.split('\n');
     });
-    $.get('/data/Names/LastNamesGermany.txt', function (lnGermany) {
+    $.get('data/Names/LastNamesGermany.txt', function (lnGermany) {
         lastNamesGermany = lnGermany.split('\n');
     });
 

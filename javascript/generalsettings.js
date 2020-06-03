@@ -54,10 +54,11 @@ $(document).ready(function () {
         //6 = Saturday
         if (n == 5 || n == 6 || registration == false) {
             document.getElementById("registration-closed").style.display = "flex";
+            document.getElementById("registration-opened").style.display = "none";
         }
         else {
-            document.getElementById("google-form").style.display = "flex";
-            document.getElementById("roster-updated").style.display = "flex";
+            document.getElementById("registration-opened").style.display = "flex";
+            document.getElementById("registration-closed").style.display = "none";
         }
     }
 
