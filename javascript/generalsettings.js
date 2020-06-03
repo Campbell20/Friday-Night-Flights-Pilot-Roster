@@ -20,7 +20,7 @@ $(document).ready(function () {
     axisPlaneB = "Bf109G14";
     axisBomber = "Ju88";
 
-    eventDate = "June 5th";
+    eventDate = "June 12th";
     registration = true;
 
 
