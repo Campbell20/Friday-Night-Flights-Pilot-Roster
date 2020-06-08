@@ -11,8 +11,8 @@ $(document).ready(function () {
     alliedBomber = "A20 Havocs";
 
     //axis groups
-    axisFighterGroupA = "I./JG77";
-    axisFighterGroupB = "I./JG1";
+    axisFighterGroupA = "I./JG1";
+    axisFighterGroupB = "I./JG77";
     axisBomberGroup = "I./KG54";
 
     //axis planes
