@@ -21,7 +21,7 @@ $(document).ready(function () {
     axisBomber = "Ju88";
 
     eventDate = "June 12th";
-    registration = true;
+    registration = false;
 
 
     function setFlightsAndPlanes() {
