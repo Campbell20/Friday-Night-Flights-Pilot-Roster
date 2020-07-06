@@ -2,13 +2,13 @@ $(document).ready(function () {
 
     //allied groups
     alliedFighterGroupA = "352nd Fighter Group";
-    alliedFighterGroupB = "474th Fighter Group"
+    alliedFighterGroupB = "No. 402 Squadron RCAF"
     alliedBomberGroup = "410th Bomber Group";
 
     //allied planes
-    alliedPlaneA = "P51 Mustangs";
-    alliedPlaneB = "P38 Lightings";
-    alliedBomber = "A20 Havocs";
+    alliedPlaneA = "P51 Mustang";
+    alliedPlaneB = "Spitfire MkIX";
+    alliedBomber = "A20 Havoc";
 
     //axis groups
     axisFighterGroupA = "I./JG1";
@@ -18,10 +18,10 @@ $(document).ready(function () {
     //axis planes
     axisPlaneA = "Fw190A8";
     axisPlaneB = "Bf109G14";
-    axisBomber = "Ju88";
+    axisBomber = "BF110G2";
 
-    eventDate = "June 12th";
-    registration = false;
+    eventDate = "July 10th";
+    registration = true;
 
 
     function setFlightsAndPlanes() {

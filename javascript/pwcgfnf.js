@@ -1,8 +1,14 @@
 
 $(document).ready(function () {
-    $.getJSON('https://spreadsheets.google.com/feeds/list/1C4ke63VpXK0yZxbGX1AE03Rf7qF_8t90-M0Yv6QzJzE/ootif9z/public/values?alt=json', function (json) {
-        // console.log(json);
+    var randomNumber;
+
+    $.getJSON('https://spreadsheets.google.com/feeds/list/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/1/public/full?alt=json', function (json) {
+        console.log(json);
         createGridsFromTemplate(json);
+    });
+
+    $.getJSON('https://spreadsheets.google.com/feeds/list/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/2/public/full?alt=json', function (imageNumb) {
+        randomNumber = imageNumb;
     });
 
     $.get('data/Names/FirstNamesUSA.txt', function (fnUSA) {
@@ -18,18 +24,18 @@ $(document).ready(function () {
         lastNamesGermany = lnGermany.split('\n');
     });
 
-
     function createGridsFromTemplate(json) {
+        
         jsonLength = Object.keys(json.feed.entry).length;
         // console.log(firstNamesUSA);
         //allied planes
         alliedPlaneA = "P51";
-        alliedPlaneB = "P38";
+        alliedPlaneB = "Spitfire";
         alliedBomber = "A20";
         //axis planes
         axisPlaneA = "Fw190A8";
         axisPlaneB = "Bf109G14";
-        axisBomber = "Ju88";
+        axisBomber = "BF110G2";
 
         var alliedFGATemplate = document.getElementsByTagName("template-alliedFGA")[0];
         var alliedFGBTemplate = document.getElementsByTagName("template-alliedFGB")[0];
@@ -53,14 +59,14 @@ $(document).ready(function () {
         axisBGLeaderFilled = false;
         axisB = 0;
         for (i = 0; i < jsonLength; i++) {
-            side = json.feed.entry[i].gsx$side.$t;
-            imageLink = json.feed.entry[i].gsx$image.$t;
-            alliedFG = json.feed.entry[i].gsx$alliedfg.$t;
-            alliedName = firstNamesUSA[imageLink] + " \"" + json.feed.entry[i].gsx$alliedname.$t + "\" " + lastNamesUSA[imageLink];            
-            alliedPosition = json.feed.entry[i].gsx$alliedposition.$t;
-            axisFG = json.feed.entry[i].gsx$axisfg.$t;
-            axisName = firstNamesGermany[imageLink] + " \"" + json.feed.entry[i].gsx$axisname.$t + "\" " + lastNamesGermany[imageLink]; 
-            axisPosition = json.feed.entry[i].gsx$axisposition.$t;
+            side = json.feed.entry[i].gsx$whichsideoftheconflictwouldyouliketobeon.$t;
+            imageLink = randomNumber.feed.entry[i].gsx$imagenumber.$t;
+            alliedFG = json.feed.entry[i].gsx$selectflightgroup.$t;
+            alliedName = firstNamesUSA[imageLink] + " \"" + json.feed.entry[i].gsx$enterpilotnickname.$t + "\" " + lastNamesUSA[imageLink];            
+            alliedPosition = json.feed.entry[i].gsx$selectpilotposition.$t;
+            axisFG = json.feed.entry[i].gsx$selectflightgroup_2.$t;
+            axisName = firstNamesGermany[imageLink] + " \"" + json.feed.entry[i].gsx$enterpilotnickname_2.$t + "\" " + lastNamesGermany[imageLink]; 
+            axisPosition = json.feed.entry[i].gsx$selectpilotposition_2.$t;
             
             if (side == "Allied") {
                 if (alliedFG.includes(alliedPlaneA)) {
