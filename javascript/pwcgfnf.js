@@ -2,13 +2,13 @@
 $(document).ready(function () {
     var randomNumber;
 
-    $.getJSON('https://spreadsheets.google.com/feeds/list/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/1/public/full?alt=json', function (json) {
+    $.getJSON('https://spreadsheets.google.com/feeds/list/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/1/public/full?alt=json').done(function (json) {
         console.log(json);
         createGridsFromTemplate(json);
     });
 
-    $.getJSON('https://spreadsheets.google.com/feeds/list/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/2/public/full?alt=json', function (imageNumb) {
-        randomNumber = imageNumb;
+    $.get('data/randomNumbers.txt', function (ranNum) {
+        randomNumber = ranNum.split('\n');
     });
 
     $.get('data/Names/FirstNamesUSA.txt', function (fnUSA) {
@@ -25,7 +25,7 @@ $(document).ready(function () {
     });
 
     function createGridsFromTemplate(json) {
-        
+
         jsonLength = Object.keys(json.feed.entry).length;
         // console.log(firstNamesUSA);
         //allied planes
@@ -60,14 +60,14 @@ $(document).ready(function () {
         axisB = 0;
         for (i = 0; i < jsonLength; i++) {
             side = json.feed.entry[i].gsx$whichsideoftheconflictwouldyouliketobeon.$t;
-            imageLink = randomNumber.feed.entry[i].gsx$imagenumber.$t;
+            imageNumber = parseInt(randomNumber[i]);
             alliedFG = json.feed.entry[i].gsx$selectflightgroup.$t;
-            alliedName = firstNamesUSA[imageLink] + " \"" + json.feed.entry[i].gsx$enterpilotnickname.$t + "\" " + lastNamesUSA[imageLink];            
+            alliedName = firstNamesUSA[imageNumber] + " \"" + json.feed.entry[i].gsx$enterpilotnickname.$t + "\" " + lastNamesUSA[imageNumber];
             alliedPosition = json.feed.entry[i].gsx$selectpilotposition.$t;
             axisFG = json.feed.entry[i].gsx$selectflightgroup_2.$t;
-            axisName = firstNamesGermany[imageLink] + " \"" + json.feed.entry[i].gsx$enterpilotnickname_2.$t + "\" " + lastNamesGermany[imageLink]; 
+            axisName = firstNamesGermany[imageNumber] + " \"" + json.feed.entry[i].gsx$enterpilotnickname_2.$t + "\" " + lastNamesGermany[imageNumber];
             axisPosition = json.feed.entry[i].gsx$selectpilotposition_2.$t;
-            
+
             if (side == "Allied") {
                 if (alliedFG.includes(alliedPlaneA)) {
                     var alliedFGADivs = alliedFGATemplate.querySelector('div');
@@ -77,7 +77,7 @@ $(document).ready(function () {
                         !alliedFGALeaderFilled) {
                         alliedFGALeaderFilled = true;
                         document.getElementById('alliedfighterA-leader').innerHTML = alliedName;
-                        document.getElementById('alliedfighterA-leader-pic').src = 'imgs/American/American' + imageLink + ".jpg";
+                        document.getElementById('alliedfighterA-leader-pic').src = 'imgs/American/American' + imageNumber + ".jpg";
                     }
                     else {
                         alliedfightergroupAD = document.importNode(alliedFGADivs, true);
@@ -85,7 +85,7 @@ $(document).ready(function () {
                         createIds();
                         alliedFGA++;
                         document.getElementById("alliedFGA" + alliedFGA).innerHTML = alliedName;
-                        document.getElementById('alliedFGA-pic' + alliedFGA).src = 'imgs/American/American' + imageLink + ".jpg";
+                        document.getElementById('alliedFGA-pic' + alliedFGA).src = 'imgs/American/American' + imageNumber + ".jpg";
                     }
                 }
                 else if (alliedFG.includes(alliedPlaneB)) {
@@ -96,7 +96,7 @@ $(document).ready(function () {
                         !alliedFGBLeaderFilled) {
                         alliedFGBLeaderFilled = true;
                         document.getElementById('alliedfighterB-leader').innerHTML = alliedName;
-                        document.getElementById('alliedfighterB-leader-pic').src = 'imgs/American/American' + imageLink + ".jpg";
+                        document.getElementById('alliedfighterB-leader-pic').src = 'imgs/American/American' + imageNumber + ".jpg";
                     }
                     else {
                         alliedfightergroupBD = document.importNode(alliedFGBDivs, true);
@@ -104,7 +104,7 @@ $(document).ready(function () {
                         createIds();
                         alliedFGB++;
                         document.getElementById("alliedFGB" + alliedFGB).innerHTML = alliedName;
-                        document.getElementById('alliedFGB-pic' + alliedFGB).src = 'imgs/American/American' + imageLink + ".jpg";
+                        document.getElementById('alliedFGB-pic' + alliedFGB).src = 'imgs/American/American' + imageNumber + ".jpg";
                     }
                 }
                 else {
@@ -115,7 +115,7 @@ $(document).ready(function () {
                         !alliedBGLeaderFilled) {
                         alliedBGLeaderFilled = true;
                         document.getElementById('alliedbomber-leader').innerHTML = alliedName;
-                        document.getElementById('alliedbomber-leader-pic').src = 'imgs/American/American' + imageLink + ".jpg";
+                        document.getElementById('alliedbomber-leader-pic').src = 'imgs/American/American' + imageNumber + ".jpg";
                     }
                     else {
                         alliedBomberD = document.importNode(alliedBomberDivs, true);
@@ -123,7 +123,7 @@ $(document).ready(function () {
                         createIds();
                         alliedB++;
                         document.getElementById("alliedBG" + alliedB).innerHTML = alliedName;
-                        document.getElementById('alliedBG-pic' + alliedB).src = 'imgs/American/American' + imageLink + ".jpg";
+                        document.getElementById('alliedBG-pic' + alliedB).src = 'imgs/American/American' + imageNumber + ".jpg";
                     }
                 }
             }
@@ -138,7 +138,7 @@ $(document).ready(function () {
                         !axisFGALeaderFilled) {
                         axisFGALeaderFilled = true;
                         document.getElementById('axisfighterA-leader').innerHTML = axisName;
-                        document.getElementById('axisfighterA-leader-pic').src = 'imgs/German/German' + imageLink + ".jpg";
+                        document.getElementById('axisfighterA-leader-pic').src = 'imgs/German/German' + imageNumber + ".jpg";
                     }
                     else {
                         axisfightergroupAD = document.importNode(axisFGADivs, true);
@@ -146,7 +146,7 @@ $(document).ready(function () {
                         createIds();
                         axisFGA++;
                         document.getElementById("axisFGA" + axisFGA).innerHTML = axisName;
-                        document.getElementById('axisFGA-pic' + axisFGA).src = 'imgs/German/German' + imageLink + ".jpg";
+                        document.getElementById('axisFGA-pic' + axisFGA).src = 'imgs/German/German' + imageNumber + ".jpg";
                     }
                 }
                 else if (axisFG.includes(axisPlaneB)) {
@@ -157,7 +157,7 @@ $(document).ready(function () {
                         !axisFGBLeaderFilled) {
                         axisFGBLeaderFilled = true;
                         document.getElementById('axisfighterB-leader').innerHTML = axisName;
-                        document.getElementById('axisfighterB-leader-pic').src = 'imgs/German/German' + imageLink + ".jpg";
+                        document.getElementById('axisfighterB-leader-pic').src = 'imgs/German/German' + imageNumber + ".jpg";
                     }
                     else {
                         axisfightergroupBD = document.importNode(axisFGBDivs, true);
@@ -165,7 +165,7 @@ $(document).ready(function () {
                         createIds();
                         axisFGB++;
                         document.getElementById("axisFGB" + axisFGB).innerHTML = axisName;
-                        document.getElementById('axisFGB-pic' + axisFGB).src = 'imgs/German/German' + imageLink + ".jpg";
+                        document.getElementById('axisFGB-pic' + axisFGB).src = 'imgs/German/German' + imageNumber + ".jpg";
                     }
                 }
                 else {
@@ -176,7 +176,7 @@ $(document).ready(function () {
                         !axisBGLeaderFilled) {
                         axisBGLeaderFilled = true;
                         document.getElementById('axisbomber-leader').innerHTML = axisName;
-                        document.getElementById('axisbomber-leader-pic').src = 'imgs/German/German' + imageLink + ".jpg";
+                        document.getElementById('axisbomber-leader-pic').src = 'imgs/German/German' + imageNumber + ".jpg";
                     }
                     else {
                         axisBomberD = document.importNode(axisBomberDivs, true);
@@ -184,7 +184,7 @@ $(document).ready(function () {
                         createIds();
                         axisB++;
                         document.getElementById("axisBG" + axisB).innerHTML = axisName;
-                        document.getElementById('axisBG-pic' + axisB).src = 'imgs/German/German' + imageLink + ".jpg";
+                        document.getElementById('axisBG-pic' + axisB).src = 'imgs/German/German' + imageNumber + ".jpg";
                     }
                 }
             }
