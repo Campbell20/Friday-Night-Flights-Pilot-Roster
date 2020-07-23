@@ -29,13 +29,13 @@ $(document).ready(function () {
         jsonLength = Object.keys(json.feed.entry).length;
         // console.log(firstNamesUSA);
         //allied planes
-        alliedPlaneA = "P51";
-        alliedPlaneB = "Spitfire";
-        alliedBomber = "A20";
+        alliedTeamA = "352nd";
+        alliedTeamB = "402 Squadron";
+        alliedBomber = "410th";
         //axis planes
-        axisPlaneA = "Fw190A8";
-        axisPlaneB = "Bf109G14";
-        axisBomber = "BF110G2";
+        axisTeamA = "I./JG1";
+        axisTeamB = "I./JG77";
+        axisBomber = "I./KG54";
 
         var alliedFGATemplate = document.getElementsByTagName("template-alliedFGA")[0];
         var alliedFGBTemplate = document.getElementsByTagName("template-alliedFGB")[0];
@@ -69,7 +69,7 @@ $(document).ready(function () {
             axisPosition = json.feed.entry[i].gsx$selectpilotposition_2.$t;
 
             if (side == "Allied") {
-                if (alliedFG.includes(alliedPlaneA)) {
+                if (alliedFG.includes(alliedTeamA)) {
                     var alliedFGADivs = alliedFGATemplate.querySelector('div');
                     var alliedfightergroupAD;
 
@@ -88,7 +88,7 @@ $(document).ready(function () {
                         document.getElementById('alliedFGA-pic' + alliedFGA).src = 'imgs/American/American' + imageNumber + ".jpg";
                     }
                 }
-                else if (alliedFG.includes(alliedPlaneB)) {
+                else if (alliedFG.includes(alliedTeamB)) {
                     var alliedFGBDivs = alliedFGBTemplate.querySelector('div');
                     var alliedfightergroupBD;
 
@@ -130,7 +130,7 @@ $(document).ready(function () {
 
             //AXIS SIDE
             if (side == "Axis") {
-                if (axisFG.includes(axisPlaneA)) {
+                if (axisFG.includes(axisTeamA)) {
                     var axisFGADivs = axisFGATemplate.querySelector('div');
                     var axisfightergroupAD;
 
@@ -149,7 +149,7 @@ $(document).ready(function () {
                         document.getElementById('axisFGA-pic' + axisFGA).src = 'imgs/German/German' + imageNumber + ".jpg";
                     }
                 }
-                else if (axisFG.includes(axisPlaneB)) {
+                else if (axisFG.includes(axisTeamB)) {
                     var axisFGBDivs = axisFGBTemplate.querySelector('div');
                     var axisfightergroupBD;
 
