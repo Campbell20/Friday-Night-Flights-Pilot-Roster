@@ -33,8 +33,8 @@ $(document).ready(function () {
         alliedTeamB = "402 Squadron";
         alliedBomber = "410th";
         //axis planes
-        axisTeamA = "I./JG1";
-        axisTeamB = "I./JG77";
+        axisTeamA = "I./JG77";
+        axisTeamB = "I./JG1";
         axisBomber = "I./KG54";
 
         var alliedFGATemplate = document.getElementsByTagName("template-alliedFGA")[0];
