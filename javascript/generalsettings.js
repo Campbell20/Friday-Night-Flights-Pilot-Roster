@@ -21,7 +21,7 @@ $(document).ready(function () {
     axisBomber = "Fw190A8";
 
     eventDate = "July 31st";
-    registration = true;
+    registration = false;
 
 
     function setFlightsAndPlanes() {
