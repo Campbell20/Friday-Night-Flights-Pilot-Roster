@@ -8,7 +8,7 @@ $(document).ready(function () {
     //allied planes
     alliedPlaneA = "P51 Mustang";
     alliedPlaneB = "Spitfire MkIX";
-    alliedBomber = "P47 Razorback";
+    alliedBomber = "A20 Havoc";
 
     //axis groups
     axisFighterGroupA = "I./JG1";
@@ -16,12 +16,12 @@ $(document).ready(function () {
     axisBomberGroup = "I./KG54";
 
     //axis planes
-    axisPlaneA = "Bf109G14";
+    axisPlaneA = "Fw190A8";
     axisPlaneB = "Bf109G14";
-    axisBomber = "Fw190A8";
+    axisBomber = "BF110G2";
 
-    eventDate = "July 31st";
-    registration = false;
+    eventDate = "August 7th";
+    registration = true;
 
 
     function setFlightsAndPlanes() {
