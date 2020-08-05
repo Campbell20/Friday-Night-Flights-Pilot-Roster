@@ -16,8 +16,8 @@ $(document).ready(function () {
     axisBomberGroup = "I./KG54";
 
     //axis planes
-    axisPlaneA = "Fw190A8";
-    axisPlaneB = "Bf109G14";
+    axisPlaneA = "Bf109G14";
+    axisPlaneB = "Fw190A8";
     axisBomber = "BF110G2";
 
     eventDate = "August 7th";
