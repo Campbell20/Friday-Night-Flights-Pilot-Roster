@@ -52,7 +52,7 @@ $(document).ready(function () {
         //4 = Thursday
         //5 = Friday
         //6 = Saturday
-        if (n == 0 || n == 6 || registration == false) {
+        if (n == 6 || registration == false) {
             document.getElementById("registration-closed").style.display = "flex";
             document.getElementById("registration-opened").style.display = "none";
         }
