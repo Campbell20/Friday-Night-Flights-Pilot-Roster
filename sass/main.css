@@ -1,7 +1,7 @@
 body {
   background-color: #999;
   font-family: 'Courier New';
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .registration-btn {
@@ -10,8 +10,21 @@ body {
   border: 1px solid #e0e0e0;
 }
 
+.blue-background {
+  background-color: #0087ff1c;
+}
+
+.red-background {
+  background-color: #ff00000d;
+}
+
+.team-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
 .grid {
-  text-align: left;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

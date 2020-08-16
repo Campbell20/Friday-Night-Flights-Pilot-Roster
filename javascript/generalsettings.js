@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     //allied groups
     alliedFighterGroupA = "352nd Fighter Group";
-    alliedFighterGroupB = "No. 402 Squadron RCAF"
+    alliedFighterGroupB = "No.402 Squadron RCAF"
     alliedBomberGroup = "410th Bomber Group";
 
     //allied planes
@@ -20,7 +20,7 @@ $(document).ready(function () {
     axisPlaneB = "Fw190A8";
     axisBomber = "BF110G2";
 
-    eventDate = "August 14th";
+    eventDate = "August 21st";
     registration = false;
 
 

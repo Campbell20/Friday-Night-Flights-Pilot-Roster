@@ -29,18 +29,20 @@
         </div>
         <div class="col-12 justify-content-center" id="registration-opened">
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-info registration-btn" data-toggle="modal" data-target="#registrationModal">
+            <button type="button" class="btn btn-info registration-btn" data-toggle="modal"
+                data-target="#registrationModal">
                 REGISTER HERE
             </button>
 
             <!-- Modal -->
-            <div class="modal fade" id="registrationModal" tabindex="-1" role="dialog" aria-labelledby="registrationModalLabel"
-                aria-hidden="true">
+            <div class="modal fade" id="registrationModal" tabindex="-1" role="dialog"
+                aria-labelledby="registrationModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="registrationModalLabel">Registration</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="location.reload();">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                                onclick="location.reload();">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
@@ -48,153 +50,180 @@
                             <div class="col-12 py-3 justify-content-center" id="google-form">
                                 <iframe
                                     src="https://docs.google.com/forms/d/e/1FAIpQLSfB6WovQEkwirlugLJew-dcq-aDGseR9-KRbwwNPsFvIh0bwA/viewform?embedded=true"
-                                    width="640" height="660" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                                    width="640" height="660" frameborder="0" marginheight="0"
+                                    marginwidth="0">Loading…</iframe>
                             </div>
                         </div>
-              
+
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="col-12 d-flex justify-content-center pt-3">
-            Allied Team Roster
+        <div class="red-background mt-3 pb-2">
+            <div class="col-12 d-flex justify-content-center team-title">
+                Allied Team Roster
+            </div>
+
+
+            <div class="col-12 px-1 grid-card">
+                <!-- first flight -->
+                <div class="col pl-0 pr-1">
+                    <div class="col-12 px-0 grid grid-header">
+                        <span class="grid-header-flight" id="alliedfighterA">FLIGHT GROUP</span> - <span
+                            class="grid-header-plane" id="alliedfighterA-plane">PLANE TYPE</span>
+                    </div>
+                    <div class="d-inline-flex col-12 px-0">
+                        <div class="col-2 px-0 grid grid-body grid-body-number">
+                            Squadron Leader
+                        </div>
+                        <div class="col-2 px-0 grid grid-body grid-body-pic justify-content-center">
+                            <img src="imgs/American/Emptyimg.jpg" width="70" height="100"
+                                id="alliedfighterA-leader-pic">
+                        </div>
+                        <div class="col-8 grid grid-body grid-body-name" id="alliedfighterA-leader">
+                            None Assigned
+                        </div>
+                    </div>
+                    <div class="grid-last" id="alliedfighterA-lead"></div>
+                    <div class="grid-last" id="alliedfighterA-wingmen"></div>
+                </div>
+
+                <!-- second flight -->
+                <div class="col pl-0 pr-1">
+                    <div class="col-12 px-0 grid grid-header">
+                        <span class="grid-header-flight" id="alliedfighterB">FLIGHT GROUP</span> - <span
+                            class="grid-header-plane" id="alliedfighterB-plane">PLANE TYPE</span>
+                    </div>
+                    <div class="d-inline-flex col-12 px-0">
+                        <div class="col-2 px-0 grid grid-body grid-body-number">
+                            Squadron Leader
+                        </div>
+                        <div class="col-2 px-0 grid grid-body grid-body-pic justify-content-center">
+                            <img src="imgs/American/Emptyimg.jpg" width="70" height="100"
+                                id="alliedfighterB-leader-pic">
+                        </div>
+                        <div class="col-8 grid grid-body grid-body-name" id="alliedfighterB-leader">
+                            None Assigned
+                        </div>
+                    </div>
+                    <div class="grid-last" id="alliedfighterB-lead"></div>
+                    <div class="grid-last" id="alliedfighterB-wingmen"></div>
+                </div>
+
+                <!-- bomber flight -->
+                <div class="col pl-0 pr-1">
+                    <div class="col-12 px-0 grid grid-header">
+                        <span class="grid-header-flight" id="alliedbombergroup">FLIGHT GROUP</span> - <span
+                            class="grid-header-plane" id="alliedbombergroup-plane">PLANE TYPE</span>
+                    </div>
+                    <div class="d-inline-flex col-12 px-0">
+                        <div class="col-2 px-0 grid grid-body grid-body-number">
+                            Squadron Leader
+                        </div>
+                        <div class="col-2 px-0 grid grid-body grid-body-pic justify-content-center">
+                            <img src="imgs/American/Emptyimg.jpg" width="70" height="100" id="alliedbomber-leader-pic">
+                        </div>
+                        <div class="col-8 grid grid-body grid-body-name" id="alliedbomber-leader">
+                            None Assigned
+                        </div>
+                    </div>
+                    <div class="grid-last" id="alliedbomber-lead"></div>
+                    <div class="grid-last" id="alliedbomber-wingmen"></div>
+                </div>
+
+            </div>
         </div>
 
-        <div class="col-12 grid-card">
-            <!-- first flight -->
-            <div class="col pl-0 pr-1">
-                <div class="col-12 px-0 grid grid-header">
-                    <span class="grid-header-flight" id="alliedfighterA">FLIGHT GROUP</span> - <span
-                        class="grid-header-plane" id="alliedfighterA-plane">PLANE TYPE</span>
-                </div>
-                <div class="d-inline-flex col-12 px-0">
-                    <div class="col-2 px-0 grid grid-body grid-body-number">
-                        Lead
-                    </div>
-                    <div class="col-2 px-0 grid grid-body grid-body-pic justify-content-center">
-                        <img src="imgs/American/Emptyimg.jpg" width="70" height="100" id="alliedfighterA-leader-pic">
-                    </div>
-                    <div class="col-8 grid grid-body grid-body-name" id="alliedfighterA-leader">
-                        None Assigned
-                    </div>
-                </div>
-                <div class="grid-last" id="alliedfighterA-wingmen"></div>
+        <div class="blue-background mt-3 pb-2">
+            <div class="col-12 d-flex justify-content-center team-title">
+                Axis Team Roster
             </div>
+            <div class="col-12 px-1 grid-card">
+                <!-- first flight -->
+                <div class="col pl-0 pr-1">
+                    <div class="col-12 px-0 grid grid-header">
+                        <span class="grid-header-flight" id="axisfighterA">FLIGHT GROUP</span> - <span
+                            class="grid-header-plane" id="axisfighterA-plane">PLANE TYPE</span>
+                    </div>
+                    <div class="d-inline-flex col-12 px-0">
+                        <div class="col-2 px-0 grid grid-body grid-body-number">
+                            Squadron Leader
+                        </div>
+                        <div class="col-2 px-0 grid grid-body grid-body-pic justify-content-center">
+                            <img src="imgs/American/Emptyimg.jpg" width="70" height="100" id="axisfighterA-leader-pic">
+                        </div>
+                        <div class="col-8 grid grid-body grid-body-name" id="axisfighterA-leader">
+                            None Assigned
+                        </div>
+                    </div>
+                    <div class="grid-last" id="axisfighterA-lead"></div>
+                    <div class="grid-last" id="axisfighterA-wingmen"></div>
+                </div>
 
-            <!-- second flight -->
-            <div class="col pl-0 pr-1">
-                <div class="col-12 px-0 grid grid-header">
-                    <span class="grid-header-flight" id="alliedfighterB">FLIGHT GROUP</span> - <span
-                        class="grid-header-plane" id="alliedfighterB-plane">PLANE TYPE</span>
+                <!-- second flight -->
+                <div class="col pl-0 pr-1">
+                    <div class="col-12 px-0 grid grid-header">
+                        <span class="grid-header-flight" id="axisfighterB">FLIGHT GROUP</span> - <span
+                            class="grid-header-plane" id="axisfighterB-plane">PLANE TYPE</span>
+                    </div>
+                    <div class="d-inline-flex col-12 px-0">
+                        <div class="col-2 px-0 grid grid-body grid-body-number">
+                            Squadron Leader
+                        </div>
+                        <div class="col-2 px-0 grid grid-body grid-body-pic justify-content-center">
+                            <img src="imgs/American/Emptyimg.jpg" width="70" height="100" id="axisfighterB-leader-pic">
+                        </div>
+                        <div class="col-8 grid grid-body grid-body-name" id="axisfighterB-leader">
+                            None Assigned
+                        </div>
+                    </div>
+                    <div class="grid-last" id="axisfighterB-lead"></div>
+                    <div class="grid-last" id="axisfighterB-wingmen"></div>
                 </div>
-                <div class="d-inline-flex col-12 px-0">
-                    <div class="col-2 px-0 grid grid-body grid-body-number">
-                        Lead
+
+                <!-- bomber flight -->
+                <div class="col pl-0 pr-1">
+                    <div class="col-12 px-0 grid grid-header">
+                        <span class="grid-header-flight" id="axisbombergroup">FLIGHT GROUP</span> - <span
+                            class="grid-header-plane" id="axisbombergroup-plane">PLANE TYPE</span>
                     </div>
-                    <div class="col-2 px-0 grid grid-body grid-body-pic justify-content-center">
-                        <img src="imgs/American/Emptyimg.jpg" width="70" height="100" id="alliedfighterB-leader-pic">
+                    <div class="d-inline-flex col-12 px-0">
+                        <div class="col-2 px-0 grid grid-body grid-body-number">
+                            Squadron Leader
+                        </div>
+                        <div class="col-2 px-0 grid grid-body grid-body-pic justify-content-center">
+                            <img src="imgs/American/Emptyimg.jpg" width="70" height="100" id="axisbomber-leader-pic">
+                        </div>
+                        <div class="col-8 grid grid-body grid-body-name" id="axisbomber-leader">
+                            None Assigned
+                        </div>
                     </div>
-                    <div class="col-8 grid grid-body grid-body-name" id="alliedfighterB-leader">
-                        None Assigned
-                    </div>
+                    <div class="grid-last" id="axisbomber-lead"></div>
+                    <div class="grid-last" id="axisbomber-wingmen"></div>
                 </div>
-                <div class="grid-last" id="alliedfighterB-wingmen"></div>
+
             </div>
-
-            <!-- bomber flight -->
-            <div class="col pl-0 pr-1">
-                <div class="col-12 px-0 grid grid-header">
-                    <span class="grid-header-flight" id="alliedbombergroup">FLIGHT GROUP</span> - <span
-                        class="grid-header-plane" id="alliedbombergroup-plane">PLANE TYPE</span>
-                </div>
-                <div class="d-inline-flex col-12 px-0">
-                    <div class="col-2 px-0 grid grid-body grid-body-number">
-                        Lead
-                    </div>
-                    <div class="col-2 px-0 grid grid-body grid-body-pic justify-content-center">
-                        <img src="imgs/American/Emptyimg.jpg" width="70" height="100" id="alliedbomber-leader-pic">
-                    </div>
-                    <div class="col-8 grid grid-body grid-body-name" id="alliedbomber-leader">
-                        None Assigned
-                    </div>
-                </div>
-                <div class="grid-last" id="alliedbomber-wingmen"></div>
-            </div>
-
-        </div>
-
-
-        <div class="col-12 d-flex justify-content-center pt-5">
-            Axis Team Roster
-        </div>
-        <div class="col-12 grid-card">
-            <!-- first flight -->
-            <div class="col pl-0 pr-1">
-                <div class="col-12 px-0 grid grid-header">
-                    <span class="grid-header-flight" id="axisfighterA">FLIGHT GROUP</span> - <span
-                        class="grid-header-plane" id="axisfighterA-plane">PLANE TYPE</span>
-                </div>
-                <div class="d-inline-flex col-12 px-0">
-                    <div class="col-2 px-0 grid grid-body grid-body-number">
-                        Lead
-                    </div>
-                    <div class="col-2 px-0 grid grid-body grid-body-pic justify-content-center">
-                        <img src="imgs/American/Emptyimg.jpg" width="70" height="100" id="axisfighterA-leader-pic">
-                    </div>
-                    <div class="col-8 grid grid-body grid-body-name" id="axisfighterA-leader">
-                        None Assigned
-                    </div>
-                </div>
-                <div class="grid-last" id="axisfighterA-wingmen"></div>
-            </div>
-
-            <!-- second flight -->
-            <div class="col pl-0 pr-1">
-                <div class="col-12 px-0 grid grid-header">
-                    <span class="grid-header-flight" id="axisfighterB">FLIGHT GROUP</span> - <span
-                        class="grid-header-plane" id="axisfighterB-plane">PLANE TYPE</span>
-                </div>
-                <div class="d-inline-flex col-12 px-0">
-                    <div class="col-2 px-0 grid grid-body grid-body-number">
-                        Lead
-                    </div>
-                    <div class="col-2 px-0 grid grid-body grid-body-pic justify-content-center">
-                        <img src="imgs/American/Emptyimg.jpg" width="70" height="100" id="axisfighterB-leader-pic">
-                    </div>
-                    <div class="col-8 grid grid-body grid-body-name" id="axisfighterB-leader">
-                        None Assigned
-                    </div>
-                </div>
-                <div class="grid-last" id="axisfighterB-wingmen"></div>
-            </div>
-
-            <!-- bomber flight -->
-            <div class="col pl-0 pr-1">
-                <div class="col-12 px-0 grid grid-header">
-                    <span class="grid-header-flight" id="axisbombergroup">FLIGHT GROUP</span> - <span
-                        class="grid-header-plane" id="axisbombergroup-plane">PLANE TYPE</span>
-                </div>
-                <div class="d-inline-flex col-12 px-0">
-                    <div class="col-2 px-0 grid grid-body grid-body-number">
-                        Lead
-                    </div>
-                    <div class="col-2 px-0 grid grid-body grid-body-pic justify-content-center">
-                        <img src="imgs/American/Emptyimg.jpg" width="70" height="100" id="axisbomber-leader-pic">
-                    </div>
-                    <div class="col-8 grid grid-body grid-body-name" id="axisbomber-leader">
-                        None Assigned
-                    </div>
-                </div>
-                <div class="grid-last" id="axisbomber-wingmen"></div>
-            </div>
-
         </div>
     </div>
 
 
 
     <div class="hidden-templates">
+        <template-alliedFGA-Lead>
+            <div class="d-inline-flex col px-0">
+                <div class="col-2 px-0 grid grid-body grid-body-number alliedFGA-number-lead"
+                    id='alliedFGA-number-lead'>
+                </div>
+                <div class="col-2 px-0 grid grid-body grid-body-pic justify-content-center">
+                    <img class="alliedFGA-pic-lead" src="imgs/American/Emptyimg.jpg" width="70" height="100"
+                        id="alliedFGA-pic-lead">
+                </div>
+                <div class="col-8 grid grid-body grid-body-name alliedFGA-lead" id="alliedFGA-lead">
+                </div>
+            </div>
+        </template-alliedFGA-Lead>
+
         <template-alliedFGA>
             <div class="d-inline-flex col px-0">
                 <div class="col-2 px-0 grid grid-body grid-body-number alliedFGA-number" id='alliedFGA-number'>
@@ -207,6 +236,21 @@
                 </div>
             </div>
         </template-alliedFGA>
+
+        <template-alliedFGB-Lead>
+            <div class="d-inline-flex col px-0">
+                <div class="col-2 px-0 grid grid-body grid-body-number alliedFGB-number-lead"
+                    id='alliedFGB-number-lead'>
+                </div>
+                <div class="col-2 px-0 grid grid-body grid-body-pic justify-content-center">
+                    <img class="alliedFGB-pic-lead" src="imgs/American/Emptyimg.jpg" width="70" height="100"
+                        id="alliedFGB-pic-lead">
+                </div>
+                <div class="col-8 grid grid-body grid-body-name alliedFGB-lead" id="alliedFGB-lead">
+                </div>
+            </div>
+        </template-alliedFGB-Lead>
+
         <template-alliedFGB>
             <div class="d-inline-flex col px-0">
                 <div class="col-2 px-0 grid grid-body grid-body-number alliedFGB-number" id='alliedFGB-number'>
@@ -219,6 +263,20 @@
                 </div>
             </div>
         </template-alliedFGB>
+
+        <template-alliedBG-Lead>
+            <div class="d-inline-flex col px-0">
+                <div class="col-2 px-0 grid grid-body grid-body-number alliedBG-number-lead" id='alliedBG-number-lead'>
+                </div>
+                <div class="col-2 px-0 grid grid-body grid-body-pic justify-content-center">
+                    <img class="alliedBG-pic-lead" src="imgs/American/Emptyimg.jpg" width="70" height="100"
+                        id="alliedBG-pic-lead">
+                </div>
+                <div class="col-8 grid grid-body grid-body-name alliedBG-lead" id="alliedBG-lead">
+                </div>
+            </div>
+        </template-alliedBG-Lead>
+
         <template-alliedBG>
             <div class="d-inline-flex col px-0">
                 <div class="col-2 px-0 grid grid-body grid-body-number alliedBG-number" id='alliedBG-number'>
@@ -227,11 +285,24 @@
                     <img class="alliedBG-pic" src="imgs/American/Emptyimg.jpg" width="70" height="100"
                         id="alliedBG-pic">
                 </div>
-                <div class="col-8 grid grid-body grid-body-name alliedBG" id="alliedBG">
+                <div class="col-8 grid grid-body grid-body-name alliedBG" id="alliedBomberGroup">
                 </div>
             </div>
         </template-alliedBG>
 
+
+        <template-axisFGA-Lead>
+            <div class="d-inline-flex col px-0">
+                <div class="col-2 px-0 grid grid-body grid-body-number axisFGA-number-lead" id='axisFGA-number-lead'>
+                </div>
+                <div class="col-2 px-0 grid grid-body grid-body-pic justify-content-center">
+                    <img class="axisFGA-pic-lead" src="imgs/American/Emptyimg.jpg" width="70" height="100"
+                        id="axisFGA-pic-lead">
+                </div>
+                <div class="col-8 grid grid-body grid-body-name axisFGA-lead" id="axisFGA-lead">
+                </div>
+            </div>
+        </template-axisFGA-Lead>
 
         <template-axisFGA>
             <div class="d-inline-flex col px-0">
@@ -244,6 +315,20 @@
                 </div>
             </div>
         </template-axisFGA>
+
+        <template-axisFGB-Lead>
+            <div class="d-inline-flex col px-0">
+                <div class="col-2 px-0 grid grid-body grid-body-number axisFGB-number-lead" id='axisFGB-number-lead'>
+                </div>
+                <div class="col-2 px-0 grid grid-body grid-body-pic justify-content-center">
+                    <img class="axisFGB-pic-lead" src="imgs/American/Emptyimg.jpg" width="70" height="100"
+                        id="axisFGB-pic-lead">
+                </div>
+                <div class="col-8 grid grid-body grid-body-name axisFGB-lead" id="axisFGB-lead">
+                </div>
+            </div>
+        </template-axisFGB-Lead>
+
         <template-axisFGB>
             <div class="d-inline-flex col px-0">
                 <div class="col-2 px-0 grid grid-body grid-body-number axisFGB-number" id='axisFGB-number'>
@@ -255,6 +340,18 @@
                 </div>
             </div>
         </template-axisFGB>
+        <template-axisBG-Lead>
+            <div class="d-inline-flex col px-0">
+                <div class="col-2 px-0 grid grid-body grid-body-number axisBG-number-lead" id='axisBG-number-lead'>
+                </div>
+                <div class="col-2 px-0 grid grid-body grid-body-pic justify-content-center">
+                    <img class="axisBG-pic-lead" src="imgs/American/Emptyimg.jpg" width="70" height="100"
+                        id="axisBG-pic-lead">
+                </div>
+                <div class="col-8 grid grid-body grid-body-name axisBG-lead" id="axisBG-lead">
+                </div>
+            </div>
+        </template-axisBG-Lead>
         <template-axisBG>
             <div class="d-inline-flex col px-0">
                 <div class="col-2 px-0 grid grid-body grid-body-number axisBG-number" id='axisBG-number'>
@@ -267,6 +364,8 @@
             </div>
         </template-axisBG>
     </div>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

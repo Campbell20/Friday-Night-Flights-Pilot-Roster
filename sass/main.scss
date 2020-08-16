@@ -1,7 +1,7 @@
 body {
     background-color: #999;
     font-family: 'Courier New';
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 $lightgrey: rgb(224, 224, 224);
@@ -14,12 +14,17 @@ $tbody-bckgrnd: #cfcfc4;
 $border: rgba(70, 70, 70, 0.65);
 $font-color: rgb(24, 24, 24);
 
-$alliedLighter: #f4cccc;
+
+$green: #a8ffa875;
+$red: #ea999970;
+$yellow: rgba(255, 255, 181, 0.356);
+
+$alliedLighter: #ff00000d;
 $alliedRed: #ea9999;
 $alliedDark: #e066669f;
-$alliedDarker: #e06666;
+$alliedDarker: #e066664d;
 
-$axisLighter: #cfe2f3;
+$axisLighter: #0087ff1c;
 $axisBlue: #a4c2f4;
 $axisDark: #7891bd;
 $axisDarker: #4e7bc4;
@@ -31,9 +36,19 @@ $axisDarker: #4e7bc4;
         border: 1px solid $lightgrey;
     }
 }
+.blue-background {
+    background-color: $axisLighter;
+}
+.red-background {
+    background-color: $alliedLighter;
+}
+.team-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
 
 .grid {
-    text-align: left;
+    text-align: center;
     display: flex;
     align-items: center;
     color: $font-color;
