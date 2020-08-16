@@ -14,9 +14,9 @@ $tbody-bckgrnd: #cfcfc4;
 $border: rgba(70, 70, 70, 0.65);
 $font-color: rgb(24, 24, 24);
 
-
+$blue: #0087ff1c;
 $green: #a8ffa875;
-$red: #ea999970;
+$red: #ff00001c;
 $yellow: rgba(255, 255, 181, 0.356);
 
 $alliedLighter: #ff00000d;
@@ -37,10 +37,10 @@ $axisDarker: #4e7bc4;
     }
 }
 .blue-background {
-    background-color: $axisLighter;
+    background-color: $blue;
 }
 .red-background {
-    background-color: $alliedLighter;
+    background-color: $red;
 }
 .team-title {
     font-size: 1.4rem;
