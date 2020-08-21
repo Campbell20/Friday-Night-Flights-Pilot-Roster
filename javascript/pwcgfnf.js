@@ -132,48 +132,11 @@ $(document).ready(function () {
                             var alliedfightergroupAD;
                             alliedfightergroupAD = document.importNode(alliedFGADivs, true);
                             document.getElementById("alliedfighterA-wingmen").appendChild(alliedfightergroupAD);
-                            if (alliedFGA <= 3) {
-                                FlightColor = "Red";
+                            if(alliedFGAElementNumber == 1){
+                                alliedFGAElementNumber++;
                             }
-                            else if (alliedFGA > 3 &&
-                                alliedFGA <= 7) {
-                                if (alliedFGA == 4) {
-                                    alliedFGAElementNumber = 1;
-                                }
-                                FlightColor = "Green";
-                            }
-                            else if (alliedFGA > 7 &&
-                                alliedFGA <= 11) {
-                                if (alliedFGA == 8) {
-                                    alliedFGAElementNumber = 1;
-                                }
-                                FlightColor = "Yellow";
-                            }
-                            else if (alliedFGA > 11 &&
-                                alliedFGA <= 15) {
-                                if (alliedFGA == 12) {
-                                    alliedFGAElementNumber = 1;
-                                }
-                                FlightColor = "Black";
-                            }
-                            else if (alliedFGA > 15 &&
-                                alliedFGA <= 19) {
-                                if (alliedFGA == 16) {
-                                    alliedFGAElementNumber = 1;
-                                }
-                                FlightColor = "Orange";
-                            }
-                            else if (alliedFGA > 19 &&
-                                alliedFGA <= 23) {
-                                if (alliedFGA == 20) {
-                                    alliedFGAElementNumber = 1;
-                                }
-                                FlightColor = "Purple";
-                            }
+                            assignRole(alliedFGA, alliedFGAElementNumber, "alliedFGA-number", "alliedFGA", alliedName, 'alliedFGA-pic', 'American');
                             alliedFGAElementNumber++;
-                            document.getElementById("alliedFGA-number" + alliedFGA).innerHTML = FlightColor + "-" + alliedFGAElementNumber;
-                            document.getElementById("alliedFGA" + alliedFGA).innerHTML = alliedName;
-                            document.getElementById('alliedFGA-pic' + alliedFGA).src = 'imgs/American/American' + imageNumber + ".jpg";
                             alliedFGA++;
                         }
                     }
@@ -201,48 +164,11 @@ $(document).ready(function () {
                             var alliedfightergroupBD;
                             alliedfightergroupBD = document.importNode(alliedFGBDivs, true);
                             document.getElementById("alliedfighterB-wingmen").appendChild(alliedfightergroupBD);
-                            if (alliedFGB <= 3) {
-                                FlightColor = "Red";
+                            if(alliedFGBElementNumber == 1){
+                                alliedFGBElementNumber++;
                             }
-                            else if (alliedFGB > 3 &&
-                                alliedFGB <= 7) {
-                                if (alliedFGB == 4) {
-                                    alliedFGBElementNumber = 1;
-                                }
-                                FlightColor = "Green";
-                            }
-                            else if (alliedFGB > 7 &&
-                                alliedFGB <= 11) {
-                                if (alliedFGB == 8) {
-                                    alliedFGBElementNumber = 1;
-                                }
-                                FlightColor = "Yellow";
-                            }
-                            else if (alliedFGB > 11 &&
-                                alliedFGB <= 15) {
-                                if (alliedFGB == 12) {
-                                    alliedFGBElementNumber = 1;
-                                }
-                                FlightColor = "Black";
-                            }
-                            else if (alliedFGB > 15 &&
-                                alliedFGB <= 19) {
-                                if (alliedFGB == 16) {
-                                    alliedFGBElementNumber = 1;
-                                }
-                                FlightColor = "Orange";
-                            }
-                            else if (alliedFGB > 19 &&
-                                alliedFGB <= 23) {
-                                if (alliedFGB == 20) {
-                                    alliedFGBElementNumber = 1;
-                                }
-                                FlightColor = "Purple";
-                            }
+                            assignRole(alliedFGB, alliedFGBElementNumber, "alliedFGB-number", "alliedFGB", alliedName, 'alliedFGB-pic', 'American');
                             alliedFGBElementNumber++;
-                            document.getElementById("alliedFGB-number" + alliedFGB).innerHTML = FlightColor + "-" + alliedFGBElementNumber;
-                            document.getElementById("alliedFGB" + alliedFGB).innerHTML = alliedName;
-                            document.getElementById('alliedFGB-pic' + alliedFGB).src = 'imgs/American/American' + imageNumber + ".jpg";
                             alliedFGB++;
                         }
                     }
@@ -270,49 +196,11 @@ $(document).ready(function () {
                             var alliedBomberGroupBD;
                             alliedBomberGroupBD = document.importNode(alliedBGDivs, true);
                             document.getElementById("alliedbomber-wingmen").appendChild(alliedBomberGroupBD);
-
-                            if (alliedBG <= 3) {
-                                FlightColor = "Red";
+                            if(alliedBGElementNumber == 1){
+                                alliedBGElementNumber++;
                             }
-                            else if (alliedBG > 3 &&
-                                alliedFGB <= 7) {
-                                if (alliedBG == 4) {
-                                    alliedBGElementNumber = 1;
-                                }
-                                FlightColor = "Green";
-                            }
-                            else if (alliedBG > 7 &&
-                                alliedBG <= 11) {
-                                if (alliedBG == 8) {
-                                    alliedBGElementNumber = 1;
-                                }
-                                FlightColor = "Yellow";
-                            }
-                            else if (alliedBG > 11 &&
-                                alliedBG <= 15) {
-                                if (alliedBG == 12) {
-                                    alliedBGElementNumber = 1;
-                                }
-                                FlightColor = "Black";
-                            }
-                            else if (alliedBG > 15 &&
-                                alliedBG <= 19) {
-                                if (alliedBG == 16) {
-                                    alliedBGElementNumber = 1;
-                                }
-                                FlightColor = "Orange";
-                            }
-                            else if (alliedBG > 19 &&
-                                alliedBG <= 23) {
-                                if (alliedBG == 20) {
-                                    alliedBGElementNumber = 1;
-                                }
-                                FlightColor = "Purple";
-                            }
+                            assignRole(alliedBG, alliedBGElementNumber, "alliedBG-number", "alliedBomberGroup", alliedName, 'alliedBG-pic', 'American');
                             alliedBGElementNumber++;
-                            document.getElementById("alliedBG-number" + alliedBG).innerHTML = FlightColor + "-" + alliedBGElementNumber;
-                            document.getElementById("alliedBomberGroup" + alliedBG).innerHTML = alliedName;
-                            document.getElementById('alliedBG-pic' + alliedBG).src = 'imgs/American/American' + imageNumber + ".jpg";
                             alliedBG++;
                         }
                     }
@@ -345,48 +233,11 @@ $(document).ready(function () {
                             var axisfightergroupAD;
                             axisfightergroupAD = document.importNode(axisFGADivs, true);
                             document.getElementById("axisfighterA-wingmen").appendChild(axisfightergroupAD);
-                            if (axisFGA <= 3) {
-                                FlightColor = "Red";
+                            if(axisFGAElementNumber == 1){
+                                axisFGAElementNumber++;
                             }
-                            else if (axisFGA > 3 &&
-                                axisFGA <= 7) {
-                                if (axisFGA == 4) {
-                                    axisFGAElementNumber = 1;
-                                }
-                                FlightColor = "Green";
-                            }
-                            else if (axisFGA > 7 &&
-                                axisFGA <= 11) {
-                                if (axisFGA == 8) {
-                                    axisFGAElementNumber = 1;
-                                }
-                                FlightColor = "Yellow";
-                            }
-                            else if (axisFGA > 11 &&
-                                axisFGA <= 15) {
-                                if (axisFGA == 12) {
-                                    axisFGAElementNumber = 1;
-                                }
-                                FlightColor = "Black";
-                            }
-                            else if (axisFGA > 15 &&
-                                axisFGA <= 19) {
-                                if (axisFGA == 16) {
-                                    axisFGAElementNumber = 1;
-                                }
-                                FlightColor = "Orange";
-                            }
-                            else if (axisFGA > 19 &&
-                                axisFGA <= 23) {
-                                if (axisFGA == 20) {
-                                    axisFGAElementNumber = 1;
-                                }
-                                FlightColor = "Purple";
-                            }
+                            assignRole(axisFGA, axisFGAElementNumber, "axisFGA-number", "axisFGA", axisName, 'axisFGA-pic', 'German');
                             axisFGAElementNumber++;
-                            document.getElementById("axisFGA-number" + axisFGA).innerHTML = FlightColor + "-" + axisFGAElementNumber;
-                            document.getElementById("axisFGA" + axisFGA).innerHTML = axisName;
-                            document.getElementById('axisFGA-pic' + axisFGA).src = 'imgs/German/German' + imageNumber + ".jpg";
                             axisFGA++;
                         }
                     }
@@ -414,48 +265,11 @@ $(document).ready(function () {
                             var axisfightergroupBD;
                             axisfightergroupBD = document.importNode(axisFGBDivs, true);
                             document.getElementById("axisfighterB-wingmen").appendChild(axisfightergroupBD);
-                            if (axisFGB <= 3) {
-                                FlightColor = "Red";
+                            if(axisFGBElementNumber == 1){
+                                axisFGBElementNumber++;
                             }
-                            else if (axisFGB > 3 &&
-                                axisFGB <= 7) {
-                                if (axisFGB == 4) {
-                                    axisFGBElementNumber = 1;
-                                }
-                                FlightColor = "Green";
-                            }
-                            else if (axisFGB > 7 &&
-                                axisFGB <= 11) {
-                                if (axisFGB == 8) {
-                                    axisFGBElementNumber = 1;
-                                }
-                                FlightColor = "Yellow";
-                            }
-                            else if (axisFGB > 11 &&
-                                axisFGB <= 15) {
-                                if (axisFGB == 12) {
-                                    axisFGBElementNumber = 1;
-                                }
-                                FlightColor = "Black";
-                            }
-                            else if (axisFGB > 15 &&
-                                axisFGB <= 19) {
-                                if (axisFGB == 16) {
-                                    axisFGBElementNumber = 1;
-                                }
-                                FlightColor = "Orange";
-                            }
-                            else if (axisFGB > 19 &&
-                                axisFGB <= 23) {
-                                if (axisFGB == 20) {
-                                    axisFGBElementNumber = 1;
-                                }
-                                FlightColor = "Purple";
-                            }
+                            assignRole(axisFGB, axisFGBElementNumber, "axisFGB-number", "axisFGB", axisName, 'axisFGB-pic', 'German');
                             axisFGBElementNumber++;
-                            document.getElementById("axisFGB-number" + axisFGB).innerHTML = FlightColor + "-" + axisFGBElementNumber;
-                            document.getElementById("axisFGB" + axisFGB).innerHTML = axisName;
-                            document.getElementById('axisFGB-pic' + axisFGB).src = 'imgs/German/German' + imageNumber + ".jpg";
                             axisFGB++;
                         }
                     }
@@ -482,48 +296,11 @@ $(document).ready(function () {
                             var axisBomberGroupBD;
                             axisBomberGroupBD = document.importNode(axisBGDivs, true);
                             document.getElementById("axisbomber-wingmen").appendChild(axisBomberGroupBD);
-                            if (axisBG <= 3) {
-                                FlightColor = "Red";
+                            if(axisBGElementNumber == 1){
+                                axisBGElementNumber++;
                             }
-                            else if (axisBG > 3 &&
-                                axisFGB <= 7) {
-                                if (axisBG == 4) {
-                                    axisFGBElementNumber = 1;
-                                }
-                                FlightColor = "Green";
-                            }
-                            else if (axisBG > 7 &&
-                                axisBG <= 11) {
-                                if (axisBG == 8) {
-                                    axisFGBElementNumber = 1;
-                                }
-                                FlightColor = "Yellow";
-                            }
-                            else if (axisBG > 11 &&
-                                axisBG <= 15) {
-                                if (axisBG == 12) {
-                                    axisFGBElementNumber = 1;
-                                }
-                                FlightColor = "Black";
-                            }
-                            else if (axisBG > 15 &&
-                                axisBG <= 19) {
-                                if (axisBG == 16) {
-                                    axisFGBElementNumber = 1;
-                                }
-                                FlightColor = "Orange";
-                            }
-                            else if (axisBG > 19 &&
-                                axisBG <= 23) {
-                                if (axisBG == 20) {
-                                    axisFGBElementNumber = 1;
-                                }
-                                FlightColor = "Purple";
-                            }
-                            axisFGBElementNumber++;
-                            document.getElementById("axisBG-number" + axisBG).innerHTML = FlightColor + "-" + axisFGBElementNumber;
-                            document.getElementById("axisBG" + axisBG).innerHTML = axisName;
-                            document.getElementById('axisBG-pic' + axisBG).src = 'imgs/German/German' + imageNumber + ".jpg";
+                            assignRole(axisBG, axisBGElementNumber, "axisBG-number", "axisBG", axisName, 'axisBG-pic', 'German')
+                            axisBGElementNumber++;
                             axisBG++;
                         }
                     }
@@ -675,6 +452,44 @@ $(document).ready(function () {
             $(this).attr('id', "axisBG-pic" + i);
         });
     };
+
+
+
+    function assignRole(num, elementNum, elementIDNumber, elementID, elementNationName, elementPic, elementNationPic) {
+        if (num <= 2) {
+            FlightColor = "Red";
+        }
+        else if (num > 2 &&
+            num <= 6) {
+            elementNum = elementNum - 3;
+            FlightColor = "Green";
+        }
+        else if (num > 6 &&
+            num <= 10) {
+            elementNum = elementNum - 7;
+            FlightColor = "Yellow";
+        }
+        else if (axisFGB > 10 &&
+            axisFGB <= 14) {
+            elementNum = elementNum - 11;
+            FlightColor = "Black";
+        }
+        else if (axisFGB > 14 &&
+            axisFGB <= 18) {
+            elementNum = elementNum - 15;
+            FlightColor = "Orange";
+        }
+        else if (axisFGB > 18 &&
+            axisFGB <= 22) {
+            elementNum = elementNum - 19;
+            FlightColor = "Purple";
+        }
+
+        document.getElementById(elementIDNumber + num).innerHTML = FlightColor + "-" + elementNum;
+        document.getElementById(elementID + num).innerHTML = elementNationName;
+        document.getElementById(elementPic + num).src = "imgs/" + elementNationPic + "/" + elementNationPic + imageNumber + ".jpg";
+ 
+    }
 
 });
 
