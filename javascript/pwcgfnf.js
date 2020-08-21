@@ -105,8 +105,6 @@ $(document).ready(function () {
             axisFG = json.feed.entry[i].gsx$selectflightgroup_2.$t;
             axisName = firstNamesGermany[imageNumber] + " \"" + json.feed.entry[i].gsx$enterpilotnickname_2.$t + "\" " + lastNamesGermany[imageNumber];
             axisPosition = json.feed.entry[i].gsx$selectpilotposition_2.$t;
-
-
             createIds();
 
             if (side == "Allied") {
@@ -207,9 +205,6 @@ $(document).ready(function () {
                 }
             }
 
-
-
-
             if (side == "Axis") {
                 //Axis Fighter Group A
                 if (axisFG.includes(axisTeamA)) {
@@ -305,11 +300,8 @@ $(document).ready(function () {
                         }
                     }
                 }
-
             }
         }
-
-
     }
 
 
@@ -460,28 +452,28 @@ $(document).ready(function () {
             FlightColor = "Red";
         }
         else if (num > 2 &&
-            num <= 6) {
+            num <= 5) {
             elementNum = elementNum - 3;
             FlightColor = "Green";
         }
-        else if (num > 6 &&
-            num <= 10) {
-            elementNum = elementNum - 7;
+        else if (num > 5 &&
+            num <= 9) {
+            elementNum = elementNum - 6;
             FlightColor = "Yellow";
         }
-        else if (axisFGB > 10 &&
-            axisFGB <= 14) {
-            elementNum = elementNum - 11;
+        else if (axisFGB > 9 &&
+            axisFGB <= 13) {
+            elementNum = elementNum - 9;
             FlightColor = "Black";
         }
-        else if (axisFGB > 14 &&
-            axisFGB <= 18) {
-            elementNum = elementNum - 15;
+        else if (axisFGB > 13 &&
+            axisFGB <= 17) {
+            elementNum = elementNum - 13;
             FlightColor = "Orange";
         }
-        else if (axisFGB > 18 &&
+        else if (axisFGB > 17 &&
             axisFGB <= 22) {
-            elementNum = elementNum - 19;
+            elementNum = elementNum - 17;
             FlightColor = "Purple";
         }
 
