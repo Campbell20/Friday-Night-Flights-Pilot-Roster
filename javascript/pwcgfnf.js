@@ -91,7 +91,6 @@ $(document).ready(function () {
 
         //Axis Bomber Group
         axisBGLeader = 0;
-        axisBGColor = "Red";
         axisBG = 0;
         axisBGLeadElementNumber = 0;
         axisBGElementNumber = 1;
@@ -105,6 +104,7 @@ $(document).ready(function () {
             axisFG = json.feed.entry[i].gsx$selectflightgroup_2.$t;
             axisName = firstNamesGermany[imageNumber] + " \"" + json.feed.entry[i].gsx$enterpilotnickname_2.$t + "\" " + lastNamesGermany[imageNumber];
             axisPosition = json.feed.entry[i].gsx$selectpilotposition_2.$t;
+
             createIds();
 
             if (side == "Allied") {
@@ -183,7 +183,6 @@ $(document).ready(function () {
                             var alliedBGLead;
                             alliedBGLead = document.importNode(alliedBGLeadDivs, true);
                             document.getElementById("alliedbomber-lead").appendChild(alliedBGLead);
-
                             document.getElementById("alliedBG-lead" + alliedBGLeadElementNumber).innerHTML = alliedName;
                             document.getElementById('alliedBG-pic-lead' + alliedBGLeadElementNumber).src = 'imgs/American/American' + imageNumber + ".jpg";
                             document.getElementById("alliedBG-number-lead" + alliedBGLeadElementNumber).innerHTML = "Flight Lead";
@@ -278,9 +277,9 @@ $(document).ready(function () {
                     else {
                         if (axisPosition.includes("Flight Lead")) {
                             var axisBGLeadDivs = axisBomberTemplateLead.querySelector('div');
-                            var axisBGLead;
-                            axisBGLead = document.importNode(axisBGLeadDivs, true);
-                            document.getElementById("axisbomber-lead").appendChild(axisfightergroupBDLead);
+                            var axisBomberGroupLead;
+                            axisBomberGroupLead = document.importNode(axisBGLeadDivs, true);
+                            document.getElementById("axisbomber-lead").appendChild(axisBomberGroupLead);
                             document.getElementById("axisBG-lead" + axisBGLeadElementNumber).innerHTML = axisName;
                             document.getElementById('axisBG-pic-lead' + axisBGLeadElementNumber).src = 'imgs/German/German' + imageNumber + ".jpg";
                             document.getElementById("axisBG-number-lead" + axisBGLeadElementNumber).innerHTML = "Flight Lead";
@@ -303,7 +302,6 @@ $(document).ready(function () {
             }
         }
     }
-
 
     function createIds() {
         /**** ALLIED *****/
@@ -480,7 +478,6 @@ $(document).ready(function () {
         document.getElementById(elementIDNumber + num).innerHTML = FlightColor + "-" + elementNum;
         document.getElementById(elementID + num).innerHTML = elementNationName;
         document.getElementById(elementPic + num).src = "imgs/" + elementNationPic + "/" + elementNationPic + imageNumber + ".jpg";
- 
     }
 
 });
