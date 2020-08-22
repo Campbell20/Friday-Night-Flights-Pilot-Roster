@@ -20,8 +20,8 @@ $(document).ready(function () {
     axisPlaneB = "Fw190A8";
     axisBomber = "BF110G2";
 
-    eventDate = "August 21st";
-    registration = false;
+    eventDate = "August 28th";
+    registration = true;
 
 
     function setFlightsAndPlanes() {
