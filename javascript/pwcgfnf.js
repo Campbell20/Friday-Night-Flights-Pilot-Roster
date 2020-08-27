@@ -455,24 +455,23 @@ $(document).ready(function () {
             FlightColor = "Green";
         }
         else if (num > 5 &&
-            num <= 9) {
+            num <= 8) {
             elementNum = elementNum - 6;
             FlightColor = "Yellow";
         }
-        else if (axisFGB > 9 &&
-            axisFGB <= 13) {
+        else if (num > 8 &&
+            num <= 11) {
             elementNum = elementNum - 9;
             FlightColor = "Black";
         }
-        else if (axisFGB > 13 &&
-            axisFGB <= 17) {
-            elementNum = elementNum - 13;
-            FlightColor = "Orange";
-        }
-        else if (axisFGB > 17 &&
-            axisFGB <= 22) {
-            elementNum = elementNum - 17;
+        else if (num > 11 &&
+            num <= 14) {
+            elementNum = elementNum - 12;
             FlightColor = "Purple";
+        }
+        else if (num > 14) {
+            elementNum = elementNum - 15;
+            FlightColor = "Orange";
         }
 
         document.getElementById(elementIDNumber + num).innerHTML = FlightColor + "-" + elementNum;
