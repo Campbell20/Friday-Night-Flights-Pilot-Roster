@@ -21,7 +21,7 @@ $(document).ready(function () {
     axisBomber = "BF110G2";
 
     eventDate = "August 28th";
-    registration = true;
+    registration = false;
 
 
     function setFlightsAndPlanes() {
