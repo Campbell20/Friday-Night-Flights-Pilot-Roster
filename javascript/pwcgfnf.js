@@ -61,7 +61,6 @@ $(document).ready(function () {
 
         //Allied Bomber Group
         alliedBGLeader = 0;
-        alliedBGColor = "Red";
         alliedBG = 0;
         alliedBGLeadElementNumber = 0;
         alliedBGElementNumber = 1;
@@ -303,6 +302,78 @@ $(document).ready(function () {
         }
     }
 
+    
+    function assignRole(num, elementNum, elementIDNumber, elementID, elementNationName, elementPic, elementNationPic) {
+        if (num <= 2) {
+            FlightColor = "Red";
+            if(elementID == "alliedFGB" || elementID == "axisFGB"){
+                FlightColor = "Bumper";
+            }
+            if(elementID == "alliedBomberGroup" || elementID == "axisBG") {
+                FlightColor = "Swan";
+            }
+        }
+        else if (num > 2 &&
+            num <= 5) {
+            elementNum = elementNum - 3;
+            FlightColor = "Green";
+            if(elementID == "alliedFGB" || elementID == "axisFGB"){
+                FlightColor = "Kudos";
+            }
+            if(elementID == "alliedBomberGroup" || elementID == "axisBG") {
+                FlightColor = "Canary";
+            }
+        }
+        else if (num > 5 &&
+            num <= 8) {
+            elementNum = elementNum - 6;
+            FlightColor = "Yellow";
+            if(elementID == "alliedFGB" || elementID == "axisFGB"){
+                FlightColor = "Growler";
+            }
+            if(elementID == "alliedBomberGroup" || elementID == "axisBG") {
+                FlightColor = "Pelican";
+            }
+        }
+        else if (num > 8 &&
+            num <= 11) {
+            elementNum = elementNum - 9;
+            FlightColor = "Black";
+            if(elementID == "alliedFGB" || elementID == "axisFGB"){
+                FlightColor = "Mitor";
+            }
+            if(elementID == "alliedBomberGroup" || elementID == "axisBG") {
+                FlightColor = "Vulture";
+            }
+        }
+        else if (num > 11 &&
+            num <= 14) {
+            elementNum = elementNum - 12;
+            FlightColor = "Purple";
+            if(elementID == "alliedFGB" || elementID == "axisFGB"){
+                FlightColor = "Molly";
+            }
+            if(elementID == "alliedBomberGroup" || elementID == "axisBG") {
+                FlightColor = "Condor";
+            }
+        }
+        else if (num > 14) {
+            elementNum = elementNum - 15;
+            FlightColor = "Orange";
+            if(elementID == "alliedFGB"|| elementID == "axisFGB"){
+                FlightColor = "Angus";
+            }
+            if(elementID == "alliedBomberGroup" || elementID == "axisBG") {
+                FlightColor = "Kingfish";
+            }
+        }
+
+        document.getElementById(elementIDNumber + num).innerHTML = FlightColor + "-" + elementNum;
+        document.getElementById(elementID + num).innerHTML = elementNationName;
+        document.getElementById(elementPic + num).src = "imgs/" + elementNationPic + "/" + elementNationPic + imageNumber + ".jpg";
+    }
+
+
     function createIds() {
         /**** ALLIED *****/
         //allied fighter group A lead
@@ -442,42 +513,6 @@ $(document).ready(function () {
             $(this).attr('id', "axisBG-pic" + i);
         });
     };
-
-
-
-    function assignRole(num, elementNum, elementIDNumber, elementID, elementNationName, elementPic, elementNationPic) {
-        if (num <= 2) {
-            FlightColor = "Red";
-        }
-        else if (num > 2 &&
-            num <= 5) {
-            elementNum = elementNum - 3;
-            FlightColor = "Green";
-        }
-        else if (num > 5 &&
-            num <= 8) {
-            elementNum = elementNum - 6;
-            FlightColor = "Yellow";
-        }
-        else if (num > 8 &&
-            num <= 11) {
-            elementNum = elementNum - 9;
-            FlightColor = "Black";
-        }
-        else if (num > 11 &&
-            num <= 14) {
-            elementNum = elementNum - 12;
-            FlightColor = "Purple";
-        }
-        else if (num > 14) {
-            elementNum = elementNum - 15;
-            FlightColor = "Orange";
-        }
-
-        document.getElementById(elementIDNumber + num).innerHTML = FlightColor + "-" + elementNum;
-        document.getElementById(elementID + num).innerHTML = elementNationName;
-        document.getElementById(elementPic + num).src = "imgs/" + elementNationPic + "/" + elementNationPic + imageNumber + ".jpg";
-    }
 
 });
 
