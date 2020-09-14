@@ -24,6 +24,15 @@ $axisBlue: #a4c2f4;
 $axisDark: #7891bd;
 $axisDarker: #4e7bc4;
 
+
+
+.locked-side {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
 .registration {
     &-btn {
         font-size: 1.5rem;

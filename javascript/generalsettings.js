@@ -20,8 +20,8 @@ $(document).ready(function () {
     axisPlaneB = "Fw190A8/Fw190D9";
     axisBomber = "BF110G2";
 
-    eventDate = "September 11th";
-    registration = false;
+    eventDate = "September 18th";
+    registration = true;
 
 
     function setFlightsAndPlanes() {
@@ -33,13 +33,13 @@ $(document).ready(function () {
         document.getElementById("alliedfighterB-plane").innerHTML = alliedPlaneB;
         document.getElementById("alliedbombergroup-plane").innerHTML = alliedBomber;
 
-        document.getElementById("axisfighterA").innerHTML = axisFighterGroupA;
-        document.getElementById("axisfighterB").innerHTML = axisFighterGroupB;
-        document.getElementById("axisbombergroup").innerHTML = axisBomberGroup;
+        // document.getElementById("axisfighterA").innerHTML = axisFighterGroupA;
+        // document.getElementById("axisfighterB").innerHTML = axisFighterGroupB;
+        // document.getElementById("axisbombergroup").innerHTML = axisBomberGroup;
 
-        document.getElementById("axisfighterA-plane").innerHTML = axisPlaneA;
-        document.getElementById("axisfighterB-plane").innerHTML = axisPlaneB;
-        document.getElementById("axisbombergroup-plane").innerHTML = axisBomber;
+        // document.getElementById("axisfighterA-plane").innerHTML = axisPlaneA;
+        // document.getElementById("axisfighterB-plane").innerHTML = axisPlaneB;
+        // document.getElementById("axisbombergroup-plane").innerHTML = axisBomber;
     }
 
     function toggleRegistration() {

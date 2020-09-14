@@ -29,6 +29,13 @@ $axisBlue: #a4c2f4;
 $axisDark: #7891bd;
 $axisDarker: #4e7bc4;
 
+.locked-side {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
 .registration {
     &-btn {
         font-size: 1.5rem;
@@ -36,12 +43,15 @@ $axisDarker: #4e7bc4;
         border: 1px solid $lightgrey;
     }
 }
+
 .blue-background {
     background-color: $blue;
 }
+
 .red-background {
     background-color: $red;
 }
+
 .team-title {
     font-size: 1.4rem;
     font-weight: bold;
@@ -105,22 +115,23 @@ $axisDarker: #4e7bc4;
             .grid {
                 &-body {
                     &-name {
-                        border-bottom: 1px solid $border;  
+                        border-bottom: 1px solid $border;
                     }
+
                     &-number {
-                        border-bottom: 1px solid $border;  
+                        border-bottom: 1px solid $border;
                     }
+
                     &-pic {
-                        border-bottom: 1px solid $border;  
+                        border-bottom: 1px solid $border;
                     }
                 }
-            }  
+            }
         }
     }
-  
+
 }
 
 .hidden-templates {
     display: none;
 }
-
