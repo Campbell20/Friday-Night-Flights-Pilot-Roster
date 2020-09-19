@@ -3,7 +3,7 @@ $(document).ready(function () {
     var randomNumber;
 
     $.getJSON('https://spreadsheets.google.com/feeds/list/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/1/public/full?alt=json').done(function (json) {
-        console.log(json);
+        // console.log(json);
         createGridsFromTemplate(json);
     });
 
