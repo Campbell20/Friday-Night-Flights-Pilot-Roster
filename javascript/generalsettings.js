@@ -21,7 +21,7 @@ $(document).ready(function () {
     axisBomber = "WW1 Bombers";
 
     eventDate = "September 25th";
-    registration = true;
+    registration = false;
 
 
     function setFlightsAndPlanes() {
