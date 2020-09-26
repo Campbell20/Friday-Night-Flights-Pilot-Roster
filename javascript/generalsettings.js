@@ -20,7 +20,7 @@ $(document).ready(function () {
     axisPlaneB = "";
     axisBomber = "WW1 Bombers";
 
-    eventDate = "September 25th";
+    eventDate = "October 9th, 2020";
     registration = false;
 
 
