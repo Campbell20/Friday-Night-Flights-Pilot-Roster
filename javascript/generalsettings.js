@@ -1,24 +1,28 @@
 $(document).ready(function () {
 
     //allied groups
-    alliedFighterGroupA = "Fighters";
-    alliedFighterGroupB = ""
-    alliedBomberGroup = "Bombers";
+    alliedFighterGroupA = "45th Fighter Air Regiment";
+    alliedFighterGroupB = "16th Order Guard Fighter Air Regiment"
+    alliedAttackerGroup = "190th Ground Attack Regiment"
+    alliedBomberGroup = "134th Bomber Regiment";
 
     //allied planes
-    alliedPlaneA = "WW1 Fighters";
-    alliedPlaneB = "";
-    alliedBomber = "WW1 Bombers";
+    alliedPlaneA = "i16";
+    alliedPlaneB = "P40";
+    alliedAttacker = "IL2m41"
+    alliedBomber = "Pe2s35";
 
     //axis groups
-    axisFighterGroupA = "Fighters";
-    axisFighterGroupB = "";
-    axisBomberGroup = "Bombers";
+    axisFighterGroupA = "II./Jg52";
+    axisFighterGroupB = "22* Gruppo Autonomo C.T.";
+    axisAttackerGroup = "III./St.G2"
+    axisBomberGroup = "I./Zg1";
 
     //axis planes
-    axisPlaneA = "WW1 Fighters";
-    axisPlaneB = "";
-    axisBomber = "WW1 Bombers";
+    axisPlaneA = "Bf109E7";
+    axisPlaneB = "Mc202";
+    axisAttacker = "Ju87"
+    axisBomber = "Ju88";
 
     eventDate = "October 9th, 2020";
     registration = false;
@@ -26,19 +30,23 @@ $(document).ready(function () {
 
     function setFlightsAndPlanes() {
         document.getElementById("alliedfighterA").innerHTML = alliedFighterGroupA;
-        // document.getElementById("alliedfighterB").innerHTML = alliedFighterGroupB;
+        document.getElementById("alliedfighterB").innerHTML = alliedFighterGroupB;
+        document.getElementById("alliedattackergroup").innerHTML = alliedAttackerGroup;
         document.getElementById("alliedbombergroup").innerHTML = alliedBomberGroup;
 
         document.getElementById("alliedfighterA-plane").innerHTML = alliedPlaneA;
-        // document.getElementById("alliedfighterB-plane").innerHTML = alliedPlaneB;
+        document.getElementById("alliedfighterB-plane").innerHTML = alliedPlaneB;
+        document.getElementById("alliedattacker-plane").innerHTML = alliedAttacker;
         document.getElementById("alliedbombergroup-plane").innerHTML = alliedBomber;
 
         document.getElementById("axisfighterA").innerHTML = axisFighterGroupA;
-        // document.getElementById("axisfighterB").innerHTML = axisFighterGroupB;
+        document.getElementById("axisfighterB").innerHTML = axisFighterGroupB;
+        document.getElementById("axisattackergroup").innerHTML = axisAttackerGroup;
         document.getElementById("axisbombergroup").innerHTML = axisBomberGroup;
 
         document.getElementById("axisfighterA-plane").innerHTML = axisPlaneA;
-        // document.getElementById("axisfighterB-plane").innerHTML = axisPlaneB;
+        document.getElementById("axisfighterB-plane").innerHTML = axisPlaneB;
+        document.getElementById("axisattacker-plane").innerHTML = axisAttacker;
         document.getElementById("axisbombergroup-plane").innerHTML = axisBomber;
     }
 
