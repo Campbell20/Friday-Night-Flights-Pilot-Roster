@@ -28,17 +28,20 @@ $(document).ready(function () {
         jsonLength = Object.keys(json.feed.entry).length;
 
         //side names
-        alliedSide = "Entente - Allied";
-        axisSide = "Central - Axis";
-        // console.log(firstNamesUSA);
-        //allied planes
-        alliedTeamA = "Fighters";
-        // alliedTeamB = "402 Squadron";
-        alliedBomber = "Bombers";
-        //axis planes
-        axisTeamA = "Fighters";
-        // axisTeamB = "I./JG77";
-        axisBomber = "Bombers";
+        alliedSide = "Allied";
+        axisSide = "Axis";
+
+        //allied flights
+        alliedTeamA = "45th Fighter Air Regiment";
+        alliedTeamB = "16th Order Guard Fighter Air Regiment";
+        alliedAttackers = "190th Ground Attack Regiment"
+        alliedBomber = "134th Bomber Regiment";
+
+        // axis flights
+        axisTeamA = "II./Jg52";
+        axisTeamB = "22* Gruppo Autonomo C.T.";
+        axisAttackers = "III./St.G2";
+        axisBomber = "I./Zg1";
 
         var alliedFGATemplateLead = document.getElementsByTagName("template-alliedFGA-Lead")[0];
         var alliedFGATemplate = document.getElementsByTagName("template-alliedFGA")[0];
@@ -62,6 +65,12 @@ $(document).ready(function () {
         alliedFGB = 0;
         alliedFGBLeadElementNumber = 0;
         alliedFGBElementNumber = 1;
+
+        //Allied Attacker Group
+        alliedAttackerGroupLeader = 0;
+        alliedAttackerGroup = 0;
+        alliedAttackerGroupLeadElementNumber = 0;
+        alliedAttackerGroupElementNumber = 1;
 
         //Allied Bomber Group
         alliedBGLeader = 0;
