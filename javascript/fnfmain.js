@@ -16,6 +16,7 @@ $(document).ready(function () {
         axisAttackers = "III./St.G2";
         axisBomber = "I./Zg1";
 
+        setAxisTemplates(json, randomNumber);    
         setAlliedTemplates(json, randomNumber);
     });
 

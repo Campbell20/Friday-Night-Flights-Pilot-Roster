@@ -180,69 +180,60 @@ function setAlliedTemplates(json, randomNumber) {
     }
   }
 
-  sortWingmen();
+  sortAlliedWingmen();
 }
 
-function sortWingmen() {
-  var squadronAWingmen = document.getElementsByClassName("alliedFighterGroupSortA");
-  var squadronBWingmen = document.getElementsByClassName('alliedFighterGroupSortB');
-  var squardonAttackerWingmen = document.getElementsByClassName('alliedAttackerGroupSort');
-  var squadronBomberWingmen = document.getElementsByClassName('alliedBomberGroupSort'); //Why is bad code making this work? LOL Don't remove it....
-
-  squadronAWingmen.last().remove();
-  squadronBWingmen;
-  squardonAttackerWingmen;
-  squadronBomberWingmen;
-  $('.alliedFighterGroupLeadSortA').sort(function (a, b) {
+function sortAlliedWingmen() {
+  $('#alliedFighterGroupLeadSortA').sort(function (a, b) {
     if (a.textContent < b.textContent) {
       return -1;
     } else {
       return 1;
     }
   }).appendTo('#alliedfighterA-Lead');
-  $('.alliedFighterGroupSortA').sort(function (a, b) {
+  $('#alliedFighterGroupSortA').sort(function (a, b) {
     if (a.textContent < b.textContent) {
       return -1;
     } else {
       return 1;
     }
   }).appendTo('#alliedfighterA-wingmen');
-  $('.alliedFighterGroupLeadSortB').sort(function (a, b) {
+  $('#alliedFighterGroupLeadSortB').sort(function (a, b) {
     if (a.textContent < b.textContent) {
       return -1;
     } else {
       return 1;
     }
   }).appendTo('#alliedfighterB-Lead');
-  $('.alliedFighterGroupSortB').sort(function (a, b) {
+  $('#alliedFighterGroupSortB').sort(function (a, b) {
     if (a.textContent < b.textContent) {
       return -1;
     } else {
       return 1;
     }
   }).appendTo('#alliedfighterB-wingmen');
-  $('.alliedAttackerGroupSortLead').sort(function (a, b) {
+  $('#alliedAttackerGroupSortLead').sort(function (a, b) {
     if (a.textContent < b.textContent) {
       return -1;
     } else {
       return 1;
     }
   }).appendTo('#alliedAttackerGroup-Lead');
-  $('.alliedAttackerGroupSort').sort(function (a, b) {
+  $('#alliedAttackerGroupSort').sort(function (a, b) {
     if (a.textContent < b.textContent) {
       return -1;
     } else {
       return 1;
     }
   }).appendTo('#alliedAttackerGroup-wingmen');
-  $('.alliedBomberGroupSortLead').sort(function (a, b) {
+  $('#alliedBomberGroupSortLead').sort(function (a, b) {
     if (a.textContent < b.textContent) {
       return -1;
     } else {
       return 1;
     }
   }).appendTo('#alliedbomber-Lead');
-  $('.alliedBomberGroupSort').sort(function (a, b) {
+  $('#alliedBomberGroupSort').sort(function (a, b) {
     if (a.textContent < b.textContent) {
       return -1;
     } else {

@@ -15,6 +15,7 @@ $(document).ready(function () {
     axisTeamB = "22* Gruppo Autonomo C.T.";
     axisAttackers = "III./St.G2";
     axisBomber = "I./Zg1";
+    setAxisTemplates(json, randomNumber);
     setAlliedTemplates(json, randomNumber);
   });
   $.get('data/randomNumbers.txt', function (ranNum) {
