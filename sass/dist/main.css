@@ -1,6 +1,6 @@
 body {
   background-color: #999;
-  font-family: 'Courier New';
+  font-family: "Courier New";
   font-size: 1rem;
 }
 
@@ -32,75 +32,54 @@ body {
 
 .grid {
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: #181818;
 }
-
 .grid-card {
   display: block;
 }
-
 @media (min-width: 992px) {
   .grid-card {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
   }
 }
-
 .grid-header {
   background-color: #c9c3b1;
   border-top-left-radius: 1rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   border-top: 1px solid rgba(70, 70, 70, 0.65);
   border-left: 1px solid rgba(70, 70, 70, 0.65);
   border-right: 1px solid rgba(70, 70, 70, 0.65);
   border-bottom: 1px dotted rgba(70, 70, 70, 0.65);
 }
-
 .grid-header-flight {
   border: none;
   font-weight: bold;
 }
-
 .grid-header-plane {
   border: none;
   font-style: italic;
 }
-
 .grid-body {
   background-color: #cfcfc4;
   border-bottom: 1px dotted rgba(70, 70, 70, 0.65);
 }
-
 .grid-body-name {
-  padding: 0 .2rem;
+  padding: 0 0.2rem;
   border-right: 1px solid rgba(70, 70, 70, 0.65);
 }
-
 .grid-body-number {
   font-weight: bold;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   border-left: 1px solid rgba(70, 70, 70, 0.65);
 }
-
 .grid-last:last-child .grid-body-name {
   border-bottom: 1px solid rgba(70, 70, 70, 0.65);
 }
-
 .grid-last:last-child .grid-body-number {
   border-bottom: 1px solid rgba(70, 70, 70, 0.65);
 }
-
 .grid-last:last-child .grid-body-pic {
   border-bottom: 1px solid rgba(70, 70, 70, 0.65);
 }
@@ -115,27 +94,22 @@ body {
   border-top-left-radius: 1rem;
   border-bottom: 1px solid white;
 }
-
 .nav-tabs .nav-item:hover {
   background-color: #cfcfc4;
   border-top-left-radius: 1rem;
 }
-
 .nav-tabs .nav-item .active {
   border-top-left-radius: 1rem;
   background-color: #eee8d5;
 }
-
 .nav-tabs .nav-link {
   color: #181818;
   border-top: none;
   border-left: none;
   border-right: none;
 }
-
 .nav-tabs .nav-link.active {
   border-top: none;
   border-left: none;
   border-right: none;
 }
-/*# sourceMappingURL=main.css.map */

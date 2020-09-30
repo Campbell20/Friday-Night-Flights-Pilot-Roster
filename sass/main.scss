@@ -1,14 +1,10 @@
-body {
-    background-color: #999;
-    font-family: 'Courier New';
-    font-size: 1rem;
-}
-
+$bodyBackgroundColor: #999;
 $lightgrey: rgb(224, 224, 224);
 $darkgrey: rgb(49, 49, 49);
 $black: rgb(20, 20, 20);
 $body-bckgrnd: #dbdbd9;
 $table-wrapper-bckgrnd: #bdbdb3;
+$folderhead-bckgrnd: #eee8d5;
 $thead-bckgrnd: #c9c3b1;
 $tbody-bckgrnd: #cfcfc4;
 $border: rgba(70, 70, 70, 0.65);
@@ -29,6 +25,12 @@ $axisBlue: #a4c2f4;
 $axisDark: #7891bd;
 $axisDarker: #4e7bc4;
 
+body {
+    background-color: $bodyBackgroundColor;
+    font-family: 'Courier New';
+    font-size: 1rem;
+}
+
 .locked-side {
     font-size: 3rem;
     font-weight: bold;
@@ -45,11 +47,11 @@ $axisDarker: #4e7bc4;
 }
 
 .blue-background {
-    background-color: $blue;
+    background-color: $axisDark;
 }
 
 .red-background {
-    background-color: $red;
+    background-color: $alliedDarker;
 }
 
 .team-title {
@@ -134,4 +136,39 @@ $axisDarker: #4e7bc4;
 
 .hidden-templates {
     display: none;
+}
+
+
+//nav
+
+.nav {
+    &-tabs {
+        .nav-item {
+            background-color: $table-wrapper-bckgrnd;
+            border: 1px solid $border;
+            border-top-left-radius: 1rem;
+            border-bottom: 1px solid white;
+            &:hover {
+                background-color: $tbody-bckgrnd;
+                border-top-left-radius: 1rem;
+            }
+         
+            .active {
+                border-top-left-radius: 1rem;
+                background-color: $folderhead-bckgrnd;
+            }
+        }
+        .nav-link {
+            color: $font-color;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+
+            &.active {
+                border-top: none;
+                border-left: none;
+                border-right: none;
+            }
+        }
+    }
 }
