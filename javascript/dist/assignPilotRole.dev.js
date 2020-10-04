@@ -66,7 +66,7 @@ function assignWingmanRole(num, elementNum, elementIDNumber, elementID, elementN
     }
   } else {
     if (flightForBomberSquadron == "It") {
-      assignRandomFlightColor(elementID, elementNum);
+      assignRandomFlight(elementID, elementNum);
     } else {
       flight = flightForBomberSquadron;
       setFlightNumber();
