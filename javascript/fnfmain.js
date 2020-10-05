@@ -17,7 +17,8 @@ $(document).ready(function () {
         axisBomber = "I./Zg1";
 
         
-        sortPilotsIntoRole(json, randomNumber);           
+        setAlliedTemplates(json, randomNumber);           
+        setAxisTemplates(json, randomNumber);   
     });
 
     $.get('data/randomNumbers.txt', function (ranNum) {

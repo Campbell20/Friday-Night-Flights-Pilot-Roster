@@ -15,7 +15,8 @@ $(document).ready(function () {
     axisTeamB = "22* Gruppo Autonomo C.T.";
     axisAttackers = "III./St.G2";
     axisBomber = "I./Zg1";
-    sortPilotsIntoRole(json, randomNumber);
+    setAlliedTemplates(json, randomNumber);
+    setAxisTemplates(json, randomNumber);
   });
   $.get('data/randomNumbers.txt', function (ranNum) {
     randomNumber = ranNum.split('\n');
