@@ -55,30 +55,28 @@ function setAlliedTemplates(json, randomNumber) {
         if (alliedFighterSquadronAPosition.includes("Squadron")) {
           document.getElementById('alliedfighterA-leader').innerHTML = alliedName;
           document.getElementById('alliedfighterA-leader-pic').src = 'imgs/American/American' + imageNumber + ".jpg";
+        } else if (alliedFighterSquadronAPosition.includes("Flight Lead") && checkLeader(flightForFighterSquadronA)) {
+          var alliedFGALeadDivs = alliedFGATemplateLead.querySelector('div');
+          var templateSet;
+          templateSet = document.importNode(alliedFGALeadDivs, true);
+          document.getElementById("alliedfighterA-lead").appendChild(templateSet);
+          document.getElementById("alliedFGA-lead" + alliedFGALeadElementNumber).innerHTML = alliedName;
+          document.getElementById('alliedFGA-pic-lead' + alliedFGALeadElementNumber).src = 'imgs/American/American' + imageNumber + ".jpg";
+          setFlightLeaderText("alliedFGA-number-lead", alliedFGALeadElementNumber);
+          alliedFGALeadElementNumber++;
         } else {
-          if (alliedFighterSquadronAPosition.includes("Flight Lead") && checkLeader(flightForFighterSquadronA)) {
-            var alliedFGALeadDivs = alliedFGATemplateLead.querySelector('div');
-            var templateSet;
-            templateSet = document.importNode(alliedFGALeadDivs, true);
-            document.getElementById("alliedfighterA-lead").appendChild(templateSet);
-            document.getElementById("alliedFGA-lead" + alliedFGALeadElementNumber).innerHTML = alliedName;
-            document.getElementById('alliedFGA-pic-lead' + alliedFGALeadElementNumber).src = 'imgs/American/American' + imageNumber + ".jpg";
-            setFlightLeaderText("alliedFGA-number-lead", alliedFGALeadElementNumber);
-            alliedFGALeadElementNumber++;
-          } else {
-            var alliedFGADivs = alliedFGATemplate.querySelector('div');
-            var alliedfightergroupAD;
-            alliedfightergroupAD = document.importNode(alliedFGADivs, true);
-            document.getElementById("alliedfighterA-wingmen").appendChild(alliedfightergroupAD);
+          var alliedFGADivs = alliedFGATemplate.querySelector('div');
+          var alliedfightergroupAD;
+          alliedfightergroupAD = document.importNode(alliedFGADivs, true);
+          document.getElementById("alliedfighterA-wingmen").appendChild(alliedfightergroupAD);
 
-            if (alliedFGAElementNumber == 1) {
-              alliedFGAElementNumber++;
-            }
-
-            assignWingmanRole(alliedFGA, alliedFGAElementNumber, "alliedFGA-number", "alliedFGA", alliedName, 'alliedFGA-pic', 'American');
+          if (alliedFGAElementNumber == 1) {
             alliedFGAElementNumber++;
-            alliedFGA++;
           }
+
+          assignWingmanRole(alliedFGA, alliedFGAElementNumber, "alliedFGA-number", "alliedFGA", alliedName, 'alliedFGA-pic', 'American');
+          alliedFGAElementNumber++;
+          alliedFGA++;
         }
       } //Allied Fighter Group B
 
@@ -87,30 +85,28 @@ function setAlliedTemplates(json, randomNumber) {
         if (alliedFighterSquadronBPosition.includes("Squadron")) {
           document.getElementById('alliedfighterB-leader').innerHTML = alliedName;
           document.getElementById('alliedfighterB-leader-pic').src = 'imgs/American/American' + imageNumber + ".jpg";
+        } else if (alliedFighterSquadronBPosition.includes("Flight Lead") && checkLeader(flightForFighterSquadronB)) {
+          var alliedFGBLeadDivs = alliedFGBTemplateLead.querySelector('div');
+          var templateSet;
+          templateSet = document.importNode(alliedFGBLeadDivs, true);
+          document.getElementById("alliedfighterB-lead").appendChild(templateSet);
+          document.getElementById("alliedFGB-lead" + alliedFGBLeadElementNumber).innerHTML = alliedName;
+          document.getElementById('alliedFGB-pic-lead' + alliedFGBLeadElementNumber).src = 'imgs/American/American' + imageNumber + ".jpg";
+          setFlightLeaderText("alliedFGB-number-lead", alliedFGBLeadElementNumber);
+          alliedFGBLeadElementNumber++;
         } else {
-          if (alliedFighterSquadronBPosition.includes("Flight Lead") && checkLeader(flightForFighterSquadronB)) {
-            var alliedFGBLeadDivs = alliedFGBTemplateLead.querySelector('div');
-            var templateSet;
-            templateSet = document.importNode(alliedFGBLeadDivs, true);
-            document.getElementById("alliedfighterB-lead").appendChild(templateSet);
-            document.getElementById("alliedFGB-lead" + alliedFGBLeadElementNumber).innerHTML = alliedName;
-            document.getElementById('alliedFGB-pic-lead' + alliedFGBLeadElementNumber).src = 'imgs/American/American' + imageNumber + ".jpg";
-            setFlightLeaderText("alliedFGB-number-lead", alliedFGBLeadElementNumber);
-            alliedFGBLeadElementNumber++;
-          } else {
-            var alliedFGBDivs = alliedFGBTemplate.querySelector('div');
-            var templateSet;
-            templateSet = document.importNode(alliedFGBDivs, true);
-            document.getElementById("alliedfighterB-wingmen").appendChild(templateSet);
+          var alliedFGBDivs = alliedFGBTemplate.querySelector('div');
+          var templateSet;
+          templateSet = document.importNode(alliedFGBDivs, true);
+          document.getElementById("alliedfighterB-wingmen").appendChild(templateSet);
 
-            if (alliedFGBElementNumber == 1) {
-              alliedFGBElementNumber++;
-            }
-
-            assignWingmanRole(alliedFGB, alliedFGBElementNumber, "alliedFGB-number", "alliedFGB", alliedName, 'alliedFGB-pic', 'American');
+          if (alliedFGBElementNumber == 1) {
             alliedFGBElementNumber++;
-            alliedFGB++;
           }
+
+          assignWingmanRole(alliedFGB, alliedFGBElementNumber, "alliedFGB-number", "alliedFGB", alliedName, 'alliedFGB-pic', 'American');
+          alliedFGBElementNumber++;
+          alliedFGB++;
         }
       } //Allied Attacker Group
 
@@ -119,30 +115,28 @@ function setAlliedTemplates(json, randomNumber) {
         if (alliedAttackSquadronPosition.includes("Squadron")) {
           document.getElementById('alliedAttackerGroup-leader').innerHTML = alliedName;
           document.getElementById('alliedAttackerGroup-leader-pic').src = 'imgs/American/American' + imageNumber + ".jpg";
+        } else if (alliedAttackSquadronPosition.includes("Flight Lead") && checkLeader(flightForAttackSquadron)) {
+          var alliedAGLeadDivs = alliedAGTemplateLead.querySelector('div');
+          var templateSet;
+          templateSet = document.importNode(alliedAGLeadDivs, true);
+          document.getElementById("alliedAttackerGroup-lead").appendChild(templateSet);
+          document.getElementById("alliedAG-lead" + alliedAGLeadElementNumber).innerHTML = alliedName;
+          document.getElementById('alliedAG-pic-lead' + alliedAGLeadElementNumber).src = 'imgs/American/American' + imageNumber + ".jpg";
+          setFlightLeaderText("alliedAG-number-lead", alliedAGLeadElementNumber);
+          alliedAGLeadElementNumber++;
         } else {
-          if (alliedAttackSquadronPosition.includes("Flight Lead") && checkLeader(flightForAttackSquadron)) {
-            var alliedAGLeadDivs = alliedAGTemplateLead.querySelector('div');
-            var templateSet;
-            templateSet = document.importNode(alliedAGLeadDivs, true);
-            document.getElementById("alliedAttackerGroup-lead").appendChild(templateSet);
-            document.getElementById("alliedAG-lead" + alliedAGLeadElementNumber).innerHTML = alliedName;
-            document.getElementById('alliedAG-pic-lead' + alliedAGLeadElementNumber).src = 'imgs/American/American' + imageNumber + ".jpg";
-            setFlightLeaderText("alliedAG-number-lead", alliedAGLeadElementNumber);
-            alliedAGLeadElementNumber++;
-          } else {
-            var alliedAGDivs = alliedAGTemplate.querySelector('div');
-            var templateSet;
-            templateSet = document.importNode(alliedAGDivs, true);
-            document.getElementById("alliedAttackerGroup-wingmen").appendChild(templateSet);
+          var alliedAGDivs = alliedAGTemplate.querySelector('div');
+          var templateSet;
+          templateSet = document.importNode(alliedAGDivs, true);
+          document.getElementById("alliedAttackerGroup-wingmen").appendChild(templateSet);
 
-            if (alliedAGElementNumber == 1) {
-              alliedAGElementNumber++;
-            }
-
-            assignWingmanRole(alliedAG, alliedAGElementNumber, "alliedAG-number", "alliedAG", alliedName, 'alliedAG-pic', 'American');
+          if (alliedAGElementNumber == 1) {
             alliedAGElementNumber++;
-            alliedAG++;
           }
+
+          assignWingmanRole(alliedAG, alliedAGElementNumber, "alliedAG-number", "alliedAG", alliedName, 'alliedAG-pic', 'American');
+          alliedAGElementNumber++;
+          alliedAG++;
         }
       } //Allied Bomber Group
 
@@ -151,30 +145,28 @@ function setAlliedTemplates(json, randomNumber) {
         if (alliedBomberSquadronPosition.includes("Squadron")) {
           document.getElementById('alliedbomber-leader').innerHTML = alliedName;
           document.getElementById('alliedbomber-leader-pic').src = 'imgs/American/American' + imageNumber + ".jpg";
+        } else if (alliedBomberSquadronPosition.includes("Flight Lead") && checkLeader(flightForBomberSquadron)) {
+          var alliedBGLeadDivs = alliedBGTemplateLead.querySelector('div');
+          var templateSet;
+          templateSet = document.importNode(alliedBGLeadDivs, true);
+          document.getElementById("alliedbomber-lead").appendChild(templateSet);
+          document.getElementById("alliedBG-lead" + alliedBGLeadElementNumber).innerHTML = alliedName;
+          document.getElementById('alliedBG-pic-lead' + alliedBGLeadElementNumber).src = 'imgs/American/American' + imageNumber + ".jpg";
+          setFlightLeaderText("alliedBG-number-lead", alliedBGLeadElementNumber);
+          alliedBGLeadElementNumber++;
         } else {
-          if (alliedBomberSquadronPosition.includes("Flight Lead") && checkLeader(flightForBomberSquadron)) {
-            var alliedBGLeadDivs = alliedBGTemplateLead.querySelector('div');
-            var templateSet;
-            templateSet = document.importNode(alliedBGLeadDivs, true);
-            document.getElementById("alliedbomber-lead").appendChild(templateSet);
-            document.getElementById("alliedBG-lead" + alliedBGLeadElementNumber).innerHTML = alliedName;
-            document.getElementById('alliedBG-pic-lead' + alliedBGLeadElementNumber).src = 'imgs/American/American' + imageNumber + ".jpg";
-            setFlightLeaderText("alliedBG-number-lead", alliedBGLeadElementNumber);
-            alliedBGLeadElementNumber++;
-          } else {
-            var alliedBGDivs = alliedBGTemplate.querySelector('div');
-            var templateSet;
-            templateSet = document.importNode(alliedBGDivs, true);
-            document.getElementById("alliedbomber-wingmen").appendChild(templateSet);
+          var alliedBGDivs = alliedBGTemplate.querySelector('div');
+          var templateSet;
+          templateSet = document.importNode(alliedBGDivs, true);
+          document.getElementById("alliedbomber-wingmen").appendChild(templateSet);
 
-            if (alliedBGElementNumber == 1) {
-              alliedBGElementNumber++;
-            }
-
-            assignWingmanRole(alliedBG, alliedBGElementNumber, "alliedBG-number", "alliedBG", alliedName, 'alliedBG-pic', 'American');
+          if (alliedBGElementNumber == 1) {
             alliedBGElementNumber++;
-            alliedBG++;
           }
+
+          assignWingmanRole(alliedBG, alliedBGElementNumber, "alliedBG-number", "alliedBG", alliedName, 'alliedBG-pic', 'American');
+          alliedBGElementNumber++;
+          alliedBG++;
         }
       }
     }

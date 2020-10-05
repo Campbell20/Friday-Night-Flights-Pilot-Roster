@@ -77,33 +77,28 @@ function assignWingmanRole(num, elementNum, elementIDNumber, elementID, elementN
 
   if (flightForFighterSquadronA != "") {
     if (flightForFighterSquadronA == "It") {
-      //give random name to flight
-      assignRandomFlight(elementID, elementNum);
-      setFlightNumber();
+      assignRandomFlightNumber(elementID, elementNum);
     } else {
       flight = flightForFighterSquadronA;
       setFlightNumber();
     }
   } else if (flightForFighterSquadronB != "") {
     if (flightForFighterSquadronB == "It") {
-      assignRandomFlight(elementID, elementNum);
-      setFlightNumber();
+      assignRandomFlightNumber(elementID, elementNum);
     } else {
       flight = flightForFighterSquadronB;
       setFlightNumber();
     }
   } else if (flightForAttackSquadron != "") {
     if (flightForAttackSquadron == "It") {
-      assignRandomFlight(elementID, elementNum);
-      setFlightNumber();
+      assignRandomFlightNumber(elementID, elementNum);
     } else {
       flight = flightForAttackSquadron;
       setFlightNumber();
     }
   } else {
     if (flightForBomberSquadron == "It") {
-      assignRandomFlight(elementID, elementNum);
-      setFlightNumber();
+      assignRandomFlightNumber(elementID, elementNum);
     } else {
       flight = flightForBomberSquadron;
       setFlightNumber();
@@ -632,73 +627,93 @@ function setFlightLeaderText(groupNumberLead, LeadElementNumber) {
   }
 }
 
-function assignRandomFlight() {
+function assignRandomFlightNumber() {
   if (alliedFG.includes(alliedTeamA)) {
     if (alliedredFlightNumber < 4) {
       flight = "Red";
+      alliedredFlightNumber++;
       return flightElementNumber = alliedredFlightNumber;
     } else if (alliedblueFlightNumber < 4) {
       flight = "Blue";
+      alliedblueFlightNumber++;
       return flightElementNumber = alliedblueFlightNumber;
     } else if (alliedgreenFlightNumber < 4) {
       flight = "Green";
+      alliedgreenFlightNumber++;
       return flightElementNumber = alliedgrowlerFlightNumber;
     } else if (alliedblackFlightNumber < 4) {
       flight = "Black";
+      alliedblackFlightNumber++;
       return flightElementNumber = alliedblackFlightNumber;
     } else {
       flight = "Purple";
+      alliedelseFlightNumber++;
       return flightElementNumber = alliedelseFlightNumber;
     }
   } else if (alliedFG.includes(alliedTeamB)) {
     if (alliedgrowlerFlightNumber < 4) {
+      alliedgrowlerFlightNumber++;
       flight = "Growler";
       return flightElementNumber = alliedgrowlerFlightNumber;
     } else if (ravenFlightNumber < 4) {
       flight = "Raven";
+      alliedravenFlightNumber++;
       return flightElementNumber = alliedravenFlightNumber;
     } else if (alliedeagleFlightNumber < 4) {
       flight = "Eagle";
+      alliedeagleFlightNumber++;
       return flightElementNumber = alliedeagleFlightNumber;
     } else if (alliedripperFlightNumber < 4) {
       flight = "Ripper";
+      alliedripperFlightNumber++;
       return flightElementNumber = alliedripperFlightNumber;
     } else {
       flight = "Penguin";
+      alliedelseFlightNumber++;
       return flightElementNumber = alliedelseFlightNumber;
     }
   } else if (alliedFG.includes(alliedAttackers)) {
     if (alliedbearFlightNumber < 4) {
       flight = "Bear";
+      alliedbearFlightNumber++;
       return flightElementNumber = alliedbearFlightNumber;
     } else if (alliedrabbitFlightNumber < 4) {
       flight = "Rabbit";
+      alliedrabbitFlightNumber++;
       return flightElementNumber = alliedrabbitFlightNumber;
     } else if (alliedfoxFlightNumber < 4) {
       flight = "Fox";
+      alliedfoxFlightNumber++;
       return flightElementNumber = alliedfoxFlightNumber;
     } else if (alliedbisonFlightNumber < 4) {
       flight = "Bison";
+      alliedbisonFlightNumber++;
       return flightElementNumber = alliedbisonFlightNumber;
     } else {
       flight = "Wolf";
+      alliedelseFlightNumber++;
       return flightElementNumber = alliedelseFlightNumber;
     }
   } else if (alliedFG.includes(alliedBomber)) {
     if (alliedpelicanFlightNumber < 4) {
       flight = "Pelican";
+      alliedpelicanFlightNumber++;
       return flightElementNumber = alliedpelicanFlightNumber;
     } else if (alliedswanFlightNumber < 4) {
       flight = "Swan";
+      alliedswanFlightNumber++;
       return flightElementNumber = alliedswanFlightNumber;
     } else if (alliedseagullFlightNumber < 4) {
       flight = "Seagull";
+      alliedseagullFlightNumber++;
       return flightElementNumber = alliedseagullFlightNumber;
     } else if (alliedcanaryFlightNumber < 4) {
       flight = "Canary";
+      alliedcanaryFlightNumber++;
       return flightElementNumber = alliedcanaryFlightNumber;
     } else {
       flight = "Mockingbird";
+      alliedelseFlightNumber++;
       return flightElementNumber = alliedelseFlightNumber;
     }
   }
@@ -706,69 +721,89 @@ function assignRandomFlight() {
   if (axisFG.includes(axisTeamA)) {
     if (axisredFlightNumber < 4) {
       flight = "Red";
+      axisredFlightNumber++;
       return flightElementNumber = axisredFlightNumber;
     } else if (axisblueFlightNumber < 4) {
       flight = "Blue";
+      axisblueFlightNumber++;
       return flightElementNumber = axisblueFlightNumber;
     } else if (axisgreenFlightNumber < 4) {
       flight = "Green";
+      axisgreenFlightNumber++;
       return flightElementNumber = axisgrowlerFlightNumber;
     } else if (axisblackFlightNumber < 4) {
       flight = "Black";
+      axisblackFlightNumber++;
       return flightElementNumber = axisblackFlightNumber;
     } else {
       flight = "Purple";
+      axiselseFlightNumber++;
       return flightElementNumber = axiselseFlightNumber;
     }
   } else if (axisFG.includes(axisTeamB)) {
     if (axisgrowlerFlightNumber < 4) {
+      axisgrowlerFlightNumber++;
       flight = "Growler";
       return flightElementNumber = axisgrowlerFlightNumber;
     } else if (ravenFlightNumber < 4) {
       flight = "Raven";
+      axisravenFlightNumber++;
       return flightElementNumber = axisravenFlightNumber;
     } else if (axiseagleFlightNumber < 4) {
       flight = "Eagle";
+      axiseagleFlightNumber++;
       return flightElementNumber = axiseagleFlightNumber;
     } else if (axisripperFlightNumber < 4) {
       flight = "Ripper";
+      axisripperFlightNumber++;
       return flightElementNumber = axisripperFlightNumber;
     } else {
       flight = "Penguin";
+      axiselseFlightNumber++;
       return flightElementNumber = axiselseFlightNumber;
     }
   } else if (axisFG.includes(axisAttackers)) {
     if (axisbearFlightNumber < 4) {
       flight = "Bear";
+      axisbearFlightNumber++;
       return flightElementNumber = axisbearFlightNumber;
     } else if (axisrabbitFlightNumber < 4) {
       flight = "Rabbit";
+      axisrabbitFlightNumber++;
       return flightElementNumber = axisrabbitFlightNumber;
     } else if (axisfoxFlightNumber < 4) {
       flight = "Fox";
+      axisfoxFlightNumber++;
       return flightElementNumber = axisfoxFlightNumber;
     } else if (axisbisonFlightNumber < 4) {
       flight = "Bison";
+      axisbisonFlightNumber++;
       return flightElementNumber = axisbisonFlightNumber;
     } else {
       flight = "Wolf";
+      axiselseFlightNumber++;
       return flightElementNumber = axiselseFlightNumber;
     }
   } else if (axisFG.includes(axisBomber)) {
     if (axispelicanFlightNumber < 4) {
       flight = "Pelican";
+      axispelicanFlightNumber++;
       return flightElementNumber = axispelicanFlightNumber;
     } else if (axisswanFlightNumber < 4) {
       flight = "Swan";
+      axisswanFlightNumber++;
       return flightElementNumber = axisswanFlightNumber;
     } else if (axisseagullFlightNumber < 4) {
       flight = "Seagull";
+      axisseagullFlightNumber++;
       return flightElementNumber = axisseagullFlightNumber;
     } else if (axiscanaryFlightNumber < 4) {
       flight = "Canary";
+      axiscanaryFlightNumber++;
       return flightElementNumber = axiscanaryFlightNumber;
     } else {
       flight = "Mockingbird";
+      axiselseFlightNumber++;
       return flightElementNumber = axiselseFlightNumber;
     }
   }
