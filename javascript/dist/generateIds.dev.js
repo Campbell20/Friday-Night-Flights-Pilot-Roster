@@ -128,9 +128,29 @@ function createIds() {
   });
   $(".axisFGB-pic").each(function (i) {
     $(this).attr('id', "axisFGB-pic" + i);
+  }); //axis attacker group lead
+
+  $(".axisAG-number-lead").each(function (i) {
+    $(this).attr('id', "axisAG-number-lead" + i);
+  });
+  $(".axisAG-lead").each(function (i) {
+    $(this).attr('id', "axisAG-lead" + i);
+  });
+  $(".axisAG-pic-lead").each(function (i) {
+    $(this).attr('id', "axisAG-pic-lead" + i);
+  }); //axis attacker group
+
+  $(".axisAG-number").each(function (i) {
+    $(this).attr('id', "axisAG-number" + i);
+  });
+  $(".axisAG").each(function (i) {
+    $(this).attr('id', "axisAG" + i);
+  });
+  $(".axisAG-pic").each(function (i) {
+    $(this).attr('id', "axisAG-pic" + i);
   }); ///axis bomber group lead
 
-  $(".axisBG-number-lead").each(function (i) {
+  $(".axisG-number-lead").each(function (i) {
     $(this).attr('id', "axisBG-number-lead" + i);
   });
   $(".axisBG-lead").each(function (i) {
