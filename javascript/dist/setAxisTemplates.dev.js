@@ -54,14 +54,14 @@ function setAxisTemplates(json, randomNumber) {
       if (axisFG.includes(axisTeamA)) {
         if (axisFighterSquadronAPosition.includes("Squadron")) {
           document.getElementById('axisfighterA-leader').innerHTML = axisName;
-          document.getElementById('axisfighterA-leader-pic').src = 'imgs/American/American' + imageNumber + ".jpg";
+          document.getElementById('axisfighterA-leader-pic').src = 'imgs/German/German' + imageNumber + ".jpg";
         } else if (axisFighterSquadronAPosition.includes("Flight Lead") && checkLeader(flightForFighterSquadronA)) {
           var axisFGALeadDivs = axisFGATemplateLead.querySelector('div');
           var templateSet;
           templateSet = document.importNode(axisFGALeadDivs, true);
           document.getElementById("axisfighterA-lead").appendChild(templateSet);
           document.getElementById("axisFGA-lead" + axisFGALeadElementNumber).innerHTML = axisName;
-          document.getElementById('axisFGA-pic-lead' + axisFGALeadElementNumber).src = 'imgs/American/American' + imageNumber + ".jpg";
+          document.getElementById('axisFGA-pic-lead' + axisFGALeadElementNumber).src = 'imgs/German/German' + imageNumber + ".jpg";
           setFlightLeaderText("axisFGA-number-lead", axisFGALeadElementNumber);
           axisFGALeadElementNumber++;
         } else {
@@ -74,7 +74,7 @@ function setAxisTemplates(json, randomNumber) {
             axisFGAElementNumber++;
           }
 
-          assignWingmanRole(axisFGA, axisFGAElementNumber, "axisFGA-number", "axisFGA", axisName, 'axisFGA-pic', 'American');
+          assignWingmanRole(axisFGA, axisFGAElementNumber, "axisFGA-number", "axisFGA", axisName, 'axisFGA-pic', 'German');
           axisFGAElementNumber++;
           axisFGA++;
         }
@@ -84,14 +84,14 @@ function setAxisTemplates(json, randomNumber) {
       if (axisFG.includes(axisTeamB)) {
         if (axisFighterSquadronBPosition.includes("Squadron")) {
           document.getElementById('axisfighterB-leader').innerHTML = axisName;
-          document.getElementById('axisfighterB-leader-pic').src = 'imgs/American/American' + imageNumber + ".jpg";
+          document.getElementById('axisfighterB-leader-pic').src = 'imgs/German/German' + imageNumber + ".jpg";
         } else if (axisFighterSquadronBPosition.includes("Flight Lead") && checkLeader(flightForFighterSquadronB)) {
           var axisFGBLeadDivs = axisFGBTemplateLead.querySelector('div');
           var templateSet;
           templateSet = document.importNode(axisFGBLeadDivs, true);
           document.getElementById("axisfighterB-lead").appendChild(templateSet);
           document.getElementById("axisFGB-lead" + axisFGBLeadElementNumber).innerHTML = axisName;
-          document.getElementById('axisFGB-pic-lead' + axisFGBLeadElementNumber).src = 'imgs/American/American' + imageNumber + ".jpg";
+          document.getElementById('axisFGB-pic-lead' + axisFGBLeadElementNumber).src = 'imgs/German/German' + imageNumber + ".jpg";
           setFlightLeaderText("axisFGB-number-lead", axisFGBLeadElementNumber);
           axisFGBLeadElementNumber++;
         } else {
@@ -104,7 +104,7 @@ function setAxisTemplates(json, randomNumber) {
             axisFGBElementNumber++;
           }
 
-          assignWingmanRole(axisFGB, axisFGBElementNumber, "axisFGB-number", "axisFGB", axisName, 'axisFGB-pic', 'American');
+          assignWingmanRole(axisFGB, axisFGBElementNumber, "axisFGB-number", "axisFGB", axisName, 'axisFGB-pic', 'German');
           axisFGBElementNumber++;
           axisFGB++;
         }
@@ -114,14 +114,14 @@ function setAxisTemplates(json, randomNumber) {
       if (axisFG.includes(axisAttackers)) {
         if (axisAttackSquadronPosition.includes("Squadron")) {
           document.getElementById('axisAttackerGroup-leader').innerHTML = axisName;
-          document.getElementById('axisAttackerGroup-leader-pic').src = 'imgs/American/American' + imageNumber + ".jpg";
+          document.getElementById('axisAttackerGroup-leader-pic').src = 'imgs/German/German' + imageNumber + ".jpg";
         } else if (axisAttackSquadronPosition.includes("Flight Lead") && checkLeader(flightForAttackSquadron)) {
           var axisAGLeadDivs = axisAGTemplateLead.querySelector('div');
           var templateSet;
           templateSet = document.importNode(axisAGLeadDivs, true);
           document.getElementById("axisAttackerGroup-lead").appendChild(templateSet);
           document.getElementById("axisAG-lead" + axisAGLeadElementNumber).innerHTML = axisName;
-          document.getElementById('axisAG-pic-lead' + axisAGLeadElementNumber).src = 'imgs/American/American' + imageNumber + ".jpg";
+          document.getElementById('axisAG-pic-lead' + axisAGLeadElementNumber).src = 'imgs/German/German' + imageNumber + ".jpg";
           setFlightLeaderText("axisAG-number-lead", axisAGLeadElementNumber);
           axisAGLeadElementNumber++;
         } else {
@@ -134,7 +134,7 @@ function setAxisTemplates(json, randomNumber) {
             axisAGElementNumber++;
           }
 
-          assignWingmanRole(axisAG, axisAGElementNumber, "axisAG-number", "axisAG", axisName, 'axisAG-pic', 'American');
+          assignWingmanRole(axisAG, axisAGElementNumber, "axisAG-number", "axisAG", axisName, 'axisAG-pic', 'German');
           axisAGElementNumber++;
           axisAG++;
         }
@@ -144,14 +144,14 @@ function setAxisTemplates(json, randomNumber) {
       if (axisFG.includes(axisBomber)) {
         if (axisBomberSquadronPosition.includes("Squadron")) {
           document.getElementById('axisbomber-leader').innerHTML = axisName;
-          document.getElementById('axisbomber-leader-pic').src = 'imgs/American/American' + imageNumber + ".jpg";
+          document.getElementById('axisbomber-leader-pic').src = 'imgs/German/German' + imageNumber + ".jpg";
         } else if (axisBomberSquadronPosition.includes("Flight Lead") && checkLeader(flightForBomberSquadron)) {
           var axisBGLeadDivs = axisBGTemplateLead.querySelector('div');
           var templateSet;
           templateSet = document.importNode(axisBGLeadDivs, true);
           document.getElementById("axisbomber-lead").appendChild(templateSet);
           document.getElementById("axisBG-lead" + axisBGLeadElementNumber).innerHTML = axisName;
-          document.getElementById('axisBG-pic-lead' + axisBGLeadElementNumber).src = 'imgs/American/American' + imageNumber + ".jpg";
+          document.getElementById('axisBG-pic-lead' + axisBGLeadElementNumber).src = 'imgs/German/German' + imageNumber + ".jpg";
           setFlightLeaderText("axisBG-number-lead", axisBGLeadElementNumber);
           axisBGLeadElementNumber++;
         } else {
@@ -164,7 +164,7 @@ function setAxisTemplates(json, randomNumber) {
             axisBGElementNumber++;
           }
 
-          assignWingmanRole(axisBG, axisBGElementNumber, "axisBG-number", "axisBG", axisName, 'axisBG-pic', 'American');
+          assignWingmanRole(axisBG, axisBGElementNumber, "axisBG-number", "axisBG", axisName, 'axisBG-pic', 'German');
           axisBGElementNumber++;
           axisBG++;
         }
@@ -191,7 +191,21 @@ function sortAxisWingmen() {
   //     }
   // }).appendTo('#axisfighterA-wingmen');
 
-  $('.axisFGA-number .axisFGA-pic .axisFGA').sort(function (a, b) {
+  $('.axisFGA-pic').sort(function (a, b) {
+    if (a.textContent < b.textContent) {
+      return -1;
+    } else {
+      return 1;
+    }
+  }).appendTo('#axisfighterA-wingmen');
+  $('.axisFGA').sort(function (a, b) {
+    if (a.textContent < b.textContent) {
+      return -1;
+    } else {
+      return 1;
+    }
+  }).appendTo('#axisfighterA-wingmen');
+  $('.axisFGA-number').sort(function (a, b) {
     if (a.textContent < b.textContent) {
       return -1;
     } else {
