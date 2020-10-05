@@ -87,6 +87,7 @@ function assignWingmanRole(num, elementNum, elementIDNumber, elementID, elementN
   } else if (flightForFighterSquadronB != "") {
     if (flightForFighterSquadronB == "It") {
       assignRandomFlight(elementID, elementNum);
+      setFlightNumber();
     } else {
       flight = flightForFighterSquadronB;
       setFlightNumber();
@@ -94,6 +95,7 @@ function assignWingmanRole(num, elementNum, elementIDNumber, elementID, elementN
   } else if (flightForAttackSquadron != "") {
     if (flightForAttackSquadron == "It") {
       assignRandomFlight(elementID, elementNum);
+      setFlightNumber();
     } else {
       flight = flightForAttackSquadron;
       setFlightNumber();
@@ -101,6 +103,7 @@ function assignWingmanRole(num, elementNum, elementIDNumber, elementID, elementN
   } else {
     if (flightForBomberSquadron == "It") {
       assignRandomFlight(elementID, elementNum);
+      setFlightNumber();
     } else {
       flight = flightForBomberSquadron;
       setFlightNumber();
@@ -113,147 +116,153 @@ function assignWingmanRole(num, elementNum, elementIDNumber, elementID, elementN
 }
 
 function setFlightNumber() {
+  var wing = "Wingman";
+
   if (side == alliedSide) {
-    switch (flight) {
-      case "Red":
-        alliedredFlightNumber++;
-        return flightElementNumber = alliedredFlightNumber;
+    if (alliedFighterSquadronAPosition.includes(wing) || alliedFighterSquadronBPosition.includes(wing) || alliedAttackSquadronPosition.includes(wing) || alliedBomberSquadronPosition.includes(wing)) {
+      switch (flight) {
+        case "Red":
+          alliedredFlightNumber++;
+          return flightElementNumber = alliedredFlightNumber;
 
-      case "Growler":
-        alliedgrowlerFlightNumber++;
-        return flightElementNumber = alliedgrowlerFlightNumber;
+        case "Growler":
+          alliedgrowlerFlightNumber++;
+          return flightElementNumber = alliedgrowlerFlightNumber;
 
-      case "Bear":
-        alliedbearFlightNumber++;
-        return flightElementNumber = alliedbearFlightNumber;
+        case "Bear":
+          alliedbearFlightNumber++;
+          return flightElementNumber = alliedbearFlightNumber;
 
-      case "Pelican":
-        alliedpelicanFlightNumber++;
-        return flightElementNumber = alliedpelicanFlightNumber;
+        case "Pelican":
+          alliedpelicanFlightNumber++;
+          return flightElementNumber = alliedpelicanFlightNumber;
 
-      case "Blue":
-        alliedblueFlightNumber++;
-        return flightElementNumber = alliedblueFlightNumber;
+        case "Blue":
+          alliedblueFlightNumber++;
+          return flightElementNumber = alliedblueFlightNumber;
 
-      case "Raven":
-        alliedravenFlightNumber++;
-        return flightElementNumber = alliedravenFlightNumber;
+        case "Raven":
+          alliedravenFlightNumber++;
+          return flightElementNumber = alliedravenFlightNumber;
 
-      case "Rabbit":
-        alliedrabbitFlightNumber++;
-        return flightElementNumber = alliedrabbitFlightNumber;
+        case "Rabbit":
+          alliedrabbitFlightNumber++;
+          return flightElementNumber = alliedrabbitFlightNumber;
 
-      case "Swan":
-        alliedswanFlightNumber++;
-        return flightElementNumber = alliedswanFlightNumber;
+        case "Swan":
+          alliedswanFlightNumber++;
+          return flightElementNumber = alliedswanFlightNumber;
 
-      case "Green":
-        alliedgreenFlightNumber++;
-        return flightElementNumber = alliedgreenFlightNumber;
+        case "Green":
+          alliedgreenFlightNumber++;
+          return flightElementNumber = alliedgreenFlightNumber;
 
-      case "Eagle":
-        alliedeagleFlightNumber++;
-        return flightElementNumber = alliedeagleFlightNumber;
+        case "Eagle":
+          alliedeagleFlightNumber++;
+          return flightElementNumber = alliedeagleFlightNumber;
 
-      case "Fox":
-        alliedfoxFlightNumber++;
-        return flightElementNumber = alliedfoxFlightNumber;
+        case "Fox":
+          alliedfoxFlightNumber++;
+          return flightElementNumber = alliedfoxFlightNumber;
 
-      case "Seagull":
-        alliedseagullFlightNumber++;
-        return flightElementNumber = alliedseagullFlightNumber;
+        case "Seagull":
+          alliedseagullFlightNumber++;
+          return flightElementNumber = alliedseagullFlightNumber;
 
-      case "Black":
-        alliedblackFlightNumber++;
-        return flightElementNumber = alliedblackFlightNumber;
+        case "Black":
+          alliedblackFlightNumber++;
+          return flightElementNumber = alliedblackFlightNumber;
 
-      case "Ripper":
-        alliedripperFlightNumber++;
-        return flightElementNumber = alliedripperFlightNumber;
+        case "Ripper":
+          alliedripperFlightNumber++;
+          return flightElementNumber = alliedripperFlightNumber;
 
-      case "Bison":
-        alliedbisonFlightNumber++;
-        return flightElementNumber = alliedbisonFlightNumber;
+        case "Bison":
+          alliedbisonFlightNumber++;
+          return flightElementNumber = alliedbisonFlightNumber;
 
-      case "Canary":
-        alliedcanaryFlightNumber++;
-        return flightElementNumber = alliedcanaryFlightNumber++;
+        case "Canary":
+          alliedcanaryFlightNumber++;
+          return flightElementNumber = alliedcanaryFlightNumber++;
 
-      default:
-        alliedelseFlightNumber++;
-        return flightElementNumber = alliedelseFlightNumber;
+        default:
+          alliedelseFlightNumber++;
+          return flightElementNumber = alliedelseFlightNumber;
+      }
     }
   }
 
   if (side == axisSide) {
-    switch (flight) {
-      case "Red":
-        axisredFlightNumber++;
-        return flightElementNumber = axisredFlightNumber;
+    if (axisFighterSquadronAPosition.includes(wing) || axisFighterSquadronBPosition.includes(wing) || axisAttackSquadronPosition.includes(wing) || axisBomberSquadronPosition.includes(wing)) {
+      switch (flight) {
+        case "Red":
+          axisredFlightNumber++;
+          return flightElementNumber = axisredFlightNumber;
 
-      case "Growler":
-        axisgrowlerFlightNumber++;
-        return flightElementNumber = axisgrowlerFlightNumber;
+        case "Growler":
+          axisgrowlerFlightNumber++;
+          return flightElementNumber = axisgrowlerFlightNumber;
 
-      case "Bear":
-        axisbearFlightNumber++;
-        return flightElementNumber = axisbearFlightNumber;
+        case "Bear":
+          axisbearFlightNumber++;
+          return flightElementNumber = axisbearFlightNumber;
 
-      case "Pelican":
-        axispelicanFlightNumber++;
-        return flightElementNumber = axispelicanFlightNumber;
+        case "Pelican":
+          axispelicanFlightNumber++;
+          return flightElementNumber = axispelicanFlightNumber;
 
-      case "Blue":
-        axisblueFlightNumber++;
-        return flightElementNumber = axisblueFlightNumber;
+        case "Blue":
+          axisblueFlightNumber++;
+          return flightElementNumber = axisblueFlightNumber;
 
-      case "Raven":
-        axisravenFlightNumber++;
-        return flightElementNumber = axisravenFlightNumber;
+        case "Raven":
+          axisravenFlightNumber++;
+          return flightElementNumber = axisravenFlightNumber;
 
-      case "Rabbit":
-        axisrabbitFlightNumber++;
-        return flightElementNumber = axisrabbitFlightNumber;
+        case "Rabbit":
+          axisrabbitFlightNumber++;
+          return flightElementNumber = axisrabbitFlightNumber;
 
-      case "Swan":
-        axisswanFlightNumber++;
-        return flightElementNumber = axisswanFlightNumber;
+        case "Swan":
+          axisswanFlightNumber++;
+          return flightElementNumber = axisswanFlightNumber;
 
-      case "Green":
-        axisgreenFlightNumber++;
-        return flightElementNumber = axisgreenFlightNumber;
+        case "Green":
+          axisgreenFlightNumber++;
+          return flightElementNumber = axisgreenFlightNumber;
 
-      case "Eagle":
-        axiseagleFlightNumber++;
-        return flightElementNumber = axiseagleFlightNumber;
+        case "Eagle":
+          axiseagleFlightNumber++;
+          return flightElementNumber = axiseagleFlightNumber;
 
-      case "Fox":
-        axisfoxFlightNumber++;
-        return flightElementNumber = axisfoxFlightNumber;
+        case "Fox":
+          axisfoxFlightNumber++;
+          return flightElementNumber = axisfoxFlightNumber;
 
-      case "Seagull":
-        axisseagullFlightNumber++;
-        return flightElementNumber = axisseagullFlightNumber;
+        case "Seagull":
+          axisseagullFlightNumber++;
+          return flightElementNumber = axisseagullFlightNumber;
 
-      case "Black":
-        axisblackFlightNumber++;
-        return flightElementNumber = axisblackFlightNumber;
+        case "Black":
+          axisblackFlightNumber++;
+          return flightElementNumber = axisblackFlightNumber;
 
-      case "Ripper":
-        axisripperFlightNumber++;
-        return flightElementNumber = axisripperFlightNumber;
+        case "Ripper":
+          axisripperFlightNumber++;
+          return flightElementNumber = axisripperFlightNumber;
 
-      case "Bison":
-        axisbisonFlightNumber++;
-        return flightElementNumber = axisbisonFlightNumber;
+        case "Bison":
+          axisbisonFlightNumber++;
+          return flightElementNumber = axisbisonFlightNumber;
 
-      case "Canary":
-        axiscanaryFlightNumber++;
-        return flightElementNumber = axiscanaryFlightNumber++;
+        case "Canary":
+          axiscanaryFlightNumber++;
+          return flightElementNumber = axiscanaryFlightNumber++;
 
-      default:
-        axiselseFlightNumber++;
-        return flightElementNumber = axiselseFlightNumber;
+        default:
+          axiselseFlightNumber++;
+          return flightElementNumber = axiselseFlightNumber;
+      }
     }
   }
 }
@@ -263,7 +272,7 @@ function checkLeader(flight) {
     if (flight == "Red") {
       alliedredLeader++;
 
-      if (alliedredLeader < 1) {
+      if (alliedredLeader <= 1) {
         return true;
       } else {
         return false;
@@ -273,7 +282,7 @@ function checkLeader(flight) {
     if (flight == "Growler") {
       alliedgrowlerLeader++;
 
-      if (alliedgrowlerLeader < 1) {
+      if (alliedgrowlerLeader <= 1) {
         return true;
       } else {
         return false;
@@ -283,7 +292,7 @@ function checkLeader(flight) {
     if (flight == "Bear") {
       alliedbearLeader++;
 
-      if (alliedbearLeader < 1) {
+      if (alliedbearLeader <= 1) {
         return true;
       } else {
         return false;
@@ -293,7 +302,7 @@ function checkLeader(flight) {
     if (flight == "Pelican") {
       alliedpelicanLeader++;
 
-      if (alliedpelicanLeader < 1) {
+      if (alliedpelicanLeader <= 1) {
         return true;
       } else {
         return false;
@@ -303,7 +312,7 @@ function checkLeader(flight) {
     if (flight == "Blue") {
       alliedblueLeader++;
 
-      if (alliedblueLeader < 1) {
+      if (alliedblueLeader <= 1) {
         return true;
       } else {
         return false;
@@ -313,7 +322,7 @@ function checkLeader(flight) {
     if (flight == "Raven") {
       alliedravenLeader++;
 
-      if (alliedravenLeader < 1) {
+      if (alliedravenLeader <= 1) {
         return true;
       } else {
         return false;
@@ -323,7 +332,7 @@ function checkLeader(flight) {
     if (flight == "Rabbit") {
       alliedrabbitLeader++;
 
-      if (alliedrabbitLeader < 1) {
+      if (alliedrabbitLeader <= 1) {
         return true;
       } else {
         return false;
@@ -333,7 +342,7 @@ function checkLeader(flight) {
     if (flight == "Swan") {
       alliedswanLeader++;
 
-      if (alliedswanLeader < 1) {
+      if (alliedswanLeader <= 1) {
         return true;
       } else {
         return false;
@@ -343,7 +352,7 @@ function checkLeader(flight) {
     if (flight == "Green") {
       alliedgreenLeader++;
 
-      if (alliedgreenLeader < 1) {
+      if (alliedgreenLeader <= 1) {
         return true;
       } else {
         return false;
@@ -353,7 +362,7 @@ function checkLeader(flight) {
     if (flight == "Eagle") {
       alliedeagleLeader++;
 
-      if (alliedeagleLeader < 1) {
+      if (alliedeagleLeader <= 1) {
         return true;
       } else {
         return false;
@@ -363,7 +372,7 @@ function checkLeader(flight) {
     if (flight == "Fox") {
       alliedfoxLeader++;
 
-      if (alliedfoxLeader < 1) {
+      if (alliedfoxLeader <= 1) {
         return true;
       } else {
         return false;
@@ -373,7 +382,7 @@ function checkLeader(flight) {
     if (flight == "Seagull") {
       alliedseagullLeader++;
 
-      if (alliedseagullLeader < 1) {
+      if (alliedseagullLeader <= 1) {
         return true;
       } else {
         return false;
@@ -383,7 +392,7 @@ function checkLeader(flight) {
     if (flight == "Black") {
       alliedblackLeader++;
 
-      if (alliedblackLeader < 1) {
+      if (alliedblackLeader <= 1) {
         return true;
       } else {
         return false;
@@ -393,7 +402,7 @@ function checkLeader(flight) {
     if (flight == "Ripper") {
       alliedripperLeader++;
 
-      if (alliedripperLeader < 1) {
+      if (alliedripperLeader <= 1) {
         return true;
       } else {
         return false;
@@ -403,7 +412,7 @@ function checkLeader(flight) {
     if (flight == "Bison") {
       alliedbisonLeader++;
 
-      if (alliedbisonLeader < 1) {
+      if (alliedbisonLeader <= 1) {
         return true;
       } else {
         return false;
@@ -413,7 +422,7 @@ function checkLeader(flight) {
     if (flight == "Canary") {
       alliedcanaryLeader++;
 
-      if (alliedcanaryLeader < 1) {
+      if (alliedcanaryLeader <= 1) {
         return true;
       } else {
         return false;
@@ -425,7 +434,7 @@ function checkLeader(flight) {
     if (flight == "Red") {
       axisredLeader++;
 
-      if (axisredLeader < 1) {
+      if (axisredLeader <= 1) {
         return true;
       } else {
         return false;
@@ -435,7 +444,7 @@ function checkLeader(flight) {
     if (flight == "Growler") {
       axisgrowlerLeader++;
 
-      if (axisgrowlerLeader < 1) {
+      if (axisgrowlerLeader <= 1) {
         return true;
       } else {
         return false;
@@ -445,7 +454,7 @@ function checkLeader(flight) {
     if (flight == "Bear") {
       axisbearLeader++;
 
-      if (axisbearLeader < 1) {
+      if (axisbearLeader <= 1) {
         return true;
       } else {
         return false;
@@ -455,7 +464,7 @@ function checkLeader(flight) {
     if (flight == "Pelican") {
       axispelicanLeader++;
 
-      if (axispelicanLeader < 1) {
+      if (axispelicanLeader <= 1) {
         return true;
       } else {
         return false;
@@ -465,7 +474,7 @@ function checkLeader(flight) {
     if (flight == "Blue") {
       axisblueLeader++;
 
-      if (axisblueLeader < 1) {
+      if (axisblueLeader <= 1) {
         return true;
       } else {
         return false;
@@ -475,7 +484,7 @@ function checkLeader(flight) {
     if (flight == "Raven") {
       axisravenLeader++;
 
-      if (axisravenLeader < 1) {
+      if (axisravenLeader <= 1) {
         return true;
       } else {
         return false;
@@ -485,7 +494,7 @@ function checkLeader(flight) {
     if (flight == "Rabbit") {
       axisrabbitLeader++;
 
-      if (axisrabbitLeader < 1) {
+      if (axisrabbitLeader <= 1) {
         return true;
       } else {
         return false;
@@ -495,7 +504,7 @@ function checkLeader(flight) {
     if (flight == "Swan") {
       axisswanLeader++;
 
-      if (axisswanLeader < 1) {
+      if (axisswanLeader <= 1) {
         return true;
       } else {
         return false;
@@ -505,7 +514,7 @@ function checkLeader(flight) {
     if (flight == "Green") {
       axisgreenLeader++;
 
-      if (axisgreenLeader < 1) {
+      if (axisgreenLeader <= 1) {
         return true;
       } else {
         return false;
@@ -515,7 +524,7 @@ function checkLeader(flight) {
     if (flight == "Eagle") {
       axiseagleLeader++;
 
-      if (axiseagleLeader < 1) {
+      if (axiseagleLeader <= 1) {
         return true;
       } else {
         return false;
@@ -525,7 +534,7 @@ function checkLeader(flight) {
     if (flight == "Fox") {
       axisfoxLeader++;
 
-      if (axisfoxLeader < 1) {
+      if (axisfoxLeader <= 1) {
         return true;
       } else {
         return false;
@@ -535,7 +544,7 @@ function checkLeader(flight) {
     if (flight == "Seagull") {
       axisseagullLeader++;
 
-      if (axisseagullLeader < 1) {
+      if (axisseagullLeader <= 1) {
         return true;
       } else {
         return false;
@@ -545,7 +554,7 @@ function checkLeader(flight) {
     if (flight == "Black") {
       axisblackLeader++;
 
-      if (axisblackLeader < 1) {
+      if (axisblackLeader <= 1) {
         return true;
       } else {
         return false;
@@ -555,7 +564,7 @@ function checkLeader(flight) {
     if (flight == "Ripper") {
       axisripperLeader++;
 
-      if (axisripperLeader < 1) {
+      if (axisripperLeader <= 1) {
         return true;
       } else {
         return false;
@@ -565,7 +574,7 @@ function checkLeader(flight) {
     if (flight == "Bison") {
       axisbisonLeader++;
 
-      if (axisbisonLeader < 1) {
+      if (axisbisonLeader <= 1) {
         return true;
       } else {
         return false;
@@ -575,7 +584,7 @@ function checkLeader(flight) {
     if (flight == "Canary") {
       axiscanaryLeader++;
 
-      if (axiscanaryLeader < 1) {
+      if (axiscanaryLeader <= 1) {
         return true;
       } else {
         return false;

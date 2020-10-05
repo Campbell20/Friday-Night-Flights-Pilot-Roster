@@ -1,7 +1,7 @@
 "use strict";
 
 function setAlliedTemplates(json, randomNumber) {
-  console.log(json);
+  // console.log(json);
   jsonLength = Object.keys(json.feed.entry).length;
   var alliedFGATemplateLead = document.getElementsByTagName("template-alliedFGA-Lead")[0];
   var alliedFGATemplate = document.getElementsByTagName("template-alliedFGA")[0];
@@ -41,8 +41,8 @@ function setAlliedTemplates(json, randomNumber) {
 
     alliedFighterSquadronAPosition = json.feed.entry[i].gsx$selectpilotposition.$t;
     alliedFighterSquadronBPosition = json.feed.entry[i].gsx$selectpilotposition_2.$t;
-    alliedAttackSquadronBPosition = json.feed.entry[i].gsx$selectpilotposition_3.$t;
-    alliedBomberSquadronBPosition = json.feed.entry[i].gsx$selectpilotposition_4.$t; // Flights in each Squadron
+    alliedAttackSquadronPosition = json.feed.entry[i].gsx$selectpilotposition_3.$t;
+    alliedBomberSquadronPosition = json.feed.entry[i].gsx$selectpilotposition_4.$t; // Flights in each Squadron
 
     flightForFighterSquadronA = json.feed.entry[i].gsx$whichflightdoyouwishtobein.$t.split(" ")[0];
     flightForFighterSquadronB = json.feed.entry[i].gsx$whichflightdoyouwishtobein_2.$t.split(" ")[0];
@@ -116,11 +116,11 @@ function setAlliedTemplates(json, randomNumber) {
 
 
       if (alliedFG.includes(alliedAttackers)) {
-        if (alliedAttackSquadronBPosition.includes("Squadron")) {
+        if (alliedAttackSquadronPosition.includes("Squadron")) {
           document.getElementById('alliedAttackerGroup-leader').innerHTML = alliedName;
           document.getElementById('alliedAttackerGroup-leader-pic').src = 'imgs/American/American' + imageNumber + ".jpg";
         } else {
-          if (alliedAttackSquadronBPosition.includes("Flight Lead") && checkLeader(flightForAttackSquadron)) {
+          if (alliedAttackSquadronPosition.includes("Flight Lead") && checkLeader(flightForAttackSquadron)) {
             var alliedAGLeadDivs = alliedAGTemplateLead.querySelector('div');
             var templateSet;
             templateSet = document.importNode(alliedAGLeadDivs, true);
@@ -148,11 +148,11 @@ function setAlliedTemplates(json, randomNumber) {
 
 
       if (alliedFG.includes(alliedBomber)) {
-        if (alliedBomberSquadronBPosition.includes("Squadron")) {
+        if (alliedBomberSquadronPosition.includes("Squadron")) {
           document.getElementById('alliedbomber-leader').innerHTML = alliedName;
           document.getElementById('alliedbomber-leader-pic').src = 'imgs/American/American' + imageNumber + ".jpg";
         } else {
-          if (alliedBomberSquadronBPosition.includes("Flight Lead") && checkLeader(flightForBomberSquadron)) {
+          if (alliedBomberSquadronPosition.includes("Flight Lead") && checkLeader(flightForBomberSquadron)) {
             var alliedBGLeadDivs = alliedBGTemplateLead.querySelector('div');
             var templateSet;
             templateSet = document.importNode(alliedBGLeadDivs, true);

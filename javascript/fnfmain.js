@@ -37,5 +37,4 @@ $(document).ready(function () {
     $.get('data/Names/LastNamesGermany.txt', function (lnGermany) {
         lastNamesGermany = lnGermany.split('\n');
     });
-    
 });
