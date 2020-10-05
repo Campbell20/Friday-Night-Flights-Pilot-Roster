@@ -182,36 +182,38 @@ function sortAxisWingmen() {
     } else {
       return 1;
     }
-  }).appendTo('#axisfighterA-Lead'); // $('#axisFighterGroupSortA').sort(
+  }).appendTo('#axisfighterA-Lead');
+  $('#axisFighterGroupSortA').sort(function (a, b) {
+    if (a.textContent < b.textContent) {
+      return -1;
+    } else {
+      return 1;
+    }
+  }).appendTo('#axisfighterA-wingmen'); // $('.axisFGA-pic').sort(
   //     function (a, b) {
-  //     if (a.textContent < b.textContent) {
-  //         return -1;
-  //     } else {
-  //         return 1;
-  //     }
-  // }).appendTo('#axisfighterA-wingmen');
+  //         if (a.textContent < b.textContent) {
+  //             return -1;
+  //         } else {
+  //             return 1;
+  //         }
+  //     }).appendTo('#axisfighterA-wingmen');
+  // $('.axisFGA').sort(
+  //     function (a, b) {
+  //         if (a.textContent < b.textContent) {
+  //             return -1;
+  //         } else {
+  //             return 1;
+  //         }
+  //     }).appendTo('#axisfighterA-wingmen');
+  // $('.axisFGA-number').sort(
+  //     function (a, b) {
+  //         if (a.textContent < b.textContent) {
+  //             return -1;
+  //         } else {
+  //             return 1;
+  //         }
+  //     }).appendTo('#axisfighterA-wingmen');
 
-  $('.axisFGA-pic').sort(function (a, b) {
-    if (a.textContent < b.textContent) {
-      return -1;
-    } else {
-      return 1;
-    }
-  }).appendTo('#axisfighterA-wingmen');
-  $('.axisFGA').sort(function (a, b) {
-    if (a.textContent < b.textContent) {
-      return -1;
-    } else {
-      return 1;
-    }
-  }).appendTo('#axisfighterA-wingmen');
-  $('.axisFGA-number').sort(function (a, b) {
-    if (a.textContent < b.textContent) {
-      return -1;
-    } else {
-      return 1;
-    }
-  }).appendTo('#axisfighterA-wingmen');
   $('#axisFighterGroupLeadSortB').sort(function (a, b) {
     if (a.textContent < b.textContent) {
       return -1;
