@@ -655,7 +655,7 @@ function assignRandomFlightNumber() {
       alliedgrowlerFlightNumber++;
       flight = "Growler";
       return flightElementNumber = alliedgrowlerFlightNumber;
-    } else if (ravenFlightNumber < 4) {
+    } else if (alliedravenFlightNumber < 4) {
       flight = "Raven";
       alliedravenFlightNumber++;
       return flightElementNumber = alliedravenFlightNumber;
@@ -745,7 +745,7 @@ function assignRandomFlightNumber() {
       axisgrowlerFlightNumber++;
       flight = "Growler";
       return flightElementNumber = axisgrowlerFlightNumber;
-    } else if (ravenFlightNumber < 4) {
+    } else if (axisravenFlightNumber < 4) {
       flight = "Raven";
       axisravenFlightNumber++;
       return flightElementNumber = axisravenFlightNumber;
