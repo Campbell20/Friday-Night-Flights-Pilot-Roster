@@ -12,6 +12,7 @@ alliedfoxLeader = 0;
 alliedbisonLeader = 0;
 alliedpelicanLeader = 0;
 alliedswanLeader = 0;
+alliedseagullLeader = 0;
 alliedalliedseagullLeader = 0;
 alliedcanaryLeader = 0;
 alliedelseLeader = 0;
