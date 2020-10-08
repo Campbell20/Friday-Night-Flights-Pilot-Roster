@@ -31,6 +31,20 @@ body {
     font-size: .85rem;
 }
 
+.fnf-logo {
+    height: 13rem;
+    width: 32.3rem;
+    @media (max-width: 600px) {
+        height: 100%;
+        width: 100%;       
+    }
+}
+
+.pilot-pic {
+    height: 100%;
+    width: 100%;
+}
+
 .locked-side {
     font-size: 3rem;
     font-weight: bold;
