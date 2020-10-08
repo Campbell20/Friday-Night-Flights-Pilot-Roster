@@ -21,6 +21,11 @@ body {
   width: 100%;
 }
 
+.mission-pic {
+  height: 100%;
+  width: 100%;
+}
+
 .locked-side {
   font-size: 3rem;
   font-weight: bold;
