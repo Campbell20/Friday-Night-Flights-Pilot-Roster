@@ -25,7 +25,7 @@ $(document).ready(function () {
     axisBomber = "Ju88";
 
     eventDate = "October 9th, 2020";
-    registration = true;
+    registration = false;
 
 
     function setFlightsAndPlanes() {
