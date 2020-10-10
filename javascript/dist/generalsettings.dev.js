@@ -7,10 +7,10 @@ $(document).ready(function () {
   alliedAttackerGroup = "190th Ground Attack Regiment";
   alliedBomberGroup = "134th Bomber Regiment"; //allied planes
 
-  alliedPlaneA = "i16";
-  alliedPlaneB = "P40";
-  alliedAttacker = "IL2m41";
-  alliedBomber = "Pe2s35"; //axis groups
+  alliedPlaneA = "Mig3";
+  alliedPlaneB = "P40/LaGG3";
+  alliedAttacker = "IL2m41/IL2m42";
+  alliedBomber = "Pe2s87"; //axis groups
 
   axisFighterGroupA = "II./Jg52";
   axisFighterGroupB = "22* Gruppo Autonomo C.T.";
@@ -18,11 +18,11 @@ $(document).ready(function () {
   axisBomberGroup = "I./Zg1"; //axis planes
 
   axisPlaneA = "Bf109E7";
-  axisPlaneB = "Mc202";
+  axisPlaneB = "Mc202/Bf109F2";
   axisAttacker = "Ju87";
-  axisBomber = "Ju88";
-  eventDate = "October 9th, 2020";
-  registration = true;
+  axisBomber = "Bf110E2";
+  eventDate = "October 16th, 2020";
+  registration = false;
 
   function setFlightsAndPlanes() {
     document.getElementById("alliedfighterA").innerHTML = alliedFighterGroupA;
