@@ -19,8 +19,8 @@ $(document).ready(function () {
     axisBomberGroup = "I./Zg1";
 
     //axis planes
-    axisPlaneA = "Bf109E7";
-    axisPlaneB = "Mc202/Bf109F2";
+    axisPlaneA = "Bf109E7/Bf109F2";
+    axisPlaneB = "Mc202";
     axisAttacker = "Ju87"
     axisBomber = "Bf110E2";
 
