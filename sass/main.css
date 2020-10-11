@@ -24,6 +24,8 @@ body {
 .mission-pic {
   height: 100%;
   width: 100%;
+  border: 0.3rem solid #8b8989;
+  border-radius: .5rem;
 }
 
 .locked-side {

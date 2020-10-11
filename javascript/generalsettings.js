@@ -25,7 +25,7 @@ $(document).ready(function () {
     axisBomber = "Bf110E2";
 
     eventDate = "October 16th, 2020";
-    registration = false;
+    registration = true;
 
 
     function setFlightsAndPlanes() {
