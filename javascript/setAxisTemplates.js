@@ -196,35 +196,6 @@ function sortAxisWingmen() {
         }
     }).appendTo('#axisfighterA-wingmen');
 
-
-
-    // $('.axisFGA-pic').sort(
-    //     function (a, b) {
-    //         if (a.textContent < b.textContent) {
-    //             return -1;
-    //         } else {
-    //             return 1;
-    //         }
-    //     }).appendTo('#axisfighterA-wingmen');
-
-    // $('.axisFGA').sort(
-    //     function (a, b) {
-    //         if (a.textContent < b.textContent) {
-    //             return -1;
-    //         } else {
-    //             return 1;
-    //         }
-    //     }).appendTo('#axisfighterA-wingmen');
-
-    // $('.axisFGA-number').sort(
-    //     function (a, b) {
-    //         if (a.textContent < b.textContent) {
-    //             return -1;
-    //         } else {
-    //             return 1;
-    //         }
-    //     }).appendTo('#axisfighterA-wingmen');
-
     $('#axisFighterGroupLeadSortB').sort(function (a, b) {
         if (a.textContent < b.textContent) {
             return -1;
@@ -240,7 +211,6 @@ function sortAxisWingmen() {
             return 1;
         }
     }).appendTo('#axisfighterB-wingmen');
-
 
 
     $('#axisAttackerGroupSortLead').sort(function (a, b) {

@@ -150,7 +150,7 @@ function createIds() {
     $(this).attr('id', "axisAG-pic" + i);
   }); ///axis bomber group lead
 
-  $(".axisG-number-lead").each(function (i) {
+  $(".axisBG-number-lead").each(function (i) {
     $(this).attr('id', "axisBG-number-lead" + i);
   });
   $(".axisBG-lead").each(function (i) {

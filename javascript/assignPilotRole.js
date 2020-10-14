@@ -13,7 +13,6 @@ alliedbisonLeader = 0;
 alliedpelicanLeader = 0;
 alliedswanLeader = 0;
 alliedseagullLeader = 0;
-alliedalliedseagullLeader = 0;
 alliedcanaryLeader = 0;
 alliedelseLeader = 0;
 
@@ -49,7 +48,7 @@ axisfoxLeader = 0;
 axisbisonLeader = 0;
 axispelicanLeader = 0;
 axisswanLeader = 0;
-axisaxisseagullLeader = 0;
+axisseagullLeader = 0;
 axiscanaryLeader = 0;
 axiselseLeader = 0;
 
