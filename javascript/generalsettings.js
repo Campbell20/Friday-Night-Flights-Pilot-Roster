@@ -24,7 +24,7 @@ $(document).ready(function () {
     axisAttacker = "Ju87"
     axisBomber = "Bf110E2";
 
-    eventDate = "October 16th, 2020";
+    eventDate = "October 23th, 2020";
     registration = false;
 
 
