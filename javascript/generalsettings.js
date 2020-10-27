@@ -7,9 +7,9 @@ $(document).ready(function () {
     alliedBomberGroup = "134th Bomber Regiment";
 
     //allied planes
-    alliedPlaneA = "Mig3";
-    alliedPlaneB = "P40/LaGG3";
-    alliedAttacker = "IL2m41/IL2m42"
+    alliedPlaneA = "Yak1s69";
+    alliedPlaneB = "P40";
+    alliedAttacker = "IL2m42"
     alliedBomber = "Pe2s87";
 
     //axis groups
@@ -19,12 +19,12 @@ $(document).ready(function () {
     axisBomberGroup = "I./Zg1";
 
     //axis planes
-    axisPlaneA = "Bf109E7/Bf109F2";
-    axisPlaneB = "Mc202";
-    axisAttacker = "Ju87"
+    axisPlaneA = "Bf109F4";
+    axisPlaneB = "Bf109F2";
+    axisAttacker = "Ju88"
     axisBomber = "Bf110E2";
 
-    eventDate = "October 23rd, 2020 at 8pm Eastern";
+    eventDate = "November 6th, 2020 at 8pm Eastern";
     registration = false;
 
 
