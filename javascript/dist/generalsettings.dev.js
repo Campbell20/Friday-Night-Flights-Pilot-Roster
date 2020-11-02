@@ -22,7 +22,7 @@ $(document).ready(function () {
   axisAttacker = "Ju88";
   axisBomber = "Bf110E2";
   eventDate = "November 6th, 2020 at 8pm Eastern";
-  registration = false;
+  registration = true;
 
   function setFlightsAndPlanes() {
     document.getElementById("alliedfighterA").innerHTML = alliedFighterGroupA;
