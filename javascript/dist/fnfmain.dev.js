@@ -22,7 +22,7 @@ $(document).ready(function () {
   axisAttacker = "Ju88";
   axisBomber = "Bf110E2";
   eventDate = "<em>Faux Battle of Britain Plane Set</em> - <strong>November 13th, 2020 at 8pm Eastern</strong>";
-  registration = true;
+  registration = false;
   $.getJSON('https://spreadsheets.google.com/feeds/list/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/1/public/full?alt=json').done(function (json) {
     //side names
     alliedSide = "Allied";
