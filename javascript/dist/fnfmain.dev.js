@@ -25,8 +25,8 @@ $(document).ready(function () {
   registration = true;
   $.getJSON('https://spreadsheets.google.com/feeds/list/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/1/public/full?alt=json').done(function (json) {
     //side names
-    alliedSide = "Allied";
-    axisSide = "Axis"; //allied flights
+    alliedSide = "Allied - Entente";
+    axisSide = "Axis - Central"; //allied flights
 
     alliedTeamA = alliedFighterGroupA;
     alliedTeamB = alliedFighterGroupB;
