@@ -2,26 +2,26 @@
 
 $(document).ready(function () {
   //allied groups
-  alliedFighterGroupA = "No. 74 Squadron RAF";
-  alliedFighterGroupB = "No. 1 Squadron RCAF";
-  alliedAttackerGroup = "No. 219 Squadron RAF";
-  alliedBomberGroup = "No. 246 Squadron RAF"; //allied planes
+  alliedFighterGroupA = "1st Fighter Group";
+  alliedFighterGroupB = "3rd Fighter Group";
+  alliedAttackerGroup = "219th Bomber Squadron";
+  alliedBomberGroup = "246th Bomber Squadron"; //allied planes
 
-  alliedPlaneA = "SpitfireVb";
-  alliedPlaneB = "Hurricane";
-  alliedAttacker = "IL2m41 (no 23mm)";
-  alliedBomber = "Pe2s35"; //axis groups
+  alliedPlaneA = "Spad XIII";
+  alliedPlaneB = "Sopwith Camel";
+  alliedAttacker = "Bristol2b2f";
+  alliedBomber = "Bristol2b2f"; //axis groups
 
-  axisFighterGroupA = "II./JG2";
-  axisFighterGroupB = "II./JG27";
-  axisAttackerGroup = "II./KG76";
-  axisBomberGroup = "I./ZG1"; //axis planes
+  axisFighterGroupA = "168th Aero Squadron";
+  axisFighterGroupB = "27th Aero Squadron";
+  axisAttackerGroup = "76th Bomber Squadron";
+  axisBomberGroup = "1st Bomber Squadron"; //axis planes
 
-  axisPlaneA = "Bf109F2";
-  axisPlaneB = "Bf109E7";
-  axisAttacker = "Ju88";
-  axisBomber = "Bf110E2";
-  eventDate = "<em>Faux Battle of Britain Plane Set</em> - <strong>November 13th, 2020 at 8pm Eastern</strong>";
+  axisPlaneA = "Fokker D7";
+  axisPlaneB = "Fokker D1";
+  axisAttacker = "Halberstadt";
+  axisBomber = "Halberstadt";
+  eventDate = "<em>WW1 Plane Set</em> - <strong>November 20th, 2020 at 8pm Eastern</strong>";
   registration = false;
   $.getJSON('https://spreadsheets.google.com/feeds/list/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/1/public/full?alt=json').done(function (json) {
     //side names
