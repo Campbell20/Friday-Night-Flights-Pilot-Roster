@@ -24,7 +24,7 @@ $(document).ready(function () {
     axisAttacker = "Halberstadt"
     axisBomber = "Halberstadt";
 
-    eventDate = "<em>WW1 Plane Set</em> - <strong>November 20th, 2020 at 8pm Eastern</strong>";
+    eventDate = "<em>WW1 Plane Set</em> - <strong>November 20th, 2020 at 9pm Eastern</strong>";
     registration = true;
 
     $.getJSON('https://spreadsheets.google.com/feeds/list/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/1/public/full?alt=json').done(function (json) {
