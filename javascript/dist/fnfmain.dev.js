@@ -5,22 +5,22 @@ $(document).ready(function () {
   alliedFighterGroupA = "1st Fighter Group";
   alliedFighterGroupB = "3rd Fighter Group";
   alliedAttackerGroup = "219th Bomber Squadron";
-  alliedBomberGroup = "246th Bomber Squadron"; //allied planes
+  alliedBomberGroup = "Gunner"; //allied planes
 
   alliedPlaneA = "Spad XIII";
   alliedPlaneB = "Sopwith Camel";
   alliedAttacker = "Bristol2b2f";
-  alliedBomber = "Bristol2b2f"; //axis groups
+  alliedBomber = "Bristol2b2f Gunner"; //axis groups
 
   axisFighterGroupA = "168th Aero Squadron";
   axisFighterGroupB = "27th Aero Squadron";
   axisAttackerGroup = "76th Bomber Squadron";
-  axisBomberGroup = "1st Bomber Squadron"; //axis planes
+  axisBomberGroup = "Gunner"; //axis planes
 
   axisPlaneA = "Fokker D7";
   axisPlaneB = "Fokker D1";
   axisAttacker = "Halberstadt";
-  axisBomber = "Halberstadt";
+  axisBomber = "Halberstadt Gunner";
   eventDate = "<em>WW1 Plane Set</em> - <strong>November 20th, 2020 at 9pm Eastern</strong>";
   registration = true;
   $.getJSON('https://spreadsheets.google.com/feeds/list/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/1/public/full?alt=json').done(function (json) {
