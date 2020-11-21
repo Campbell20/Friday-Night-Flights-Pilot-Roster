@@ -2,31 +2,31 @@
 
 $(document).ready(function () {
   //allied groups
-  alliedFighterGroupA = "1st Fighter Group";
-  alliedFighterGroupB = "3rd Fighter Group";
-  alliedAttackerGroup = "219th Bomber Squadron";
-  alliedBomberGroup = "Gunner"; //allied planes
+  alliedFighterGroupA = "La5F";
+  alliedFighterGroupB = "SpitfireIX";
+  alliedAttackerGroup = "IL21942";
+  alliedBomberGroup = "A20s"; //allied planes
 
-  alliedPlaneA = "Spad XIII";
-  alliedPlaneB = "Sopwith Camel";
-  alliedAttacker = "Bristol2b2f";
-  alliedBomber = "Bristol2b2f Gunner"; //axis groups
+  alliedPlaneA = "La5F";
+  alliedPlaneB = "SpitfireIX";
+  alliedAttacker = "IL21942";
+  alliedBomber = "A20"; //axis groups
 
-  axisFighterGroupA = "168th Aero Squadron";
-  axisFighterGroupB = "27th Aero Squadron";
-  axisAttackerGroup = "76th Bomber Squadron";
-  axisBomberGroup = "Gunner"; //axis planes
+  axisFighterGroupA = "109G6Late (no MW50)";
+  axisFighterGroupB = "109F4";
+  axisAttackerGroup = "190A5";
+  axisBomberGroup = "Bf110G2"; //axis planes
 
-  axisPlaneA = "Fokker D7";
-  axisPlaneB = "Fokker D1";
-  axisAttacker = "Halberstadt";
-  axisBomber = "Halberstadt Gunner";
-  eventDate = "<em>WW1 Plane Set</em> - <strong>November 20th, 2020 at 9pm Eastern</strong>";
-  registration = true;
+  axisPlaneA = "109G6Late (no MW50)";
+  axisPlaneB = "109F4";
+  axisAttacker = "190A5";
+  axisBomber = "Bf110G2";
+  eventDate = "<em>1943 Plane Set</em> - <strong>December 4th, 2020 at 9pm Eastern</strong>";
+  registration = false;
   $.getJSON('https://spreadsheets.google.com/feeds/list/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/1/public/full?alt=json').done(function (json) {
     //side names
-    alliedSide = "Allied - Entente";
-    axisSide = "Axis - Central"; //allied flights
+    alliedSide = "Allied";
+    axisSide = "Axis"; //allied flights
 
     alliedTeamA = alliedFighterGroupA;
     alliedTeamB = alliedFighterGroupB;
