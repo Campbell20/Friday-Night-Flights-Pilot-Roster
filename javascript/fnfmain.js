@@ -1,31 +1,31 @@
 $(document).ready(function () {
 
     //allied groups
-    alliedFighterGroupA = "La5F";
-    alliedFighterGroupB = "SpitfireIX"
-    alliedAttackerGroup = "IL21942"
-    alliedBomberGroup = "A20s";
+    alliedFighterGroupA = "1st Fighter Group";
+    alliedFighterGroupB = "3rd Fighter Group";
+    alliedAttackerGroup = "219th Attacker Squadron";
+    alliedBomberGroup = "249th Bomber Squadron";
 
     //allied planes
     alliedPlaneA = "La5F";
     alliedPlaneB = "SpitfireIX";
-    alliedAttacker = "IL21942"
-    alliedBomber = "A20";
+    alliedAttacker = "IL2 1942"
+    alliedBomber = "A20 Havoc";
 
     //axis groups
-    axisFighterGroupA = "109G6Late (no MW50)";
-    axisFighterGroupB = "109F4";
-    axisAttackerGroup = "190A5"
-    axisBomberGroup = "Bf110G2";
+    axisFighterGroupA = "168th Aero Squadron";
+    axisFighterGroupB = "27th Aero Squadron";
+    axisAttackerGroup = "76th Jabo Squadron";
+    axisBomberGroup = "44th Bomber Squadron";
 
     //axis planes
-    axisPlaneA = "109G6Late (no MW50)";
-    axisPlaneB = "109F4";
-    axisAttacker = "190A5"
+    axisPlaneA = "Bf109G6Late (no MW50)";
+    axisPlaneB = "Fw190A5";
+    axisAttacker = "Fw190A3";
     axisBomber = "Bf110G2";
 
     eventDate = "<em>1943 Plane Set</em> - <strong>December 4th, 2020 at 9pm Eastern</strong>";
-    registration = false;
+    registration = true;
 
     $.getJSON('https://spreadsheets.google.com/feeds/list/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/1/public/full?alt=json').done(function (json) {
         //side names
