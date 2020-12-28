@@ -7,9 +7,9 @@ $(document).ready(function () {
     alliedBomberGroup = "249th Bomber Squadron";
 
     //allied planes
-    alliedPlaneA = "La5F";
-    alliedPlaneB = "SpitfireVB";
-    alliedAttacker = "IL2 1942"
+    alliedPlaneA = "P51 Mustang";
+    alliedPlaneB = "P51";
+    alliedAttacker = "P47"
     alliedBomber = "A20 Havoc";
 
     //axis groups
@@ -19,13 +19,13 @@ $(document).ready(function () {
     axisBomberGroup = "44th Bomber Squadron";
 
     //axis planes
-    axisPlaneA = "Bf109G4";
-    axisPlaneB = "Fw190A3";
-    axisAttacker = "Hs129";
+    axisPlaneA = "Bf109G14";
+    axisPlaneB = "Fw190D9";
+    axisAttacker = "Fw190A8";
     axisBomber = "Bf110G2";
 
-    eventDate = "<em>1943 Plane Set</em> - <strong>December 18th, 2020 at 9pm Eastern</strong>";
-    registration = false;
+    eventDate = "<em>1945 Plane Set</em> - <strong>January 1st, 2020 at 9pm Eastern</strong>";
+    registration = true;
 
     $.getJSON('https://spreadsheets.google.com/feeds/list/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/1/public/full?alt=json').done(function (json) {
         //side names
