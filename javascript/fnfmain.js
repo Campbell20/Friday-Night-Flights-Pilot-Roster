@@ -1,28 +1,28 @@
 $(document).ready(function () {
 
     //allied groups
-    alliedFighterGroupA = "1st Fighter Group";
-    alliedFighterGroupB = "3rd Fighter Group";
-    alliedAttackerGroup = "219th Attacker Squadron";
-    alliedBomberGroup = "249th Bomber Squadron";
+    alliedFighterGroupA = "486th Fighter Squadron";
+    alliedFighterGroupB = "487th Fighter Squadron";
+    alliedAttackerGroup = "328th Fighter Squadron";
+    alliedBomberGroup = "458th Bomber Squadron";
 
     //allied planes
-    alliedPlaneA = "P51 Mustang";
-    alliedPlaneB = "P51";
+    alliedPlaneA = "Pegasus P51";
+    alliedPlaneB = "Lil'Bastard P51";
     alliedAttacker = "P47"
     alliedBomber = "A20 Havoc";
 
     //axis groups
-    axisFighterGroupA = "168th Aero Squadron";
-    axisFighterGroupB = "27th Aero Squadron";
-    axisAttackerGroup = "76th Jabo Squadron";
-    axisBomberGroup = "44th Bomber Squadron";
+    axisFighterGroupA = "III./JG77";
+    axisFighterGroupB = "II./JG4";
+    axisAttackerGroup = "I./JG26";
+    axisBomberGroup = "III./JG11";
 
     //axis planes
-    axisPlaneA = "Bf109G14";
-    axisPlaneB = "Fw190D9";
-    axisAttacker = "Fw190A8";
-    axisBomber = "Bf110G2";
+    axisPlaneA = "Bf109K4";
+    axisPlaneB = "Bf109G14";
+    axisAttacker = "Fw190D9";
+    axisBomber = "Fw190A8";
 
     eventDate = "<em>1945 Plane Set</em> - <strong>January 1st, 2020 at 9pm Eastern</strong>";
     registration = true;
