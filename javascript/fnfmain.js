@@ -25,7 +25,7 @@ $(document).ready(function () {
     axisBomber = "Fw190A8";
 
     eventDate = "<em>1945 Plane Set</em> - <strong>January 1st, 2020 at 9pm Eastern</strong>";
-    registration = true;
+    registration = false;
 
     $.getJSON('https://spreadsheets.google.com/feeds/list/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/1/public/full?alt=json').done(function (json) {
         //side names
