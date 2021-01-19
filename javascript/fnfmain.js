@@ -7,10 +7,10 @@ $(document).ready(function () {
     alliedBomberGroup = "458th Bomber Squadron";
 
     //allied planes
-    alliedPlaneA = "La5FN";
-    alliedPlaneB = "Yak9T";
-    alliedAttacker = "Yak7/Yak1B"
-    alliedBomber = "A20 Havoc";
+    alliedPlaneA = "Yak1s69/Yak7b";
+    alliedPlaneB = "LaGG3";
+    alliedAttacker = "IL2 1941"
+    alliedBomber = "Pe2s87";
 
     //axis groups
     axisFighterGroupA = "III./JG77";
@@ -19,12 +19,12 @@ $(document).ready(function () {
     axisBomberGroup = "III./JG11";
 
     //axis planes
-    axisPlaneA = "Bf109G4";
-    axisPlaneB = "Fw190A3";
-    axisAttacker = "Fw190A5";
-    axisBomber = "Bf110G2";
+    axisPlaneA = "Bf109F4";
+    axisPlaneB = "Bf109E7";
+    axisAttacker = "Ju87";
+    axisBomber = "Bf110E2";
 
-    eventDate = "<em>1943 Plane Set</em> - <strong>January 15th, 2021 at 9pm Eastern</strong>";
+    eventDate = "<em>Eastern Front Plane Set</em> - <strong>January 22nd, 2021 at 9pm Eastern</strong>";
     registration = true;
 
     $.getJSON('https://spreadsheets.google.com/feeds/list/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/1/public/full?alt=json').done(function (json) {
