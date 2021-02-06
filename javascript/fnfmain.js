@@ -25,7 +25,7 @@ $(document).ready(function () {
     axisBomber = "Gunner Position";
 
     eventDate = "<em>WW1 Plane Set</em> - <strong>February 5th, 2021 at 9pm Eastern</strong>";
-    registration = true;
+    registration = false;
 
     $.getJSON('https://spreadsheets.google.com/feeds/list/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/1/public/full?alt=json').done(function (json) {
         //side names
