@@ -7,10 +7,10 @@ $(document).ready(function () {
     alliedBomberGroup = "458th Bomber Squadron";
 
     //allied planes
-    alliedPlaneA = "SPAD 13.C1";
-    alliedPlaneB = "Sopwith Camel";
-    alliedAttacker = "Bristol F2B (F.III)"
-    alliedBomber = "Gunner Position";
+    alliedPlaneA = "P51";
+    alliedPlaneB = "P38";
+    alliedAttacker = "P47 (both variants)"
+    alliedBomber = "A20";
 
     //axis groups
     axisFighterGroupA = "III./JG77";
@@ -19,13 +19,13 @@ $(document).ready(function () {
     axisBomberGroup = "III./JG11";
 
     //axis planes
-    axisPlaneA = "FokkerDR1";
-    axisPlaneB = "FokkerDR7";
-    axisAttacker = "Halbertadt CL.II 200hp";
-    axisBomber = "Gunner Position";
+    axisPlaneA = "Bf109G14";
+    axisPlaneB = "Fw190D9";
+    axisAttacker = "Fw190A6";
+    axisBomber = "Bf110G2";
 
-    eventDate = "<em>WW1 Plane Set</em> - <strong>February 5th, 2021 at 9pm Eastern</strong>";
-    registration = false;
+    eventDate = "<em>Late War Plane Set</em> - <strong>March 5th, 2021 at 8pm Eastern</strong>";
+    registration = true;
 
     $.getJSON('https://spreadsheets.google.com/feeds/list/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/1/public/full?alt=json').done(function (json) {
         //side names
