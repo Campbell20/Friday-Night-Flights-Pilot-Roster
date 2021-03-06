@@ -7,21 +7,21 @@ $(document).ready(function () {
   alliedAttackerGroup = "328th Fighter Squadron";
   alliedBomberGroup = "458th Bomber Squadron"; //allied planes
 
-  alliedPlaneA = "P51";
-  alliedPlaneB = "P38";
-  alliedAttacker = "P47 (both variants)";
-  alliedBomber = "A20"; //axis groups
+  alliedPlaneA = "Hurricane";
+  alliedPlaneB = "P40";
+  alliedAttacker = "P40 Attackers";
+  alliedBomber = "Pe2"; //axis groups
 
   axisFighterGroupA = "III./JG77";
   axisFighterGroupB = "II./JG4";
   axisAttackerGroup = "I./JG26";
   axisBomberGroup = "III./JG11"; //axis planes
 
-  axisPlaneA = "Bf109G14";
-  axisPlaneB = "Fw190D9";
-  axisAttacker = "Fw190A6";
-  axisBomber = "Bf110G2";
-  eventDate = "<em>Late War Plane Set</em> - <strong>March 5th, 2021 at 8pm Eastern</strong>";
+  axisPlaneA = "Bf109E7";
+  axisPlaneB = "Macchi 202";
+  axisAttacker = "Bf110E2";
+  axisBomber = "Bf110E2";
+  eventDate = "<em>Early War Plane Set</em> - <strong>March 12th, 2021 at 9pm Eastern</strong>";
   registration = true;
   $.getJSON('https://spreadsheets.google.com/feeds/list/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/1/public/full?alt=json').done(function (json) {
     //side names
