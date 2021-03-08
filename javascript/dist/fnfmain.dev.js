@@ -10,7 +10,7 @@ $(document).ready(function () {
   alliedPlaneA = "Hurricane";
   alliedPlaneB = "P40";
   alliedAttacker = "P40 Attackers";
-  alliedBomber = "Pe2"; //axis groups
+  alliedBomber = "Pe2s87"; //axis groups
 
   axisFighterGroupA = "III./JG77";
   axisFighterGroupB = "II./JG4";
@@ -19,7 +19,7 @@ $(document).ready(function () {
 
   axisPlaneA = "Bf109E7";
   axisPlaneB = "Macchi 202";
-  axisAttacker = "Bf110E2";
+  axisAttacker = "Hs129 Duck";
   axisBomber = "Bf110E2";
   eventDate = "<em>Early War Plane Set</em> - <strong>March 12th, 2021 at 9pm Eastern</strong>";
   registration = true;
