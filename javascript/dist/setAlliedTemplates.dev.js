@@ -52,10 +52,7 @@ function setAlliedTemplates(json, randomNumber) {
     if (side == alliedSide) {
       //Allied Fighter Group A
       if (alliedFG.includes(alliedTeamA)) {
-        if (alliedFighterSquadronAPosition.includes("Squadron")) {
-          document.getElementById('alliedfighterA-leader').innerHTML = alliedName;
-          document.getElementById('alliedfighterA-leader-pic').src = 'imgs/American/American' + imageNumber + ".jpg";
-        } else if (alliedFighterSquadronAPosition.includes("Flight Lead") && checkLeader(flightForFighterSquadronA)) {
+        if (alliedFighterSquadronAPosition.includes("Flight Lead") && checkLeader(flightForFighterSquadronA)) {
           var alliedFGALeadDivs = alliedFGATemplateLead.querySelector('div');
           var templateSet;
           templateSet = document.importNode(alliedFGALeadDivs, true);
@@ -82,10 +79,7 @@ function setAlliedTemplates(json, randomNumber) {
 
 
       if (alliedFG.includes(alliedTeamB)) {
-        if (alliedFighterSquadronBPosition.includes("Squadron")) {
-          document.getElementById('alliedfighterB-leader').innerHTML = alliedName;
-          document.getElementById('alliedfighterB-leader-pic').src = 'imgs/American/American' + imageNumber + ".jpg";
-        } else if (alliedFighterSquadronBPosition.includes("Flight Lead") && checkLeader(flightForFighterSquadronB)) {
+        if (alliedFighterSquadronBPosition.includes("Flight Lead") && checkLeader(flightForFighterSquadronB)) {
           var alliedFGBLeadDivs = alliedFGBTemplateLead.querySelector('div');
           var templateSet;
           templateSet = document.importNode(alliedFGBLeadDivs, true);
@@ -112,10 +106,7 @@ function setAlliedTemplates(json, randomNumber) {
 
 
       if (alliedFG.includes(alliedAttackers)) {
-        if (alliedAttackSquadronPosition.includes("Squadron")) {
-          document.getElementById('alliedAttackerGroup-leader').innerHTML = alliedName;
-          document.getElementById('alliedAttackerGroup-leader-pic').src = 'imgs/American/American' + imageNumber + ".jpg";
-        } else if (alliedAttackSquadronPosition.includes("Flight Lead") && checkLeader(flightForAttackSquadron)) {
+        if (alliedAttackSquadronPosition.includes("Flight Lead") && checkLeader(flightForAttackSquadron)) {
           var alliedAGLeadDivs = alliedAGTemplateLead.querySelector('div');
           var templateSet;
           templateSet = document.importNode(alliedAGLeadDivs, true);
@@ -142,10 +133,7 @@ function setAlliedTemplates(json, randomNumber) {
 
 
       if (alliedFG.includes(alliedBomber)) {
-        if (alliedBomberSquadronPosition.includes("Squadron")) {
-          document.getElementById('alliedbomber-leader').innerHTML = alliedName;
-          document.getElementById('alliedbomber-leader-pic').src = 'imgs/American/American' + imageNumber + ".jpg";
-        } else if (alliedBomberSquadronPosition.includes("Flight Lead") && checkLeader(flightForBomberSquadron)) {
+        if (alliedBomberSquadronPosition.includes("Flight Lead") && checkLeader(flightForBomberSquadron)) {
           var alliedBGLeadDivs = alliedBGTemplateLead.querySelector('div');
           var templateSet;
           templateSet = document.importNode(alliedBGLeadDivs, true);

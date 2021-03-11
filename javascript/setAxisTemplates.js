@@ -50,10 +50,7 @@ function setAxisTemplates(json, randomNumber) {
         if (side == axisSide) {
             //Axis Fighter Group A
             if (axisFG.includes(axisTeamA)) {
-                if (axisFighterSquadronAPosition.includes("Squadron")) {
-                    document.getElementById('axisfighterA-leader').innerHTML = axisName;
-                    document.getElementById('axisfighterA-leader-pic').src = 'imgs/German/German' + imageNumber + ".jpg";
-                } else if (axisFighterSquadronAPosition.includes("Flight Lead") && checkLeader(flightForFighterSquadronA)) {
+               if (axisFighterSquadronAPosition.includes("Flight Lead") && checkLeader(flightForFighterSquadronA)) {
                     var axisFGALeadDivs = axisFGATemplateLead.querySelector('div');
                     var templateSet;
                     templateSet = document.importNode(axisFGALeadDivs, true);
@@ -81,10 +78,7 @@ function setAxisTemplates(json, randomNumber) {
 
 
             if (axisFG.includes(axisTeamB)) {
-                if (axisFighterSquadronBPosition.includes("Squadron")) {
-                    document.getElementById('axisfighterB-leader').innerHTML = axisName;
-                    document.getElementById('axisfighterB-leader-pic').src = 'imgs/German/German' + imageNumber + ".jpg";
-                } else if (axisFighterSquadronBPosition.includes("Flight Lead") && checkLeader(flightForFighterSquadronB)) {
+                if (axisFighterSquadronBPosition.includes("Flight Lead") && checkLeader(flightForFighterSquadronB)) {
                     var axisFGBLeadDivs = axisFGBTemplateLead.querySelector('div');
                     var templateSet;
                     templateSet = document.importNode(axisFGBLeadDivs, true);
@@ -112,10 +106,7 @@ function setAxisTemplates(json, randomNumber) {
 
 
             if (axisFG.includes(axisAttackers)) {
-                if (axisAttackSquadronPosition.includes("Squadron")) {
-                    document.getElementById('axisAttackerGroup-leader').innerHTML = axisName;
-                    document.getElementById('axisAttackerGroup-leader-pic').src = 'imgs/German/German' + imageNumber + ".jpg";
-                } else if (axisAttackSquadronPosition.includes("Flight Lead") && checkLeader(flightForAttackSquadron)) {
+                if (axisAttackSquadronPosition.includes("Flight Lead") && checkLeader(flightForAttackSquadron)) {
                     var axisAGLeadDivs = axisAGTemplateLead.querySelector('div');
                     var templateSet;
                     templateSet = document.importNode(axisAGLeadDivs, true);
@@ -143,10 +134,7 @@ function setAxisTemplates(json, randomNumber) {
 
 
             if (axisFG.includes(axisBomber)) {
-                if (axisBomberSquadronPosition.includes("Squadron")) {
-                    document.getElementById('axisbomber-leader').innerHTML = axisName;
-                    document.getElementById('axisbomber-leader-pic').src = 'imgs/German/German' + imageNumber + ".jpg";
-                } else if (axisBomberSquadronPosition.includes("Flight Lead") && checkLeader(flightForBomberSquadron)) {
+               if (axisBomberSquadronPosition.includes("Flight Lead") && checkLeader(flightForBomberSquadron)) {
                     var axisBGLeadDivs = axisBGTemplateLead.querySelector('div');
                     var templateSet;
                     templateSet = document.importNode(axisBGLeadDivs, true);
