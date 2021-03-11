@@ -1,5 +1,5 @@
 function setAlliedTemplates(json, randomNumber) {
-  // console.log(json);
+  console.log(json);
   jsonLength = Object.keys(json.feed.entry).length;
   var alliedFGATemplateLead = document.getElementsByTagName("template-alliedFGA-Lead")[0];
   var alliedFGATemplate = document.getElementsByTagName("template-alliedFGA")[0];
@@ -159,76 +159,6 @@ function setAlliedTemplates(json, randomNumber) {
       }
     }
   }
-  sortAlliedWingmen();
+
 }
 
-
-function sortAlliedWingmen() {
-  $('#alliedFighterGroupLeadSortA').sort(function (a, b) {
-    if (a.textContent < b.textContent) {
-      return -1;
-    } else {
-      return 1;
-    }
-  }).appendTo('#alliedfighterA-Lead');
-
-  $('#alliedFighterGroupSortA').sort(function (a, b) {
-    if (a.textContent < b.textContent) {
-      return -1;
-    } else {
-      return 1;
-    }
-  }).appendTo('#alliedfighterA-wingmen');
-
-
-  $('#alliedFighterGroupLeadSortB').sort(function (a, b) {
-    if (a.textContent < b.textContent) {
-      return -1;
-    } else {
-      return 1;
-    }
-  }).appendTo('#alliedfighterB-Lead');
-
-  $('#alliedFighterGroupSortB').sort(function (a, b) {
-    if (a.textContent < b.textContent) {
-      return -1;
-    } else {
-      return 1;
-    }
-  }).appendTo('#alliedfighterB-wingmen');
-
-
-
-  $('#alliedAttackerGroupSortLead').sort(function (a, b) {
-    if (a.textContent < b.textContent) {
-      return -1;
-    } else {
-      return 1;
-    }
-  }).appendTo('#alliedAttackerGroup-Lead');
-
-  $('#alliedAttackerGroupSort').sort(function (a, b) {
-    if (a.textContent < b.textContent) {
-      return -1;
-    } else {
-      return 1;
-    }
-  }).appendTo('#alliedAttackerGroup-wingmen');
-
-
-  $('#alliedBomberGroupSortLead').sort(function (a, b) {
-    if (a.textContent < b.textContent) {
-      return -1;
-    } else {
-      return 1;
-    }
-  }).appendTo('#alliedbomber-Lead');
-
-  $('#alliedBomberGroupSort').sort(function (a, b) {
-    if (a.textContent < b.textContent) {
-      return -1;
-    } else {
-      return 1;
-    }
-  }).appendTo('#alliedbomber-wingmen');
-}

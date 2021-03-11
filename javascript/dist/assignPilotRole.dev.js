@@ -80,6 +80,11 @@ function assignWingmanRole(num, elementNum, elementIDNumber, elementID, elementN
       assignRandomFlightNumber(elementID, elementNum);
     } else {
       flight = flightForFighterSquadronA;
+
+      if (flightElementNumber == 0) {
+        flightElementNumber = elementNum;
+      }
+
       setFlightNumber();
     }
   } else if (flightForFighterSquadronB != "") {
@@ -87,6 +92,11 @@ function assignWingmanRole(num, elementNum, elementIDNumber, elementID, elementN
       assignRandomFlightNumber(elementID, elementNum);
     } else {
       flight = flightForFighterSquadronB;
+
+      if (flightElementNumber == 0) {
+        flightElementNumber = elementNum;
+      }
+
       setFlightNumber();
     }
   } else if (flightForAttackSquadron != "") {
@@ -94,6 +104,11 @@ function assignWingmanRole(num, elementNum, elementIDNumber, elementID, elementN
       assignRandomFlightNumber(elementID, elementNum);
     } else {
       flight = flightForAttackSquadron;
+
+      if (flightElementNumber == 0) {
+        flightElementNumber = elementNum;
+      }
+
       setFlightNumber();
     }
   } else {
@@ -101,6 +116,11 @@ function assignWingmanRole(num, elementNum, elementIDNumber, elementID, elementN
       assignRandomFlightNumber(elementID, elementNum);
     } else {
       flight = flightForBomberSquadron;
+
+      if (flightElementNumber == 0) {
+        flightElementNumber = elementNum;
+      }
+
       setFlightNumber();
     }
   }
