@@ -114,5 +114,5 @@ $(document).ready(function () {
     setFlightsAndPlanes();
     toggleRegistration();
     setEventDate();
-
 });
+
