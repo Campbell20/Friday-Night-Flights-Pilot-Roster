@@ -82,7 +82,7 @@ function assignWingmanRole(num, elementNum, elementIDNumber, elementID, elementN
       flight = flightForFighterSquadronA;
 
       if (flightElementNumber == 0) {
-        flightElementNumber = elementNum;
+        flightElementNumber = elementNum * 10;
       }
 
       setFlightNumber();
@@ -94,7 +94,7 @@ function assignWingmanRole(num, elementNum, elementIDNumber, elementID, elementN
       flight = flightForFighterSquadronB;
 
       if (flightElementNumber == 0) {
-        flightElementNumber = elementNum;
+        flightElementNumber = elementNum * 10;
       }
 
       setFlightNumber();
@@ -106,7 +106,7 @@ function assignWingmanRole(num, elementNum, elementIDNumber, elementID, elementN
       flight = flightForAttackSquadron;
 
       if (flightElementNumber == 0) {
-        flightElementNumber = elementNum;
+        flightElementNumber = elementNum * 10;
       }
 
       setFlightNumber();
@@ -118,7 +118,7 @@ function assignWingmanRole(num, elementNum, elementIDNumber, elementID, elementN
       flight = flightForBomberSquadron;
 
       if (flightElementNumber == 0) {
-        flightElementNumber = elementNum;
+        flightElementNumber = elementNum * 10;
       }
 
       setFlightNumber();
