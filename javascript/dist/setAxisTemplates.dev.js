@@ -31,11 +31,19 @@ function setAxisTemplates(json, randomNumber) {
   axisBG = 0;
   axisBGLeadElementNumber = 0;
   axisBGElementNumber = 1;
+  _randomNumber = randomNumber.map(function (x) {
+    return parseInt(x, 10);
+  });
 
   for (i = 0; i < jsonLength; i++) {
     createIds();
     side = json.feed.entry[i].gsx$whichsideoftheconflictwouldyouliketobeon.$t;
-    imageNumber = parseInt(randomNumber[i]);
+    imageNumber = _randomNumber[i];
+
+    if (imageNumber == undefined || imageNumber == NaN) {
+      imageNumber = getRandomInt(1, 50);
+    }
+
     axisFG = json.feed.entry[i].gsx$selectflightgroup_2.$t;
     axisName = firstNamesGermany[imageNumber] + " \"" + json.feed.entry[i].gsx$enterpilotnickname_2.$t + "\" " + lastNamesGermany[imageNumber]; // pilot chosen position
 

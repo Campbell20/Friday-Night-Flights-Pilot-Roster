@@ -31,11 +31,19 @@ function setAlliedTemplates(json, randomNumber) {
   alliedBG = 0;
   alliedBGLeadElementNumber = 0;
   alliedBGElementNumber = 1;
+  _randomNumber = randomNumber.map(function (x) {
+    return parseInt(x, 10);
+  });
 
   for (i = 0; i < jsonLength; i++) {
     createIds();
     side = json.feed.entry[i].gsx$whichsideoftheconflictwouldyouliketobeon.$t;
-    imageNumber = parseInt(randomNumber[i]);
+    imageNumber = _randomNumber[i];
+
+    if (imageNumber == undefined || imageNumber == NaN) {
+      imageNumber = getRandomInt(1, 50);
+    }
+
     alliedFG = json.feed.entry[i].gsx$selectflightgroup.$t;
     alliedName = firstNamesUSA[imageNumber] + " \"" + json.feed.entry[i].gsx$enterpilotnickname.$t + "\" " + lastNamesUSA[imageNumber]; // pilot chosen position
 
@@ -294,4 +302,10 @@ function sortAlliedWingmen() {
   $.each(axisBomberlistitems, function (index, item) {
     axisBomberlist.append(item);
   });
+}
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
