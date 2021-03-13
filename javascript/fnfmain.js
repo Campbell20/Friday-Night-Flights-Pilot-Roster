@@ -7,10 +7,10 @@ $(document).ready(function () {
     alliedBomberGroup = "458th Bomber Squadron";
 
     //allied planes
-    alliedPlaneA = "Hurricane";
+    alliedPlaneA = "P47 Jug";
     alliedPlaneB = "P40";
     alliedAttacker = "P40 Attackers"
-    alliedBomber = "Pe2s87";
+    alliedBomber = "A20 Havoc";
 
     //axis groups
     axisFighterGroupA = "III./JG77";
@@ -19,12 +19,12 @@ $(document).ready(function () {
     axisBomberGroup = "III./JG11";
 
     //axis planes
-    axisPlaneA = "Bf109E7";
+    axisPlaneA = "Bf109G6Late (No MW50)";
     axisPlaneB = "Macchi 202";
     axisAttacker = "Hs129 Duck";
-    axisBomber = "Bf110E2";
+    axisBomber = "Bf110G2";
 
-    eventDate = "<em>Early War Plane Set</em> - <strong>March 12th, 2021 at 9pm Eastern</strong>";
+    eventDate = "<em>Jugs vs Messers</em> - <strong>March 19th, 2021 at 9pm Eastern</strong>";
     registration = false;
 
     $.getJSON('https://spreadsheets.google.com/feeds/list/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/1/public/full?alt=json').done(function (json) {
