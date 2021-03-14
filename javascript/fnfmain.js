@@ -7,7 +7,7 @@ $(document).ready(function () {
     alliedBomberGroup = "458th Bomber Squadron";
 
     //allied planes
-    alliedPlaneA = "P47 Jug";
+    alliedPlaneA = "P47D22/P47D28";
     alliedPlaneB = "P40";
     alliedAttacker = "P40 Attackers"
     alliedBomber = "A20 Havoc";
@@ -19,8 +19,8 @@ $(document).ready(function () {
     axisBomberGroup = "III./JG11";
 
     //axis planes
-    axisPlaneA = "Bf109G6Late (No MW50)";
-    axisPlaneB = "Macchi 202";
+    axisPlaneA = "Bf109G6/Bf109G6Late (No MW50)";
+    axisPlaneB = "Bf109G4";
     axisAttacker = "Hs129 Duck";
     axisBomber = "Bf110G2";
 
