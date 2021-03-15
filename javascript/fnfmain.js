@@ -15,8 +15,8 @@ $(document).ready(function () {
     //axis groups
     axisFighterGroupA = "III./JG77";
     axisFighterGroupB = "II./JG4";
-    axisAttackerGroup = "I./JG26";
-    axisBomberGroup = "III./JG11";
+    axisAttackerGroup = "III./JG11";
+    axisBomberGroup = "I./JG26";
 
     //axis planes
     axisPlaneA = "Bf109G6/Bf109G6Late (No MW50)";
