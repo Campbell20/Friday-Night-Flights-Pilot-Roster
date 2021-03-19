@@ -25,7 +25,7 @@ $(document).ready(function () {
     axisBomber = "Bf110G2";
 
     eventDate = "<em>Jugs vs Messers</em> - <strong>March 19th, 2021 at 9pm Eastern</strong>";
-    registration = true;
+    registration = false;
 
     $.getJSON('https://spreadsheets.google.com/feeds/list/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/1/public/full?alt=json').done(function (json) {
         //side names
