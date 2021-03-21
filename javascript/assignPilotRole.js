@@ -511,16 +511,16 @@ function checkLeader(flight) {
 
 
 function setFlightLeaderText(groupNumberLead, LeadElementNumber) {
-    //Adjust text for Flight Leader
+    //Adjust text for Leader
     if ($(window).width() < 509) {
         if (flightForFighterSquadronA != "") {
-            document.getElementById(groupNumberLead + LeadElementNumber).innerHTML = flightForFighterSquadronA + " Flight Lead";
+            document.getElementById(groupNumberLead + LeadElementNumber).innerHTML = flightForFighterSquadronA + " Lead";
         } else if (flightForFighterSquadronB != "") {
-            document.getElementById(groupNumberLead + LeadElementNumber).innerHTML = flightForFighterSquadronB + " Flight Lead";
+            document.getElementById(groupNumberLead + LeadElementNumber).innerHTML = flightForFighterSquadronB + " Lead";
         } else if (flightForAttackSquadron != "") {
-            document.getElementById(groupNumberLead + LeadElementNumber).innerHTML = flightForAttackSquadron + " Flight Lead";
+            document.getElementById(groupNumberLead + LeadElementNumber).innerHTML = flightForAttackSquadron + " Lead";
         } else {
-            document.getElementById(groupNumberLead + LeadElementNumber).innerHTML = flightForBomberSquadron + " Flight Lead";
+            document.getElementById(groupNumberLead + LeadElementNumber).innerHTML = flightForBomberSquadron + " Lead";
         }
     } else if ($(window).width() > 991 && $(window).width() < 1209) {
         document.getElementById(groupNumberLead + LeadElementNumber).innerHTML = "";
@@ -528,23 +528,23 @@ function setFlightLeaderText(groupNumberLead, LeadElementNumber) {
         document.getElementById(groupNumberLead + LeadElementNumber).innerHTML = "FL";
     } else if ($(window).width() >= 1530 && $(window).width() < 1950) {
         if (flightForFighterSquadronA != "") {
-            document.getElementById(groupNumberLead + LeadElementNumber).innerHTML = flightForFighterSquadronA + " Flight Lead";
+            document.getElementById(groupNumberLead + LeadElementNumber).innerHTML = flightForFighterSquadronA + " Lead";
         } else if (flightForFighterSquadronB != "") {
-            document.getElementById(groupNumberLead + LeadElementNumber).innerHTML = flightForFighterSquadronB + " Flight Lead";
+            document.getElementById(groupNumberLead + LeadElementNumber).innerHTML = flightForFighterSquadronB + " Lead";
         } else if (flightForAttackSquadron != "") {
-            document.getElementById(groupNumberLead + LeadElementNumber).innerHTML = flightForAttackSquadron + " Flight Lead";
+            document.getElementById(groupNumberLead + LeadElementNumber).innerHTML = flightForAttackSquadron + " Lead";
         } else {
-            document.getElementById(groupNumberLead + LeadElementNumber).innerHTML = flightForBomberSquadron + " Flight Lead";
+            document.getElementById(groupNumberLead + LeadElementNumber).innerHTML = flightForBomberSquadron + " Lead";
         }
     } else {
         if (flightForFighterSquadronA != "") {
-            document.getElementById(groupNumberLead + LeadElementNumber).innerHTML = flightForFighterSquadronA + " Flight Leader";
+            document.getElementById(groupNumberLead + LeadElementNumber).innerHTML = flightForFighterSquadronA + " Leader";
         } else if (flightForFighterSquadronB != "") {
-            document.getElementById(groupNumberLead + LeadElementNumber).innerHTML = flightForFighterSquadronB + " Flight Leader";
+            document.getElementById(groupNumberLead + LeadElementNumber).innerHTML = flightForFighterSquadronB + " Leader";
         } else if (flightForAttackSquadron != "") {
-            document.getElementById(groupNumberLead + LeadElementNumber).innerHTML = flightForAttackSquadron + " Flight Leader";
+            document.getElementById(groupNumberLead + LeadElementNumber).innerHTML = flightForAttackSquadron + " Leader";
         } else {
-            document.getElementById(groupNumberLead + LeadElementNumber).innerHTML = flightForBomberSquadron + " Flight Leader";
+            document.getElementById(groupNumberLead + LeadElementNumber).innerHTML = flightForBomberSquadron + " Leader";
         }
     }
 }

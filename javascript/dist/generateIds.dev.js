@@ -11,6 +11,9 @@ function createIds() {
   });
   $(".alliedFGA-pic-lead").each(function (i) {
     $(this).attr('id', "alliedFGA-pic-lead" + i);
+  });
+  $(".alliedFGA-skin-lead").each(function (i) {
+    $(this).attr('id', "alliedFGA-skin-lead" + i);
   }); //allied fighter group A
 
   $(".alliedFGA-background-color").each(function (i) {
@@ -24,6 +27,9 @@ function createIds() {
   });
   $(".alliedFGA-pic").each(function (i) {
     $(this).attr('id', "alliedFGA-pic" + i);
+  });
+  $(".alliedFGA-skin").each(function (i) {
+    $(this).attr('id', "alliedFGA-skin" + i);
   }); //allied fighter group B lead
 
   $(".alliedFGB-number-lead").each(function (i) {
@@ -34,6 +40,9 @@ function createIds() {
   });
   $(".alliedFGB-pic-lead").each(function (i) {
     $(this).attr('id', "alliedFGB-pic-lead" + i);
+  });
+  $(".alliedFGB-skin-lead").each(function (i) {
+    $(this).attr('id', "alliedFGB-skin-lead" + i);
   }); //allied fighter group B
 
   $(".alliedFGB-number").each(function (i) {
@@ -44,6 +53,9 @@ function createIds() {
   });
   $(".alliedFGB-pic").each(function (i) {
     $(this).attr('id', "alliedFGB-pic" + i);
+  });
+  $(".alliedFGB-skin").each(function (i) {
+    $(this).attr('id', "alliedFGB-skin" + i);
   }); ///allied attacker group lead
 
   $(".alliedAG-number-lead").each(function (i) {
@@ -54,6 +66,9 @@ function createIds() {
   });
   $(".alliedAG-pic-lead").each(function (i) {
     $(this).attr('id', "alliedAG-pic-lead" + i);
+  });
+  $(".alliedAG-skin-lead").each(function (i) {
+    $(this).attr('id', "alliedAG-skin-lead" + i);
   }); //allied attacker group
 
   $(".alliedAG-number").each(function (i) {
@@ -64,6 +79,9 @@ function createIds() {
   });
   $(".alliedAG-pic").each(function (i) {
     $(this).attr('id', "alliedAG-pic" + i);
+  });
+  $(".alliedAG-skin").each(function (i) {
+    $(this).attr('id', "alliedAG-skin" + i);
   }); ///allied bomber group lead
 
   $(".alliedBG-number-lead").each(function (i) {
@@ -74,6 +92,9 @@ function createIds() {
   });
   $(".alliedBG-pic-lead").each(function (i) {
     $(this).attr('id', "alliedBG-pic-lead" + i);
+  });
+  $(".alliedBG-skin-lead").each(function (i) {
+    $(this).attr('id', "alliedBG-skin-lead" + i);
   }); //allied bomber group
 
   $(".alliedBG-number").each(function (i) {
@@ -84,6 +105,9 @@ function createIds() {
   });
   $(".alliedBG-pic").each(function (i) {
     $(this).attr('id', "alliedBG-pic" + i);
+  });
+  $(".alliedBG-skin").each(function (i) {
+    $(this).attr('id', "alliedBG-skin" + i);
   }); //axis
   //axis fighter group A lead
 
@@ -95,6 +119,9 @@ function createIds() {
   });
   $(".axisFGA-pic-lead").each(function (i) {
     $(this).attr('id', "axisFGA-pic-lead" + i);
+  });
+  $(".axisFGA-skin-lead").each(function (i) {
+    $(this).attr('id', "axisFGA-skin-lead" + i);
   }); //axis fighter group A
 
   $(".axisFGA-background-color").each(function (i) {
@@ -108,6 +135,9 @@ function createIds() {
   });
   $(".axisFGA-pic").each(function (i) {
     $(this).attr('id', "axisFGA-pic" + i);
+  });
+  $(".axisFGA-skin").each(function (i) {
+    $(this).attr('id', "axisFGA-skin" + i);
   }); //axis fighter group B lead
 
   $(".axisFGB-number-lead").each(function (i) {
@@ -118,6 +148,9 @@ function createIds() {
   });
   $(".axisFGB-pic-lead").each(function (i) {
     $(this).attr('id', "axisFGB-pic-lead" + i);
+  });
+  $(".axisFGB-skin-lead").each(function (i) {
+    $(this).attr('id', "axisFGB-skin-lead" + i);
   }); //axis fighter group B
 
   $(".axisFGB-number").each(function (i) {
@@ -128,6 +161,9 @@ function createIds() {
   });
   $(".axisFGB-pic").each(function (i) {
     $(this).attr('id', "axisFGB-pic" + i);
+  });
+  $(".axisFGB-skin").each(function (i) {
+    $(this).attr('id', "axisFGB-skin" + i);
   }); //axis attacker group lead
 
   $(".axisAG-number-lead").each(function (i) {
@@ -138,6 +174,9 @@ function createIds() {
   });
   $(".axisAG-pic-lead").each(function (i) {
     $(this).attr('id', "axisAG-pic-lead" + i);
+  });
+  $(".axisAG-skin-lead").each(function (i) {
+    $(this).attr('id', "axisAG-skin-lead" + i);
   }); //axis attacker group
 
   $(".axisAG-number").each(function (i) {
@@ -148,6 +187,9 @@ function createIds() {
   });
   $(".axisAG-pic").each(function (i) {
     $(this).attr('id', "axisAG-pic" + i);
+  });
+  $(".axisAG-skin").each(function (i) {
+    $(this).attr('id', "axisAG-skin" + i);
   }); ///axis bomber group lead
 
   $(".axisBG-number-lead").each(function (i) {
@@ -158,6 +200,9 @@ function createIds() {
   });
   $(".axisBG-pic-lead").each(function (i) {
     $(this).attr('id', "axisBG-pic-lead" + i);
+  });
+  $(".axisBG-skin-lead").each(function (i) {
+    $(this).attr('id', "axisBG-skin-lead" + i);
   }); //axis bomber group
 
   $(".axisBG-number").each(function (i) {
@@ -168,6 +213,9 @@ function createIds() {
   });
   $(".axisBG-pic").each(function (i) {
     $(this).attr('id', "axisBG-pic" + i);
+  });
+  $(".axisBG-skin").each(function (i) {
+    $(this).attr('id', "axisBG-skin" + i);
   });
 }
 

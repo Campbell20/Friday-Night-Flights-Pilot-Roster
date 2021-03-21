@@ -45,7 +45,7 @@ function setAlliedTemplates(json, randomNumber) {
     }
 
     alliedFG = json.feed.entry[i].gsx$selectflightgroup.$t;
-    alliedName = firstNamesUSA[imageNumber] + " \"" + json.feed.entry[i].gsx$enterpilotnickname.$t + "\" " + lastNamesUSA[imageNumber]; // pilot chosen position
+    alliedName = json.feed.entry[i].gsx$enterpilotnickname.$t; // pilot chosen position
 
     alliedFighterSquadronAPosition = json.feed.entry[i].gsx$selectpilotposition.$t;
     alliedFighterSquadronBPosition = json.feed.entry[i].gsx$selectpilotposition_2.$t;
@@ -56,6 +56,7 @@ function setAlliedTemplates(json, randomNumber) {
     flightForFighterSquadronB = json.feed.entry[i].gsx$whichflightdoyouwishtobein_2.$t.split(" ")[0];
     flightForAttackSquadron = json.feed.entry[i].gsx$whichflightdoyouwishtobein_3.$t.split(" ")[0];
     flightForBomberSquadron = json.feed.entry[i].gsx$whichflightdoyouwishtobein_4.$t.split(" ")[0];
+    skinChoice = setAlliedPlaneSkin();
 
     if (side == alliedSide) {
       //Allied Fighter Group A
@@ -68,6 +69,7 @@ function setAlliedTemplates(json, randomNumber) {
           document.getElementById("alliedFGA-lead" + alliedFGALeadElementNumber).innerHTML = alliedName;
           document.getElementById('alliedFGA-pic-lead' + alliedFGALeadElementNumber).src = 'imgs/American/American' + imageNumber + ".jpg";
           setFlightLeaderText("alliedFGA-number-lead", alliedFGALeadElementNumber);
+          document.getElementById("alliedFGA-skin-lead" + alliedFGALeadElementNumber).innerHTML = skinChoice;
           alliedFGALeadElementNumber++;
         } else {
           var alliedFGADivs = alliedFGATemplate.querySelector('div');
@@ -80,6 +82,7 @@ function setAlliedTemplates(json, randomNumber) {
           }
 
           assignWingmanRole(alliedFGA, alliedFGAElementNumber, "alliedFGA-number", "alliedFGA", alliedName, 'alliedFGA-pic', 'American');
+          document.getElementById("alliedFGA-skin" + alliedFGA).innerHTML = skinChoice;
           alliedFGAElementNumber++;
           alliedFGA++;
         }
@@ -95,6 +98,7 @@ function setAlliedTemplates(json, randomNumber) {
           document.getElementById("alliedFGB-lead" + alliedFGBLeadElementNumber).innerHTML = alliedName;
           document.getElementById('alliedFGB-pic-lead' + alliedFGBLeadElementNumber).src = 'imgs/American/American' + imageNumber + ".jpg";
           setFlightLeaderText("alliedFGB-number-lead", alliedFGBLeadElementNumber);
+          document.getElementById("alliedFGB-skin-lead" + alliedFGBLeadElementNumber).innerHTML = skinChoice;
           alliedFGBLeadElementNumber++;
         } else {
           var alliedFGBDivs = alliedFGBTemplate.querySelector('div');
@@ -107,6 +111,7 @@ function setAlliedTemplates(json, randomNumber) {
           }
 
           assignWingmanRole(alliedFGB, alliedFGBElementNumber, "alliedFGB-number", "alliedFGB", alliedName, 'alliedFGB-pic', 'American');
+          document.getElementById("alliedFGB-skin" + alliedFGB).innerHTML = skinChoice;
           alliedFGBElementNumber++;
           alliedFGB++;
         }
@@ -122,6 +127,7 @@ function setAlliedTemplates(json, randomNumber) {
           document.getElementById("alliedAG-lead" + alliedAGLeadElementNumber).innerHTML = alliedName;
           document.getElementById('alliedAG-pic-lead' + alliedAGLeadElementNumber).src = 'imgs/American/American' + imageNumber + ".jpg";
           setFlightLeaderText("alliedAG-number-lead", alliedAGLeadElementNumber);
+          document.getElementById("alliedAG-skin-lead" + alliedAGLeadElementNumber).innerHTML = skinChoice;
           alliedAGLeadElementNumber++;
         } else {
           var alliedAGDivs = alliedAGTemplate.querySelector('div');
@@ -134,6 +140,7 @@ function setAlliedTemplates(json, randomNumber) {
           }
 
           assignWingmanRole(alliedAG, alliedAGElementNumber, "alliedAG-number", "alliedAG", alliedName, 'alliedAG-pic', 'American');
+          document.getElementById("alliedAG-skin" + alliedAG).innerHTML = skinChoice;
           alliedAGElementNumber++;
           alliedAG++;
         }
@@ -149,6 +156,7 @@ function setAlliedTemplates(json, randomNumber) {
           document.getElementById("alliedBG-lead" + alliedBGLeadElementNumber).innerHTML = alliedName;
           document.getElementById('alliedBG-pic-lead' + alliedBGLeadElementNumber).src = 'imgs/American/American' + imageNumber + ".jpg";
           setFlightLeaderText("alliedBG-number-lead", alliedBGLeadElementNumber);
+          document.getElementById("alliedBG-skin-lead" + alliedBGLeadElementNumber).innerHTML = skinChoice;
           alliedBGLeadElementNumber++;
         } else {
           var alliedBGDivs = alliedBGTemplate.querySelector('div');
@@ -161,6 +169,7 @@ function setAlliedTemplates(json, randomNumber) {
           }
 
           assignWingmanRole(alliedBG, alliedBGElementNumber, "alliedBG-number", "alliedBG", alliedName, 'alliedBG-pic', 'American');
+          document.getElementById("alliedBG-skin" + alliedBG).innerHTML = skinChoice;
           alliedBGElementNumber++;
           alliedBG++;
         }
@@ -169,143 +178,89 @@ function setAlliedTemplates(json, randomNumber) {
   }
 
   setTimeout(function () {
-    sortAlliedWingmen();
+    sortWingmen();
   }, 200);
 }
 
-function sortAlliedWingmen() {
-  var alliedFighterALeadlist = $('#alliedfighterA-lead');
-  var alliedFighterALeadlistitems = alliedFighterALeadlist.children('div').get();
-  alliedFighterALeadlistitems.sort(function (a, b) {
-    return $(a).text().localeCompare($(b).text());
-  });
-  $.each(alliedFighterALeadlistitems, function (index, item) {
-    alliedFighterALeadlist.append(item);
-  });
-  var alliedFighterAlist = $('#alliedfighterA-wingmen');
-  var alliedFighterAlistitems = alliedFighterAlist.children('div').get();
-  alliedFighterAlistitems.sort(function (a, b) {
-    return $(a).text().localeCompare($(b).text());
-  });
-  $.each(alliedFighterAlistitems, function (index, item) {
-    alliedFighterAlist.append(item);
-  });
-  var alliedFighterBLeadlist = $('#alliedfighterB-lead');
-  var alliedFighterBLeadlistitems = alliedFighterBLeadlist.children('div').get();
-  alliedFighterBLeadlistitems.sort(function (a, b) {
-    return $(a).text().localeCompare($(b).text());
-  });
-  $.each(alliedFighterBLeadlistitems, function (index, item) {
-    alliedFighterBLeadlist.append(item);
-  });
-  var alliedFighterBlist = $('#alliedfighterB-wingmen');
-  var alliedFighterBlistitems = alliedFighterBlist.children('div').get();
-  alliedFighterBlistitems.sort(function (a, b) {
-    return $(a).text().localeCompare($(b).text());
-  });
-  $.each(alliedFighterBlistitems, function (index, item) {
-    alliedFighterBlist.append(item);
-  });
-  var alliedAttackerLeadlist = $('#alliedAttackerGroup-lead');
-  var alliedAttackerLeadlistitems = alliedAttackerLeadlist.children('div').get();
-  alliedAttackerLeadlistitems.sort(function (a, b) {
-    return $(a).text().localeCompare($(b).text());
-  });
-  $.each(alliedAttackerLeadlistitems, function (index, item) {
-    alliedAttackerLeadlist.append(item);
-  });
-  var alliedAttackerLeadlist = $('#alliedAttackerGroup-lead');
-  var alliedAttackerLeadlistitems = alliedAttackerLeadlist.children('div').get();
-  alliedAttackerLeadlistitems.sort(function (a, b) {
-    return $(a).text().localeCompare($(b).text());
-  });
-  $.each(alliedAttackerLeadlistitems, function (index, item) {
-    alliedAttackerLeadlist.append(item);
-  });
-  var alliedBomberLeadlist = $('#alliedbomber-lead');
-  var alliedBomberLeadlistitems = alliedBomberLeadlist.children('div').get();
-  alliedBomberLeadlistitems.sort(function (a, b) {
-    return $(a).text().localeCompare($(b).text());
-  });
-  $.each(alliedBomberLeadlistitems, function (index, item) {
-    alliedBomberLeadlist.append(item);
-  });
-  var alliedBomberlist = $('#alliedbomber-wingmen');
-  var alliedBomberlistitems = alliedBomberlist.children('div').get();
-  alliedBomberlistitems.sort(function (a, b) {
-    return $(a).text().localeCompare($(b).text());
-  });
-  $.each(alliedBomberlistitems, function (index, item) {
-    alliedBomberlist.append(item);
-  });
-  var axisFighterALeadlist = $('#axisfighterA-lead');
-  var axisFighterALeadlistitems = axisFighterALeadlist.children('div').get();
-  axisFighterALeadlistitems.sort(function (a, b) {
-    return $(a).text().localeCompare($(b).text());
-  });
-  $.each(axisFighterALeadlistitems, function (index, item) {
-    axisFighterALeadlist.append(item);
-  });
-  var axisFighterAlist = $('#axisfighterA-wingmen');
-  var axisFighterAlistitems = axisFighterAlist.children('div').get();
-  axisFighterAlistitems.sort(function (a, b) {
-    return $(a).text().localeCompare($(b).text());
-  });
-  $.each(axisFighterAlistitems, function (index, item) {
-    axisFighterAlist.append(item);
-  });
-  var axisFighterBLeadlist = $('#axisfighterB-lead');
-  var axisFighterBLeadlistitems = axisFighterBLeadlist.children('div').get();
-  axisFighterBLeadlistitems.sort(function (a, b) {
-    return $(a).text().localeCompare($(b).text());
-  });
-  $.each(axisFighterBLeadlistitems, function (index, item) {
-    axisFighterBLeadlist.append(item);
-  });
-  var axisFighterBlist = $('#axisfighterB-wingmen');
-  var axisFighterBlistitems = axisFighterBlist.children('div').get();
-  axisFighterBlistitems.sort(function (a, b) {
-    return $(a).text().localeCompare($(b).text());
-  });
-  $.each(axisFighterBlistitems, function (index, item) {
-    axisFighterBlist.append(item);
-  });
-  var axisAttackerLeadlist = $('#axisAttackerGroup-lead');
-  var axisAttackerLeadlistitems = axisAttackerLeadlist.children('div').get();
-  axisAttackerLeadlistitems.sort(function (a, b) {
-    return $(a).text().localeCompare($(b).text());
-  });
-  $.each(axisAttackerLeadlistitems, function (index, item) {
-    axisAttackerLeadlist.append(item);
-  });
-  var axisAttackerLeadlist = $('#axisAttackerGroup-lead');
-  var axisAttackerLeadlistitems = axisAttackerLeadlist.children('div').get();
-  axisAttackerLeadlistitems.sort(function (a, b) {
-    return $(a).text().localeCompare($(b).text());
-  });
-  $.each(axisAttackerLeadlistitems, function (index, item) {
-    axisAttackerLeadlist.append(item);
-  });
-  var axisBomberLeadlist = $('#axisbomber-lead');
-  var axisBomberLeadlistitems = axisBomberLeadlist.children('div').get();
-  axisBomberLeadlistitems.sort(function (a, b) {
-    return $(a).text().localeCompare($(b).text());
-  });
-  $.each(axisBomberLeadlistitems, function (index, item) {
-    axisBomberLeadlist.append(item);
-  });
-  var axisBomberlist = $('#axisbomber-wingmen');
-  var axisBomberlistitems = axisBomberlist.children('div').get();
-  axisBomberlistitems.sort(function (a, b) {
-    return $(a).text().localeCompare($(b).text());
-  });
-  $.each(axisBomberlistitems, function (index, item) {
-    axisBomberlist.append(item);
-  });
-}
+function setAlliedPlaneSkin() {
+  SquadronASkinRed = "Stamp";
+  SquadronASkinBlue = "9./JG 54";
+  SquadronASkinGreen = "Kunz";
+  SquadronASkinBlack = "Ehrler";
+  SquadronBSkinGrowler = "Graf";
+  SquadronBSkinRaven = "Dreesmann";
+  SquadronBSkinEagle = "Weiss";
+  SquadronBSkinRipper = "Emmerstorfer";
+  AttackSquadronSkinBear = "Don Pedro";
+  AttackSquadronSkinRabbit = "Gerthofer";
+  AttackSquadronSkinFox = "Tonne";
+  AttackSquadronSkinBison = "Grislawski";
+  BomberSquadronSkinPelican = "Ossmann";
+  BomberSquadronSkinSwan = "Stratmann";
+  BomberSquadronSkinSeagull = "Johnen";
+  BomberSquadronSkinCanary = "Becker";
 
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  if (flightForFighterSquadronA == "Red") {
+    return SquadronASkinRed;
+  }
+
+  if (flightForFighterSquadronA == "Blue") {
+    return SquadronASkinBlue;
+  }
+
+  if (flightForFighterSquadronA == "Green") {
+    return SquadronASkinGreen;
+  }
+
+  if (flightForFighterSquadronA == "Black") {
+    return SquadronASkinBlack;
+  }
+
+  if (flightForFighterSquadronB == "Growler") {
+    return SquadronBSkinGrowler;
+  }
+
+  if (flightForFighterSquadronB == "Raven") {
+    return SquadronBSkinRaven;
+  }
+
+  if (flightForFighterSquadronB == "Eagle") {
+    return SquadronBSkinEagle;
+  }
+
+  if (flightForFighterSquadronB == "Ripper") {
+    return SquadronBSkinRipper;
+  }
+
+  if (flightForAttackSquadron == "Bear") {
+    return AttackSquadronSkinBear;
+  }
+
+  if (flightForAttackSquadron == "Rabbit") {
+    return AttackSquadronSkinRabbit;
+  }
+
+  if (flightForAttackSquadron == "Fox") {
+    return AttackSquadronSkinFox;
+  }
+
+  if (flightForAttackSquadron == "Bison") {
+    return AttackSquadronSkinBison;
+  }
+
+  if (flightForBomberSquadron == "Pelican") {
+    return BomberSquadronSkinPelican;
+  }
+
+  if (flightForBomberSquadron == "Swan") {
+    return BomberSquadronSkinSwan;
+  }
+
+  if (flightForBomberSquadron == "Seagull") {
+    return BomberSquadronSkinSeagull;
+  }
+
+  if (flightForBomberSquadron == "Canary") {
+    return BomberSquadronSkinCanary;
+  }
 }

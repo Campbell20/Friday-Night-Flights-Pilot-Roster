@@ -115,6 +115,24 @@ body {
         }
     }
 
+    &-subtitle {
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        &-assignment {
+            border-left: 1px solid $border;
+            border-right: 1px dotted $border;
+        }
+        &-name {
+            border-left:1px dotted $border;
+        }
+        &-skin {
+            border-left: 1px dotted $border;
+            border-right: 1px solid $border;
+        }
+
+        
+    }
     &-body {
         background-color: $tbody-bckgrnd;
         border-bottom: 1px dotted $border;
@@ -123,35 +141,67 @@ body {
             // text-indent: .5rem;
             // font-weight: bold;
             padding: 0 .2rem;
-            border-right: 1px solid $border;
+            // border-right: 1px solid $border;
+            display: flex;
+            justify-content: center;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: .8rem;
+            padding-left: .2rem;
+            padding-right:.2rem;
         }
 
         &-number {
             font-weight: bold;
             justify-content: center;
             border-left: 1px solid $border;
-        }
-    }
-
-    &-last {
-        &:last-child {
-            .grid {
-                &-body {
-                    &-name {
-                        border-bottom: 1px solid $border;
-                    }
-
-                    &-number {
-                        border-bottom: 1px solid $border;
-                    }
-
-                    &-pic {
-                        border-bottom: 1px solid $border;
-                    }
-                }
+            display: flex;
+            justify-content: left;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-size: .8rem;
+            padding-left: .2rem;
+            padding-right:0;
+            
+            &-lead {
+                justify-content: center !important;
             }
         }
+
+        &-skin {
+            border-left: 1px dotted $border;
+            border-right: 1px solid $border;
+            display: flex;
+            justify-content: left;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: .8rem;
+            padding-left: .2rem;
+            padding-right:0;
+        }
     }
+
+    // &-last {
+    //     &:last-child {
+    //         .grid {
+    //             &-body {
+    //                 &-name {
+    //                     border-bottom: 1px solid $border;
+    //                 }
+
+    //                 &-number {
+    //                     border-bottom: 1px solid $border;
+    //                 }
+
+    //                 &-pic {
+    //                     border-bottom: 1px solid $border;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 
 }
 

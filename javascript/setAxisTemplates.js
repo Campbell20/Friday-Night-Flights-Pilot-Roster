@@ -44,7 +44,7 @@ function setAxisTemplates(json, randomNumber) {
             imageNumber = getRandomInt(1, 50);
         }
         axisFG = json.feed.entry[i].gsx$selectflightgroup_2.$t;
-        axisName = firstNamesGermany[imageNumber] + " \"" + json.feed.entry[i].gsx$enterpilotnickname_2.$t + "\" " + lastNamesGermany[imageNumber]; // pilot chosen position
+        axisName = json.feed.entry[i].gsx$enterpilotnickname_2.$t; // pilot chosen position
 
         axisFighterSquadronAPosition = json.feed.entry[i].gsx$selectpilotposition.$t;
         axisFighterSquadronBPosition = json.feed.entry[i].gsx$selectpilotposition_2.$t;
@@ -55,6 +55,8 @@ function setAxisTemplates(json, randomNumber) {
         flightForFighterSquadronB = json.feed.entry[i].gsx$whichflightdoyouwishtobein_2.$t.split(" ")[0];
         flightForAttackSquadron = json.feed.entry[i].gsx$whichflightdoyouwishtobein_3.$t.split(" ")[0];
         flightForBomberSquadron = json.feed.entry[i].gsx$whichflightdoyouwishtobein_4.$t.split(" ")[0];
+
+        skinChoice = setAxisPlaneSkin();
 
         if (side == axisSide) {
             //Axis Fighter Group A
@@ -67,6 +69,7 @@ function setAxisTemplates(json, randomNumber) {
                     document.getElementById("axisFGA-lead" + axisFGALeadElementNumber).innerHTML = axisName;
                     document.getElementById('axisFGA-pic-lead' + axisFGALeadElementNumber).src = 'imgs/German/German' + imageNumber + ".jpg";
                     setFlightLeaderText("axisFGA-number-lead", axisFGALeadElementNumber);
+                    document.getElementById("axisFGA-skin-lead" + axisFGALeadElementNumber).innerHTML = skinChoice;
                     axisFGALeadElementNumber++;
                 } else {
                     var axisFGADivs = axisFGATemplate.querySelector('div');
@@ -79,6 +82,7 @@ function setAxisTemplates(json, randomNumber) {
                     }
 
                     assignWingmanRole(axisFGA, axisFGAElementNumber, "axisFGA-number", "axisFGA", axisName, 'axisFGA-pic', 'German');
+                    document.getElementById("axisFGA-skin" + axisFGA).innerHTML = skinChoice;
                     axisFGAElementNumber++;
                     axisFGA++;
                 }
@@ -95,6 +99,7 @@ function setAxisTemplates(json, randomNumber) {
                     document.getElementById("axisFGB-lead" + axisFGBLeadElementNumber).innerHTML = axisName;
                     document.getElementById('axisFGB-pic-lead' + axisFGBLeadElementNumber).src = 'imgs/German/German' + imageNumber + ".jpg";
                     setFlightLeaderText("axisFGB-number-lead", axisFGBLeadElementNumber);
+                    document.getElementById("axisFGB-skin-lead" + axisFGBLeadElementNumber).innerHTML = skinChoice;
                     axisFGBLeadElementNumber++;
                 } else {
                     var axisFGBDivs = axisFGBTemplate.querySelector('div');
@@ -107,6 +112,7 @@ function setAxisTemplates(json, randomNumber) {
                     }
 
                     assignWingmanRole(axisFGB, axisFGBElementNumber, "axisFGB-number", "axisFGB", axisName, 'axisFGB-pic', 'German');
+                    document.getElementById("axisFGB-skin" + axisFGB).innerHTML = skinChoice;
                     axisFGBElementNumber++;
                     axisFGB++;
                 }
@@ -123,6 +129,7 @@ function setAxisTemplates(json, randomNumber) {
                     document.getElementById("axisAG-lead" + axisAGLeadElementNumber).innerHTML = axisName;
                     document.getElementById('axisAG-pic-lead' + axisAGLeadElementNumber).src = 'imgs/German/German' + imageNumber + ".jpg";
                     setFlightLeaderText("axisAG-number-lead", axisAGLeadElementNumber);
+                    document.getElementById("axisAG-skin-lead" + axisAGLeadElementNumber).innerHTML = skinChoice;
                     axisAGLeadElementNumber++;
                 } else {
                     var axisAGDivs = axisAGTemplate.querySelector('div');
@@ -135,6 +142,7 @@ function setAxisTemplates(json, randomNumber) {
                     }
 
                     assignWingmanRole(axisAG, axisAGElementNumber, "axisAG-number", "axisAG", axisName, 'axisAG-pic', 'German');
+                    document.getElementById("axisAG-skin" + axisAG).innerHTML = skinChoice;
                     axisAGElementNumber++;
                     axisAG++;
                 }
@@ -151,6 +159,7 @@ function setAxisTemplates(json, randomNumber) {
                     document.getElementById("axisBG-lead" + axisBGLeadElementNumber).innerHTML = axisName;
                     document.getElementById('axisBG-pic-lead' + axisBGLeadElementNumber).src = 'imgs/German/German' + imageNumber + ".jpg";
                     setFlightLeaderText("axisBG-number-lead", axisBGLeadElementNumber);
+                    document.getElementById("axisBG-skin-lead" + axisAGLeadElementNumber).innerHTML = skinChoice;
                     axisBGLeadElementNumber++;
                 } else {
                     var axisBGDivs = axisBGTemplate.querySelector('div');
@@ -163,6 +172,7 @@ function setAxisTemplates(json, randomNumber) {
                     }
 
                     assignWingmanRole(axisBG, axisBGElementNumber, "axisBG-number", "axisBG", axisName, 'axisBG-pic', 'German');
+                    document.getElementById("axisBG-skin" + axisBG).innerHTML = skinChoice;
                     axisBGElementNumber++;
                     axisBG++;
                 }
@@ -173,4 +183,81 @@ function setAxisTemplates(json, randomNumber) {
 
     }
 
+}
+
+
+
+function setAxisPlaneSkin () {
+    SquadronASkinRed = "Stamp";
+    SquadronASkinBlue = "9./JG 54";
+    SquadronASkinGreen = "Kunz";
+    SquadronASkinBlack = "Ehrler";
+
+    SquadronBSkinGrowler = "Graf";
+    SquadronBSkinRaven = "Dreesmann";
+    SquadronBSkinEagle = "Weiss";
+    SquadronBSkinRipper = "Emmerstorfer";
+
+    AttackSquadronSkinBear = "Don Pedro";
+    AttackSquadronSkinRabbit = "Gerthofer";
+    AttackSquadronSkinFox = "Tonne";
+    AttackSquadronSkinBison = "Grislawski";
+
+    BomberSquadronSkinPelican = "Ossmann";
+    BomberSquadronSkinSwan = "Stratmann";
+    BomberSquadronSkinSeagull = "Johnen";
+    BomberSquadronSkinCanary = "Becker";
+
+
+    if(flightForFighterSquadronA == "Red"){
+        return SquadronASkinRed;
+    }
+    if(flightForFighterSquadronA == "Blue"){
+        return SquadronASkinBlue;
+    }
+    if(flightForFighterSquadronA == "Green"){
+        return SquadronASkinGreen;
+    }
+    if(flightForFighterSquadronA == "Black"){
+        return SquadronASkinBlack;
+    }
+
+    if(flightForFighterSquadronB == "Growler"){
+        return SquadronBSkinGrowler;
+    }
+    if(flightForFighterSquadronB == "Raven"){
+        return SquadronBSkinRaven;
+    }
+    if(flightForFighterSquadronB == "Eagle"){
+        return SquadronBSkinEagle;
+    }
+    if(flightForFighterSquadronB == "Ripper"){
+        return SquadronBSkinRipper;
+    }
+
+    if(flightForAttackSquadron == "Bear") {
+        return AttackSquadronSkinBear;
+    }
+    if(flightForAttackSquadron == "Rabbit") {
+        return AttackSquadronSkinRabbit;
+    }
+    if(flightForAttackSquadron == "Fox") {
+        return AttackSquadronSkinFox;
+    }
+    if(flightForAttackSquadron == "Bison") {
+        return AttackSquadronSkinBison;
+    }
+
+    if(flightForBomberSquadron == "Pelican") {
+        return BomberSquadronSkinPelican;
+    }
+    if(flightForBomberSquadron == "Swan") {
+        return BomberSquadronSkinSwan;    
+    }
+    if(flightForBomberSquadron == "Seagull") {
+        return BomberSquadronSkinSeagull;
+    }
+    if(flightForBomberSquadron == "Canary") {
+        return BomberSquadronSkinCanary;
+    }
 }

@@ -7,19 +7,19 @@ $(document).ready(function () {
   alliedAttackerGroup = "328th Fighter Squadron";
   alliedBomberGroup = "458th Bomber Squadron"; //allied planes
 
-  alliedPlaneA = "P47D22/P47D28";
-  alliedPlaneB = "P40";
+  alliedPlaneA = "P47D22";
+  alliedPlaneB = "P47D28";
   alliedAttacker = "P40 Attackers";
   alliedBomber = "A20 Havoc"; //axis groups
 
   axisFighterGroupA = "III./JG77";
-  axisFighterGroupB = "II./JG4";
-  axisAttackerGroup = "III./JG11";
+  axisFighterGroupB = "III./JG11";
+  axisAttackerGroup = "II./JG4";
   axisBomberGroup = "I./JG26"; //axis planes
 
-  axisPlaneA = "Bf109G6/Bf109G6Late (No MW50)";
-  axisPlaneB = "Bf109G4";
-  axisAttacker = "Hs129 Duck";
+  axisPlaneA = "Bf109G6Late (No MW50)";
+  axisPlaneB = "Bf109G6";
+  axisAttacker = "Bf109G4";
   axisBomber = "Bf110G2";
   eventDate = "<em>Jugs vs Messers</em> - <strong>March 26th, 2021 at 9pm Eastern</strong>";
   registration = true;
@@ -103,3 +103,140 @@ $(document).ready(function () {
   toggleRegistration();
   setEventDate();
 });
+
+function sortWingmen() {
+  var alliedFighterALeadlist = $('#alliedfighterA-lead');
+  var alliedFighterALeadlistitems = alliedFighterALeadlist.children('div').get();
+  alliedFighterALeadlistitems.sort(function (a, b) {
+    return $(a).text().localeCompare($(b).text());
+  });
+  $.each(alliedFighterALeadlistitems, function (index, item) {
+    alliedFighterALeadlist.append(item);
+  });
+  var alliedFighterAlist = $('#alliedfighterA-wingmen');
+  var alliedFighterAlistitems = alliedFighterAlist.children('div').get();
+  alliedFighterAlistitems.sort(function (a, b) {
+    return $(a).text().localeCompare($(b).text());
+  });
+  $.each(alliedFighterAlistitems, function (index, item) {
+    alliedFighterAlist.append(item);
+  });
+  var alliedFighterBLeadlist = $('#alliedfighterB-lead');
+  var alliedFighterBLeadlistitems = alliedFighterBLeadlist.children('div').get();
+  alliedFighterBLeadlistitems.sort(function (a, b) {
+    return $(a).text().localeCompare($(b).text());
+  });
+  $.each(alliedFighterBLeadlistitems, function (index, item) {
+    alliedFighterBLeadlist.append(item);
+  });
+  var alliedFighterBlist = $('#alliedfighterB-wingmen');
+  var alliedFighterBlistitems = alliedFighterBlist.children('div').get();
+  alliedFighterBlistitems.sort(function (a, b) {
+    return $(a).text().localeCompare($(b).text());
+  });
+  $.each(alliedFighterBlistitems, function (index, item) {
+    alliedFighterBlist.append(item);
+  });
+  var alliedAttackerLeadlist = $('#alliedAttackerGroup-lead');
+  var alliedAttackerLeadlistitems = alliedAttackerLeadlist.children('div').get();
+  alliedAttackerLeadlistitems.sort(function (a, b) {
+    return $(a).text().localeCompare($(b).text());
+  });
+  $.each(alliedAttackerLeadlistitems, function (index, item) {
+    alliedAttackerLeadlist.append(item);
+  });
+  var alliedAttackerLeadlist = $('#alliedAttackerGroup-lead');
+  var alliedAttackerLeadlistitems = alliedAttackerLeadlist.children('div').get();
+  alliedAttackerLeadlistitems.sort(function (a, b) {
+    return $(a).text().localeCompare($(b).text());
+  });
+  $.each(alliedAttackerLeadlistitems, function (index, item) {
+    alliedAttackerLeadlist.append(item);
+  });
+  var alliedBomberLeadlist = $('#alliedbomber-lead');
+  var alliedBomberLeadlistitems = alliedBomberLeadlist.children('div').get();
+  alliedBomberLeadlistitems.sort(function (a, b) {
+    return $(a).text().localeCompare($(b).text());
+  });
+  $.each(alliedBomberLeadlistitems, function (index, item) {
+    alliedBomberLeadlist.append(item);
+  });
+  var alliedBomberlist = $('#alliedbomber-wingmen');
+  var alliedBomberlistitems = alliedBomberlist.children('div').get();
+  alliedBomberlistitems.sort(function (a, b) {
+    return $(a).text().localeCompare($(b).text());
+  });
+  $.each(alliedBomberlistitems, function (index, item) {
+    alliedBomberlist.append(item);
+  });
+  var axisFighterALeadlist = $('#axisfighterA-lead');
+  var axisFighterALeadlistitems = axisFighterALeadlist.children('div').get();
+  axisFighterALeadlistitems.sort(function (a, b) {
+    return $(a).text().localeCompare($(b).text());
+  });
+  $.each(axisFighterALeadlistitems, function (index, item) {
+    axisFighterALeadlist.append(item);
+  });
+  var axisFighterAlist = $('#axisfighterA-wingmen');
+  var axisFighterAlistitems = axisFighterAlist.children('div').get();
+  axisFighterAlistitems.sort(function (a, b) {
+    return $(a).text().localeCompare($(b).text());
+  });
+  $.each(axisFighterAlistitems, function (index, item) {
+    axisFighterAlist.append(item);
+  });
+  var axisFighterBLeadlist = $('#axisfighterB-lead');
+  var axisFighterBLeadlistitems = axisFighterBLeadlist.children('div').get();
+  axisFighterBLeadlistitems.sort(function (a, b) {
+    return $(a).text().localeCompare($(b).text());
+  });
+  $.each(axisFighterBLeadlistitems, function (index, item) {
+    axisFighterBLeadlist.append(item);
+  });
+  var axisFighterBlist = $('#axisfighterB-wingmen');
+  var axisFighterBlistitems = axisFighterBlist.children('div').get();
+  axisFighterBlistitems.sort(function (a, b) {
+    return $(a).text().localeCompare($(b).text());
+  });
+  $.each(axisFighterBlistitems, function (index, item) {
+    axisFighterBlist.append(item);
+  });
+  var axisAttackerLeadlist = $('#axisAttackerGroup-lead');
+  var axisAttackerLeadlistitems = axisAttackerLeadlist.children('div').get();
+  axisAttackerLeadlistitems.sort(function (a, b) {
+    return $(a).text().localeCompare($(b).text());
+  });
+  $.each(axisAttackerLeadlistitems, function (index, item) {
+    axisAttackerLeadlist.append(item);
+  });
+  var axisAttackerLeadlist = $('#axisAttackerGroup-lead');
+  var axisAttackerLeadlistitems = axisAttackerLeadlist.children('div').get();
+  axisAttackerLeadlistitems.sort(function (a, b) {
+    return $(a).text().localeCompare($(b).text());
+  });
+  $.each(axisAttackerLeadlistitems, function (index, item) {
+    axisAttackerLeadlist.append(item);
+  });
+  var axisBomberLeadlist = $('#axisbomber-lead');
+  var axisBomberLeadlistitems = axisBomberLeadlist.children('div').get();
+  axisBomberLeadlistitems.sort(function (a, b) {
+    return $(a).text().localeCompare($(b).text());
+  });
+  $.each(axisBomberLeadlistitems, function (index, item) {
+    axisBomberLeadlist.append(item);
+  });
+  var axisBomberlist = $('#axisbomber-wingmen');
+  var axisBomberlistitems = axisBomberlist.children('div').get();
+  axisBomberlistitems.sort(function (a, b) {
+    return $(a).text().localeCompare($(b).text());
+  });
+  $.each(axisBomberlistitems, function (index, item) {
+    axisBomberlist.append(item);
+  });
+}
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
