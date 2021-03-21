@@ -179,7 +179,6 @@ body {
       -ms-flex-pack: left;
           justify-content: left;
   text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
   font-size: .8rem;
   padding-left: .2rem;

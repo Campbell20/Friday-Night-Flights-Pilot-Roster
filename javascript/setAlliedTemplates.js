@@ -183,29 +183,26 @@ function setAlliedTemplates(json, randomNumber) {
   }, 200);
 }
 
-
-
-
 function setAlliedPlaneSkin () {
-  SquadronASkinRed = "Stamp";
-  SquadronASkinBlue = "9./JG 54";
-  SquadronASkinGreen = "Kunz";
-  SquadronASkinBlack = "Ehrler";
+  SquadronASkinRed = "Hart";
+  SquadronASkinBlue = "Kansas Tornado II";
+  SquadronASkinGreen = "410th FS";
+  SquadronASkinBlack = "Georgie Fay";
 
-  SquadronBSkinGrowler = "Graf";
-  SquadronBSkinRaven = "Dreesmann";
-  SquadronBSkinEagle = "Weiss";
-  SquadronBSkinRipper = "Emmerstorfer";
+  SquadronBSkinGrowler = "Winged Skull";
+  SquadronBSkinRaven = "Passionate Patsy";
+  SquadronBSkinEagle = "Lisi";
+  SquadronBSkinRipper = "Senta a Pua!";
 
-  AttackSquadronSkinBear = "Don Pedro";
-  AttackSquadronSkinRabbit = "Gerthofer";
-  AttackSquadronSkinFox = "Tonne";
-  AttackSquadronSkinBison = "Grislawski";
+  AttackSquadronSkinBear = "";
+  AttackSquadronSkinRabbit = "";
+  AttackSquadronSkinFox = "";
+  AttackSquadronSkinBison = "";
 
-  BomberSquadronSkinPelican = "Ossmann";
-  BomberSquadronSkinSwan = "Stratmann";
-  BomberSquadronSkinSeagull = "Johnen";
-  BomberSquadronSkinCanary = "Becker";
+  BomberSquadronSkinPelican = "Sandy";
+  BomberSquadronSkinSwan = "Wahoo";
+  BomberSquadronSkinSeagull = "Miss Burma";
+  BomberSquadronSkinCanary = "Night Interdiction";
 
 
   if(flightForFighterSquadronA == "Red"){
