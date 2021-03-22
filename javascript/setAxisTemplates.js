@@ -29,12 +29,15 @@ function setAxisTemplates(json, randomNumber) {
     axisBG = 0;
     axisBGLeadElementNumber = 0;
     axisBGElementNumber = 1;
-
+    axisNumbers = 0
     
-
+    totalRegistered = 85;
+    
     _randomNumber = randomNumber.map(function (x) { 
         return parseInt(x, 10); 
       });
+
+   
 
     for (i = 0; i < jsonLength; i++) {
         createIds();
@@ -57,7 +60,18 @@ function setAxisTemplates(json, randomNumber) {
         flightForBomberSquadron = json.feed.entry[i].gsx$whichflightdoyouwishtobein_4.$t.split(" ")[0];
 
         skinChoice = setAxisPlaneSkin();
+    
 
+        if(side == axisSide) {
+            axisNumbers++;
+        }
+
+     
+        if(side == axisSide || side == alliedSide){
+            totalRegistered--
+            document.getElementById('slots-left').innerHTML = totalRegistered;
+        }
+       
         if (side == axisSide) {
             //Axis Fighter Group A
             if (axisFG.includes(axisTeamA)) {
@@ -180,9 +194,9 @@ function setAxisTemplates(json, randomNumber) {
 
         }
 
-
     }
-
+    console.log(axisNumbers);
+    document.getElementById("axis-numbers").innerHTML = axisNumbers;
 }
 
 

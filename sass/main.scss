@@ -34,9 +34,10 @@ body {
 .fnf-logo {
     height: 13rem;
     width: 32.3rem;
+
     @media (max-width: 600px) {
         height: 100%;
-        width: 100%;       
+        width: 100%;
     }
 }
 
@@ -119,20 +120,24 @@ body {
         font-weight: bolder;
         display: flex;
         justify-content: center;
+
         &-assignment {
             border-left: 1px solid $border;
             border-right: 1px dotted $border;
         }
+
         &-name {
-            border-left:1px dotted $border;
+            border-left: 1px dotted $border;
         }
+
         &-skin {
             border-left: 1px dotted $border;
             border-right: 1px solid $border;
         }
 
-        
+
     }
+
     &-body {
         background-color: $tbody-bckgrnd;
         border-bottom: 1px dotted $border;
@@ -149,7 +154,7 @@ body {
             overflow: hidden;
             font-size: .8rem;
             padding-left: .2rem;
-            padding-right:.2rem;
+            padding-right: .2rem;
         }
 
         &-number {
@@ -162,8 +167,8 @@ body {
             overflow: hidden;
             font-size: .8rem;
             padding-left: .2rem;
-            padding-right:0;
-            
+            padding-right: 0;
+
             &-lead {
                 justify-content: center !important;
             }
@@ -178,7 +183,7 @@ body {
             overflow: hidden;
             font-size: .8rem;
             padding-left: .2rem;
-            padding-right:0;
+            padding-right: 0;
         }
     }
 
@@ -218,16 +223,18 @@ body {
             border: 1px solid $border;
             border-top-left-radius: 1rem;
             border-bottom: 1px solid white;
+
             &:hover {
                 background-color: $tbody-bckgrnd;
                 border-top-left-radius: 1rem;
             }
-         
+
             .active {
                 border-top-left-radius: 1rem;
                 background-color: $folderhead-bckgrnd;
             }
         }
+
         .nav-link {
             color: $font-color;
             border-top: none;
@@ -240,5 +247,30 @@ body {
                 border-right: none;
             }
         }
+    }
+}
+
+.pilot {
+    font-size: 1rem;
+    &-subtitle {
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    &-numbers {
+        text-align: center;
+        justify-content: center;
+    }
+    &-allied {
+        padding: 0.1rem 0.2rem;
+        background-color: $alliedRed;
+    }
+    &-axis{
+        padding: 0.1rem 0.2rem;
+        background-color: $axisBlue;
+    }
+    &-slots-left {
+        background-color: #cfcfc4;
+        padding: .1rem .2rem;
     }
 }

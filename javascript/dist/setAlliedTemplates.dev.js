@@ -31,6 +31,7 @@ function setAlliedTemplates(json, randomNumber) {
   alliedBG = 0;
   alliedBGLeadElementNumber = 0;
   alliedBGElementNumber = 1;
+  alliedNumbers = 0;
   _randomNumber = randomNumber.map(function (x) {
     return parseInt(x, 10);
   });
@@ -57,6 +58,10 @@ function setAlliedTemplates(json, randomNumber) {
     flightForAttackSquadron = json.feed.entry[i].gsx$whichflightdoyouwishtobein_3.$t.split(" ")[0];
     flightForBomberSquadron = json.feed.entry[i].gsx$whichflightdoyouwishtobein_4.$t.split(" ")[0];
     skinChoice = setAlliedPlaneSkin();
+
+    if (side == alliedSide) {
+      alliedNumbers++;
+    }
 
     if (side == alliedSide) {
       //Allied Fighter Group A
@@ -177,6 +182,8 @@ function setAlliedTemplates(json, randomNumber) {
     }
   }
 
+  document.getElementById("allied-numbers").innerHTML = alliedNumbers;
+  console.log(alliedNumbers);
   setTimeout(function () {
     sortWingmen();
   }, 200);

@@ -30,9 +30,13 @@ function setAlliedTemplates(json, randomNumber) {
   alliedBGLeadElementNumber = 0;
   alliedBGElementNumber = 1;
 
+  alliedNumbers = 0
+
   _randomNumber = randomNumber.map(function (x) {
     return parseInt(x, 10);
   });
+
+
 
   for (i = 0; i < jsonLength; i++) {
     createIds();
@@ -55,6 +59,10 @@ function setAlliedTemplates(json, randomNumber) {
     flightForBomberSquadron = json.feed.entry[i].gsx$whichflightdoyouwishtobein_4.$t.split(" ")[0];
 
     skinChoice = setAlliedPlaneSkin();
+
+    if (side == alliedSide) {
+      alliedNumbers++;
+    }
 
     if (side == alliedSide) {
       //Allied Fighter Group A
@@ -178,12 +186,14 @@ function setAlliedTemplates(json, randomNumber) {
       }
     }
   }
+  document.getElementById("allied-numbers").innerHTML = alliedNumbers;
+  console.log(alliedNumbers);
   setTimeout(() => {
     sortWingmen();
   }, 200);
 }
 
-function setAlliedPlaneSkin () {
+function setAlliedPlaneSkin() {
   SquadronASkinRed = "Hart";
   SquadronASkinBlue = "Kansas Tornado II";
   SquadronASkinGreen = "410th FS";
@@ -205,56 +215,55 @@ function setAlliedPlaneSkin () {
   BomberSquadronSkinCanary = "Night Interdiction";
 
 
-  if(flightForFighterSquadronA == "Red"){
-      return SquadronASkinRed;
+  if (flightForFighterSquadronA == "Red") {
+    return SquadronASkinRed;
   }
-  if(flightForFighterSquadronA == "Blue"){
-      return SquadronASkinBlue;
+  if (flightForFighterSquadronA == "Blue") {
+    return SquadronASkinBlue;
   }
-  if(flightForFighterSquadronA == "Green"){
-      return SquadronASkinGreen;
+  if (flightForFighterSquadronA == "Green") {
+    return SquadronASkinGreen;
   }
-  if(flightForFighterSquadronA == "Black"){
-      return SquadronASkinBlack;
-  }
-
-  if(flightForFighterSquadronB == "Growler"){
-      return SquadronBSkinGrowler;
-  }
-  if(flightForFighterSquadronB == "Raven"){
-      return SquadronBSkinRaven;
-  }
-  if(flightForFighterSquadronB == "Eagle"){
-      return SquadronBSkinEagle;
-  }
-  if(flightForFighterSquadronB == "Ripper"){
-      return SquadronBSkinRipper;
+  if (flightForFighterSquadronA == "Black") {
+    return SquadronASkinBlack;
   }
 
-  if(flightForAttackSquadron == "Bear") {
-      return AttackSquadronSkinBear;
+  if (flightForFighterSquadronB == "Growler") {
+    return SquadronBSkinGrowler;
   }
-  if(flightForAttackSquadron == "Rabbit") {
-      return AttackSquadronSkinRabbit;
+  if (flightForFighterSquadronB == "Raven") {
+    return SquadronBSkinRaven;
   }
-  if(flightForAttackSquadron == "Fox") {
-      return AttackSquadronSkinFox;
+  if (flightForFighterSquadronB == "Eagle") {
+    return SquadronBSkinEagle;
   }
-  if(flightForAttackSquadron == "Bison") {
-      return AttackSquadronSkinBison;
+  if (flightForFighterSquadronB == "Ripper") {
+    return SquadronBSkinRipper;
   }
 
-  if(flightForBomberSquadron == "Pelican") {
-      return BomberSquadronSkinPelican;
+  if (flightForAttackSquadron == "Bear") {
+    return AttackSquadronSkinBear;
   }
-  if(flightForBomberSquadron == "Swan") {
-      return BomberSquadronSkinSwan;    
+  if (flightForAttackSquadron == "Rabbit") {
+    return AttackSquadronSkinRabbit;
   }
-  if(flightForBomberSquadron == "Seagull") {
-      return BomberSquadronSkinSeagull;
+  if (flightForAttackSquadron == "Fox") {
+    return AttackSquadronSkinFox;
   }
-  if(flightForBomberSquadron == "Canary") {
-      return BomberSquadronSkinCanary;
+  if (flightForAttackSquadron == "Bison") {
+    return AttackSquadronSkinBison;
+  }
+
+  if (flightForBomberSquadron == "Pelican") {
+    return BomberSquadronSkinPelican;
+  }
+  if (flightForBomberSquadron == "Swan") {
+    return BomberSquadronSkinSwan;
+  }
+  if (flightForBomberSquadron == "Seagull") {
+    return BomberSquadronSkinSeagull;
+  }
+  if (flightForBomberSquadron == "Canary") {
+    return BomberSquadronSkinCanary;
   }
 }
-

@@ -171,3 +171,27 @@ body {
   border-left: none;
   border-right: none;
 }
+
+.pilot {
+  font-size: 1rem;
+}
+.pilot-subtitle {
+  text-align: center;
+  font-weight: bolder;
+}
+.pilot-numbers {
+  text-align: center;
+  justify-content: center;
+}
+.pilot-allied {
+  padding: 0.1rem 0.2rem;
+  background-color: #ea9999;
+}
+.pilot-axis {
+  padding: 0.1rem 0.2rem;
+  background-color: #a4c2f4;
+}
+.pilot-slots-left {
+  background-color: #cfcfc4;
+  padding: 0.1rem 0.2rem;
+}

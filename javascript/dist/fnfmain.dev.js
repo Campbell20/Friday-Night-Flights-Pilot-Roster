@@ -42,19 +42,18 @@ $(document).ready(function () {
   });
   $.get('data/randomNumbers.txt', function (ranNum) {
     randomNumber = ranNum.split('\n');
-  });
-  $.get('data/Names/FirstNamesUSA.txt', function (fnUSA) {
-    firstNamesUSA = fnUSA.split('\n');
-  });
-  $.get('data/Names/LastNamesUSA.txt', function (lnUSA) {
-    lastNamesUSA = lnUSA.split('\n');
-  });
-  $.get('data/Names/FirstNamesGermany.txt', function (fnGermany) {
-    firstNamesGermany = fnGermany.split('\n');
-  });
-  $.get('data/Names/LastNamesGermany.txt', function (lnGermany) {
-    lastNamesGermany = lnGermany.split('\n');
-  });
+  }); // $.get('data/Names/FirstNamesUSA.txt', function (fnUSA) {
+  //     firstNamesUSA = fnUSA.split('\n');
+  // });
+  // $.get('data/Names/LastNamesUSA.txt', function (lnUSA) {
+  //     lastNamesUSA = lnUSA.split('\n');
+  // });
+  // $.get('data/Names/FirstNamesGermany.txt', function (fnGermany) {
+  //     firstNamesGermany = fnGermany.split('\n');
+  // });
+  // $.get('data/Names/LastNamesGermany.txt', function (lnGermany) {
+  //     lastNamesGermany = lnGermany.split('\n');
+  // });
 
   function setFlightsAndPlanes() {
     document.getElementById("alliedfighterA").innerHTML = alliedFighterGroupA;
