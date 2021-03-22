@@ -187,7 +187,6 @@ function setAlliedTemplates(json, randomNumber) {
     }
   }
   document.getElementById("allied-numbers").innerHTML = alliedNumbers;
-  console.log(alliedNumbers);
   setTimeout(() => {
     sortWingmen();
   }, 200);

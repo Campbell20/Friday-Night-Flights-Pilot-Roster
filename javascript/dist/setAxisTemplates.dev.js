@@ -32,12 +32,13 @@ function setAxisTemplates(json, randomNumber) {
   axisBGLeadElementNumber = 0;
   axisBGElementNumber = 1;
   axisNumbers = 0;
-  totalRegistered = 85;
   _randomNumber = randomNumber.map(function (x) {
     return parseInt(x, 10);
   });
 
   for (i = 0; i < jsonLength; i++) {
+    //check to see if registration is full
+    registrationFull(side);
     createIds();
     side = json.feed.entry[i].gsx$whichsideoftheconflictwouldyouliketobeon.$t;
     imageNumber = _randomNumber[i];
@@ -62,11 +63,6 @@ function setAxisTemplates(json, randomNumber) {
 
     if (side == axisSide) {
       axisNumbers++;
-    }
-
-    if (side == axisSide || side == alliedSide) {
-      totalRegistered--;
-      document.getElementById('slots-left').innerHTML = totalRegistered;
     }
 
     if (side == axisSide) {
@@ -188,7 +184,6 @@ function setAxisTemplates(json, randomNumber) {
     }
   }
 
-  console.log(axisNumbers);
   document.getElementById("axis-numbers").innerHTML = axisNumbers;
 }
 

@@ -23,6 +23,7 @@ $(document).ready(function () {
   axisBomber = "Bf110G2";
   eventDate = "<em>Jugs vs Messers</em> - <strong>March 26th, 2021 at 9pm Eastern</strong>";
   registration = true;
+  totalRegistered = 85;
   $.getJSON('https://spreadsheets.google.com/feeds/list/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/1/public/full?alt=json').done(function (json) {
     //side names
     alliedSide = "Allied";
@@ -99,8 +100,10 @@ $(document).ready(function () {
   }
 
   setFlightsAndPlanes();
-  toggleRegistration();
   setEventDate();
+  setTimeout(function () {
+    toggleRegistration();
+  }, 200);
 });
 
 function sortWingmen() {
@@ -238,4 +241,15 @@ function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function registrationFull(side) {
+  if (side == axisSide || side == alliedSide) {
+    totalRegistered--;
+    document.getElementById('slots-left').innerHTML = totalRegistered;
+  }
+
+  if (totalRegistered <= 1) {
+    registration = false;
+  }
 }
