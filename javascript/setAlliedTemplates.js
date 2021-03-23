@@ -10,6 +10,12 @@ function setAlliedTemplates(json, randomNumber) {
   var alliedBGTemplateLead = document.getElementsByTagName("template-alliedBG-Lead")[0];
   var alliedBGTemplate = document.getElementsByTagName("template-alliedBG")[0]; //Allied Fight Group A
 
+  alliedFGAnumbers = 0;
+  alliedFGBnumbers = 0;
+  alliedAGnumbers = 0;
+  alliedBGnumbers = 0;
+
+
   alliedFGALeader = 0;
   alliedFGA = 0;
   alliedFGALeadElementNumber = 0;
@@ -93,6 +99,8 @@ function setAlliedTemplates(json, randomNumber) {
           alliedFGA++;
 
         }
+        alliedFGAnumbers++;
+        document.getElementById('alliedFGAnumbers').innerHTML = alliedFGAnumbers;
       } //Allied Fighter Group B
 
 
@@ -122,6 +130,8 @@ function setAlliedTemplates(json, randomNumber) {
           alliedFGBElementNumber++;
           alliedFGB++;
         }
+        alliedFGBnumbers++;
+        document.getElementById('alliedFGBnumbers').innerHTML = alliedFGBnumbers;
 
       } //Allied Attacker Group
 
@@ -152,6 +162,8 @@ function setAlliedTemplates(json, randomNumber) {
           alliedAGElementNumber++;
           alliedAG++;
         }
+        alliedAGnumbers++;
+        document.getElementById('alliedAGnumbers').innerHTML = alliedAGnumbers;
 
       }
 
@@ -183,6 +195,8 @@ function setAlliedTemplates(json, randomNumber) {
           alliedBG++;
 
         }
+        alliedBGnumbers++;
+        document.getElementById('alliedBGnumbers').innerHTML = alliedBGnumbers;
       }
     }
   }

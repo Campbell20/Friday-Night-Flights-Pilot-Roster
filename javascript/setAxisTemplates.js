@@ -10,6 +10,11 @@ function setAxisTemplates(json, randomNumber) {
     var axisBGTemplateLead = document.getElementsByTagName("template-axisBG-Lead")[0];
     var axisBGTemplate = document.getElementsByTagName("template-axisBG")[0]; //Axis Fight Group A
 
+    axisFGAnumbers = 0;
+    axisFGBnumbers = 0;
+    axisAGnumbers = 0;
+    axisBGnumbers = 0;
+
     axisFGALeader = 0;
     axisFGA = 0;
     axisFGALeadElementNumber = 0;
@@ -93,6 +98,8 @@ function setAxisTemplates(json, randomNumber) {
                     axisFGAElementNumber++;
                     axisFGA++;
                 }
+                axisFGAnumbers++;
+                document.getElementById('axisFGAnumbers').innerHTML = axisFGAnumbers;
             }
             //Axis Fighter Group B
 
@@ -123,6 +130,8 @@ function setAxisTemplates(json, randomNumber) {
                     axisFGBElementNumber++;
                     axisFGB++;
                 }
+                axisFGBnumbers++;
+                document.getElementById('axisFGBnumbers').innerHTML = axisFGBnumbers;
             }
             //Axis Attacker Group
 
@@ -153,6 +162,8 @@ function setAxisTemplates(json, randomNumber) {
                     axisAGElementNumber++;
                     axisAG++;
                 }
+                axisAGnumbers++;
+                document.getElementById('axisAGnumbers').innerHTML = axisAGnumbers;
 
             } //Axis Bomber Group
 
@@ -183,6 +194,8 @@ function setAxisTemplates(json, randomNumber) {
                     axisBGElementNumber++;
                     axisBG++;
                 }
+                axisBGnumbers++;
+                document.getElementById('axisBGnumbers').innerHTML = axisBGnumbers;
             }
 
         }

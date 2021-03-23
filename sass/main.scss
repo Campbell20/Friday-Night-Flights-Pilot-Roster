@@ -98,7 +98,7 @@ body {
 
     &-header {
         background-color: $thead-bckgrnd;
-        border-top-left-radius: 1rem;
+        border-top-left-radius: .5rem;
         justify-content: center;
         border-top: 1px solid $border;
         border-left: 1px solid $border;
@@ -116,6 +116,34 @@ body {
         }
     }
 
+    &-subheader {
+        justify-content: center;
+        display: flex;
+        background-color: $thead-bckgrnd;
+        display: inline-flex;
+        border-left: 1px solid $border;
+        border-right: 1px solid $border;
+        border-bottom: 1px dotted $border;
+
+        .top {
+            font-weight: bolder;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .bottom {
+            display: flex;
+            justify-content: center;
+        }
+
+        .center {
+            border-left: 1px dotted $border;
+            border-right: 1px dotted $border;
+        }
+
+    
+    }
     &-subtitle {
         font-weight: bolder;
         display: flex;
@@ -218,23 +246,24 @@ body {
 
 .nav {
     font-weight: bolder;
+    $borderads: .5rem;
     &-tabs {
         border: 0;
         .nav-item {
             // background-color: $table-wrapper-bckgrnd;
             // border: 1px solid $border;
-            border-top-left-radius: 1rem;
+            border-top-left-radius: $borderads;
             // border-bottom: 1px solid white;
             border-bottom: 1px solid transparent;
 
             &:hover {
                 // background-color: $tbody-bckgrnd;
-                border-top-left-radius: 1rem;
+                border-top-left-radius: $borderads;
                 border-bottom: 1px solid transparent;
             }
 
             .active {
-                border-top-left-radius: 1rem;              
+                border-top-left-radius: $borderads;              
                 // background-color: $folderhead-bckgrnd;
                 background-color: transparent !important;
                 color: black;
