@@ -74,7 +74,7 @@ body {
 
 .red-background {
     background-color: $alliedDarker;
-}
+} 
 
 .team-title {
     font-size: 1.4rem;
@@ -141,7 +141,6 @@ body {
     &-body {
         background-color: $tbody-bckgrnd;
         border-bottom: 1px dotted $border;
-
         &-name {
             // text-indent: .5rem;
             // font-weight: bold;
@@ -152,9 +151,10 @@ body {
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
-            font-size: .8rem;
-            padding-left: .2rem;
-            padding-right: .2rem;
+            font-size: 1.2rem;
+            // padding-left: .2rem;
+            // padding-right: .2rem;
+            color: rgba(20, 20, 20, 0.973);
         }
 
         &-number {
@@ -166,8 +166,8 @@ body {
             text-overflow: ellipsis;
             overflow: hidden;
             font-size: .8rem;
-            padding-left: .2rem;
-            padding-right: 0;
+            // padding-left: .2rem;
+            // padding-right: 0;
 
             &-lead {
                 justify-content: center !important;
@@ -182,8 +182,8 @@ body {
             text-overflow: ellipsis;
             overflow: hidden;
             font-size: .8rem;
-            padding-left: .2rem;
-            padding-right: 0;
+            // padding-left: .2rem;
+            // padding-right: 0;
         }
     }
 
@@ -217,34 +217,44 @@ body {
 //nav
 
 .nav {
+    font-weight: bolder;
     &-tabs {
+        border: 0;
         .nav-item {
-            background-color: $table-wrapper-bckgrnd;
-            border: 1px solid $border;
+            // background-color: $table-wrapper-bckgrnd;
+            // border: 1px solid $border;
             border-top-left-radius: 1rem;
-            border-bottom: 1px solid white;
+            // border-bottom: 1px solid white;
+            border-bottom: 1px solid transparent;
 
             &:hover {
-                background-color: $tbody-bckgrnd;
+                // background-color: $tbody-bckgrnd;
                 border-top-left-radius: 1rem;
+                border-bottom: 1px solid transparent;
             }
 
             .active {
-                border-top-left-radius: 1rem;
-                background-color: $folderhead-bckgrnd;
+                border-top-left-radius: 1rem;              
+                // background-color: $folderhead-bckgrnd;
+                background-color: transparent !important;
+                color: black;
+                border-bottom: 1px solid transparent;
             }
         }
 
         .nav-link {
-            color: $font-color;
+            color: rgba(39, 39, 39, 0.507);
             border-top: none;
             border-left: none;
             border-right: none;
+            border-bottom: 1px solid transparent;
 
             &.active {
                 border-top: none;
                 border-left: none;
                 border-right: none;
+                border-bottom: 1px solid transparent;
+                background-color: transparent !important;
             }
         }
     }
