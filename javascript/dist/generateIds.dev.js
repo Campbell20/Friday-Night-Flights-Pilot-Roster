@@ -217,6 +217,9 @@ function createIds() {
   $(".axisBG-skin").each(function (i) {
     $(this).attr('id', "axisBG-skin" + i);
   });
+  $(".axisbomber-wingmen").each(function (i) {
+    $(this).attr('id', "axisbomber-wingmen" + i);
+  });
 }
 
 ;

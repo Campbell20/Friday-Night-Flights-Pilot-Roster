@@ -171,18 +171,20 @@ function setAxisTemplates(json, randomNumber) {
         if (axisBomberSquadronPosition.includes("Flight Lead") && checkLeader(flightForBomberSquadron)) {
           var axisBGLeadDivs = axisBGTemplateLead.querySelector('div');
           var templateSet;
+          console.log(axisBGLeadElementNumber);
           templateSet = document.importNode(axisBGLeadDivs, true);
           document.getElementById("axisbomber-lead").appendChild(templateSet);
           document.getElementById("axisBG-lead" + axisBGLeadElementNumber).innerHTML = axisName;
           document.getElementById('axisBG-pic-lead' + axisBGLeadElementNumber).src = 'imgs/German/German' + imageNumber + ".jpg";
           setFlightLeaderText("axisBG-number-lead", axisBGLeadElementNumber);
-          document.getElementById("axisBG-skin-lead" + axisAGLeadElementNumber).innerHTML = skinChoice;
+          document.getElementById("axisBG-skin-lead" + axisBGLeadElementNumber).innerHTML = skinChoice;
           axisBGLeadElementNumber++;
         } else {
           var axisBGDivs = axisBGTemplate.querySelector('div');
           var templateSet;
-          templateSet = document.importNode(axisBGDivs, true);
-          document.getElementById("axisbomber-wingmen").appendChild(templateSet);
+          templateSet = document.importNode(axisBGDivs, true); // document.getElementById("axisbomber-wingmen").appendChild(templateSet);
+
+          document.getElementsByClassName("axisbomber-wingmen")[0].appendChild(templateSet);
 
           if (axisBGElementNumber == 1) {
             axisBGElementNumber++;
