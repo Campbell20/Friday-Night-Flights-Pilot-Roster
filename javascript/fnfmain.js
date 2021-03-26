@@ -116,7 +116,7 @@ $(document).ready(function () {
   
   setTimeout(() => {
     toggleRegistration();
-  }, 200);
+  }, 300);
 });
 
 

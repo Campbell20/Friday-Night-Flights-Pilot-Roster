@@ -103,7 +103,7 @@ $(document).ready(function () {
   setEventDate();
   setTimeout(function () {
     toggleRegistration();
-  }, 200);
+  }, 300);
 });
 
 function sortWingmen() {
