@@ -1,7 +1,18 @@
 body {
   background-color: #999;
   font-family: "Courier New";
-  font-size: 0.85rem;
+  font-size: 1rem;
+}
+body a {
+  color: whitesmoke;
+}
+
+.friday {
+  background-color: #757580;
+}
+
+.saturday {
+  background-color: #796e6e;
 }
 
 .fnf-logo {
@@ -10,6 +21,15 @@ body {
 }
 @media (max-width: 600px) {
   .fnf-logo {
+    height: 100%;
+    width: 100%;
+  }
+}
+.fnf-logo-main {
+  height: 15rem;
+}
+@media (max-width: 600px) {
+  .fnf-logo-main {
     height: 100%;
     width: 100%;
   }

@@ -205,22 +205,22 @@ function setAlliedTemplates(json, randomNumber) {
 }
 
 function setAlliedPlaneSkin() {
-  SquadronASkinRed = "Hart";
-  SquadronASkinBlue = "Kansas Tornado II";
-  SquadronASkinGreen = "410th FS";
-  SquadronASkinBlack = "Georgie Fay";
-  SquadronBSkinGrowler = "Winged Skull";
-  SquadronBSkinRaven = "Passionate Patsy";
-  SquadronBSkinEagle = "Lisi";
-  SquadronBSkinRipper = "Senta a Pua!";
-  AttackSquadronSkinBear = "";
-  AttackSquadronSkinRabbit = "";
-  AttackSquadronSkinFox = "";
-  AttackSquadronSkinBison = "";
-  BomberSquadronSkinPelican = "Sandy";
-  BomberSquadronSkinSwan = "Wahoo";
-  BomberSquadronSkinSeagull = "Miss Burma";
-  BomberSquadronSkinCanary = "Night Interdiction";
+  SquadronASkinRed = "Shestakov";
+  SquadronASkinBlue = "Bravo";
+  SquadronASkinGreen = "Golubev";
+  SquadronASkinBlack = "Safonov";
+  SquadronBSkinGrowler = "Default";
+  SquadronBSkinRaven = "Standard Grey";
+  SquadronBSkinEagle = "Yellow Tail";
+  SquadronBSkinRipper = "Snow Cat";
+  AttackSquadronSkinBear = "Green";
+  AttackSquadronSkinRabbit = "White 10";
+  AttackSquadronSkinFox = "Spilled Coffee";
+  AttackSquadronSkinBison = "Valery Chkalov";
+  BomberSquadronSkinPelican = "Red Thunderbolt";
+  BomberSquadronSkinSwan = "Special One";
+  BomberSquadronSkinSeagull = "White Sash";
+  BomberSquadronSkinCanary = "Default";
 
   if (flightForFighterSquadronA == "Red") {
     return SquadronASkinRed;

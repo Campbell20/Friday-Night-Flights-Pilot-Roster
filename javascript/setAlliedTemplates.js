@@ -1,6 +1,7 @@
 function setAlliedTemplates(json, randomNumber) {
   //console.log(json);
   jsonLength = Object.keys(json.feed.entry).length;
+ 
   var alliedFGATemplateLead = document.getElementsByTagName("template-alliedFGA-Lead")[0];
   var alliedFGATemplate = document.getElementsByTagName("template-alliedFGA")[0];
   var alliedFGBTemplateLead = document.getElementsByTagName("template-alliedFGB-Lead")[0];
@@ -207,25 +208,25 @@ function setAlliedTemplates(json, randomNumber) {
 }
 
 function setAlliedPlaneSkin() {
-  SquadronASkinRed = "Hart";
-  SquadronASkinBlue = "Kansas Tornado II";
-  SquadronASkinGreen = "410th FS";
-  SquadronASkinBlack = "Georgie Fay";
+  SquadronASkinRed = "Shestakov";
+  SquadronASkinBlue = "Bravo";
+  SquadronASkinGreen = "Golubev";
+  SquadronASkinBlack = "Safonov";
 
-  SquadronBSkinGrowler = "Winged Skull";
-  SquadronBSkinRaven = "Passionate Patsy";
-  SquadronBSkinEagle = "Lisi";
-  SquadronBSkinRipper = "Senta a Pua!";
+  SquadronBSkinGrowler = "Default";
+  SquadronBSkinRaven = "Standard Grey";
+  SquadronBSkinEagle = "Yellow Tail";
+  SquadronBSkinRipper = "Snow Cat";
 
-  AttackSquadronSkinBear = "";
-  AttackSquadronSkinRabbit = "";
-  AttackSquadronSkinFox = "";
-  AttackSquadronSkinBison = "";
+  AttackSquadronSkinBear = "Green";
+  AttackSquadronSkinRabbit = "White 10";
+  AttackSquadronSkinFox = "Spilled Coffee";
+  AttackSquadronSkinBison = "Valery Chkalov";
 
-  BomberSquadronSkinPelican = "Sandy";
-  BomberSquadronSkinSwan = "Wahoo";
-  BomberSquadronSkinSeagull = "Miss Burma";
-  BomberSquadronSkinCanary = "Night Interdiction";
+  BomberSquadronSkinPelican = "Red Thunderbolt";
+  BomberSquadronSkinSwan = "Special One";
+  BomberSquadronSkinSeagull = "White Sash";
+  BomberSquadronSkinCanary = "Default";
 
 
   if (flightForFighterSquadronA == "Red") {

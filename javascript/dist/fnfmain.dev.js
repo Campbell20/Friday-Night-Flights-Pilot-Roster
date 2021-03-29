@@ -7,23 +7,20 @@ $(document).ready(function () {
   alliedAttackerGroup = "328th Fighter Squadron";
   alliedBomberGroup = "458th Bomber Squadron"; //allied planes
 
-  alliedPlaneA = "P47D22";
-  alliedPlaneB = "P47D28";
-  alliedAttacker = "P40 Attackers";
-  alliedBomber = "A20 Havoc"; //axis groups
+  alliedPlaneA = "i16";
+  alliedPlaneB = "LaGG3";
+  alliedAttacker = "IL2 1941";
+  alliedBomber = "IL2 1942 with Turret"; //axis groups
 
   axisFighterGroupA = "III./JG77";
   axisFighterGroupB = "III./JG11";
   axisAttackerGroup = "II./JG4";
   axisBomberGroup = "I./JG26"; //axis planes
 
-  axisPlaneA = "Bf109G6Late (No MW50)";
-  axisPlaneB = "Bf109G6";
-  axisAttacker = "Bf109G4";
-  axisBomber = "Bf110G2";
-  eventDate = "<em>Jugs vs Messers</em> - <strong>March 26th, 2021 at 9pm Eastern</strong>";
-  registration = true;
-  totalRegistered = 85;
+  axisPlaneA = "Bf109E7";
+  axisPlaneB = "Bf109F2";
+  axisAttacker = "Ju87 Stuka";
+  axisBomber = "He111H6";
   $.getJSON('https://spreadsheets.google.com/feeds/list/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/1/public/full?alt=json').done(function (json) {
     //side names
     alliedSide = "Allied";
@@ -43,18 +40,7 @@ $(document).ready(function () {
   });
   $.get('data/randomNumbers.txt', function (ranNum) {
     randomNumber = ranNum.split('\n');
-  }); // $.get('data/Names/FirstNamesUSA.txt', function (fnUSA) {
-  //     firstNamesUSA = fnUSA.split('\n');
-  // });
-  // $.get('data/Names/LastNamesUSA.txt', function (lnUSA) {
-  //     lastNamesUSA = lnUSA.split('\n');
-  // });
-  // $.get('data/Names/FirstNamesGermany.txt', function (fnGermany) {
-  //     firstNamesGermany = fnGermany.split('\n');
-  // });
-  // $.get('data/Names/LastNamesGermany.txt', function (lnGermany) {
-  //     lastNamesGermany = lnGermany.split('\n');
-  // });
+  });
 
   function setFlightsAndPlanes() {
     document.getElementById("alliedfighterA").innerHTML = alliedFighterGroupA;
@@ -75,34 +61,9 @@ $(document).ready(function () {
     document.getElementById("axisbombergroup-plane").innerHTML = axisBomber;
   }
 
-  function toggleRegistration() {
-    var d = new Date();
-    var n = d.getDay(); //0 = Sunday
-    //1 = Monday
-    //2 = Tuesday
-    //3 = Wednesday
-    //4 = Thursday
-    //5 = Friday
-    //6 = Saturday
-
-    if (registration == false) {
-      document.getElementById("registration-closed").style.display = "flex";
-      document.getElementById("registration-opened").style.display = "none";
-    } else {
-      document.getElementById("registration-opened").style.display = "flex";
-      document.getElementById("registration-closed").style.display = "none";
-    }
-  }
-
-  function setEventDate() {
-    document.getElementById("event-date0").innerHTML = eventDate;
-    document.getElementById("event-date1").innerHTML = eventDate;
-  }
-
   setFlightsAndPlanes();
-  setEventDate();
   setTimeout(function () {
-    toggleRegistration();
+    setEvent();
   }, 300);
 });
 
@@ -241,15 +202,4 @@ function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-function registrationFull(side) {
-  if (side == axisSide || side == alliedSide) {
-    totalRegistered--;
-    document.getElementById('slots-left').innerHTML = totalRegistered;
-  }
-
-  if (totalRegistered <= 1) {
-    registration = false;
-  }
 }

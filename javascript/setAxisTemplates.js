@@ -44,7 +44,8 @@ function setAxisTemplates(json, randomNumber) {
 
     for (i = 0; i < jsonLength; i++) {
         //check to see if registration is full
-        registrationFull(side);
+        registrationFnFFull(side);
+        registrationSeFFull(side);
         createIds();
         side = json.feed.entry[i].gsx$whichsideoftheconflictwouldyouliketobeon.$t;
         imageNumber = _randomNumber[i];
@@ -211,25 +212,25 @@ function setAxisTemplates(json, randomNumber) {
 
 
 function setAxisPlaneSkin () {
-    SquadronASkinRed = "Stamp";
-    SquadronASkinBlue = "9./JG 54";
-    SquadronASkinGreen = "Kunz";
-    SquadronASkinBlack = "Ehrler";
+    SquadronASkinRed = "Schroer";
+    SquadronASkinBlue = "Marseille";
+    SquadronASkinGreen = "Red 3";
+    SquadronASkinBlack = "Alice";
 
-    SquadronBSkinGrowler = "Graf";
-    SquadronBSkinRaven = "Dreesmann";
-    SquadronBSkinEagle = "Weiss";
-    SquadronBSkinRipper = "Emmerstorfer";
+    SquadronBSkinGrowler = "Trautloft";
+    SquadronBSkinRaven = "Dollefeld";
+    SquadronBSkinEagle = "Hrabak";
+    SquadronBSkinRipper = "Hoffmann";
 
-    AttackSquadronSkinBear = "Don Pedro";
-    AttackSquadronSkinRabbit = "Gerthofer";
-    AttackSquadronSkinFox = "Tonne";
-    AttackSquadronSkinBison = "Grislawski";
+    AttackSquadronSkinBear = "Dilly";
+    AttackSquadronSkinRabbit = "Auner";
+    AttackSquadronSkinFox = "IV./St.G.77";
+    AttackSquadronSkinBison = "1./St.G.3";
 
-    BomberSquadronSkinPelican = "Ossmann";
-    BomberSquadronSkinSwan = "Stratmann";
-    BomberSquadronSkinSeagull = "Johnen";
-    BomberSquadronSkinCanary = "Becker";
+    BomberSquadronSkinPelican = "Kuhlmey";
+    BomberSquadronSkinSwan = "Libya";
+    BomberSquadronSkinSeagull = "Night";
+    BomberSquadronSkinCanary = "Desert";
 
 
     if(flightForFighterSquadronA == "Red"){

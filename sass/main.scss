@@ -28,7 +28,19 @@ $axisDarker: #4e7bc4;
 body {
     background-color: $bodyBackgroundColor;
     font-family: 'Courier New';
-    font-size: .85rem;
+    font-size: 1rem;
+
+    a{
+        color: whitesmoke;
+    }
+}
+
+.friday{
+    background-color: #757580;
+}
+
+.saturday {
+    background-color: #796e6e;
 }
 
 .fnf-logo {
@@ -38,6 +50,13 @@ body {
     @media (max-width: 600px) {
         height: 100%;
         width: 100%;
+    }
+    &-main {
+        height: 15rem;
+        @media (max-width: 600px) {
+            height: 100%;
+            width: 100%;
+        }
     }
 }
 
