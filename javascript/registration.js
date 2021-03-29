@@ -2,7 +2,7 @@
 FnFevent = "<em>Early War</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/b5f6c918'>Event Time</a></strong>";
 FnFregistration = true;
 
-SeFevent = "<em>Early War</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/78925249'>Event Time</a></strong>";
+SeFevent = "<em>Early War</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/2c224d75'>Event Time</a></strong>";
 SeFregistration = true;
 
 totalFnFRegistered = 85;
