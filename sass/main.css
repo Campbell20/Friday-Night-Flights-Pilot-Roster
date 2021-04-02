@@ -8,6 +8,16 @@ body a {
   color: whitesmoke;
 }
 
+.event {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
 .friday {
   background-color: #757580;
 }
@@ -245,7 +255,7 @@ body a {
 }
 
 .hidden-templates {
-  display: none;
+  display: none !important;
 }
 
 .nav {

@@ -10,10 +10,10 @@ totalSeFRegistered = 85;
 
 function setEvent() {
   title = document.getElementById("title").innerHTML;
+  console.log(title);
 
   if (title.includes("Friday")) {
     if (FnFregistration == false) {
-      document.getElementById("FnFevent-closed").innerHTML = FnFevent;
       $("#FnFevent-open").addClass("hidden-templates");
       $("#FnFevent-btn").addClass("hidden-templates");
     } else {
@@ -24,7 +24,6 @@ function setEvent() {
 
   if (title.includes("Saturday")) {
     if (SeFregistration == false) {
-      document.getElementById("SeFevent-closed").innerHTML = SeFevent;
       $("#SeFevent-open").addClass("hidden-templates");
       $("#SeFevent-btn").addClass("hidden-templates");
     } else {
@@ -56,4 +55,6 @@ function registrationSeFFull(side) {
   }
 }
 
-setEvent();
+$(document).ready(function () {
+  setEvent();
+});

@@ -35,6 +35,11 @@ body {
     }
 }
 
+.event {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 .friday{
     background-color: #757580;
 }
@@ -257,7 +262,7 @@ body {
 }
 
 .hidden-templates {
-    display: none;
+    display: none !important;
 }
 
 
