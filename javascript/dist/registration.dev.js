@@ -16,7 +16,6 @@ function setEvent() {
       document.getElementById("FnFevent-closed").innerHTML = FnFevent;
       $("#FnFevent-open").addClass("hidden-templates");
       $("#FnFevent-btn").addClass("hidden-templates");
-      $("#FnFevent-main-btn").addClass("disabled");
     } else {
       document.getElementById("FnFevent-open").innerHTML = FnFevent;
       $("#FnFevent-closed").addClass("hidden-templates");
