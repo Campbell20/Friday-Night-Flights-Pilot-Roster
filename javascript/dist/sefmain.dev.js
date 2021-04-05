@@ -1,26 +1,6 @@
 "use strict";
 
 $(document).ready(function () {
-  //allied groups
-  alliedFighterGroupA = "486th Fighter Squadron";
-  alliedFighterGroupB = "487th Fighter Squadron";
-  alliedAttackerGroup = "328th Fighter Squadron";
-  alliedBomberGroup = "458th Bomber Squadron"; //allied planes
-
-  alliedPlaneA = "i16";
-  alliedPlaneB = "LaGG3";
-  alliedAttacker = "IL2 1941";
-  alliedBomber = "IL2 1942 with Turret"; //axis groups
-
-  axisFighterGroupA = "III./JG77";
-  axisFighterGroupB = "III./JG11";
-  axisAttackerGroup = "II./JG4";
-  axisBomberGroup = "I./JG26"; //axis planes
-
-  axisPlaneA = "Bf109E7";
-  axisPlaneB = "Bf109F2";
-  axisAttacker = "Ju87 Stuka";
-  axisBomber = "He111H6";
   $.getJSON('https://spreadsheets.google.com/feeds/list/1IYQ2-g6IqRA0dL3B6__RzlV0JV1TiGeUl5AWifLxTyM/1/public/full?alt=json').done(function (json) {
     //side names
     alliedSide = "Allied";

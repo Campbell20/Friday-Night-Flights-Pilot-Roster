@@ -25,7 +25,7 @@
             <img class="fnf-logo pt-3" src="imgs/FnFLogo.png" alt="The Friday Night Flights Logo">
         </div>
         <div class="col-12 d-flex justify-content-center text-center">
-            <h2><strong>Saturday Night Flights</strong></h2>
+            <h2><strong>Saturday Encore Flights</strong></h2>
         </div>
         <div class="col-12 event pb-3" id="SeFevent-open">
             SeF EVENT OPEN
@@ -53,7 +53,7 @@
                         </div>
                         <div class="modal-body">
                             <div class="col-12 py-3 justify-content-center" id="google-form">
-                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd-4aTUFS00_SzzRc9HdLNyzyOHI2JFicuA86ZD3kMrep3pJA/viewform?embedded=true" width="600" height="850" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                                <iframe id="google-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSd-4aTUFS00_SzzRc9HdLNyzyOHI2JFicuA86ZD3kMrep3pJA/viewform?embedded=true" width="600" height="850" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                             </div>
                             <div class="col-12 justify-content-center registration-help-text">Once you hit submit, you will be registered. After you have registered, give the database a few seconds, and then you can refresh the page to see your name on the pilot board.</div>
                         </div>
@@ -92,14 +92,14 @@
                 <div class="col-12 px-1 grid-card">
 
                     <!-- Axis Fighter Group A -->
-                    <div class="col pl-0 pr-1 pb-3">
+                    <div class="col pl-0 pr-1 pb-3" id="axis-fighter-group-a">
                         <div class="col-12 px-0 grid grid-header grid-subheader">
                             <div class="col-3 grid top">Pilots</div>
                             <div class="col-5 grid center top">Unit</div>
                             <div class="col-4 grid top">Plane</div>
                         </div>
                         <div class="col-12 px-0 grid-subheader">
-                            <div class="col-3 grid bottom" id="axisFGAnumbers"></div>
+                            <div class="col-3 grid bottom" id="axisFGAnumbers">0</div>
                             <div class="col-5 grid center bottom" id="axisfighterA"></div>
                             <div class="col-4 grid bottom" id="axisfighterA-plane"></div>
                         </div>
@@ -109,9 +109,9 @@
                             <div class="col-2 px-0 grid grid-body grid-subtitle">
                                Image
                             </div>
-                            <div class="col-6 px-0 grid grid-body grid-subtitle grid-subtitle-name">Name
+                            <div class="col-5 px-0 grid grid-body grid-subtitle grid-subtitle-name">Name
                             </div>
-                            <div class="col-2 px-0 grid grid-body grid-subtitle grid-subtitle-skin">Skin
+                           <div class="col-3 px-0 grid grid-body grid-subtitle grid-subtitle-skin">Radio
                             </div>
                         </div>
                         <div class="grid-last" id="axisfighterA-lead"></div>
@@ -119,14 +119,14 @@
                     </div>
 
                     <!-- Axis Fighter Group B -->
-                    <div class="col pl-0 pr-1 pb-3">
+                    <div class="col pl-0 pr-1 pb-3" id="axis-fighter-group-b">
                         <div class="col-12 px-0 grid grid-header grid-subheader">
                             <div class="col-3 grid top">Pilots</div>
                             <div class="col-5 grid center top">Unit</div>
                             <div class="col-4 grid top">Plane</div>
                         </div>
                         <div class="col-12 px-0 grid-subheader">
-                            <div class="col-3 grid bottom" id="axisFGBnumbers"></div>
+                            <div class="col-3 grid bottom" id="axisFGBnumbers">0</div>
                             <div class="col-5 grid center bottom" id="axisfighterB"></div>
                             <div class="col-4 grid bottom" id="axisfighterB-plane"></div>
                         </div>
@@ -136,9 +136,9 @@
                             <div class="col-2 px-0 grid grid-body grid-subtitle">
                                Image
                             </div>
-                            <div class="col-6 px-0 grid grid-body grid-subtitle grid-subtitle-name">Name
+                            <div class="col-5 px-0 grid grid-body grid-subtitle grid-subtitle-name">Name
                             </div>
-                            <div class="col-2 px-0 grid grid-body grid-subtitle grid-subtitle-skin">Skin
+                           <div class="col-3 px-0 grid grid-body grid-subtitle grid-subtitle-skin">Radio
                             </div>
                         </div>
                         <div class="grid-last" id="axisfighterB-lead"></div>
@@ -148,14 +148,14 @@
 
 
                     <!-- Axis Attacker Group -->
-                    <div class="col pl-0 pr-1 pb-3">
+                    <div class="col pl-0 pr-1 pb-3" id="axis-attacker-group">
                         <div class="col-12 px-0 grid grid-header grid-subheader">
                             <div class="col-3 grid top">Pilots</div>
                             <div class="col-5 grid center top">Unit</div>
                             <div class="col-4 grid top">Plane</div>
                         </div>
                         <div class="col-12 px-0 grid-subheader">
-                            <div class="col-3 grid bottom" id="axisAGnumbers"></div>
+                            <div class="col-3 grid bottom" id="axisAGnumbers">0</div>
                             <div class="col-5 grid center bottom" id="axisattackergroup"></div>
                             <div class="col-4 grid bottom" id="axisattacker-plane"></div>
                         </div>
@@ -165,9 +165,9 @@
                             <div class="col-2 px-0 grid grid-body grid-subtitle">
                                Image
                             </div>
-                            <div class="col-6 px-0 grid grid-body grid-subtitle grid-subtitle-name">Name
+                            <div class="col-5 px-0 grid grid-body grid-subtitle grid-subtitle-name">Name
                             </div>
-                            <div class="col-2 px-0 grid grid-body grid-subtitle grid-subtitle-skin">Skin
+                           <div class="col-3 px-0 grid grid-body grid-subtitle grid-subtitle-skin">Radio
                             </div>
                         </div>
                         <div class="grid-last" id="axisAttackerGroup-lead"></div>
@@ -175,14 +175,14 @@
                     </div>
 
                     <!-- Axis Bomber Group -->
-                    <div class="col pl-0 pr-1 pb-3">
+                    <div class="col pl-0 pr-1 pb-3" id="axis-bomber-group">
                         <div class="col-12 px-0 grid grid-header grid-subheader">
                             <div class="col-3 grid top">Pilots</div>
                             <div class="col-5 grid center top">Unit</div>
                             <div class="col-4 grid top">Plane</div>
                         </div>
                         <div class="col-12 px-0 grid-subheader">
-                            <div class="col-3 grid bottom" id="axisBGnumbers"></div>
+                            <div class="col-3 grid bottom" id="axisBGnumbers">0</div>
                             <div class="col-5 grid center bottom" id="axisbombergroup"></div>
                             <div class="col-4 grid bottom" id="axisbombergroup-plane"></div>
                         </div>
@@ -192,9 +192,9 @@
                             <div class="col-2 px-0 grid grid-body grid-subtitle">
                                Image
                             </div>
-                            <div class="col-6 px-0 grid grid-body grid-subtitle grid-subtitle-name">Name
+                            <div class="col-5 px-0 grid grid-body grid-subtitle grid-subtitle-name">Name
                             </div>
-                            <div class="col-2 px-0 grid grid-body grid-subtitle grid-subtitle-skin">Skin
+                           <div class="col-3 px-0 grid grid-body grid-subtitle grid-subtitle-skin">Radio
                             </div>
                         </div>
                         <div class="grid-last" id="axisbomber-lead"></div>
@@ -216,9 +216,9 @@
                                 <img class="axisFGA-pic-lead pilot-pic" src="imgs/American/Emptyimg.jpg"
                                     id="axisFGA-pic-lead">
                             </div>
-                            <div class="col-6 px-0 grid grid-body grid-body-name axisFGA-lead" id="axisFGA-lead">
+                            <div class="col-5 px-0 grid grid-body grid-body-name axisFGA-lead" id="axisFGA-lead">
                             </div>
-                            <div class="col-2 grid grid-body grid-body-skin axisFGA-skin-lead" id="axisFGA-skin-lead">
+                            <div class="col-3 grid grid-body grid-body-skin axisFGA-skin-lead" id="axisFGA-skin-lead">
                             </div>
                         </div>
                     </div>
@@ -232,9 +232,9 @@
                             <div class="col-2 px-0 grid grid-body grid-body-pic justify-content-center">
                                 <img class="axisFGA-pic pilot-pic" src="imgs/American/Emptyimg.jpg" id="axisFGA-pic">
                             </div>
-                            <div class="col-6 px-0 grid grid-body grid-body-name axisFGA" id="axisFGA">
+                            <div class="col-5 px-0 grid grid-body grid-body-name axisFGA" id="axisFGA">
                             </div>
-                            <div class="col-2 grid grid-body grid-body-skin axisFGA-skin" id="axisFGA-skin">
+                            <div class="col-3 grid grid-body grid-body-skin axisFGA-skin" id="axisFGA-skin">
                             </div>
                         </div>
                     </div>
@@ -250,9 +250,9 @@
                                 <img class="axisFGB-pic-lead pilot-pic" src="imgs/American/Emptyimg.jpg"
                                     id="axisFGB-pic-lead">
                             </div>
-                            <div class="col-6 grid grid-body grid-body-name axisFGB-lead" id="axisFGB-lead">
+                            <div class="col-5 grid grid-body grid-body-name axisFGB-lead" id="axisFGB-lead">
                             </div>
-                            <div class="col-2 grid grid-body grid-body-skin axisFGB-skin-lead" id="axisFGB-skin-lead">
+                            <div class="col-3 grid grid-body grid-body-skin axisFGB-skin-lead" id="axisFGB-skin-lead">
                             </div>
                         </div>
                     </div>
@@ -266,9 +266,9 @@
                             <div class="col-2 px-0 grid grid-body grid-body-pic justify-content-center">
                                 <img class="axisFGB-pic pilot-pic" src="imgs/American/Emptyimg.jpg" id="axisFGB-pic">
                             </div>
-                            <div class="col-6 grid grid-body grid-body-name axisFGB" id="axisFGB">
+                            <div class="col-5 grid grid-body grid-body-name axisFGB" id="axisFGB">
                             </div>
-                            <div class="col-2 grid grid-body grid-body-skin axisFGB-skin" id="axisFGB-skin">
+                            <div class="col-3 grid grid-body grid-body-skin axisFGB-skin" id="axisFGB-skin">
                             </div>
                         </div>
                     </div>
@@ -284,9 +284,9 @@
                                 <img class="axisAG-pic-lead pilot-pic" src="imgs/American/Emptyimg.jpg"
                                     id="axisAG-pic-lead">
                             </div>
-                            <div class="col-6 grid grid-body grid-body-name axisAG-lead" id="axisAG-lead">
+                            <div class="col-5 grid grid-body grid-body-name axisAG-lead" id="axisAG-lead">
                             </div>
-                            <div class="col-2 grid grid-body grid-body-skin axisAG-skin-lead" id="axisAG-skin-lead">
+                            <div class="col-3 grid grid-body grid-body-skin axisAG-skin-lead" id="axisAG-skin-lead">
                             </div>
                         </div>
                     </div>
@@ -300,9 +300,9 @@
                             <div class="col-2 px-0 grid grid-body grid-body-pic justify-content-center">
                                 <img class="axisAG-pic pilot-pic" src="imgs/American/Emptyimg.jpg" id="axisAG-pic">
                             </div>
-                            <div class="col-6 grid grid-body grid-body-name axisAG" id="axisAG">
+                            <div class="col-5 grid grid-body grid-body-name axisAG" id="axisAG">
                             </div>
-                            <div class="col-2 grid grid-body grid-body-skin axisAG-skin" id="axisAG-skin">
+                            <div class="col-3 grid grid-body grid-body-skin axisAG-skin" id="axisAG-skin">
                             </div>
                         </div>
                     </div>
@@ -318,9 +318,9 @@
                                 <img class="axisBG-pic-lead pilot-pic" src="imgs/American/Emptyimg.jpg"
                                     id="axisBG-pic-lead">
                             </div>
-                            <div class="col-6 grid grid-body grid-body-name axisBG-lead" id="axisBG-lead">
+                            <div class="col-5 grid grid-body grid-body-name axisBG-lead" id="axisBG-lead">
                             </div>
-                            <div class="col-2 grid grid-body grid-body-skin axisBG-skin-lead" id="axisBG-skin-lead">
+                            <div class="col-3 grid grid-body grid-body-skin axisBG-skin-lead" id="axisBG-skin-lead">
                             </div>
                         </div>
                     </div>
@@ -334,9 +334,9 @@
                             <div class="col-2 px-0 grid grid-body grid-body-pic justify-content-center">
                                 <img class="axisBG-pic pilot-pic" src="imgs/American/Emptyimg.jpg" id="axisBG-pic">
                             </div>
-                            <div class="col-6 grid grid-body grid-body-name axisBG" id="axisBomberGroup">
+                            <div class="col-5 grid grid-body grid-body-name axisBG" id="axisBomberGroup">
                             </div>
-                            <div class="col-2 grid grid-body grid-body-skin axisBG-skin" id="axisBG-skin">
+                            <div class="col-3 grid grid-body grid-body-skin axisBG-skin" id="axisBG-skin">
                             </div>
                         </div>
                     </div>
@@ -353,14 +353,14 @@
                 <div class="col-12 px-1 grid-card">
 
                     <!-- Allied Fighter Group A -->
-                    <div class="col pl-0 pr-1 pb-3">
+                    <div class="col pl-0 pr-1 pb-3" id="allied-fighter-group-a">
                         <div class="col-12 px-0 grid grid-header grid-subheader">
                             <div class="col-3 grid top">Pilots</div>
                             <div class="col-5 grid center top">Unit</div>
                             <div class="col-4 grid top">Plane</div>
                         </div>
                         <div class="col-12 px-0 grid-subheader">
-                            <div class="col-3 grid bottom" id="alliedFGAnumbers"></div>
+                            <div class="col-3 grid bottom" id="alliedFGAnumbers">0</div>
                             <div class="col-5 grid center bottom" id="alliedfighterA"></div>
                             <div class="col-4 grid bottom" id="alliedfighterA-plane"></div>
                         </div>        
@@ -370,9 +370,9 @@
                             <div class="col-2 px-0 grid grid-body grid-subtitle">
                                Image
                             </div>
-                            <div class="col-6 px-0 grid grid-body grid-subtitle grid-subtitle-name">Name
+                            <div class="col-5 px-0 grid grid-body grid-subtitle grid-subtitle-name">Name
                             </div>
-                            <div class="col-2 px-0 grid grid-body grid-subtitle grid-subtitle-skin">Skin
+                           <div class="col-3 px-0 grid grid-body grid-subtitle grid-subtitle-skin">Radio
                             </div>
                         </div>
                         <div class="grid-last" id="alliedfighterA-lead"></div>
@@ -380,14 +380,14 @@
                     </div>
 
                     <!-- Allied Fighter Group B -->
-                    <div class="col pl-0 pr-1 pb-3">
+                    <div class="col pl-0 pr-1 pb-3" id="allied-fighter-group-b">
                         <div class="col-12 px-0 grid grid-header grid-subheader">
                             <div class="col-3 grid top">Pilots</div>
                             <div class="col-5 grid center top">Unit</div>
                             <div class="col-4 grid top">Plane</div>
                         </div>
                         <div class="col-12 px-0 grid-subheader">
-                            <div class="col-3 grid bottom" id="alliedFGBnumbers"></div>
+                            <div class="col-3 grid bottom" id="alliedFGBnumbers">0</div>
                             <div class="col-5 grid center bottom" id="alliedfighterB"></div>
                             <div class="col-4 grid bottom" id="alliedfighterB-plane"></div>
                         </div>
@@ -397,9 +397,9 @@
                             <div class="col-2 px-0 grid grid-body grid-subtitle">
                                Image
                             </div>
-                            <div class="col-6 px-0 grid grid-body grid-subtitle grid-subtitle-name">Name
+                            <div class="col-5 px-0 grid grid-body grid-subtitle grid-subtitle-name">Name
                             </div>
-                            <div class="col-2 px-0 grid grid-body grid-subtitle grid-subtitle-skin">Skin
+                           <div class="col-3 px-0 grid grid-body grid-subtitle grid-subtitle-skin">Radio
                             </div>
                         </div>
                         <div class="grid-last" id="alliedfighterB-lead"></div>
@@ -409,14 +409,14 @@
 
 
                     <!-- Allied Attacker Group -->
-                    <div class="col pl-0 pr-1 pb-3">
+                    <div class="col pl-0 pr-1 pb-3" id="allied-attacker-group">
                         <div class="col-12 px-0 grid grid-header grid-subheader">
                             <div class="col-3 grid top">Pilots</div>
                             <div class="col-5 grid center top">Unit</div>
                             <div class="col-4 grid top">Plane</div>
                         </div>
                         <div class="col-12 px-0 grid-subheader">
-                            <div class="col-3 grid bottom" id="alliedAGnumbers"></div>
+                            <div class="col-3 grid bottom" id="alliedAGnumbers">0</div>
                             <div class="col-5 grid center bottom" id="alliedattackergroup"></div>
                             <div class="col-4 grid bottom" id="alliedattacker-plane"></div>
                         </div>    
@@ -426,9 +426,9 @@
                             <div class="col-2 px-0 grid grid-body grid-subtitle">
                                Image
                             </div>
-                            <div class="col-6 px-0 grid grid-body grid-subtitle grid-subtitle-name">Name
+                            <div class="col-5 px-0 grid grid-body grid-subtitle grid-subtitle-name">Name
                             </div>
-                            <div class="col-2 px-0 grid grid-body grid-subtitle grid-subtitle-skin">Skin
+                           <div class="col-3 px-0 grid grid-body grid-subtitle grid-subtitle-skin">Radio
                             </div>
                         </div>
                         <div class="grid-last" id="alliedAttackerGroup-lead"></div>
@@ -436,14 +436,14 @@
                     </div>
 
                     <!-- Allied Bomber Group -->
-                    <div class="col pl-0 pr-1 pb-3">
+                    <div class="col pl-0 pr-1 pb-3" id="allied-bomber-group">
                         <div class="col-12 px-0 grid grid-header grid-subheader">
                             <div class="col-3 grid top">Pilots</div>
                             <div class="col-5 grid center top">Unit</div>
                             <div class="col-4 grid top">Plane</div>
                         </div>
                         <div class="col-12 px-0 grid-subheader">
-                            <div class="col-3 grid bottom" id="alliedBGnumbers"></div>
+                            <div class="col-3 grid bottom" id="alliedBGnumbers">0</div>
                             <div class="col-5 grid center bottom" id="alliedbombergroup"></div>
                             <div class="col-4 grid bottom" id="alliedbombergroup-plane"></div>
                         </div>    
@@ -453,9 +453,9 @@
                             <div class="col-2 px-0 grid grid-body grid-subtitle">
                                Image
                             </div>
-                            <div class="col-6 px-0 grid grid-body grid-subtitle grid-subtitle-name">Name
+                            <div class="col-5 px-0 grid grid-body grid-subtitle grid-subtitle-name">Name
                             </div>
-                            <div class="col-2 px-0 grid grid-body grid-subtitle grid-subtitle-skin">Skin
+                           <div class="col-3 px-0 grid grid-body grid-subtitle grid-subtitle-skin">Radio
                             </div>
                         </div>
                         <div class="grid-last" id="alliedbomber-lead"></div>
@@ -477,9 +477,9 @@
                                 <img class="alliedFGA-pic-lead pilot-pic" src="imgs/American/Emptyimg.jpg"
                                     id="alliedFGA-pic-lead">
                             </div>
-                            <div class="col-6 grid grid-body grid-body-name alliedFGA-lead" id="alliedFGA-lead">
+                            <div class="col-5 grid grid-body grid-body-name alliedFGA-lead" id="alliedFGA-lead">
                             </div>
-                            <div class="col-2 grid grid-body grid-body-skin alliedFGA-skin-lead" id="alliedFGA-skin-lead">
+                            <div class="col-3 grid grid-body grid-body-skin alliedFGA-skin-lead" id="alliedFGA-skin-lead">
                             </div>
                         </div>
                     </div>
@@ -495,9 +495,9 @@
                                 <img class="alliedFGA-pic pilot-pic" src="imgs/American/Emptyimg.jpg"
                                     id="alliedFGA-pic">
                             </div>
-                            <div class="col-6 grid grid-body grid-body-name alliedFGA" id="alliedFGA">
+                            <div class="col-5 grid grid-body grid-body-name alliedFGA" id="alliedFGA">
                             </div>
-                            <div class="col-2 grid grid-body grid-body-skin alliedFGA-skin" id="alliedFGA-skin">
+                            <div class="col-3 grid grid-body grid-body-skin alliedFGA-skin" id="alliedFGA-skin">
                             </div>
                         </div>
                     </div>
@@ -513,9 +513,9 @@
                                 <img class="alliedFGB-pic-lead pilot-pic" src="imgs/American/Emptyimg.jpg"
                                     id="alliedFGB-pic-lead">
                             </div>
-                            <div class="col-6 grid grid-body grid-body-name alliedFGB-lead" id="alliedFGB-lead">
+                            <div class="col-5 grid grid-body grid-body-name alliedFGB-lead" id="alliedFGB-lead">
                             </div>
-                            <div class="col-2 grid grid-body grid-body-skin alliedFGB-skin-lead" id="alliedFGB-skin-lead">
+                            <div class="col-3 grid grid-body grid-body-skin alliedFGB-skin-lead" id="alliedFGB-skin-lead">
                             </div>
                         </div>
                     </div>
@@ -531,9 +531,9 @@
                                 <img class="alliedFGB-pic pilot-pic" src="imgs/American/Emptyimg.jpg"
                                     id="alliedFGB-pic">
                             </div>
-                            <div class="col-6 grid grid-body grid-body-name alliedFGB" id="alliedFGB">
+                            <div class="col-5 grid grid-body grid-body-name alliedFGB" id="alliedFGB">
                             </div>
-                            <div class="col-2 grid grid-body grid-body-skin alliedFGB-skin" id="alliedFGB-skin">
+                            <div class="col-3 grid grid-body grid-body-skin alliedFGB-skin" id="alliedFGB-skin">
                             </div>
                         </div>
                     </div>
@@ -550,9 +550,9 @@
                                 <img class="alliedAG-pic-lead pilot-pic" src="imgs/American/Emptyimg.jpg"
                                     id="alliedAG-pic-lead">
                             </div>
-                            <div class="col-6 grid grid-body grid-body-name alliedAG-lead" id="alliedAG-lead">
+                            <div class="col-5 grid grid-body grid-body-name alliedAG-lead" id="alliedAG-lead">
                             </div>
-                            <div class="col-2 grid grid-body grid-body-skin alliedAG-skin-lead" id="alliedAG-skin-lead">
+                            <div class="col-3 grid grid-body grid-body-skin alliedAG-skin-lead" id="alliedAG-skin-lead">
                             </div>
                         </div>
                     </div>
@@ -567,9 +567,9 @@
                             <div class="col-2 px-0 grid grid-body grid-body-pic justify-content-center">
                                 <img class="alliedAG-pic pilot-pic" src="imgs/American/Emptyimg.jpg" id="alliedAG-pic">
                             </div>
-                            <div class="col-6 grid grid-body grid-body-name alliedAG" id="alliedAG">
+                            <div class="col-5 grid grid-body grid-body-name alliedAG" id="alliedAG">
                             </div>
-                            <div class="col-2 grid grid-body grid-body-skin alliedAG-skin" id="alliedAG-skin">
+                            <div class="col-3 grid grid-body grid-body-skin alliedAG-skin" id="alliedAG-skin">
                             </div>
                         </div>
                     </div>
@@ -585,9 +585,9 @@
                                 <img class="alliedBG-pic-lead pilot-pic" src="imgs/American/Emptyimg.jpg"
                                     id="alliedBG-pic-lead">
                             </div>
-                            <div class="col-6 grid grid-body grid-body-name alliedBG-lead" id="alliedBG-lead">
+                            <div class="col-5 grid grid-body grid-body-name alliedBG-lead" id="alliedBG-lead">
                             </div>
-                            <div class="col-2 grid grid-body grid-body-skin alliedBG-skin-lead" id="alliedBG-skin-lead">
+                            <div class="col-3 grid grid-body grid-body-skin alliedBG-skin-lead" id="alliedBG-skin-lead">
                             </div>
                         </div>
                     </div>
@@ -602,9 +602,9 @@
                             <div class="col-2 px-0 grid grid-body grid-body-pic justify-content-center">
                                 <img class="alliedBG-pic pilot-pic" src="imgs/American/Emptyimg.jpg" id="alliedBG-pic">
                             </div>
-                            <div class="col-6 grid grid-body grid-body-name alliedBG" id="alliedBomberGroup">
+                            <div class="col-5 grid grid-body grid-body-name alliedBG" id="alliedBomberGroup">
                             </div>
-                            <div class="col-2 grid grid-body grid-body-skin alliedBG-skin" id="alliedBG-skin">
+                            <div class="col-3 grid grid-body grid-body-skin alliedBG-skin" id="alliedBG-skin">
                             </div>
                         </div>
                     </div>
@@ -633,14 +633,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="javascript/registration.js"></script>
     <script src="javascript/generateIds.js"></script>
     <script src="javascript/sefmain.js"></script>
     <script src="javascript/assignPilotRole.js"></script>
     <script src="javascript/setAlliedTemplates.js"></script>
     <script src="javascript/setAxisTemplates.js"></script>
     <script src="javascript/generalsettings.js"></script>
-    <script src="javascript/textscaling.js"></script>
-    <script src="javascript/registration.js"></script>
+    <script src="javascript/textscaling.js"></script>   
 </body>
 
 </html>

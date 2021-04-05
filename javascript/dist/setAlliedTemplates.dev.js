@@ -205,84 +205,67 @@ function setAlliedTemplates(json, randomNumber) {
 }
 
 function setAlliedPlaneSkin() {
-  SquadronASkinRed = "Shestakov";
-  SquadronASkinBlue = "Bravo";
-  SquadronASkinGreen = "Golubev";
-  SquadronASkinBlack = "Safonov";
-  SquadronBSkinGrowler = "Default";
-  SquadronBSkinRaven = "Standard Grey";
-  SquadronBSkinEagle = "Yellow Tail";
-  SquadronBSkinRipper = "Snow Cat";
-  AttackSquadronSkinBear = "Green";
-  AttackSquadronSkinRabbit = "White 10";
-  AttackSquadronSkinFox = "Spilled Coffee";
-  AttackSquadronSkinBison = "Valery Chkalov";
-  BomberSquadronSkinPelican = "Red Thunderbolt";
-  BomberSquadronSkinSwan = "Special One";
-  BomberSquadronSkinSeagull = "White Sash";
-  BomberSquadronSkinCanary = "Default";
-
   if (flightForFighterSquadronA == "Red") {
-    return SquadronASkinRed;
+    return AlliedSquadronASkinRed;
   }
 
   if (flightForFighterSquadronA == "Blue") {
-    return SquadronASkinBlue;
+    return AlliedSquadronASkinBlue;
   }
 
   if (flightForFighterSquadronA == "Green") {
-    return SquadronASkinGreen;
+    return AlliedSquadronASkinGreen;
   }
 
   if (flightForFighterSquadronA == "Black") {
-    return SquadronASkinBlack;
+    return AlliedSquadronASkinBlack;
   }
 
   if (flightForFighterSquadronB == "Growler") {
-    return SquadronBSkinGrowler;
+    return AlliedSquadronBSkinGrowler;
   }
 
   if (flightForFighterSquadronB == "Raven") {
-    return SquadronBSkinRaven;
+    return AlliedSquadronBSkinRaven;
   }
 
   if (flightForFighterSquadronB == "Eagle") {
-    return SquadronBSkinEagle;
+    return AlliedSquadronBSkinEagle;
   }
 
   if (flightForFighterSquadronB == "Ripper") {
-    return SquadronBSkinRipper;
+    return AlliedSquadronBSkinRipper;
   }
 
   if (flightForAttackSquadron == "Bear") {
-    return AttackSquadronSkinBear;
+    return AlliedAttackSquadronSkinBear;
   }
 
   if (flightForAttackSquadron == "Rabbit") {
-    return AttackSquadronSkinRabbit;
+    return AlliedAttackSquadronSkinRabbit;
   }
 
   if (flightForAttackSquadron == "Fox") {
-    return AttackSquadronSkinFox;
+    return AlliedAttackSquadronSkinFox;
   }
 
   if (flightForAttackSquadron == "Bison") {
-    return AttackSquadronSkinBison;
+    return AlliedAttackSquadronSkinBison;
   }
 
   if (flightForBomberSquadron == "Pelican") {
-    return BomberSquadronSkinPelican;
+    return AlliedBomberSquadronSkinPelican;
   }
 
   if (flightForBomberSquadron == "Swan") {
-    return BomberSquadronSkinSwan;
+    return AlliedBomberSquadronSkinSwan;
   }
 
   if (flightForBomberSquadron == "Seagull") {
-    return BomberSquadronSkinSeagull;
+    return AlliedBomberSquadronSkinSeagull;
   }
 
   if (flightForBomberSquadron == "Canary") {
-    return BomberSquadronSkinCanary;
+    return AlliedBomberSquadronSkinCanary;
   }
 }

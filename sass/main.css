@@ -249,9 +249,10 @@ body a {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
   font-size: .8rem;
+  text-align: left;
 }
 
 .hidden-templates {
