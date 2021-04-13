@@ -1,8 +1,8 @@
 //Friday Event
-FnFevent = "<em>RAF versus Axis</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/c5cd779a'>Event Time</a></strong>";
+FnFevent = "<em>RAF versus Axis</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/351cae1c'>Event Time</a></strong>";
 FnFregistration = true;
 
-SeFevent = "<em>RAF versus Axis</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/adb53a58'>Event Time</a></strong>";
+SeFevent = "<em>RAF versus Axis</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/633489bf'>Event Time</a></strong>";
 SeFregistration = true;
 
 totalFnFRegistered = 85;
@@ -24,8 +24,8 @@ alliedBomber = "";
 //axis groups
 axisFighterGroupA = "III./JG77";
 axisFighterGroupB = "III./JG11";
-axisAttackerGroup = "II./JG4";
-axisBomberGroup = "I./JG26";
+axisAttackerGroup = "II./ZG4";
+axisBomberGroup = "I./KG26";
 
 //axis planes
 axisPlaneA = "Bf109K4";
@@ -170,3 +170,5 @@ function registrationSeFFull(side) {
 $(document).ready(function () {
     setEvent();
 });
+
+

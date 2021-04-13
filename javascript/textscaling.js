@@ -67,3 +67,6 @@ $(window).resize(function () {
         document.getElementById("google-iframe").width = "700";
     }
 });
+
+
+
