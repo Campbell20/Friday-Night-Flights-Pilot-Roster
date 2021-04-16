@@ -1,6 +1,6 @@
 //Friday Event
 FnFevent = "<em>Yak Attack!</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/351cae1c'>Event Time</a></strong>";
-FnFregistration = true;
+FnFregistration = false;
 
 SeFevent = "<em>Yak Attack!</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/633489bf'>Event Time</a></strong>";
 SeFregistration = true;
