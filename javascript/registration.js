@@ -3,7 +3,7 @@ FnFevent = "<em>Yak Attack!</em>&nbsp;-&nbsp;<strong><a href='https://everytimez
 FnFregistration = false;
 
 SeFevent = "<em>Yak Attack!</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/633489bf'>Event Time</a></strong>";
-SeFregistration = true;
+SeFregistration = false;
 
 totalFnFRegistered = 85;
 totalSeFRegistered = 85;
