@@ -18,7 +18,7 @@ alliedBomberGroup = "Gunner Position";
 //allied planes
 alliedPlaneA = "Hurricane";
 alliedPlaneB = "SpitfireVb";
-alliedAttacker = "Pe2s35";
+alliedAttacker = "Pe2s87";
 alliedBomber = "Gunner";
 
 //axis groups
