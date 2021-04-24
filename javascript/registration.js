@@ -1,6 +1,6 @@
 //Friday Event
 FnFevent = "<em>Faux British Early War</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/9742241f'>Event Time</a></strong>";
-FnFregistration = true;
+FnFregistration = false;
 
 SeFevent = "<em>Faux British Early War</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/a749bd0b'>Event Time</a></strong>";
 SeFregistration = true;
