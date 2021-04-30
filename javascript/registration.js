@@ -1,6 +1,6 @@
 //Friday Event
 FnFevent = "<em>Late War</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/3c63ce78'>Event Time</a></strong>";
-FnFregistration = true;
+FnFregistration = false;
 
 SeFevent = "<em>Late War</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/702abebd'>Event Time</a></strong>";
 SeFregistration = true;

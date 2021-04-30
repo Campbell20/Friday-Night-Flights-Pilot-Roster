@@ -2,8 +2,8 @@
 
 //Friday Event
 FnFevent = "<em>Late War</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/3c63ce78'>Event Time</a></strong>";
-FnFregistration = true;
-SeFevent = "<em>Late War</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/6206ecf1'>Event Time</a></strong>";
+FnFregistration = false;
+SeFevent = "<em>Late War</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/702abebd'>Event Time</a></strong>";
 SeFregistration = true;
 totalFnFRegistered = 85;
 totalSeFRegistered = 85; //allied groups
