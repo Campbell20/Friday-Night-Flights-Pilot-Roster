@@ -3,7 +3,7 @@ FnFevent = "<em>Late War</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone
 FnFregistration = false;
 
 SeFevent = "<em>Late War</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/702abebd'>Event Time</a></strong>";
-SeFregistration = true;
+SeFregistration = false;
 
 totalFnFRegistered = 85;
 totalSeFRegistered = 85;
