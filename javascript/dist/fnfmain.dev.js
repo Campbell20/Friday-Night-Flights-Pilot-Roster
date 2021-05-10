@@ -1,26 +1,6 @@
 "use strict";
 
 $(document).ready(function () {
-  // //allied groups
-  // alliedFighterGroupA = "No. 89 Squadron (RAF)";
-  // alliedFighterGroupB = "No. 87 Squadron (RAF)";
-  // alliedAttackerGroup = "No. 97 Squadron (RAF)";
-  // alliedBomberGroup = "458th Bomber Squadron";
-  // //allied planes
-  // alliedPlaneA = "SpitfireIX";
-  // alliedPlaneB = "Tempest";
-  // alliedAttacker = "A20 Boston";
-  // alliedBomber = "IL2 1942 with Turret";
-  // //axis groups
-  // axisFighterGroupA = "III./JG77";
-  // axisFighterGroupB = "III./JG11";
-  // axisAttackerGroup = "II./JG4";
-  // axisBomberGroup = "I./JG26";
-  // //axis planes
-  // axisPlaneA = "Bf109K4";
-  // axisPlaneB = "Fw190D9";
-  // axisAttacker = "Bf110G2";
-  // axisBomber = "Ju88A2";
   $.getJSON('https://spreadsheets.google.com/feeds/list/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/1/public/full?alt=json').done(function (json) {
     //side names
     alliedSide = "Allied";

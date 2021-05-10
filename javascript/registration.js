@@ -1,9 +1,9 @@
 //Friday Event
-FnFevent = "<em>Late War</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/3c63ce78'>Event Time</a></strong>";
-FnFregistration = false;
+FnFevent = "<em>Late War</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/fd713b0a'>Event Time</a></strong>";
+FnFregistration = true;
 
-SeFevent = "<em>Late War</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/702abebd'>Event Time</a></strong>";
-SeFregistration = false;
+SeFevent = "<em>Late War</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/9e58ff30'>Event Time</a></strong>";
+SeFregistration = true;
 
 totalFnFRegistered = 85;
 totalSeFRegistered = 85;
@@ -17,9 +17,9 @@ alliedBomberGroup = "474th Bomber Group";
 
 //allied planes
 alliedPlaneA = "Spitfire XIV";
-alliedPlaneB = "P38 Lighting";
-alliedAttacker = "P47D22/P47D28";
-alliedBomber = "A20 Havoc";
+alliedPlaneB = "P51 Mustang";
+alliedAttacker = "P47D22 Razorback";
+alliedBomber = "P47D28 Thunderbolt";
 
 //axis groups
 axisFighterGroupA = "III./JG7";
@@ -29,9 +29,9 @@ axisBomberGroup = "I./ZG2";
 
 //axis planes
 axisPlaneA = "Bf109K4";
-axisPlaneB = "Fw190A6";
+axisPlaneB = "Fw190D9";
 axisAttacker = "BF110G2";
-axisBomber = "";
+axisBomber = "Fw190A6";
 
 channel2 = "Channel 2";
 channel3 = "Channel 3";
@@ -49,20 +49,20 @@ AlliedSquadronASkinBlue = "Newberry" + "<br>" + channel9;
 AlliedSquadronASkinGreen = "Dodd" + "<br>" + channel8;
 AlliedSquadronASkinBlack = "Indian" + "<br>" + channel7;
 
-AlliedSquadronBSkinGrowler = "429th FS" + "<br>" + channel6;
-AlliedSquadronBSkinRaven = "SCRAPIRON IV" + "<br>" + channel5;
-AlliedSquadronBSkinEagle = "Hey Stuff" + "<br>" + channel4;
-AlliedSquadronBSkinRipper = "California Cutie" + "<br>" + channel3;
+AlliedSquadronBSkinGrowler = "MoonBeam McSwine" + "<br>" + channel6;
+AlliedSquadronBSkinRaven = "Wilson" + "<br>" + channel5;
+AlliedSquadronBSkinEagle = "Klem" + "<br>" + channel4;
+AlliedSquadronBSkinRipper = "Lollipoop II" + "<br>" + channel3;
 
-AlliedAttackSquadronSkinBear = "P47D22" + "<br>" + "RAF 2" + "<br>" + channel2;
-AlliedAttackSquadronSkinRabbit = "P47D22" + "<br>" + "255th IAP" + "<br>" + channel2;
-AlliedAttackSquadronSkinFox = "P47D28" + "<br>" + "Deacon Dandy" + "<br>" + channel2;
-AlliedAttackSquadronSkinBison = "P47D28" + "<br" + "Passionate Patsy" + "<br>" + channel2;
+AlliedAttackSquadronSkinBear = "RAF 2" + "<br>" + channel2;
+AlliedAttackSquadronSkinRabbit = "255th IAP" + "<br>" + channel2;
+AlliedAttackSquadronSkinFox = "Okie" + "<br>" + channel2;
+AlliedAttackSquadronSkinBison = "Easy's Angels" + "<br>" + channel2;
 
-AlliedBomberSquadronSkinPelican = "Sandy" + "<br>" + channel2;
-AlliedBomberSquadronSkinSwan = "Wahoo" + "<br>" + channel2;
-AlliedBomberSquadronSkinSeagull = "RAF" + "<br>" + channel2;
-AlliedBomberSquadronSkinCanary = "Night interdiction" + "<br>" + channel2;
+AlliedBomberSquadronSkinPelican = "Deacon Dandy" + "<br>" + channel2;
+AlliedBomberSquadronSkinSwan = "Passionate Patsy" + "<br>" + channel2;
+AlliedBomberSquadronSkinSeagull = "Lisi" + "<br>" + channel2;
+AlliedBomberSquadronSkinCanary = "Winged Skull" + "<br>" + channel2;
 
 //Axis Skins
 AxisSquadronASkinRed = "Deskau" + "<br>" + channel10;
@@ -70,20 +70,20 @@ AxisSquadronASkinBlue = "Blue 7" + "<br>" + channel9;
 AxisSquadronASkinGreen = "Black 1" + "<br>" + channel8;
 AxisSquadronASkinBlack = "White 6" + "<br>" + channel7;
 
-AxisSquadronBSkinGrowler = "Schott" + "<br>" + channel6;
-AxisSquadronBSkinRaven = "5./JG1" + "<br>" + channel5;
-AxisSquadronBSkinEagle = "Pfiffer" + "<br>" + channel4;
-AxisSquadronBSkinRipper = "Nowotny" + "<br>" + channel3;
+AxisSquadronBSkinGrowler = "Faber" + "<br>" + channel6;
+AxisSquadronBSkinRaven = "Red 18" + "<br>" + channel5;
+AxisSquadronBSkinEagle = "Yellow 13" + "<br>" + channel4;
+AxisSquadronBSkinRipper = "White 11" + "<br>" + channel3;
 
 AxisAttackSquadronSkinBear = "Oassmann" + "<br>" + channel2;
 AxisAttackSquadronSkinRabbit = "Bley" + "<br>" + channel2;
 AxisAttackSquadronSkinFox = "Johnen" + "<br>" + channel2;
 AxisAttackSquadronSkinBison = "Becker" + "<br>" + channel2;
 
-AxisBomberSquadronSkinPelican = "Oswald" + "<br>" + channel2;
-AxisBomberSquadronSkinSwan = "Meyer" + "<br>" + channel2;
-AxisBomberSquadronSkinSeagull = "Yellow 3" + "<br>" + channel2;
-AxisBomberSquadronSkinCanary = "White 327" + "<br>" + channel2;
+AxisBomberSquadronSkinPelican = "Schott" + "<br>" + channel2;
+AxisBomberSquadronSkinSwan = "5./JG1" + "<br>" + channel2;
+AxisBomberSquadronSkinSeagull = "Pfiffer" + "<br>" + channel2;
+AxisBomberSquadronSkinCanary = "Nowotny" + "<br>" + channel2;
 
 hideAlliedFighterGroupA = false;
 hideAlliedFighterGroupB = false;
@@ -93,7 +93,7 @@ hideAlliedBomberGroup = false;
 hideAxisFighterGroupA = false;
 hideAxisFighterGroupB = false;
 hideAxisAttackerGroup = false;
-hideAxisBomberGroup = true;
+hideAxisBomberGroup = false;
 
 
 function setEvent() {
