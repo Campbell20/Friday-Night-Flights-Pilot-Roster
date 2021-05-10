@@ -1,7 +1,7 @@
 "use strict";
 
 //Friday Event
-FnFevent = "<em>Late War</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/fd713b0a'>Event Time</a></strong>";
+FnFevent = "<em>Late War</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/1423bf54'>Event Time</a></strong>";
 FnFregistration = true;
 SeFevent = "<em>Late War</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/9e58ff30'>Event Time</a></strong>";
 SeFregistration = true;
