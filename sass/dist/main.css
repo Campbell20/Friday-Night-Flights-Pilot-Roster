@@ -255,3 +255,16 @@ body a {
   font-size: 1rem;
   font-weight: bolder;
 }
+
+.blink_me {
+  animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+.red {
+  color: red;
+}

@@ -336,4 +336,25 @@ body a {
   font-size: 1rem;
   font-weight: bolder;
 }
+
+.blink_me {
+  -webkit-animation: blinker 1.5s linear infinite;
+          animation: blinker 1.5s linear infinite;
+}
+
+@-webkit-keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.red {
+  color: red;
+}
 /*# sourceMappingURL=main.css.map */
