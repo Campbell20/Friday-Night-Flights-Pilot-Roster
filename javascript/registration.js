@@ -1,6 +1,6 @@
 //Friday Event
 FnFevent = "<em>Faux Pacific Battles</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/6048f77e'>Event Time</a></strong>";
-FnFregistration = true;
+FnFregistration = false;
 
 SeFevent = "<em>Faux Pacific Battles</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/1100fc02'>Event Time</a></strong>";
 SeFregistration = true;
