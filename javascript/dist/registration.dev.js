@@ -2,7 +2,7 @@
 
 //Friday Event
 FnFevent = "<em>Faux Pacific Battles</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/89fbd67f'>Event Time</a></strong>";
-FnFregistration = false;
+FnFregistration = true;
 SeFevent = "No event this week.";
 SeFregistration = false;
 totalFnFRegistered = 85;
