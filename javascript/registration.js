@@ -167,8 +167,8 @@ function registrationSeFFull(side) {
         SeFregistration = false;
     }
 }
-// $(document).ready(function () {
-//     setEvent();
-// });
+$(document).ready(function () {
+    setEvent();
+});
 
 

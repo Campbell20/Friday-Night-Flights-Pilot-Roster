@@ -156,6 +156,8 @@ function registrationSeFFull(side) {
   if (totalSeFRegistered <= 1) {
     SeFregistration = false;
   }
-} // $(document).ready(function () {
-//     setEvent();
-// });
+}
+
+$(document).ready(function () {
+  setEvent();
+});
