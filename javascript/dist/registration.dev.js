@@ -1,10 +1,10 @@
 "use strict";
 
 //Friday Event
-FnFevent = "<em>Faux Pacific Battles</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/6048f77e'>Event Time</a></strong>";
-FnFregistration = true;
-SeFevent = "<em>Faux Pacific Battles</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/1100fc02'>Event Time</a></strong>";
-SeFregistration = true;
+FnFevent = "<em>Faux Pacific Battles</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/89fbd67f'>Event Time</a></strong>";
+FnFregistration = false;
+SeFevent = "No event this week.";
+SeFregistration = false;
 totalFnFRegistered = 85;
 totalSeFRegistered = 85; //allied groups
 
@@ -70,13 +70,13 @@ AxisBomberSquadronSkinPelican = "Ki-49 Donryu" + "<br>" + channel2;
 AxisBomberSquadronSkinSwan = "Ki-49 Donryu" + "<br>" + channel2;
 AxisBomberSquadronSkinSeagull = "Ki-49 Donryu" + "<br>" + channel2;
 AxisBomberSquadronSkinCanary = "Ki-49 Donryu" + "<br>" + channel2;
-hideAlliedFighterGroupA = false;
+hideAlliedFighterGroupA = true;
 hideAlliedFighterGroupB = false;
-hideAlliedAttackerGroup = false;
+hideAlliedAttackerGroup = true;
 hideAlliedBomberGroup = false;
-hideAxisFighterGroupA = false;
+hideAxisFighterGroupA = true;
 hideAxisFighterGroupB = false;
-hideAxisAttackerGroup = false;
+hideAxisAttackerGroup = true;
 hideAxisBomberGroup = false;
 
 function setEvent() {
@@ -104,11 +104,11 @@ function setEvent() {
   }
 
   if (hideAxisFighterGroupA) {
-    $("#axis-figher-group-a").addClass("hidden-templates");
+    $("#axis-fighter-group-a").addClass("hidden-templates");
   }
 
   if (hideAxisFighterGroupB) {
-    $("#axis-figher-group-b").addClass("hidden-templates");
+    $("#axis-fighter-group-b").addClass("hidden-templates");
   }
 
   if (hideAxisAttackerGroup) {
@@ -120,11 +120,11 @@ function setEvent() {
   }
 
   if (hideAlliedFighterGroupA) {
-    $("#allied-figher-group-a").addClass("hidden-templates");
+    $("#allied-fighter-group-a").addClass("hidden-templates");
   }
 
   if (hideAlliedFighterGroupB) {
-    $("#allied-figher-group-b").addClass("hidden-templates");
+    $("#allied-fighter-group-b").addClass("hidden-templates");
   }
 
   if (hideAlliedAttackerGroup) {
@@ -156,8 +156,6 @@ function registrationSeFFull(side) {
   if (totalSeFRegistered <= 1) {
     SeFregistration = false;
   }
-}
-
-$(document).ready(function () {
-  setEvent();
-});
+} // $(document).ready(function () {
+//     setEvent();
+// });
