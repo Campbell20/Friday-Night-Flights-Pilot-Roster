@@ -1,4 +1,4 @@
-function setAxisTemplates(data, randomNumber) {
+function setAxisTemplates(data, randomNumber, rows) {
     console.log(data);
     jsonLength = rows.length;
     var axisFGATemplateLead = document.getElementsByTagName("template-axisFGA-Lead")[0];

@@ -17,6 +17,7 @@ $(document).ready(function () {
         //side names
         alliedSide = "Allied";
         axisSide = "Axis";
+        
         //allied flights
         alliedTeamA = alliedFighterGroupA;
         alliedTeamB = alliedFighterGroupB;
@@ -29,8 +30,8 @@ $(document).ready(function () {
         axisAttackers = axisAttackerGroup;
         axisBomber = axisBomberGroup;
 
-        setAlliedTemplates(data, randomNumber);
-        setAxisTemplates(data, randomNumber);
+        setAlliedTemplates(data, randomNumber, rows);
+        setAxisTemplates(data, randomNumber, rows);
       }
     })
     .fail((e) => console.log(e.status));

@@ -1,4 +1,4 @@
-function setAlliedTemplates(data, randomNumber) {
+function setAlliedTemplates(data, randomNumber, rows) {
   console.log(data);
   jsonLength = rows.length;
  
