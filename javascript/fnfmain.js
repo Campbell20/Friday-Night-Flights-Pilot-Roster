@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 
-  var JSONMessage = $.getJSON( "https://docs.google.com/spreadsheets/d/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/gviz/tq", function() {
+  var JSONMessage = $.getJSON( "https://docs.google.com/spreadsheets/d/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/gviz/tq?tqx=out:json", function() {
     console.log( "success" );
   })
     .done(function() {
@@ -10,12 +10,26 @@ $(document).ready(function () {
     .fail(function() {
       console.log( "error" );
     })
-    .always(function() {
-      console.log( "complete" );
-    });
 
- JSONMessage.done(function (json) {
-    console.log("here is the stuff!!" + json.stringify());
+
+//     var sf = "https://docs.google.com/spreadsheets/d/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/gviz/tq?tqx=out:json";
+// $.ajax({url: sf, type: 'GET', dataType: 'text'})
+// .done(function(data) {
+//   const r = data.match(/google\.visualization\.Query\.setResponse\(([\s\S\w]+)\)/);
+//   if (r && r.length == 2) {
+//     const obj = JSON.parse(r[1]);
+//     const table = obj.table;
+//     const header = table.cols.map(({label}) => label);
+//     const rows = table.rows.map(({c}) => c.map(e => e ? (e.v || "") : "")); // Modified from const rows = table.rows.map(({c}) => c.map(({v}) => v));
+
+//     console.log(header);
+//     console.log(rows);
+//   }
+// })
+// .fail((e) => console.log(e.status));
+
+ JSONMessage.always(function (json) {
+    console.log(json);
     //$.getJSON('https://spreadsheets.google.com/feeds/list/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/1/public/full?alt=json').done(function (json) {
     //side names
     alliedSide = "Allied";
