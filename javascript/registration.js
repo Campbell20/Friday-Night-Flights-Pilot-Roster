@@ -1,8 +1,8 @@
 //Friday Event
-FnFevent = "<em>Faux Pacific Battles</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/89fbd67f'>Event Time</a></strong>";
-FnFregistration = false;
+FnFevent = "<em>Aerial Battlefield: Capture and Hold</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/35c793d9'>Event Time</a></strong>";
+FnFregistration = true;
 
-SeFevent = "No event this week.";
+SeFevent = "<em>Aerial Battlefield: Capture and Hold</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/1e395139'>Event Time</a></strong>";
 SeFregistration = false;
 
 totalFnFRegistered = 85;
@@ -10,28 +10,28 @@ totalSeFRegistered = 85;
 
 
 //allied groups
-alliedFighterGroupA = "Marine Aircraft Group 12";
-alliedFighterGroupB = "Marine Aircraft Group 24";
-alliedAttackerGroup = "Marine Aircraft Group 36";
-alliedBomberGroup = "Marine Aircraft Group 18";
+alliedFighterGroupA = "No. 3 Squadron RAF";
+alliedFighterGroupB = "No. 404 Squadron RAF";
+alliedAttackerGroup = "179th Expeditionary Fighter Squadron";
+alliedBomberGroup = "125th Expeditionary Fighter Squadron";
 
 //allied planes
-alliedPlaneA = "P38 Lighting";
-alliedPlaneB = "P40 Warhawk";
-alliedAttacker = "P39 Airacobra";
-alliedBomber = "A20 Havoc";
+alliedPlaneA = "P51b Mustang";
+alliedPlaneB = "SpitfireXIV";
+alliedAttacker = "P51D Mustang";
+alliedBomber = "P38 Lighting";
 
 //axis groups
-axisFighterGroupA = "11th Sentai";
-axisFighterGroupB = "68th Sentai";
-axisAttackerGroup = "13th Sentai";
-axisBomberGroup = "45th Sentai";
+axisFighterGroupA = "7./Jg27";
+axisFighterGroupB = "II./Jg52";
+axisAttackerGroup = "II./Kg4";
+axisBomberGroup = "III./Kg6";
 
 //axis planes
-axisPlaneA = "Ki-84 Frank (Fw190A8)";
-axisPlaneB = "Ki-61 Tony (Mc202)";
-axisAttacker = "Ki-43 Oscar (LA5F)";
-axisBomber = "Ki-49 Helen (Ju88)";
+axisPlaneA = "Bf109 G6 Late";
+axisPlaneB = "Bf109 K4";
+axisAttacker = "Fw190A8";
+axisBomber = "Fw190D9";
 
 channel2 = "Channel 2";
 channel3 = "Channel 3";
@@ -49,50 +49,50 @@ AlliedSquadronASkinBlue = "Default" + "<br>" + channel9;
 AlliedSquadronASkinGreen = "Default" + "<br>" + channel8;
 AlliedSquadronASkinBlack = "Default" + "<br>" + channel7;
 
-AlliedSquadronBSkinGrowler = "Pacific 1942" + "<br>" + channel6;
-AlliedSquadronBSkinRaven = "Pacific 1942" + "<br>" + channel5;
-AlliedSquadronBSkinEagle = "Pacific 1942" + "<br>" + channel4;
-AlliedSquadronBSkinRipper = "Pacific 1942" + "<br>" + channel3;
+AlliedSquadronBSkinGrowler = "Default" + "<br>" + channel6;
+AlliedSquadronBSkinRaven = "Default" + "<br>" + channel5;
+AlliedSquadronBSkinEagle = "Default" + "<br>" + channel4;
+AlliedSquadronBSkinRipper = "Default" + "<br>" + channel3;
 
-AlliedAttackSquadronSkinBear = "Winburn" + "<br>" + channel2;
-AlliedAttackSquadronSkinRabbit = "Winburn" + "<br>" + channel2;
-AlliedAttackSquadronSkinFox = "Winburn" + "<br>" + channel2;
-AlliedAttackSquadronSkinBison = "Winburn" + "<br>" + channel2;
+AlliedAttackSquadronSkinBear = "Default" + "<br>" + channel2;
+AlliedAttackSquadronSkinRabbit = "Default" + "<br>" + channel2;
+AlliedAttackSquadronSkinFox = "Default" + "<br>" + channel2;
+AlliedAttackSquadronSkinBison = "Default" + "<br>" + channel2;
 
-AlliedBomberSquadronSkinPelican = "Sandy" + "<br>" + channel2;
-AlliedBomberSquadronSkinSwan = "Sandy" + "<br>" + channel2;
-AlliedBomberSquadronSkinSeagull = "Wahoo" + "<br>" + channel2;
-AlliedBomberSquadronSkinCanary = "Wahoo" + "<br>" + channel2;
+AlliedBomberSquadronSkinPelican = "Default" + "<br>" + channel2;
+AlliedBomberSquadronSkinSwan = "Default" + "<br>" + channel2;
+AlliedBomberSquadronSkinSeagull = "Default" + "<br>" + channel2;
+AlliedBomberSquadronSkinCanary = "Default" + "<br>" + channel2;
 
 //Axis Skins
-AxisSquadronASkinRed = "Ki-84" + "<br>" + channel10;
-AxisSquadronASkinBlue = "Ki-84" + "<br>" + channel9;
-AxisSquadronASkinGreen = "Ki-84" + "<br>" + channel8;
-AxisSquadronASkinBlack = "Ki-84" + "<br>" + channel7;
+AxisSquadronASkinRed = "Default" + "<br>" + channel10;
+AxisSquadronASkinBlue = "Default" + "<br>" + channel9;
+AxisSquadronASkinGreen = "Default" + "<br>" + channel8;
+AxisSquadronASkinBlack = "Default" + "<br>" + channel7;
 
-AxisSquadronBSkinGrowler = "Ki-61 Tony" + "<br>" + channel6;
-AxisSquadronBSkinRaven = "Ki-61 Tony" + "<br>" + channel5;
-AxisSquadronBSkinEagle = "Ki-61 Tony" + "<br>" + channel4;
-AxisSquadronBSkinRipper = "Ki-61 Tony" + "<br>" + channel3;
+AxisSquadronBSkinGrowler = "Default" + "<br>" + channel6;
+AxisSquadronBSkinRaven = "Default" + "<br>" + channel5;
+AxisSquadronBSkinEagle = "Default" + "<br>" + channel4;
+AxisSquadronBSkinRipper = "Default" + "<br>" + channel3;
 
-AxisAttackSquadronSkinBear = "Ki-43" + "<br>" + channel2;
-AxisAttackSquadronSkinRabbit = "Ki-43" + "<br>" + channel2;
-AxisAttackSquadronSkinFox = "Ki-43" + "<br>" + channel2;
-AxisAttackSquadronSkinBison = "Ki-43" + "<br>" + channel2;
+AxisAttackSquadronSkinBear = "Default" + "<br>" + channel2;
+AxisAttackSquadronSkinRabbit = "Default" + "<br>" + channel2;
+AxisAttackSquadronSkinFox = "Default" + "<br>" + channel2;
+AxisAttackSquadronSkinBison = "Default" + "<br>" + channel2;
 
-AxisBomberSquadronSkinPelican = "Ki-49 Donryu" + "<br>" + channel2;
-AxisBomberSquadronSkinSwan = "Ki-49 Donryu" + "<br>" + channel2;
-AxisBomberSquadronSkinSeagull = "Ki-49 Donryu" + "<br>" + channel2;
-AxisBomberSquadronSkinCanary = "Ki-49 Donryu" + "<br>" + channel2;
+AxisBomberSquadronSkinPelican = "Default" + "<br>" + channel2;
+AxisBomberSquadronSkinSwan = "Default" + "<br>" + channel2;
+AxisBomberSquadronSkinSeagull = "Default" + "<br>" + channel2;
+AxisBomberSquadronSkinCanary = "Default" + "<br>" + channel2;
 
-hideAlliedFighterGroupA = true;
+hideAlliedFighterGroupA = false;
 hideAlliedFighterGroupB = false;
-hideAlliedAttackerGroup = true;
+hideAlliedAttackerGroup = false;
 hideAlliedBomberGroup = false;
 
-hideAxisFighterGroupA = true;
+hideAxisFighterGroupA = false;
 hideAxisFighterGroupB = false;
-hideAxisAttackerGroup = true;
+hideAxisAttackerGroup = false;
 hideAxisBomberGroup = false;
 
 
