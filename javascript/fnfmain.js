@@ -1,6 +1,20 @@
 $(document).ready(function () {
 
-  $.getJSON('https://docs.google.com/spreadsheets/d/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/gviz/tq').done(function (json) {
+
+  var JSONMessage = $.getJSON( "https://docs.google.com/spreadsheets/d/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/gviz/tq", function() {
+    console.log( "success" );
+  })
+    .done(function() {
+      console.log( "second success" );
+    })
+    .fail(function() {
+      console.log( "error" );
+    })
+    .always(function() {
+      console.log( "complete" );
+    });
+
+ JSONMessage.done(function (json) {
     console.log("here is the stuff!!" + json.stringify());
     //$.getJSON('https://spreadsheets.google.com/feeds/list/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/1/public/full?alt=json').done(function (json) {
     //side names
