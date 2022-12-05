@@ -36,65 +36,39 @@ $(document).ready(function () {
 
         setAlliedTemplates(data, randomNumber, rows);
         setAxisTemplates(data, randomNumber, rows);
+
+
+        function setFlightsAndPlanes() {
+          document.getElementById("alliedfighterA").innerHTML = alliedFighterGroupA;
+          document.getElementById("alliedfighterB").innerHTML = alliedFighterGroupB;
+          document.getElementById("alliedattackergroup").innerHTML = alliedAttackerGroup;
+          document.getElementById("alliedbombergroup").innerHTML = alliedBomberGroup;
+
+          document.getElementById("alliedfighterA-plane").innerHTML = alliedPlaneA;
+          document.getElementById("alliedfighterB-plane").innerHTML = alliedPlaneB;
+          document.getElementById("alliedattacker-plane").innerHTML = alliedAttacker;
+          document.getElementById("alliedbombergroup-plane").innerHTML = alliedBomber;
+
+          document.getElementById("axisfighterA").innerHTML = axisFighterGroupA;
+          document.getElementById("axisfighterB").innerHTML = axisFighterGroupB;
+          document.getElementById("axisattackergroup").innerHTML = axisAttackerGroup;
+          document.getElementById("axisbombergroup").innerHTML = axisBomberGroup;
+
+          document.getElementById("axisfighterA-plane").innerHTML = axisPlaneA;
+          document.getElementById("axisfighterB-plane").innerHTML = axisPlaneB;
+          document.getElementById("axisattacker-plane").innerHTML = axisAttacker;
+          document.getElementById("axisbombergroup-plane").innerHTML = axisBomber;
+        }
+
+
+        setFlightsAndPlanes();
+
+        setTimeout(() => {
+          setEvent();
+        }, 300);
       }
     })
     .fail((e) => console.log(e.status));
-
-//  JSONMessage.always(function (json) {
-//     console.log(json);
-//     //$.getJSON('https://spreadsheets.google.com/feeds/list/1L3xLMrObQItYs0vnazhZK06TAaIGamsxSBMaMOCffv4/1/public/full?alt=json').done(function (json) {
-//     //side names
-//     alliedSide = "Allied";
-//     axisSide = "Axis";
-//     //allied flights
-//     alliedTeamA = alliedFighterGroupA;
-//     alliedTeamB = alliedFighterGroupB;
-//     alliedAttackers = alliedAttackerGroup;
-//     alliedBomber = alliedBomberGroup;
-
-//     // axis flights
-//     axisTeamA = axisFighterGroupA;
-//     axisTeamB = axisFighterGroupB;
-//     axisAttackers = axisAttackerGroup;
-//     axisBomber = axisBomberGroup;
-
-//     setAlliedTemplates(json, randomNumber);
-//     setAxisTemplates(json, randomNumber);
-//   });
-
-
-  $.get('data/randomNumbers.txt', function (ranNum) {
-    randomNumber = ranNum.split('\n');
-  });
-
-  function setFlightsAndPlanes() {
-    document.getElementById("alliedfighterA").innerHTML = alliedFighterGroupA;
-    document.getElementById("alliedfighterB").innerHTML = alliedFighterGroupB;
-    document.getElementById("alliedattackergroup").innerHTML = alliedAttackerGroup;
-    document.getElementById("alliedbombergroup").innerHTML = alliedBomberGroup;
-
-    document.getElementById("alliedfighterA-plane").innerHTML = alliedPlaneA;
-    document.getElementById("alliedfighterB-plane").innerHTML = alliedPlaneB;
-    document.getElementById("alliedattacker-plane").innerHTML = alliedAttacker;
-    document.getElementById("alliedbombergroup-plane").innerHTML = alliedBomber;
-
-    document.getElementById("axisfighterA").innerHTML = axisFighterGroupA;
-    document.getElementById("axisfighterB").innerHTML = axisFighterGroupB;
-    document.getElementById("axisattackergroup").innerHTML = axisAttackerGroup;
-    document.getElementById("axisbombergroup").innerHTML = axisBomberGroup;
-
-    document.getElementById("axisfighterA-plane").innerHTML = axisPlaneA;
-    document.getElementById("axisfighterB-plane").innerHTML = axisPlaneB;
-    document.getElementById("axisattacker-plane").innerHTML = axisAttacker;
-    document.getElementById("axisbombergroup-plane").innerHTML = axisBomber;
-  }
-
-
-  setFlightsAndPlanes();
-
-  setTimeout(() => {
-    setEvent();
-  }, 300);
 });
 
 
