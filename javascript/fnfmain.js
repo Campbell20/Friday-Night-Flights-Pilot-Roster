@@ -29,8 +29,8 @@ $(document).ready(function () {
         axisAttackers = axisAttackerGroup;
         axisBomber = axisBomberGroup;
 
-        setAlliedTemplates(json, randomNumber);
-        setAxisTemplates(json, randomNumber);
+        setAlliedTemplates(data, randomNumber);
+        setAxisTemplates(data, randomNumber);
       }
     })
     .fail((e) => console.log(e.status));
@@ -56,6 +56,7 @@ $(document).ready(function () {
 //     setAlliedTemplates(json, randomNumber);
 //     setAxisTemplates(json, randomNumber);
 //   });
+
 
   $.get('data/randomNumbers.txt', function (ranNum) {
     randomNumber = ranNum.split('\n');
