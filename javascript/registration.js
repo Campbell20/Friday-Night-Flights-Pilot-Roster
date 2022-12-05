@@ -3,7 +3,7 @@ FnFevent = "<em>Aerial Battlefield: Capture and Hold</em>&nbsp;-&nbsp;<strong><a
 FnFregistration = true;
 
 SeFevent = "<em>Aerial Battlefield: Capture and Hold</em>&nbsp;-&nbsp;<strong><a href='https://everytimezone.com/s/1e395139'>Event Time</a></strong>";
-SeFregistration = false;
+SeFregistration = true;
 
 totalFnFRegistered = 85;
 totalSeFRegistered = 85;
