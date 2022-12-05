@@ -30,6 +30,7 @@ $(document).ready(function () {
         axisAttackers = axisAttackerGroup;
         axisBomber = axisBomberGroup;
 
+        const randomNumber = "";
         $.get('data/randomNumbers.txt', function (ranNum) {
           randomNumber = ranNum.split('\n');
         });
