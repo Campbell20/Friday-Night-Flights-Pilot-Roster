@@ -47,23 +47,23 @@ function setAlliedTemplates(data, randomNumber, rows) {
 
   for (i = 0; i < jsonLength; i++) {
     createIds();
-    side = json.feed.entry[i].gsx$whichsideoftheconflictwouldyouliketobeon.$t;
+    side = data.feed.entry[i].gsx$whichsideoftheconflictwouldyouliketobeon.$t;
     imageNumber = _randomNumber[i];
     if (imageNumber == undefined || imageNumber == NaN) {
       imageNumber = getRandomInt(1, 50);
     }
-    alliedFG = json.feed.entry[i].gsx$selectflightgroup.$t;
-    alliedName = json.feed.entry[i].gsx$enterpilotnickname.$t // pilot chosen position
+    alliedFG = data.feed.entry[i].gsx$selectflightgroup.$t;
+    alliedName = data.feed.entry[i].gsx$enterpilotnickname.$t // pilot chosen position
 
-    alliedFighterSquadronAPosition = json.feed.entry[i].gsx$selectpilotposition.$t;
-    alliedFighterSquadronBPosition = json.feed.entry[i].gsx$selectpilotposition_2.$t;
-    alliedAttackSquadronPosition = json.feed.entry[i].gsx$selectpilotposition_3.$t;
-    alliedBomberSquadronPosition = json.feed.entry[i].gsx$selectpilotposition_4.$t; // Flights in each Squadron
+    alliedFighterSquadronAPosition = data.feed.entry[i].gsx$selectpilotposition.$t;
+    alliedFighterSquadronBPosition = data.feed.entry[i].gsx$selectpilotposition_2.$t;
+    alliedAttackSquadronPosition = data.feed.entry[i].gsx$selectpilotposition_3.$t;
+    alliedBomberSquadronPosition = data.feed.entry[i].gsx$selectpilotposition_4.$t; // Flights in each Squadron
 
-    flightForFighterSquadronA = json.feed.entry[i].gsx$whichflightdoyouwishtobein.$t.split(" ")[0];
-    flightForFighterSquadronB = json.feed.entry[i].gsx$whichflightdoyouwishtobein_2.$t.split(" ")[0];
-    flightForAttackSquadron = json.feed.entry[i].gsx$whichflightdoyouwishtobein_3.$t.split(" ")[0];
-    flightForBomberSquadron = json.feed.entry[i].gsx$whichflightdoyouwishtobein_4.$t.split(" ")[0];
+    flightForFighterSquadronA = data.feed.entry[i].gsx$whichflightdoyouwishtobein.$t.split(" ")[0];
+    flightForFighterSquadronB = data.feed.entry[i].gsx$whichflightdoyouwishtobein_2.$t.split(" ")[0];
+    flightForAttackSquadron = data.feed.entry[i].gsx$whichflightdoyouwishtobein_3.$t.split(" ")[0];
+    flightForBomberSquadron = data.feed.entry[i].gsx$whichflightdoyouwishtobein_4.$t.split(" ")[0];
 
     skinChoice = setAlliedPlaneSkin();
 
