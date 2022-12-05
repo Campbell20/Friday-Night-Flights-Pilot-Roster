@@ -17,7 +17,7 @@ $(document).ready(function () {
         //side names
         alliedSide = "Allied";
         axisSide = "Axis";
-        
+
         //allied flights
         alliedTeamA = alliedFighterGroupA;
         alliedTeamB = alliedFighterGroupB;
@@ -29,6 +29,10 @@ $(document).ready(function () {
         axisTeamB = axisFighterGroupB;
         axisAttackers = axisAttackerGroup;
         axisBomber = axisBomberGroup;
+
+        $.get('data/randomNumbers.txt', function (ranNum) {
+          randomNumber = ranNum.split('\n');
+        });
 
         setAlliedTemplates(data, randomNumber, rows);
         setAxisTemplates(data, randomNumber, rows);
