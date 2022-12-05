@@ -1,6 +1,6 @@
 function setAxisTemplates(data, randomNumber) {
-    // console.log(json);
-    jsonLength = Object.keys(json.feed.entry).length;
+    console.log(data);
+    jsonLength = rows.length;
     var axisFGATemplateLead = document.getElementsByTagName("template-axisFGA-Lead")[0];
     var axisFGATemplate = document.getElementsByTagName("template-axisFGA")[0];
     var axisFGBTemplateLead = document.getElementsByTagName("template-axisFGB-Lead")[0];

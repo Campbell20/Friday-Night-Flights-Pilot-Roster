@@ -1,6 +1,6 @@
 function setAlliedTemplates(data, randomNumber) {
-  //console.log(json);
-  jsonLength = Object.keys(json.feed.entry).length;
+  console.log(data);
+  jsonLength = rows.length;
  
   var alliedFGATemplateLead = document.getElementsByTagName("template-alliedFGA-Lead")[0];
   var alliedFGATemplate = document.getElementsByTagName("template-alliedFGA")[0];
