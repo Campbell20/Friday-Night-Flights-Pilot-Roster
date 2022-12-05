@@ -13,6 +13,24 @@ $(document).ready(function () {
 
         console.log(header);
         console.log(rows);
+
+        //side names
+        alliedSide = "Allied";
+        axisSide = "Axis";
+        //allied flights
+        alliedTeamA = alliedFighterGroupA;
+        alliedTeamB = alliedFighterGroupB;
+        alliedAttackers = alliedAttackerGroup;
+        alliedBomber = alliedBomberGroup;
+
+        // axis flights
+        axisTeamA = axisFighterGroupA;
+        axisTeamB = axisFighterGroupB;
+        axisAttackers = axisAttackerGroup;
+        axisBomber = axisBomberGroup;
+
+        setAlliedTemplates(json, randomNumber);
+        setAxisTemplates(json, randomNumber);
       }
     })
     .fail((e) => console.log(e.status));
